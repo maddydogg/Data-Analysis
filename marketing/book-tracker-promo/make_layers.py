@@ -11,21 +11,22 @@ SCREEN = (96, 318, 888, 500)          # x, y, w, h of the laptop screen
 BEZEL_TOP, BEZEL_BOTTOM = 300, 852
 BEZEL_X0, BEZEL_X1 = 78, 1002
 
-# Palette lifted straight out of BookTracker.xlsx (styles.xml):
-#   section fills  DFF3EA / E4F3F6 / EAF5EE / F4F6F8
-#   heading text   33566B, muted text 9AA7B4 / 6B7280
-#   book spines    C9A9F0 F4B8D0 B3DCF0 BFE8C6 F3D89A D8E6A8 F0BDB5 CDB8EC CFC4BC D6C4A6
-MINT    = (241, 249, 245)   # tint of EAF5EE
-SKY     = (219, 237, 243)   # shade of E4F3F6
+# Palette lifted straight out of BookTracker.xlsx (styles.xml + cell usage):
+#   DFF3EA  mint — section headers on all 8 sheets, the workbook's lead accent
+#   EAF5EE  palest mint,  E4F3F6 secondary pale cyan,  F4F6F8 neutral row banding
+#   33566B  heading text,  9AA7B4 / 6B7280 muted text
+#   book spines C9A9F0 F4B8D0 B3DCF0 BFE8C6 F3D89A D8E6A8 F0BDB5 CDB8EC CFC4BC D6C4A6
+MINT_HI = (244, 251, 247)   # tint of EAF5EE
+MINT_LO = (211, 238, 225)   # shade of DFF3EA — the lead accent
 INK     = (51, 86, 107)     # 33566B
-MUTED   = (122, 145, 160)
+MUTED   = (128, 152, 148)
 CAPTION = (51, 86, 107)
-RULE    = (183, 213, 221)
+RULE    = (185, 223, 205)
 BEZEL   = (38, 45, 52)
 CHIN    = (28, 34, 40)
 BASE    = (64, 76, 86)
 BADGE   = (51, 86, 107)     # 33566B
-BADGE_2 = (179, 220, 240)   # B3DCF0
+BADGE_2 = (223, 243, 234)   # DFF3EA
 SPINES  = [(201, 169, 240), (244, 184, 208), (179, 220, 240), (191, 232, 198),
            (243, 216, 154), (216, 230, 168), (240, 189, 181), (205, 184, 236),
            (207, 196, 188), (214, 196, 166)]
@@ -71,7 +72,7 @@ def gradient(size, top, bottom):
 
 
 # ---------------------------------------------------------------- background
-bg = gradient((S, S), MINT, SKY)
+bg = gradient((S, S), MINT_HI, MINT_LO)
 d = ImageDraw.Draw(bg)
 
 # soft halo behind the laptop
@@ -84,7 +85,7 @@ bg.paste(Image.new("RGB", (S, S), (255, 255, 255)), (0, 0), halo)
 sh = Image.new("L", (S, S), 0)
 ImageDraw.Draw(sh).rounded_rectangle([110, 700, 970, 900], radius=90, fill=95)
 sh = sh.filter(ImageFilter.GaussianBlur(38))
-bg.paste(Image.new("RGB", (S, S), (126, 151, 162)), (0, 0), sh)
+bg.paste(Image.new("RGB", (S, S), (140, 177, 160)), (0, 0), sh)
 
 # ---- header type
 draw_tracked(d, S / 2, 58, "GOOGLE SHEETS  ·  INSTANT DOWNLOAD", M600(17), MUTED, tracking=4.2)

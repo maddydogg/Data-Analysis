@@ -31,16 +31,25 @@ loops cleanly in Etsy's player.
 
 ## Palette
 
-Every colour on the frame is taken from `BookTracker.xlsx` itself (`xl/styles.xml`),
-so the surround matches the template it is selling:
+Every colour on the frame comes from `BookTracker.xlsx` itself. Ranking the
+solid fills by how many cells actually use them (`xl/styles.xml` mapped through
+`cellXfs` onto the eight sheets) puts the mint first — it is the section-header
+colour on every tab, so the surround is built on it:
 
-| role | source in the workbook | hex |
+| fill | cells | role in the workbook |
 | --- | --- | --- |
-| background gradient | section fills `EAF5EE` → `E4F3F6` | `F1F9F4` → `DBEDF3` |
+| `F4F6F8` | 3106 | neutral row banding inside the tables |
+| `DFF3EA` | 113 | **section headers on all 8 sheets — the lead accent** |
+| `E4F3F6` | 61 | secondary pale cyan |
+| `EAF5EE` | 7 | palest mint |
+
+| role on the frame | taken from | hex |
+| --- | --- | --- |
+| background gradient | tint of `EAF5EE` → shade of `DFF3EA` | `F4FBF7` → `D3EEE1` |
 | headline, footer, captions | heading font colour | `33566B` |
-| eyebrow / secondary text | muted font colours `9AA7B4`, `6B7280` | `7A91A0` |
-| rules | tint of the pale-cyan fill | `B7D5DD` |
-| badge | heading colour, ring in the pastel blue spine | `33566B` / `B3DCF0` |
+| eyebrow / secondary text | muted font colours `9AA7B4`, `6B7280` | `809894` |
+| rules | mint shade | `B9DFCD` |
+| badge | heading colour, ring and micro-type in the mint | `33566B` / `DFF3EA` |
 | chip row under the headline | the ten book-spine fills | `C9A9F0 F4B8D0 B3DCF0 BFE8C6 F3D89A D8E6A8 F0BDB5 CDB8EC CFC4BC D6C4A6` |
 
 Fixed copy on the frame: `GOOGLE SHEETS · INSTANT DOWNLOAD` (eyebrow),
