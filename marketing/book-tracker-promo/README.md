@@ -29,6 +29,20 @@ the Google Sheets menus in Russian. The five shots that survived:
 Shots cross-fade over 0.5 s; the video opens and closes on a white fade so it
 loops cleanly in Etsy's player.
 
+## Palette
+
+Every colour on the frame is taken from `BookTracker.xlsx` itself (`xl/styles.xml`),
+so the surround matches the template it is selling:
+
+| role | source in the workbook | hex |
+| --- | --- | --- |
+| background gradient | section fills `EAF5EE` → `E4F3F6` | `F1F9F4` → `DBEDF3` |
+| headline, footer, captions | heading font colour | `33566B` |
+| eyebrow / secondary text | muted font colours `9AA7B4`, `6B7280` | `7A91A0` |
+| rules | tint of the pale-cyan fill | `B7D5DD` |
+| badge | heading colour, ring in the pastel blue spine | `33566B` / `B3DCF0` |
+| chip row under the headline | the ten book-spine fills | `C9A9F0 F4B8D0 B3DCF0 BFE8C6 F3D89A D8E6A8 F0BDB5 CDB8EC CFC4BC D6C4A6` |
+
 Fixed copy on the frame: `GOOGLE SHEETS · INSTANT DOWNLOAD` (eyebrow),
 `The Reading Tracker` (headline), `AUTO-UPDATING DASHBOARD` (badge),
 `8 TABS · DASHBOARD · BOOKSHELF · TRACKER · TBR · WISHLIST · SERIES` and

@@ -11,15 +11,24 @@ SCREEN = (96, 318, 888, 500)          # x, y, w, h of the laptop screen
 BEZEL_TOP, BEZEL_BOTTOM = 300, 852
 BEZEL_X0, BEZEL_X1 = 78, 1002
 
-CREAM   = (250, 246, 239)
-SAGE    = (228, 237, 227)
-INK     = (28, 54, 44)
-MUTED   = (110, 138, 114)
-CAPTION = (44, 74, 60)
-BEZEL   = (36, 38, 43)
-CHIN    = (26, 28, 32)
-BASE    = (66, 70, 78)
-BADGE   = (47, 107, 79)
+# Palette lifted straight out of BookTracker.xlsx (styles.xml):
+#   section fills  DFF3EA / E4F3F6 / EAF5EE / F4F6F8
+#   heading text   33566B, muted text 9AA7B4 / 6B7280
+#   book spines    C9A9F0 F4B8D0 B3DCF0 BFE8C6 F3D89A D8E6A8 F0BDB5 CDB8EC CFC4BC D6C4A6
+MINT    = (241, 249, 245)   # tint of EAF5EE
+SKY     = (219, 237, 243)   # shade of E4F3F6
+INK     = (51, 86, 107)     # 33566B
+MUTED   = (122, 145, 160)
+CAPTION = (51, 86, 107)
+RULE    = (183, 213, 221)
+BEZEL   = (38, 45, 52)
+CHIN    = (28, 34, 40)
+BASE    = (64, 76, 86)
+BADGE   = (51, 86, 107)     # 33566B
+BADGE_2 = (179, 220, 240)   # B3DCF0
+SPINES  = [(201, 169, 240), (244, 184, 208), (179, 220, 240), (191, 232, 198),
+           (243, 216, 154), (216, 230, 168), (240, 189, 181), (205, 184, 236),
+           (207, 196, 188), (214, 196, 166)]
 
 def font(name, size):
     return ImageFont.truetype(os.path.join(FONTS, name), size)
@@ -62,7 +71,7 @@ def gradient(size, top, bottom):
 
 
 # ---------------------------------------------------------------- background
-bg = gradient((S, S), CREAM, SAGE)
+bg = gradient((S, S), MINT, SKY)
 d = ImageDraw.Draw(bg)
 
 # soft halo behind the laptop
@@ -75,35 +84,40 @@ bg.paste(Image.new("RGB", (S, S), (255, 255, 255)), (0, 0), halo)
 sh = Image.new("L", (S, S), 0)
 ImageDraw.Draw(sh).rounded_rectangle([110, 700, 970, 900], radius=90, fill=95)
 sh = sh.filter(ImageFilter.GaussianBlur(38))
-bg.paste(Image.new("RGB", (S, S), (120, 132, 120)), (0, 0), sh)
+bg.paste(Image.new("RGB", (S, S), (126, 151, 162)), (0, 0), sh)
 
 # ---- header type
 draw_tracked(d, S / 2, 58, "GOOGLE SHEETS  ·  INSTANT DOWNLOAD", M600(17), MUTED, tracking=4.2)
 draw_tracked(d, S / 2, 96, "The Reading Tracker", PF700(66), INK, tracking=0.5)
 
-# thin rule under the headline
-d.line([(S / 2 - 60, 186), (S / 2 + 60, 186)], fill=(178, 197, 180), width=2)
+# the book-spine palette as a chip row under the headline
+chip_w, chip_h, gap = 22, 7, 6
+row = len(SPINES) * chip_w + (len(SPINES) - 1) * gap
+cx = (S - row) / 2
+for i, col in enumerate(SPINES):
+    x = cx + i * (chip_w + gap)
+    d.rounded_rectangle([x, 180, x + chip_w, 180 + chip_h], radius=3, fill=col)
 
 # ---- laptop body
 d.rounded_rectangle([BEZEL_X0, BEZEL_TOP, BEZEL_X1, BEZEL_BOTTOM], radius=22, fill=BEZEL)
 d.rounded_rectangle([BEZEL_X0 + 1, BEZEL_TOP + 1, BEZEL_X1 - 1, BEZEL_BOTTOM - 1],
-                    radius=22, outline=(70, 74, 82), width=2)
+                    radius=22, outline=(72, 84, 94), width=2)
 # chin
 d.rounded_rectangle([BEZEL_X0, BEZEL_BOTTOM - 40, BEZEL_X1, BEZEL_BOTTOM], radius=22, fill=CHIN)
 d.rectangle([BEZEL_X0, BEZEL_BOTTOM - 40, BEZEL_X1, BEZEL_BOTTOM - 28], fill=CHIN)
-draw_tracked(d, S / 2, BEZEL_BOTTOM - 27, "BOOK TRACKER", M500(11), (150, 158, 152), tracking=3.0)
+draw_tracked(d, S / 2, BEZEL_BOTTOM - 27, "BOOK TRACKER", M500(11), (146, 160, 170), tracking=3.0)
 # camera dot
-d.ellipse([S / 2 - 3, BEZEL_TOP + 7, S / 2 + 3, BEZEL_TOP + 13], fill=(78, 82, 90))
+d.ellipse([S / 2 - 3, BEZEL_TOP + 7, S / 2 + 3, BEZEL_TOP + 13], fill=(76, 88, 98))
 # screen well (video is overlaid here)
 d.rectangle([SCREEN[0], SCREEN[1], SCREEN[0] + SCREEN[2], SCREEN[1] + SCREEN[3]], fill=(255, 255, 255))
 # base
 d.rounded_rectangle([BEZEL_X0 - 52, BEZEL_BOTTOM, BEZEL_X1 + 52, BEZEL_BOTTOM + 18], radius=9, fill=BASE)
-d.rounded_rectangle([S / 2 - 62, BEZEL_BOTTOM, S / 2 + 62, BEZEL_BOTTOM + 7], radius=4, fill=(52, 56, 63))
+d.rounded_rectangle([S / 2 - 62, BEZEL_BOTTOM, S / 2 + 62, BEZEL_BOTTOM + 7], radius=4, fill=(50, 60, 69))
 
 # ---- footer
-d.line([(150, 928), (930, 928)], fill=(196, 211, 196), width=2)
+d.line([(150, 928), (930, 928)], fill=RULE, width=2)
 draw_tracked(d, S / 2, 950, "8 TABS  ·  DASHBOARD  ·  BOOKSHELF  ·  TRACKER  ·  TBR  ·  WISHLIST  ·  SERIES",
-             M600(16), (74, 97, 81), tracking=2.4)
+             M600(16), INK, tracking=2.4)
 draw_tracked(d, S / 2, 992, "NO SETUP — JUST MAKE A COPY AND START LOGGING",
              M500(15), MUTED, tracking=2.0)
 bg.save(os.path.join(OUT, "bg.png"))
@@ -134,12 +148,12 @@ fg.alpha_composite(gl, (x0, y0))
 bcx, bcy, r = 922, 812, 88
 fd.ellipse([bcx - r - 9, bcy - r - 9, bcx + r + 9, bcy + r + 9], fill=(255, 255, 255, 235))
 fd.ellipse([bcx - r, bcy - r, bcx + r, bcy + r], fill=BADGE + (255,))
-fd.ellipse([bcx - r + 9, bcy - r + 9, bcx + r - 9, bcy + r - 9], outline=(214, 232, 214, 200), width=2)
+fd.ellipse([bcx - r + 9, bcy - r + 9, bcx + r - 9, bcy + r - 9], outline=BADGE_2 + (210,), width=2)
 stars = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 13)
-draw_tracked(fd, bcx, bcy - 50, "\u2605 \u2605 \u2605", stars, (206, 228, 206), tracking=3.0)
+draw_tracked(fd, bcx, bcy - 50, "\u2605 \u2605 \u2605", stars, BADGE_2 + (255,), tracking=3.0)
 for i, line in enumerate(("AUTO-", "UPDATING")):
     draw_tracked(fd, bcx, bcy - 30 + i * 31, line, M700(24), (255, 255, 255), tracking=0.5)
-draw_tracked(fd, bcx, bcy + 38, "DASHBOARD", M600(14), (206, 228, 206), tracking=2.4)
+draw_tracked(fd, bcx, bcy + 38, "DASHBOARD", M600(14), BADGE_2 + (255,), tracking=2.4)
 fg.save(os.path.join(OUT, "fg.png"))
 
 # ---------------------------------------------------------------- captions
