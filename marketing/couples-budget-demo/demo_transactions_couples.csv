@@ -1,0 +1,269 @@
+2026-01-01,Income,Salary,Checking,5200,Alex,Personal,Monthly pay
+2026-01-01,Income,Salary,Checking,3800,Sam,Personal,Monthly pay
+2026-01-01,Expense,Rent or Mortgage,Checking,2400.0,Alex,Shared,Rent
+2026-01-02,Transfer,Emergency Fund,Savings,850.0,Joint,Shared,Auto transfer
+2026-01-02,Transfer,Holiday Fund,Savings,420.0,Joint,Shared,Auto transfer
+2026-01-02,Transfer,New Car,Savings,610.0,Joint,Shared,Auto transfer
+2026-01-03,Expense,Insurance,Checking,240.0,Joint,Shared,Home + car
+2026-01-04,Expense,Utilities,Checking,254.54,Sam,Shared,Electric and gas
+2026-01-06,Expense,Groceries,Credit Card,317.36,Sam,Shared,Weekly shop
+2026-01-07,Expense,Subscriptions,Credit Card,46.99,Alex,Shared,Streaming + cloud
+2026-01-08,Expense,Phone and Internet,Checking,110.0,Sam,Shared,Fibre + mobiles
+2026-01-09,Expense,Transport,Credit Card,177.94,Alex,Shared,Fuel and transit
+2026-01-11,Expense,Dining out,Credit Card,96.36,Alex,Shared,Date night
+2026-01-12,Expense,Debt,Checking,420.0,Joint,Shared,Car loan
+2026-01-15,Expense,Shopping,Credit Card,150.43,Alex,Personal,Clothes
+2026-01-16,Expense,Shopping,Credit Card,117.73,Sam,Personal,Clothes
+2026-01-17,Expense,Health,Checking,90,Alex,Personal,Pharmacy
+2026-01-19,Expense,Groceries,Credit Card,320.6,Sam,Shared,Weekly shop
+2026-01-21,Expense,Fun and Leisure,Credit Card,154.68,Alex,Personal,Gym + hobbies
+2026-01-22,Expense,Fun and Leisure,Credit Card,135.39,Sam,Personal,Gym + hobbies
+2026-01-23,Expense,Transport,Credit Card,183.78,Sam,Shared,Fuel and transit
+2026-01-24,Expense,Dining out,Credit Card,87.81,Sam,Shared,Lunch out
+2026-02-01,Income,Salary,Checking,5200,Alex,Personal,Monthly pay
+2026-02-01,Income,Salary,Checking,3800,Sam,Personal,Monthly pay
+2026-02-01,Expense,Rent or Mortgage,Checking,2400.0,Alex,Shared,Rent
+2026-02-02,Transfer,Emergency Fund,Savings,850.0,Joint,Shared,Auto transfer
+2026-02-02,Transfer,Holiday Fund,Savings,420.0,Joint,Shared,Auto transfer
+2026-02-02,Transfer,New Car,Savings,610.0,Joint,Shared,Auto transfer
+2026-02-03,Expense,Insurance,Checking,240.0,Joint,Shared,Home + car
+2026-02-04,Expense,Utilities,Checking,242.51,Sam,Shared,Electric and gas
+2026-02-06,Expense,Groceries,Credit Card,334.86,Sam,Shared,Weekly shop
+2026-02-07,Expense,Subscriptions,Credit Card,46.99,Alex,Shared,Streaming + cloud
+2026-02-08,Expense,Phone and Internet,Checking,110.0,Sam,Shared,Fibre + mobiles
+2026-02-09,Expense,Transport,Credit Card,171.51,Alex,Shared,Fuel and transit
+2026-02-11,Expense,Dining out,Credit Card,85.67,Alex,Shared,Date night
+2026-02-12,Expense,Debt,Checking,420.0,Joint,Shared,Car loan
+2026-02-14,Expense,Gifts,Credit Card,140,Alex,Personal,Present
+2026-02-15,Expense,Shopping,Credit Card,155.54,Alex,Personal,Clothes
+2026-02-16,Expense,Shopping,Credit Card,100.96,Sam,Personal,Clothes
+2026-02-19,Expense,Groceries,Credit Card,284.82,Sam,Shared,Weekly shop
+2026-02-21,Expense,Fun and Leisure,Credit Card,154.16,Alex,Personal,Gym + hobbies
+2026-02-22,Expense,Fun and Leisure,Credit Card,132.54,Sam,Personal,Gym + hobbies
+2026-02-23,Expense,Transport,Credit Card,200.83,Sam,Shared,Fuel and transit
+2026-02-24,Expense,Dining out,Credit Card,105.6,Sam,Shared,Lunch out
+2026-03-01,Income,Salary,Checking,5200,Alex,Personal,Monthly pay
+2026-03-01,Income,Salary,Checking,3800,Sam,Personal,Monthly pay
+2026-03-01,Expense,Rent or Mortgage,Checking,2400.0,Alex,Shared,Rent
+2026-03-02,Transfer,Emergency Fund,Savings,850.0,Joint,Shared,Auto transfer
+2026-03-02,Transfer,Holiday Fund,Savings,420.0,Joint,Shared,Auto transfer
+2026-03-02,Transfer,New Car,Savings,610.0,Joint,Shared,Auto transfer
+2026-03-03,Expense,Insurance,Checking,240.0,Joint,Shared,Home + car
+2026-03-04,Expense,Utilities,Checking,177.47,Sam,Shared,Electric and gas
+2026-03-06,Expense,Groceries,Credit Card,300.18,Sam,Shared,Weekly shop
+2026-03-07,Expense,Subscriptions,Credit Card,46.99,Alex,Shared,Streaming + cloud
+2026-03-08,Expense,Phone and Internet,Checking,110.0,Sam,Shared,Fibre + mobiles
+2026-03-09,Expense,Transport,Credit Card,181.23,Alex,Shared,Fuel and transit
+2026-03-11,Expense,Dining out,Credit Card,84.96,Alex,Shared,Date night
+2026-03-12,Expense,Debt,Checking,420.0,Joint,Shared,Car loan
+2026-03-15,Expense,Shopping,Credit Card,162.33,Alex,Personal,Clothes
+2026-03-16,Expense,Shopping,Credit Card,113.7,Sam,Personal,Clothes
+2026-03-17,Expense,Health,Checking,120,Alex,Personal,Pharmacy
+2026-03-19,Expense,Groceries,Credit Card,283.91,Sam,Shared,Weekly shop
+2026-03-21,Expense,Fun and Leisure,Credit Card,150.69,Alex,Personal,Gym + hobbies
+2026-03-22,Expense,Fun and Leisure,Credit Card,149.99,Sam,Personal,Gym + hobbies
+2026-03-23,Expense,Transport,Credit Card,178.44,Sam,Shared,Fuel and transit
+2026-03-24,Expense,Dining out,Credit Card,93.64,Sam,Shared,Lunch out
+2026-04-01,Income,Salary,Checking,5200,Alex,Personal,Monthly pay
+2026-04-01,Income,Salary,Checking,3800,Sam,Personal,Monthly pay
+2026-04-01,Expense,Rent or Mortgage,Checking,2400.0,Alex,Shared,Rent
+2026-04-02,Transfer,Emergency Fund,Savings,850.0,Joint,Shared,Auto transfer
+2026-04-02,Transfer,Holiday Fund,Savings,420.0,Joint,Shared,Auto transfer
+2026-04-02,Transfer,New Car,Savings,610.0,Joint,Shared,Auto transfer
+2026-04-03,Expense,Insurance,Checking,240.0,Joint,Shared,Home + car
+2026-04-04,Expense,Utilities,Checking,186.71,Sam,Shared,Electric and gas
+2026-04-06,Expense,Groceries,Credit Card,358.22,Sam,Shared,Weekly shop
+2026-04-07,Expense,Subscriptions,Credit Card,46.99,Alex,Shared,Streaming + cloud
+2026-04-08,Expense,Phone and Internet,Checking,110.0,Sam,Shared,Fibre + mobiles
+2026-04-09,Expense,Transport,Credit Card,187.02,Alex,Shared,Fuel and transit
+2026-04-11,Expense,Dining out,Credit Card,94.03,Alex,Shared,Date night
+2026-04-12,Expense,Debt,Checking,420.0,Joint,Shared,Car loan
+2026-04-15,Expense,Shopping,Credit Card,143.35,Alex,Personal,Clothes
+2026-04-16,Expense,Shopping,Credit Card,104.43,Sam,Personal,Clothes
+2026-04-19,Expense,Groceries,Credit Card,358.07,Sam,Shared,Weekly shop
+2026-04-21,Expense,Fun and Leisure,Credit Card,140.27,Alex,Personal,Gym + hobbies
+2026-04-22,Expense,Fun and Leisure,Credit Card,134.53,Sam,Personal,Gym + hobbies
+2026-04-23,Expense,Transport,Credit Card,194.7,Sam,Shared,Fuel and transit
+2026-04-24,Expense,Dining out,Credit Card,99.74,Sam,Shared,Lunch out
+2026-04-26,Expense,Fun and Leisure,Credit Card,520,Joint,Shared,Weekend away
+2026-05-01,Income,Salary,Checking,5200,Alex,Personal,Monthly pay
+2026-05-01,Income,Salary,Checking,3800,Sam,Personal,Monthly pay
+2026-05-01,Expense,Rent or Mortgage,Checking,2400.0,Alex,Shared,Rent
+2026-05-02,Transfer,Emergency Fund,Savings,850.0,Joint,Shared,Auto transfer
+2026-05-02,Transfer,Holiday Fund,Savings,420.0,Joint,Shared,Auto transfer
+2026-05-02,Transfer,New Car,Savings,610.0,Joint,Shared,Auto transfer
+2026-05-03,Expense,Insurance,Checking,240.0,Joint,Shared,Home + car
+2026-05-04,Expense,Utilities,Checking,246.39,Sam,Shared,Electric and gas
+2026-05-06,Expense,Groceries,Credit Card,311.28,Sam,Shared,Weekly shop
+2026-05-07,Expense,Subscriptions,Credit Card,46.99,Alex,Shared,Streaming + cloud
+2026-05-08,Expense,Phone and Internet,Checking,110.0,Sam,Shared,Fibre + mobiles
+2026-05-09,Expense,Transport,Credit Card,191.5,Alex,Shared,Fuel and transit
+2026-05-11,Expense,Dining out,Credit Card,92.73,Alex,Shared,Date night
+2026-05-12,Expense,Debt,Checking,420.0,Joint,Shared,Car loan
+2026-05-14,Expense,Gifts,Credit Card,180,Sam,Personal,Present
+2026-05-15,Expense,Shopping,Credit Card,139.55,Alex,Personal,Clothes
+2026-05-16,Expense,Shopping,Credit Card,109.21,Sam,Personal,Clothes
+2026-05-17,Expense,Health,Checking,70,Alex,Personal,Pharmacy
+2026-05-19,Expense,Groceries,Credit Card,355.18,Sam,Shared,Weekly shop
+2026-05-21,Expense,Fun and Leisure,Credit Card,164.77,Alex,Personal,Gym + hobbies
+2026-05-22,Expense,Fun and Leisure,Credit Card,167.29,Sam,Personal,Gym + hobbies
+2026-05-23,Expense,Transport,Credit Card,195.0,Sam,Shared,Fuel and transit
+2026-05-24,Expense,Dining out,Credit Card,83.61,Sam,Shared,Lunch out
+2026-06-01,Income,Salary,Checking,5200,Alex,Personal,Monthly pay
+2026-06-01,Income,Salary,Checking,3800,Sam,Personal,Monthly pay
+2026-06-01,Expense,Rent or Mortgage,Checking,2400.0,Alex,Shared,Rent
+2026-06-02,Transfer,Emergency Fund,Savings,850.0,Joint,Shared,Auto transfer
+2026-06-02,Transfer,Holiday Fund,Savings,420.0,Joint,Shared,Auto transfer
+2026-06-02,Transfer,New Car,Savings,610.0,Joint,Shared,Auto transfer
+2026-06-03,Expense,Insurance,Checking,240.0,Joint,Shared,Home + car
+2026-06-04,Expense,Utilities,Checking,223.59,Sam,Shared,Electric and gas
+2026-06-06,Expense,Groceries,Credit Card,341.39,Sam,Shared,Weekly shop
+2026-06-07,Expense,Subscriptions,Credit Card,46.99,Alex,Shared,Streaming + cloud
+2026-06-08,Expense,Phone and Internet,Checking,110.0,Sam,Shared,Fibre + mobiles
+2026-06-09,Expense,Transport,Credit Card,175.57,Alex,Shared,Fuel and transit
+2026-06-11,Expense,Dining out,Credit Card,85.27,Alex,Shared,Date night
+2026-06-12,Expense,Debt,Checking,420.0,Joint,Shared,Car loan
+2026-06-14,Expense,Gifts,Credit Card,220,Alex,Personal,Present
+2026-06-15,Expense,Shopping,Credit Card,166.71,Alex,Personal,Clothes
+2026-06-16,Expense,Shopping,Credit Card,99.91,Sam,Personal,Clothes
+2026-06-19,Expense,Groceries,Credit Card,302.32,Sam,Shared,Weekly shop
+2026-06-20,Income,Side income,Checking,1800,Alex,Personal,Bonus
+2026-06-21,Expense,Fun and Leisure,Credit Card,159.29,Alex,Personal,Gym + hobbies
+2026-06-22,Expense,Fun and Leisure,Credit Card,140.87,Sam,Personal,Gym + hobbies
+2026-06-23,Expense,Transport,Credit Card,162.16,Sam,Shared,Fuel and transit
+2026-06-24,Expense,Dining out,Credit Card,91.18,Sam,Shared,Lunch out
+2026-07-01,Income,Salary,Checking,5200,Alex,Personal,Monthly pay
+2026-07-01,Income,Salary,Checking,3800,Sam,Personal,Monthly pay
+2026-07-01,Expense,Rent or Mortgage,Checking,2400.0,Alex,Shared,Rent
+2026-07-02,Transfer,Emergency Fund,Savings,850.0,Joint,Shared,Auto transfer
+2026-07-02,Transfer,Holiday Fund,Savings,420.0,Joint,Shared,Auto transfer
+2026-07-02,Transfer,New Car,Savings,610.0,Joint,Shared,Auto transfer
+2026-07-03,Expense,Insurance,Checking,240.0,Joint,Shared,Home + car
+2026-07-04,Expense,Utilities,Checking,241.19,Sam,Shared,Electric and gas
+2026-07-06,Expense,Groceries,Credit Card,295.25,Sam,Shared,Weekly shop
+2026-07-07,Expense,Subscriptions,Credit Card,46.99,Alex,Shared,Streaming + cloud
+2026-07-08,Expense,Phone and Internet,Checking,110.0,Sam,Shared,Fibre + mobiles
+2026-07-09,Expense,Transport,Credit Card,162.77,Alex,Shared,Fuel and transit
+2026-07-11,Expense,Dining out,Credit Card,84.97,Alex,Shared,Date night
+2026-07-12,Expense,Debt,Checking,420.0,Joint,Shared,Car loan
+2026-07-15,Expense,Shopping,Credit Card,158.35,Alex,Personal,Clothes
+2026-07-16,Expense,Shopping,Credit Card,113.79,Sam,Personal,Clothes
+2026-07-17,Expense,Health,Checking,140,Alex,Personal,Pharmacy
+2026-07-19,Expense,Groceries,Credit Card,324.55,Sam,Shared,Weekly shop
+2026-07-21,Expense,Fun and Leisure,Credit Card,136.71,Alex,Personal,Gym + hobbies
+2026-07-22,Expense,Fun and Leisure,Credit Card,136.19,Sam,Personal,Gym + hobbies
+2026-07-23,Expense,Transport,Credit Card,177.73,Sam,Shared,Fuel and transit
+2026-07-24,Expense,Dining out,Credit Card,87.95,Sam,Shared,Lunch out
+2026-08-01,Income,Salary,Checking,5200,Alex,Personal,Monthly pay
+2026-08-01,Income,Salary,Checking,3800,Sam,Personal,Monthly pay
+2026-08-01,Expense,Rent or Mortgage,Checking,2400.0,Alex,Shared,Rent
+2026-08-02,Transfer,Emergency Fund,Savings,850.0,Joint,Shared,Auto transfer
+2026-08-02,Transfer,Holiday Fund,Savings,420.0,Joint,Shared,Auto transfer
+2026-08-02,Transfer,New Car,Savings,610.0,Joint,Shared,Auto transfer
+2026-08-03,Expense,Insurance,Checking,240.0,Joint,Shared,Home + car
+2026-08-04,Expense,Utilities,Checking,185.83,Sam,Shared,Electric and gas
+2026-08-06,Expense,Groceries,Credit Card,356.17,Sam,Shared,Weekly shop
+2026-08-07,Expense,Subscriptions,Credit Card,46.99,Alex,Shared,Streaming + cloud
+2026-08-08,Expense,Phone and Internet,Checking,110.0,Sam,Shared,Fibre + mobiles
+2026-08-09,Expense,Transport,Credit Card,176.58,Alex,Shared,Fuel and transit
+2026-08-11,Expense,Dining out,Credit Card,88.45,Alex,Shared,Date night
+2026-08-12,Expense,Debt,Checking,420.0,Joint,Shared,Car loan
+2026-08-15,Expense,Shopping,Credit Card,139.59,Alex,Personal,Clothes
+2026-08-16,Expense,Shopping,Credit Card,119.36,Sam,Personal,Clothes
+2026-08-19,Expense,Groceries,Credit Card,343.3,Sam,Shared,Weekly shop
+2026-08-21,Expense,Fun and Leisure,Credit Card,146.19,Alex,Personal,Gym + hobbies
+2026-08-22,Expense,Fun and Leisure,Credit Card,155.11,Sam,Personal,Gym + hobbies
+2026-08-23,Expense,Transport,Credit Card,171.54,Sam,Shared,Fuel and transit
+2026-08-24,Expense,Dining out,Credit Card,103.77,Sam,Shared,Lunch out
+2026-08-26,Expense,Fun and Leisure,Credit Card,780,Joint,Shared,Weekend away
+2026-09-01,Income,Salary,Checking,5200,Alex,Personal,Monthly pay
+2026-09-01,Income,Salary,Checking,3800,Sam,Personal,Monthly pay
+2026-09-01,Expense,Rent or Mortgage,Checking,2400.0,Alex,Shared,Rent
+2026-09-02,Transfer,Emergency Fund,Savings,850.0,Joint,Shared,Auto transfer
+2026-09-02,Transfer,Holiday Fund,Savings,420.0,Joint,Shared,Auto transfer
+2026-09-02,Transfer,New Car,Savings,610.0,Joint,Shared,Auto transfer
+2026-09-03,Expense,Insurance,Checking,240.0,Joint,Shared,Home + car
+2026-09-04,Expense,Utilities,Checking,179.89,Sam,Shared,Electric and gas
+2026-09-06,Expense,Groceries,Credit Card,301.44,Sam,Shared,Weekly shop
+2026-09-07,Expense,Subscriptions,Credit Card,46.99,Alex,Shared,Streaming + cloud
+2026-09-08,Expense,Phone and Internet,Checking,110.0,Sam,Shared,Fibre + mobiles
+2026-09-09,Expense,Transport,Credit Card,162.73,Alex,Shared,Fuel and transit
+2026-09-11,Expense,Dining out,Credit Card,106.16,Alex,Shared,Date night
+2026-09-12,Expense,Debt,Checking,420.0,Joint,Shared,Car loan
+2026-09-14,Expense,Gifts,Credit Card,160,Sam,Personal,Present
+2026-09-15,Expense,Shopping,Credit Card,134.64,Alex,Personal,Clothes
+2026-09-16,Expense,Shopping,Credit Card,112.18,Sam,Personal,Clothes
+2026-09-17,Expense,Health,Checking,85,Alex,Personal,Pharmacy
+2026-09-19,Expense,Groceries,Credit Card,340.94,Sam,Shared,Weekly shop
+2026-09-21,Expense,Fun and Leisure,Credit Card,135.24,Alex,Personal,Gym + hobbies
+2026-09-22,Expense,Fun and Leisure,Credit Card,140.75,Sam,Personal,Gym + hobbies
+2026-09-23,Expense,Transport,Credit Card,172.61,Sam,Shared,Fuel and transit
+2026-09-24,Expense,Dining out,Credit Card,90.36,Sam,Shared,Lunch out
+2026-10-01,Income,Salary,Checking,5200,Alex,Personal,Monthly pay
+2026-10-01,Income,Salary,Checking,3800,Sam,Personal,Monthly pay
+2026-10-01,Expense,Rent or Mortgage,Checking,2400.0,Alex,Shared,Rent
+2026-10-02,Transfer,Emergency Fund,Savings,850.0,Joint,Shared,Auto transfer
+2026-10-02,Transfer,Holiday Fund,Savings,420.0,Joint,Shared,Auto transfer
+2026-10-02,Transfer,New Car,Savings,610.0,Joint,Shared,Auto transfer
+2026-10-03,Expense,Insurance,Checking,240.0,Joint,Shared,Home + car
+2026-10-04,Expense,Utilities,Checking,205.09,Sam,Shared,Electric and gas
+2026-10-06,Expense,Groceries,Credit Card,355.26,Sam,Shared,Weekly shop
+2026-10-07,Expense,Subscriptions,Credit Card,46.99,Alex,Shared,Streaming + cloud
+2026-10-08,Expense,Phone and Internet,Checking,110.0,Sam,Shared,Fibre + mobiles
+2026-10-09,Expense,Transport,Credit Card,184.38,Alex,Shared,Fuel and transit
+2026-10-11,Expense,Dining out,Credit Card,92.07,Alex,Shared,Date night
+2026-10-12,Expense,Debt,Checking,420.0,Joint,Shared,Car loan
+2026-10-15,Expense,Shopping,Credit Card,138.58,Alex,Personal,Clothes
+2026-10-16,Expense,Shopping,Credit Card,120.78,Sam,Personal,Clothes
+2026-10-19,Expense,Groceries,Credit Card,318.75,Sam,Shared,Weekly shop
+2026-10-21,Expense,Fun and Leisure,Credit Card,137.55,Alex,Personal,Gym + hobbies
+2026-10-22,Expense,Fun and Leisure,Credit Card,161.44,Sam,Personal,Gym + hobbies
+2026-10-23,Expense,Transport,Credit Card,183.22,Sam,Shared,Fuel and transit
+2026-10-24,Expense,Dining out,Credit Card,103.36,Sam,Shared,Lunch out
+2026-11-01,Income,Salary,Checking,5200,Alex,Personal,Monthly pay
+2026-11-01,Income,Salary,Checking,3800,Sam,Personal,Monthly pay
+2026-11-01,Expense,Rent or Mortgage,Checking,2400.0,Alex,Shared,Rent
+2026-11-02,Transfer,Emergency Fund,Savings,850.0,Joint,Shared,Auto transfer
+2026-11-02,Transfer,Holiday Fund,Savings,420.0,Joint,Shared,Auto transfer
+2026-11-02,Transfer,New Car,Savings,610.0,Joint,Shared,Auto transfer
+2026-11-03,Expense,Insurance,Checking,240.0,Joint,Shared,Home + car
+2026-11-04,Expense,Utilities,Checking,235.14,Sam,Shared,Electric and gas
+2026-11-06,Expense,Groceries,Credit Card,353.82,Sam,Shared,Weekly shop
+2026-11-07,Expense,Subscriptions,Credit Card,46.99,Alex,Shared,Streaming + cloud
+2026-11-08,Expense,Phone and Internet,Checking,110.0,Sam,Shared,Fibre + mobiles
+2026-11-09,Expense,Transport,Credit Card,169.18,Alex,Shared,Fuel and transit
+2026-11-11,Expense,Dining out,Credit Card,87.93,Alex,Shared,Date night
+2026-11-12,Expense,Debt,Checking,420.0,Joint,Shared,Car loan
+2026-11-14,Expense,Gifts,Credit Card,190,Sam,Personal,Present
+2026-11-15,Expense,Shopping,Credit Card,153.73,Alex,Personal,Clothes
+2026-11-16,Expense,Shopping,Credit Card,99.54,Sam,Personal,Clothes
+2026-11-17,Expense,Health,Checking,110,Alex,Personal,Pharmacy
+2026-11-19,Expense,Groceries,Credit Card,296.7,Sam,Shared,Weekly shop
+2026-11-21,Expense,Fun and Leisure,Credit Card,147.17,Alex,Personal,Gym + hobbies
+2026-11-22,Expense,Fun and Leisure,Credit Card,133.39,Sam,Personal,Gym + hobbies
+2026-11-23,Expense,Transport,Credit Card,199.45,Sam,Shared,Fuel and transit
+2026-11-24,Expense,Dining out,Credit Card,103.71,Sam,Shared,Lunch out
+2026-12-01,Income,Salary,Checking,5200,Alex,Personal,Monthly pay
+2026-12-01,Income,Salary,Checking,3800,Sam,Personal,Monthly pay
+2026-12-01,Expense,Rent or Mortgage,Checking,2400.0,Alex,Shared,Rent
+2026-12-02,Transfer,Emergency Fund,Savings,850.0,Joint,Shared,Auto transfer
+2026-12-02,Transfer,Holiday Fund,Savings,420.0,Joint,Shared,Auto transfer
+2026-12-02,Transfer,New Car,Savings,610.0,Joint,Shared,Auto transfer
+2026-12-03,Expense,Insurance,Checking,240.0,Joint,Shared,Home + car
+2026-12-04,Expense,Utilities,Checking,231.48,Sam,Shared,Electric and gas
+2026-12-06,Expense,Groceries,Credit Card,301.34,Sam,Shared,Weekly shop
+2026-12-07,Expense,Subscriptions,Credit Card,46.99,Alex,Shared,Streaming + cloud
+2026-12-08,Expense,Phone and Internet,Checking,110.0,Sam,Shared,Fibre + mobiles
+2026-12-09,Expense,Transport,Credit Card,199.99,Alex,Shared,Fuel and transit
+2026-12-11,Expense,Dining out,Credit Card,89.04,Alex,Shared,Date night
+2026-12-12,Expense,Debt,Checking,420.0,Joint,Shared,Car loan
+2026-12-14,Expense,Gifts,Credit Card,420,Alex,Personal,Present
+2026-12-15,Expense,Shopping,Credit Card,138.32,Alex,Personal,Clothes
+2026-12-16,Expense,Shopping,Credit Card,98.62,Sam,Personal,Clothes
+2026-12-19,Expense,Groceries,Credit Card,344.86,Sam,Shared,Weekly shop
+2026-12-20,Income,Side income,Checking,2400,Alex,Personal,Bonus
+2026-12-21,Expense,Fun and Leisure,Credit Card,157.93,Alex,Personal,Gym + hobbies
+2026-12-22,Expense,Fun and Leisure,Credit Card,140.22,Sam,Personal,Gym + hobbies
+2026-12-23,Expense,Transport,Credit Card,184.17,Sam,Shared,Fuel and transit
+2026-12-24,Expense,Dining out,Credit Card,90.29,Sam,Shared,Lunch out
+2026-12-26,Expense,Fun and Leisure,Credit Card,640,Joint,Shared,Weekend away
