@@ -9,6 +9,9 @@ screen recording of the Google Sheets template.
 | `budget_dark_promo_1080.mp4` | second cut, from the dark-theme recording |
 | `budget_dark_cover_1080.jpg` | still from the dark cut |
 | `build_dark.sh`, `make_layers_dark.py` | build + layers for the dark cut |
+| `budget_couple_promo_1080.mp4` | third cut — the couples edition (Split and Settle) |
+| `budget_couple_cover_1080.jpg` | still from the couples cut |
+| `build_couple.sh`, `make_layers_couple.py` | build + layers for the couples cut |
 | `budget_cover_1080.jpg` | still frame, usable as a listing image |
 | `build.sh` | rebuilds the video from the raw recording |
 | `make_layers.py` | renders the design layers (background, window, captions, tab pills) |
@@ -94,3 +97,31 @@ Defects kept out of frame:
 - the white flashes while tabs switch at 39.0 s and 49.5 s — no shot spans them;
 - the light row-number gutter and column-letter strip — every crop starts at
   x=56, y≥28.
+
+
+## Couples cut
+
+`budget_couple_promo_1080.mp4` — 14.9 s, from the 41.8 s recording of the
+edition that adds **Split and Settle** plus `Paid by` and `Share` columns on
+Transactions. That feature leads the story, so this cut runs eleven shots of
+1.61 s with 0.28 s cross-fades instead of ten of 1.76 s, the tab strip carries
+ten tabs, and the header reads FOR COUPLES & HOUSEHOLDS with the footer line
+"one log feeds the whole year — and splits it fairly".
+
+| in video | from raw | shot | caption | tab lit |
+| --- | --- | --- | --- | --- |
+| 0.00–1.61 | 3.0 s | Transactions — Paid by / Share columns | Mark who paid and what's shared | Transactions |
+| 1.33–2.94 | 5.5 s | Transactions — category dropdown open | Dropdowns do the typing | Transactions |
+| 2.66–4.27 | 8.5 s | Annual Dashboard — KPIs + month table | Your whole year on one screen | Dashboard |
+| 3.99–5.60 | 13.5 s | Spending by Category doughnut | See where the money actually goes | Dashboard |
+| 5.32–6.93 | 16.5 s | Income vs Expenses + Saved by Month | Charts build themselves | Dashboard |
+| 6.65–8.26 | 19.4 s | 50 / 30 / 20 Rule | 50 / 30 / 20, checked for you | 50-30-20 |
+| 7.97–9.58 | 21.8 s | Spending Tracker | Every category, ranked | Spending |
+| 9.30–10.91 | 24.5 s | Split and Settle — "Sam owes Alex $6,030.25" | Split by income — who owes whom | Split & Settle |
+| 10.63–12.24 | 28.5 s | Month View — month picker open | Any month on its own | Month View |
+| 11.96–13.57 | 31.6 s | Bill Calendar | The true cost of every bill | Bills |
+| 13.29–14.90 | 39.3 s | Savings & Net Worth | Savings goals and net worth | Net Worth |
+
+Defects kept out of frame: the Russian "Преобразовать в таблицу" toast, on
+screen 1.5–2.5 s and 33.5–39.0 s — no shot overlaps either window. This
+recording has no row-number gutter, so crops start at x=0 rather than x=56.
