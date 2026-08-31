@@ -14,7 +14,7 @@ screen recording of the Google Sheets template.
 | `build_couple.sh`, `make_layers_couple.py` | build + layers for the couples cut |
 | `budget_light_promo_1080.mp4` | fourth cut — light couples edition, forest-green frame |
 | `budget_light_cover_1080.jpg` | still from the light cut |
-| `build_forest.sh`, `make_layers_forest.py` | build + layers for the light cut |
+| `build_paper.sh`, `make_layers_paper.py` | build + layers for the light cut |
 | `budget_cover_1080.jpg` | still frame, usable as a listing image |
 | `build.sh` | rebuilds the video from the raw recording |
 | `make_layers.py` | renders the design layers (background, window, captions, tab pills) |
@@ -130,24 +130,27 @@ screen 1.5–2.5 s and 33.5–39.0 s — no shot overlaps either window. This
 recording has no row-number gutter, so crops start at x=0 rather than x=56.
 
 
-## Light cut — forest-green frame
+## Light cut — paper frame
 
 `budget_light_promo_1080.mp4` — 14.9 s, from the 52.2 s recording of the light
 couples workbook filled with the demo data. Eleven shots at 1.61 s, same rhythm
-as the dark cut, but a deliberately different frame so the two videos do not
-read as the same asset twice:
+as the dark cut, on a light ground built entirely from the workbook's own
+palette rather than a flat fill:
 
-| | dark cut | light cut |
+| layer | colour | where it comes from |
 | --- | --- | --- |
-| background | navy `#161F38` → `#090D1A` | forest `#1E3F2F` → `#0D1C15` |
-| window | dark chrome on dark ground | light chrome, so the white sheet sits naturally |
-| header | centred | left-aligned behind a mint accent rule |
-| chip | UPDATES ITSELF, mint on dark | SPLITS ITSELF, mint on deep green |
-| fades | to `#0A101E` | to `#0C1B14` |
+| paper base | `F4FAF6` | the sheet's near-white `FBFAFD` |
+| mint wash, top-left | `CDEAD A` → `CDEADA` | shade of the `DFF3EA` section headers |
+| cyan wash, bottom-right | `D8EAF4` | shade of `E4F3F6` |
+| warm corner | `FAF6EB` | keeps the mesh from going cold |
+| grid | white + `B0D0BE` every fourth line | the spreadsheet's own texture, at low alpha |
+| rings | `7BFFA2` | the chart green, in the two corners the type never reaches |
+| type | `2A4A5C` | the sheet's `33566B` / `36576A` |
+| accent rule, progress bar | `3CBA7A` | the chart green, darkened enough to read on light |
 
-The green is the sheet's own `#7BFFA2` — the colour of its chart bars and
-headings — darkened for the ground and kept at full strength for the accent
-rule, the lit tab pill and the progress bar.
+The window is white with a soft shadow so the screenshot separates from the
+ground; the lit tab pill is ink with green type; the fades open and close on the
+paper colour.
 
 | in video | from raw | shot | caption |
 | --- | --- | --- | --- |

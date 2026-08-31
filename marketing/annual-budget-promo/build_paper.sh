@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Build the 14.9 s Etsy listing video for the LIGHT couples edition (forest-green frame).
+# Build the 14.9 s Etsy listing video for the LIGHT couples edition (paper frame).
 #   usage: build.sh <raw-recording> <work-dir> <output.mp4>
 set -euo pipefail
 
@@ -14,7 +14,7 @@ if [ ! -f "$W/src/rec.mp4" ]; then
     -vf "crop=1918:886:0:0" -r 30 -c:v libx264 -preset veryfast -crf 18 -pix_fmt yuv420p "$W/src/rec.mp4"
 fi
 
-python3 "$HERE/make_layers_forest.py" "$W/layers" "$W/fonts"
+python3 "$HERE/make_layers_paper.py" "$W/layers" "$W/fonts"
 
 SW=960; SH=540; D=1.609; X=0.28
 
@@ -79,7 +79,7 @@ for i in $(seq 1 11); do
   FC2+="[$IDX:v]format=rgba,fade=in:st=$PIN:d=0.16:alpha=1,fade=out:st=$POUT:d=0.16:alpha=1[p$i];"
   FC2+="[$PREV][p$i]overlay=0:0:format=auto[q$i];"; PREV="q$i"
 done
-FC2+="[$PREV]fade=t=in:st=0:d=0.35:color=0x0C1B14,fade=t=out:st=14.6:d=0.3:color=0x0C1B14,format=yuv420p[out]"
+FC2+="[$PREV]fade=t=in:st=0:d=0.35:color=0xF4FAF6,fade=t=out:st=14.6:d=0.3:color=0xF4FAF6,format=yuv420p[out]"
 
 "$FF" -y -hide_banner -loglevel error "${INPUTS[@]}" -filter_complex "$FC2" \
   -map "[out]" -t $TOTAL -r 30 -an \
