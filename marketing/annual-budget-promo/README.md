@@ -12,6 +12,9 @@ screen recording of the Google Sheets template.
 | `budget_couple_promo_1080.mp4` | third cut — the couples edition (Split and Settle) |
 | `budget_couple_cover_1080.jpg` | still from the couples cut |
 | `build_couple.sh`, `make_layers_couple.py` | build + layers for the couples cut |
+| `budget_light_promo_1080.mp4` | fourth cut — light couples edition, forest-green frame |
+| `budget_light_cover_1080.jpg` | still from the light cut |
+| `build_forest.sh`, `make_layers_forest.py` | build + layers for the light cut |
 | `budget_cover_1080.jpg` | still frame, usable as a listing image |
 | `build.sh` | rebuilds the video from the raw recording |
 | `make_layers.py` | renders the design layers (background, window, captions, tab pills) |
@@ -125,3 +128,40 @@ ten tabs, and the header reads FOR COUPLES & HOUSEHOLDS with the footer line
 Defects kept out of frame: the Russian "Преобразовать в таблицу" toast, on
 screen 1.5–2.5 s and 33.5–39.0 s — no shot overlaps either window. This
 recording has no row-number gutter, so crops start at x=0 rather than x=56.
+
+
+## Light cut — forest-green frame
+
+`budget_light_promo_1080.mp4` — 14.9 s, from the 52.2 s recording of the light
+couples workbook filled with the demo data. Eleven shots at 1.61 s, same rhythm
+as the dark cut, but a deliberately different frame so the two videos do not
+read as the same asset twice:
+
+| | dark cut | light cut |
+| --- | --- | --- |
+| background | navy `#161F38` → `#090D1A` | forest `#1E3F2F` → `#0D1C15` |
+| window | dark chrome on dark ground | light chrome, so the white sheet sits naturally |
+| header | centred | left-aligned behind a mint accent rule |
+| chip | UPDATES ITSELF, mint on dark | SPLITS ITSELF, mint on deep green |
+| fades | to `#0A101E` | to `#0C1B14` |
+
+The green is the sheet's own `#7BFFA2` — the colour of its chart bars and
+headings — darkened for the ground and kept at full strength for the accent
+rule, the lit tab pill and the progress bar.
+
+| in video | from raw | shot | caption |
+| --- | --- | --- | --- |
+| 0.00–1.61 | 2.2 s | Transactions — Paid by / Share columns | Mark who paid and what's shared |
+| 1.33–2.94 | 6.8 s | Transactions — Share dropdown open | Dropdowns do the typing |
+| 2.66–4.27 | 20.2 s | Annual Dashboard — KPIs + month table | Your whole year on one screen |
+| 3.99–5.60 | 14.5 s | Spending by Category doughnut | See where the money actually goes |
+| 5.32–6.93 | 11.0 s | Income vs Expenses + Saved by Month | Charts build themselves |
+| 6.65–8.26 | 22.5 s | 50 / 30 / 20 Rule — all three on track | 50 / 30 / 20, checked for you |
+| 7.97–9.58 | 24.5 s | Spending Tracker | Every category, ranked |
+| 9.30–10.91 | 27.0 s | Split and Settle — "Sam owes Alex $5,089.00" | Split by income — who owes whom |
+| 10.63–12.24 | 33.0 s | Month View — month picker open | Any month on its own |
+| 11.96–13.57 | 45.0 s | Bill Calendar — frequency dropdown | The true cost of every bill |
+| 13.29–14.90 | 50.3 s | Savings & Net Worth | Savings goals and net worth |
+
+This take is clean: no Sheets toast, no tab-switch flashes. Crops start at x=58,
+clear of the light theme's row-number gutter.
