@@ -1,19 +1,17 @@
 # Paycheck Budget — demo data and listing video
 
-`paycheck_budget_promo_1500.mp4` is a 14.8 s listing video for the Paycheck
-Budget workbook, cut in the same shape as the reference ad: title, a feature
-list that grows shot by shot, the sheet running inside a laptop, a pill and a
-round badge over the screen, and a footer strip.
+`paycheck_budget_promo_1080.mp4` is the 14.9 s Etsy listing video, cut from one
+38.6 s screen recording of the workbook in Google Sheets. Same paper frame as
+the other listings, keyed to this workbook's own palette — the mint DFF3EA of
+its section headers, the pale blue E7ECFA of its cards and the 3E7CC0 its input
+cells are written in. No green anywhere, so it reads as a sibling of the debt
+listing rather than a copy of it.
 
-`PaycheckBudget_Light_DEMO.xlsx` is the same workbook with one month of demo
-data in it — open it, or upload it to Google Sheets, and record your own take.
-`paycheck_budget_cover.jpg` is the frame at 13.6 s, for the listing thumbnail.
+`paycheck_budget_cover_1080.jpg` is the frame at 2.4 s, for the thumbnail.
 
-There was no screen recording to cut, so the "recording" is synthesised: every
-sheet is rendered headlessly by LibreOffice from the demo workbook, and the pan,
-the zoom, the cursor and the dropdown are composited on top in Pillow. Nothing
-on screen is drawn by hand — the pixels are the workbook's own output, at 200
-dpi, which is why the numbers on camera add up.
+`PaycheckBudget_Light_DEMO.xlsx` is the workbook with the demo month already in
+it — the file the take was recorded from. `make_demo_paycheck.py` regenerates it
+from a clean template.
 
 ## The month the demo describes
 
@@ -30,66 +28,71 @@ July 2026. Month start `2026-07-01`, paychecks on the 3rd and the 17th.
 
 Which lands the Dashboard on **income $4,520.00 · expenses $3,208.68 · saved
 $1,230.00 · left $81.32**, and bills at **$2,033.96 a month**. The left-over is
-deliberately small and positive: it reads as a month that balanced.
+small and positive on purpose: it reads as a month that balanced.
 
 Rent is the one large expense, so `Spending by category` has a shape; two funds
-are far from their target and one is close, so the Savings tab is not a row of
-identical bars.
+sit far from target and one is close, so Savings is not a row of identical bars.
 
 ## The cut
 
-| | shot | new line in the list |
-| ---: | --- | --- |
-| 0.0 s | Start Here | 8 ready-to-use tabs |
-| 1.5 s | Setup | Set it up once |
-| 3.3 s | Paycheck Budget, scrolling through the split | Split across Paycheck 1 & 2 |
-| 5.3 s | Transactions, scrolling the log | One log for everything |
-| 7.2 s | **Bill Calendar — the interaction** | True monthly cost of each bill |
-| 10.2 s | Savings | Sinking funds & debt payoff |
-| 11.2 s | Debt | |
-| 12.2 s | Dashboard | |
+Ten shots, cross-faded over 0.28 s. Lengths vary between 1.52 s and 1.80 s
+because the take does — a shot is as long as its window in the recording allows,
+and the ten add up to exactly 14.9 s.
 
-Shots cross-fade over 0.22 s. Total 14.8 s, under Etsy's 15 s ceiling; 1500×1124
-(4:3, the reference's ratio), H.264, ~3 MB, no audio.
+| | shot | from the take |
+| ---: | --- | ---: |
+| 1 | Setup — paychecks, categories, funds, debts | 0.60 s |
+| 2 | Dashboard — income, expenses, saved, left | 5.20 s |
+| 3 | Dashboard — spending by category and the chart | 8.30 s |
+| 4 | Paycheck Budget — planned vs actual, % used | 11.60 s |
+| 5 | Transactions — the log | 15.00 s |
+| 6 | Transactions — **the Account dropdown, picked** | 16.85 s |
+| 7 | Transactions — **the Category dropdown, picked** | 25.55 s |
+| 8 | Bill Calendar — weekly and yearly bills as a monthly cost | 29.95 s |
+| 9 | Savings — five funds against their targets | 34.05 s |
+| 10 | Debt — three debts, smallest first | 36.20 s |
 
-The Bill Calendar shot is the one that sells the product. The cursor opens the
-Frequency dropdown on the Gym row, walks down to `Monthly`, clicks — and the
-sheet under it is swapped for a second render where that cell really is Monthly,
-so `Monthly cost` falls from **$104.00 to $24.00** and the total from
-**$2,033.96 to $1,953.96**, both flashed in amber for a beat. Two real renders,
-not a drawn number.
+Shots 6 and 7 are the ones that sell it: the cursor opens a real data-validation
+list and picks from it, and the cell changes on camera. Nothing is sped up or
+re-timed.
 
-The dropdown lands on the cell because `render_sheets.py` reads the cell's
-position out of the PDF text layer (`search_for`) rather than guessing pixels.
-That shot holds its zoom still so the overlay cannot drift.
+Three things the shot list steers around, all read off the take rather than
+guessed:
+
+- Sheets floats a Russian **"Преобразовать в таблицу"** toast — at y 777 from
+  17 s and at y 455–500 from 31.5 s. Every crop is sized to keep it out of
+  frame; that is why the Bill Calendar shot is the short one, ending at 31.47 s.
+- The tab switches land at 2.6 / 10.5 / 14.8 / 29.9 / 34.0 / 35.8 s, so no shot
+  may cross them.
+- The Dashboard is scrolled between 4 s and 7.3 s, so shot 2 is taken before it
+  and shot 3 after.
 
 ## Rebuilding
 
 ```bash
-./build_paycheck.sh "Paycheck Budget  Light.xlsx"
+./build_paycheck_video.sh <recording.webm> work paycheck_budget_promo_1080.mp4
 ```
 
-Needs `libreoffice-calc` (headless) and `python3` with `openpyxl pymupdf pillow
-numpy imageio-ffmpeg`. Montserrat and Inter are fetched from Google Fonts into
-`work/fonts` on first run. The steps run standalone too:
+Needs `python3` with `pillow` and `imageio-ffmpeg`; Playfair Display and
+Montserrat are fetched into `work/fonts` on first run. The script normalises the
+VP8 recording to constant-rate H.264 first — Chrome writes it variable-rate with
+no duration header, and seeking it directly gives frames that drift from the
+timings above.
 
-| | |
-| --- | --- |
-| `make_demo_paycheck.py src.xlsx out.xlsx` | writes the demo month into a copy |
-| `render_sheets.py demo.xlsx` | LibreOffice → PDF → cropped PNG per sheet, + cell geometry |
-| `make_video.py` | composites `work/frames/f_%04d.png` |
+Changing the workbook means re-recording, and the shot table is written against
+one specific take: `SHOTS=(start length crop)` at the top of the script, with a
+1844×852 frame and no row-number gutter. `make_layers_paycheck.py` owns
+everything drawn around the screen — title, captions, tab pills, footer.
 
-`render_sheets.py` builds its own LibreOffice profile with `OOXMLRecalcMode=0`.
-Without it LibreOffice keeps Excel's cached values and every sheet renders as
-zeros, because openpyxl writes formulas without results.
+To regenerate the demo workbook:
 
-## Two notes on the workbook itself
+```bash
+python3 make_demo_paycheck.py "Paycheck Budget  Light.xlsx" PaycheckBudget_Light_DEMO.xlsx
+```
+
+## One note on the workbook itself
 
 `Dashboard!A4` holds the label `Month`, but column A is the 2-character gutter
 and B4 carries the value, so the label renders clipped to `M`. The generator
 clears that cell in the demo copy to keep it off camera — worth giving the label
 a wider home in the template.
-
-The footer strip claims only what the workbook itself says: Sheets and Excel, 8
-tabs, and that the maths is already done. There is no brand line and no star
-rating in it — add yours in `make_bg()` in `make_video.py`.
