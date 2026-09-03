@@ -9,6 +9,12 @@ listing rather than a copy of it.
 
 `paycheck_budget_cover_1080.jpg` is the frame at 2.4 s, for the thumbnail.
 
+`paycheck_budget_dark_promo_1080.mp4` is the same listing for the dark edition,
+cut from its own 46.9 s recording — deep-navy ground with a green glow behind
+the window so the dark sheet sits in light, the accent being the #7BFFA2 the
+dark workbook writes its own headers in. Ten shots again, 14.9 s again.
+`paycheck_budget_dark_cover_1080.jpg` is its frame at 3.9 s.
+
 `PaycheckBudget_Light_DEMO.xlsx` and `PaycheckBudget_Dark_DEMO.xlsx` are the
 workbooks with the demo month already in them — the light one is the file the
 take was recorded from. Both editions carry the identical structure (same eight
@@ -70,6 +76,42 @@ guessed:
 - The Dashboard is scrolled between 4 s and 7.3 s, so shot 2 is taken before it
   and shot 3 after.
 
+## The dark cut
+
+Its own take, so its own shot table. The pair in the middle is the one that
+sells it: the cursor opens the Frequency list on Car insurance, picks Biweekly,
+and the sheet re-does itself — monthly cost $145.00 → $314.17, the month's total
+$2 033,96 → $2 203,13. The change lands at 39.9 s in the take, so one shot ends
+there and the next begins.
+
+| | shot | from the take |
+| ---: | --- | ---: |
+| 1 | Setup | 0.60 s |
+| 2 | Dashboard | 10.00 s |
+| 3 | Paycheck Budget | 12.20 s |
+| 4 | Transactions — the log | 17.10 s |
+| 5 | Transactions — the Account list, picked | 18.60 s |
+| 6 | Bill Calendar | 33.20 s |
+| 7 | **Frequency list open** | 38.55 s |
+| 8 | **the total re-does itself** | 40.05 s |
+| 9 | Savings | 42.15 s |
+| 10 | Debt | 45.00 s |
+
+Sheets floats its Russian **"Преобразовать в таблицу"** toast over this take
+too — at x845-1135 / y755-800 from 18.5 s, and at x698-988 / y400-500 from
+35.2 s to 41.9 s. The shop sells in English, so no frame may carry it. Shots 4
+and 5 clear it on the vertical (their crops stop at y646), shots 7 and 8 clear
+it on the horizontal (690 px wide, and the toast starts at x698), shot 6 ends
+at 34.95 s just before it appears, and shot 9 starts at 42.15 s just after it
+goes. Nothing is painted over — every crop is chosen so the toast is outside
+the frame. The light cut was checked the same way and is clean.
+
+The tab switches in this take land at 2.6 / 11.6 / 16.8 / 32.8 / 42.0 / 44.8 s.
+
+```bash
+./build_paycheck_video_dark.sh <recording.webm> work paycheck_budget_dark_promo_1080.mp4
+```
+
 ## Rebuilding
 
 ```bash
@@ -100,9 +142,15 @@ results; Google Sheets computes them anyway). Add `--page-setup` for the
 one-page-per-sheet printing that headless rendering wants — the delivered demo
 workbooks keep the template's own page setup.
 
-## One note on the workbook itself
+## Two notes on the workbooks
 
 `Dashboard!A4` holds the label `Month`, but column A is the 2-character gutter
 and B4 carries the value, so the label renders clipped to `M`. The generator
 clears that cell in the demo copy to keep it off camera — worth giving the label
 a wider home in the template.
+
+The dark edition's Dashboard chart carries the same XML as the light one, so its
+plot area is still white — a bright rectangle in the middle of a dark sheet. It
+shows in the dark cut's second shot and it is the one thing in that video that
+does not look designed. Restyling the chart (dark plot area, light type, dimmer
+gridlines) and re-recording that screen would fix it.
