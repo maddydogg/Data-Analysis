@@ -1,7 +1,12 @@
-# Debt Payoff (Light) — demo data and listing video
+# Debt Payoff — demo data and listing video
 
-`DebtPayoff_Light_DEMO.xlsx` is your workbook with a demo plan already in it.
-Open it, or upload it to Google Sheets, and record.
+`DebtPayoff_Light_DEMO.xlsx` and `DebtPayoff_Dark_DEMO.xlsx` are your workbooks
+with the demo plan already in them. Open one, or upload it to Google Sheets, and
+record.
+
+Both editions carry the identical structure — same six sheets, same engine
+formulas, same input cells — so one generator fills either, and both land on the
+same numbers. Only the styling differs.
 
 `make_demo_debt.py` regenerates it. The workbook carries a chart and openpyxl
 drops charts on save, so the script writes into the sheet XML and only fills
@@ -11,6 +16,7 @@ also sets `fullCalcOnLoad` so Excel recalculates the engine on open.
 
 ```bash
 python3 make_demo_debt.py "Debt Payoff  Light.xlsx" DebtPayoff_Light_DEMO.xlsx
+python3 make_demo_debt.py "Debt Payoff  Dark.xlsx"  DebtPayoff_Dark_DEMO.xlsx
 ```
 
 ## The plan the demo describes
