@@ -9,6 +9,9 @@ from openpyxl.worksheet.properties import PageSetupProperties
 import sys
 SRC = sys.argv[1]                       # the clean template
 OUT = sys.argv[2]                       # workbook with the demo month in it
+# Only the video pipeline needed one-page-per-sheet printing; pass --page-setup
+# to get it. The demo workbook itself is delivered with the template's own.
+PAGE_SETUP = "--page-setup" in sys.argv[3:]
 
 wb = openpyxl.load_workbook(SRC)
 
@@ -137,30 +140,27 @@ for i, (bal, paid, minp) in enumerate(debts):
     db.cell(row=r, column=3, value=paid)
     db.cell(row=r, column=6, value=minp)
 
-# ---------- page setup: one page per sheet ----------
-areas = {
-    "Start Here":      "A1:H24",
-    "Setup":           "A1:K26",
-    "Dashboard":       "A1:O34",
-    "Paycheck Budget": "A1:G33",
-    "Transactions":    "A1:G34",
-    "Bill Calendar":   "A1:F18",
-    "Savings":         "A1:E12",
-    "Debt":            "A1:F13",
-}
-for ws in wb.worksheets:
-    ws.print_area = areas[ws.title]
-    ws.sheet_properties.pageSetUpPr = PageSetupProperties(fitToPage=True)
-    ws.page_setup.fitToWidth = 1
-    ws.page_setup.fitToHeight = 1
-    ws.page_setup.orientation = "landscape"
-    ws.page_margins.left = ws.page_margins.right = 0.15
-    ws.page_margins.top = ws.page_margins.bottom = 0.15
-    ws.page_margins.header = ws.page_margins.footer = 0
-    ws.print_options.horizontalCentered = False
-    ws.sheet_view.showGridLines = False
-    ws.oddHeader.left.text = ws.oddHeader.center.text = ws.oddHeader.right.text = ""
-    ws.oddFooter.left.text = ws.oddFooter.center.text = ws.oddFooter.right.text = ""
+# ---------- optional: one page per sheet, for headless rendering ----------
+if PAGE_SETUP:
+    areas = {
+        "Start Here":      "A1:H24",
+        "Setup":           "A1:K26",
+        "Dashboard":       "A1:O34",
+        "Paycheck Budget": "A1:G33",
+        "Transactions":    "A1:G34",
+        "Bill Calendar":   "A1:F18",
+        "Savings":         "A1:E12",
+        "Debt":            "A1:F13",
+    }
+    for ws in wb.worksheets:
+        ws.print_area = areas[ws.title]
+        ws.sheet_properties.pageSetUpPr = PageSetupProperties(fitToPage=True)
+        ws.page_setup.fitToWidth = 1
+        ws.page_setup.fitToHeight = 1
+        ws.page_setup.orientation = "landscape"
+        ws.page_margins.left = ws.page_margins.right = 0.15
+        ws.page_margins.top = ws.page_margins.bottom = 0.15
+        ws.page_margins.header = ws.page_margins.footer = 0
 
 wb.calculation.fullCalcOnLoad = True
 wb.save(OUT)

@@ -9,9 +9,12 @@ listing rather than a copy of it.
 
 `paycheck_budget_cover_1080.jpg` is the frame at 2.4 s, for the thumbnail.
 
-`PaycheckBudget_Light_DEMO.xlsx` is the workbook with the demo month already in
-it — the file the take was recorded from. `make_demo_paycheck.py` regenerates it
-from a clean template.
+`PaycheckBudget_Light_DEMO.xlsx` and `PaycheckBudget_Dark_DEMO.xlsx` are the
+workbooks with the demo month already in them — the light one is the file the
+take was recorded from. Both editions carry the identical structure (same eight
+sheets, same formulas, same input cells), so one generator fills either and both
+land on the same numbers; only the styling differs. `make_demo_paycheck.py`
+regenerates them from a clean template.
 
 ## The month the demo describes
 
@@ -88,7 +91,14 @@ To regenerate the demo workbook:
 
 ```bash
 python3 make_demo_paycheck.py "Paycheck Budget  Light.xlsx" PaycheckBudget_Light_DEMO.xlsx
+python3 make_demo_paycheck.py "Paycheck Budget  Dark.xlsx"  PaycheckBudget_Dark_DEMO.xlsx
 ```
+
+It writes only into cells the template already has, and sets `fullCalcOnLoad` so
+Excel recalculates the engine on open (openpyxl writes formulas without cached
+results; Google Sheets computes them anyway). Add `--page-setup` for the
+one-page-per-sheet printing that headless rendering wants — the delivered demo
+workbooks keep the template's own page setup.
 
 ## One note on the workbook itself
 
