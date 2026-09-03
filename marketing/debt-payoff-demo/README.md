@@ -1,4 +1,4 @@
-# Debt Payoff (Light) — demo data
+# Debt Payoff (Light) — demo data and listing video
 
 `DebtPayoff_Light_DEMO.xlsx` is your workbook with a demo plan already in it.
 Open it, or upload it to Google Sheets, and record.
@@ -70,3 +70,48 @@ off, `Ctrl+Shift+F` to hide the Sheets menus.
 9. **Setup** — change Extra / month from 400 to 800, back to the Dashboard, watch
    the debt-free date move in. Leave it as the last beat, or set it back to 400.
 10. **Start Here** — optional, for a "how it works" shot.
+
+
+## The listing video
+
+`debt_payoff_promo_1080.mp4` — 1080×1080, 30 fps, 14.9 s, no audio, cut from the
+37.2 s recording of the demo file. Same frame as the budget videos (paper ground
+built from the sheet's own palette, browser window, tab strip, progress bar), so
+the two products read as one shop.
+
+Ten shots at 1.742 s with 0.28 s cross-fades. The order is a story rather than a
+tour: enter the debts, pick a method, read the plan, then prove the plan is live
+by changing the method and watching every number move.
+
+| in video | from raw | shot | caption |
+| --- | --- | --- | --- |
+| 0.00–1.74 | 0.4 s | Setup — the six debts | List your debts once |
+| 1.46–3.20 | 2.6 s | Setup — Method dropdown open | Snowball, Avalanche or your own order |
+| 2.93–4.67 | 13.0 s | Dashboard — Jun 2029, 34 months, $36 040, $6 290 | Your debt-free date, worked out |
+| 4.39–6.13 | 21.4 s | Dashboard — total paid, paid so far, 30.2 % | What it costs — and how far you are |
+| 5.85–7.59 | 15.4 s | Dashboard — payoff order | The order to pay them in |
+| 7.31–9.05 | 17.4 s | Dashboard — balance over time | The balance falling to zero |
+| 8.77–10.51 | 19.2 s | Dashboard — Snowball vs Avalanche + the verdict | Avalanche saves $744 — it tells you |
+| 10.24–11.98 | 29.8 s | Setup — switching the method to Custom | Change the method… |
+| 11.70–13.44 | 32.4 s | Dashboard — Custom: Jul 2029, 35 months, $8 662 | …and the whole plan recalculates |
+| 13.16–14.90 | 25.4 s | Debt Tracker — paid so far, remaining, % paid | Log payments, watch each debt shrink |
+
+The pair at 10.24 → 13.44 is the point of the whole cut: the method changes on
+Setup and the Dashboard comes back with a different date, a different interest
+total and a different payoff order. The competitor's debt video shows three
+strategies as static tables; this one shows the sheet recalculating.
+
+Nothing had to be cut for defects — the take carries no Sheets toast and no
+tab-switch flashes. This recording is 1622×720 with no row-number gutter, so
+crops start at x=0.
+
+Copy on the frame: `SNOWBALL · AVALANCHE · CUSTOM · GOOGLE SHEETS & EXCEL`
+(eyebrow), `Debt Payoff Plan` (headline), `DOES THE MATH` (window chip),
+`PICK A METHOD — IT WORKS OUT THE ORDER, THE DATE AND THE INTEREST` and
+`4 tabs · snowball, avalanche or your own order · yours to edit` (footer).
+
+### Rebuild
+
+```bash
+./build_debt.sh /path/to/Screen_recording.webm /tmp/debt debt_payoff_promo_1080.mp4
+```
