@@ -131,8 +131,8 @@ for (x, w), label in zip(boxes, TABS):
                         fill=(255, 255, 255), outline=RULE, width=1)
     draw_tracked(d, x + w / 2, TAB_Y + 9, label.upper(), fnt_tab, PILL_TX, tr=1.1)
 
-left_tracked(d, LEFT + 26, 950, "PICK THE MONTH — THE WHOLE PAGE RE-DOES ITSELF", M600(15), INK, 1.9)
-left_tracked(d, LEFT + 26, 980, "plan vs actual · bills · funds · debts · one log · yours to edit", M400(14), MUTED, 0.6)
+left_tracked(d, LEFT + 26, 950, "ONE PAGE DOES ALL OF IT — THE SECOND SHEET IS JUST THE LOG", M600(15), INK, 1.6)
+left_tracked(d, LEFT + 26, 980, "plan vs actual · bills · funds · debts · all in one view", M400(14), MUTED, 0.6)
 d.rectangle([0, S - 5, S, S], fill=(224, 240, 230))
 bg.save(os.path.join(OUT, "bg.png"))
 
@@ -145,31 +145,30 @@ corner = Image.new("RGBA", (w, h), WIN_BODY + (255,)); corner.putalpha(mask)
 fg.alpha_composite(corner, (x0, y0))
 fg.save(os.path.join(OUT, "fg.png"))
 
-# ---------------------------------------------------------------- scenes
-SCENES = [
-    ("One page — every number on it",            "Budget"),
-    ("Plan vs actual, category by category",     "Budget"),
-    ("Where the month actually went",            "Budget"),
-    ("Bills at their true monthly cost",         "Budget"),
-    ("Sinking funds against their targets",      "Budget"),
-    ("Debts, smallest balance first",            "Budget"),
-    ("Pick a month…",                            "Budget"),
-    ("…and the whole page re-does itself",       "Budget"),
-    ("One log — income, expense, transfer",      "Log"),
-    ("Categories come from a list you set",      "Log"),
+# ---------------------------------------------------------------- captions
+# The captions are timed against the film, not against shots: the page scrolls
+# through one uncut take, and the line over it changes while it moves.
+CAPTIONS = [
+    "Everything on one page",
+    "Plan vs actual · bills · funds · debts",
+    "One screen. No tab hopping.",
+    "Pick a month…",
+    "…and the whole page re-does itself",
+    "The second sheet is just the log",
 ]
-probe = ImageDraw.Draw(Image.new("RGB", (S, S)))
-fnt_tab, boxes = tab_layout(probe)
-for i, (caption, tab) in enumerate(SCENES, 1):
+for i, caption in enumerate(CAPTIONS, 1):
     lay = Image.new("RGBA", (S, S), (0, 0, 0, 0))
     cd = ImageDraw.Draw(lay)
     size = 30 if len(caption) < 30 else (27 if len(caption) < 40 else 24)
     cd.text((118, 190), caption, font=M500(size), fill=INK + (255,))
     lay.save(os.path.join(OUT, f"cap{i}.png"))
 
+probe = ImageDraw.Draw(Image.new("RGB", (S, S)))
+fnt_tab, boxes = tab_layout(probe)
+for i, tab in enumerate(TABS, 1):
     pill = Image.new("RGBA", (S, S), (0, 0, 0, 0))
     pd = ImageDraw.Draw(pill)
-    x, w = boxes[TABS.index(tab)]
+    x, w = boxes[i-1]
     pd.rounded_rectangle([x, TAB_Y, x + w, TAB_Y + TAB_H], radius=TAB_H / 2, fill=INK + (255,))
     draw_tracked(pd, x + w / 2, TAB_Y + 9, tab.upper(), fnt_tab, GREEN + (255,), tr=1.1)
     pill.save(os.path.join(OUT, f"pill{i}.png"))
