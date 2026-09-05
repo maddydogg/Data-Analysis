@@ -99,7 +99,8 @@ def fitted(shot, max_w, max_h, max_scale=1.4):
 def sheet(canvas, shot, x, y, size, angle=0.0, border="#FFFFFF", bw=10,
           shadow=(38, 20, 62), tab=None, tab_fill=MINT, tab_text_fill=INK):
     """A screenshot as a physical sheet: white margin, optional tab, optional tilt."""
-    nw, nh = size
+    x, y = int(x), int(y)
+    nw, nh = int(size[0]), int(size[1])
     img = shot.resize((nw, nh), Image.LANCZOS)
     pad = bw
     tab_h = 0 if not tab else 58
@@ -123,10 +124,12 @@ def sheet(canvas, shot, x, y, size, angle=0.0, border="#FFFFFF", bw=10,
         sh = mask.filter(ImageFilter.GaussianBlur(blur)).point(lambda v: int(v * alpha / 255))
         canvas.paste(Image.new("RGB", card.size, INK), (x, y + dy), sh)
         canvas.paste(card, (x, y), card)
-    else:
-        soft_shadow(canvas, (x, y, x + card.width, y + card.height), blur, dy, alpha)
-        canvas.paste(card, (x, y))
-    return (x, y, x + card.width, y + card.height)
+        ox = (card.width - nw) // 2
+        oy = (card.height - nh) // 2
+        return (x + ox, y + oy, x + ox + nw, y + oy + nh)
+    soft_shadow(canvas, (x, y, x + card.width, y + card.height), blur, dy, alpha)
+    canvas.paste(card, (x, y))
+    return (x + pad, y + pad + tab_h, x + pad + nw, y + pad + tab_h + nh)
 
 
 def highlighter(d, x0, y0, x1, y1, colour=MINT, skew=6):
