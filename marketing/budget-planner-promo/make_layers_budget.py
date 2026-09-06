@@ -103,7 +103,7 @@ ImageDraw.Draw(sh).rounded_rectangle([WIN[0] + 18, WIN[1] + 34, WIN[2] - 18, WIN
 bg.paste(Image.new("RGB", (S, S), (126, 158, 140)), (0, 0), sh.filter(ImageFilter.GaussianBlur(36)))
 
 d.rounded_rectangle([LEFT, 48, LEFT + 6, 168], radius=3, fill=GREEN_D)
-left_tracked(d, LEFT + 34, 50, "ONE PAGE  ·  TWO SHEETS  ·  GOOGLE SHEETS & EXCEL", M600(16), MUTED, 3.4)
+left_tracked(d, LEFT + 34, 50, "ONE PAGE  ·  ONE LOG  ·  GOOGLE SHEETS & EXCEL", M600(16), MUTED, 3.4)
 d.text((LEFT + 34, 82), "Budget Planner", font=PF700(62), fill=INK)
 
 # ---- window
