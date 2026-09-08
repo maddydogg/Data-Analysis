@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Build the 14.9 s Etsy listing video for the ADHD Planner workbook.
-#   usage: build_adhd_video.sh <raw-recording> <work-dir> <output.mp4>
+# Build the 14.9 s Etsy listing video for the DARK ADHD Planner workbook.
+#   usage: build_adhd_video_dark.sh <raw-recording> <work-dir> <output.mp4>
 #
 # The competitor for this product shows six dense dashboards in 15 seconds and
 # explains none of them, under one headline that never changes. So this film
@@ -23,23 +23,22 @@ if [ ! -f "$W/src/rec.mp4" ]; then
 fi
 
 [ -f "$W/fonts/PlayfairDisplay-700.ttf" ] || "$HERE/fetch_fonts.sh" "$W/fonts"
-python3 "$HERE/make_layers_adhd.py" "$W/layers" "$W/fonts"
+python3 "$HERE/make_layers_adhd_dark.py" "$W/layers" "$W/fonts"
 
 # 1. shot 1 — the Today sheet, held and then scrolled, in one take. The take
-#    scrolls it in wheel steps between 0.5 s and 9.9 s; these are the moments it
-#    is at rest, so the stitch never picks up the encoder's post-scroll ghost.
-PASS="0.5,0.9,1.4,1.7,2.0,2.4,2.7,3.0,3.3,3.6,3.9,4.3,4.6,4.9,5.2,5.6,5.9,6.2,6.6,7.0,7.3,7.6,8.0,8.3,8.6,8.8,9.2,9.9"
+#    scrolls it in wheel steps between 0.5 s and 7.7 s and then rests; these are
+#    the moments it is at rest, so the stitch never picks up the encoder's ghost.
+PASS="0.5,1.1,1.4,1.7,1.9,2.3,2.5,2.9,3.1,3.5,3.7,4.0,4.3,4.6,4.8,5.2,5.4,5.8,6.1,6.3,6.6,6.9,7.3,7.6,13.4"
 python3 "$HERE/make_page.py" "$W/src/rec.mp4" "$W/scenes/s01.mp4" "$PASS" 1200 "1.60,5.00,0.70"
 
 # 2. the four cuts that follow. Tabs switch at 10.8 s (Tasks) and 21.2 s
-#    (Habits), so no shot crosses those. The two dropdown shots are cropped to
-#    760 px wide — 1.26x on the way to the window — because the whole point
-#    against this competitor is that you can read what is happening.
+#    (Habits) in this take, so no shot crosses those. The last shot runs 4.5 s
+#    because it is the payoff and it moves: boxes get ticked, the row's DAYS
+#    climbs and "Days logged in total" goes 141 to 143 inside the frame.
 SHOTS=(
-  "11.90 1.80  680:383:1100:52  break-it-down"
-  "15.45 1.95  760:428:0:55    energy-list"
-  "18.30 1.95  760:428:0:55    status-parked"
-  "37.00 3.02  1150:647:0:20   habits"
+  "14.60 1.95  680:383:1100:52  break-it-down"
+  "18.35 1.95  760:428:0:55     energy-list"
+  "30.60 4.54  1150:647:0:15    habits-counting"
 )
 i=1
 for s in "${SHOTS[@]}"; do
@@ -77,8 +76,8 @@ done
 
 # 4. compose. Captions are timed against the film rather than against shots, so
 #    the line can change while the page keeps moving under it.
-CAPS=("0.15 2.45" "2.75 4.75" "5.05 6.85" "7.20 8.30" "8.80 10.05" "10.45 11.70" "12.10 14.62")
-PILLS=("0.00 7.10" "7.10 11.95" "11.95 14.90")
+CAPS=("0.15 2.45" "2.75 4.75" "5.05 6.85" "7.20 8.45" "8.95 10.15" "10.60 12.30" "12.55 14.62")
+PILLS=("0.00 7.10" "7.10 10.45" "10.45 14.90")
 
 INPUTS=(-loop 1 -framerate 30 -t $TOTAL -i "$W/layers/bg.png"
         -i "$W/screen.mp4"
@@ -103,7 +102,7 @@ for i in $(seq 1 ${#PILLS[@]}); do
   FC2+="[$IDX:v]format=rgba,fade=in:st=$1:d=0.16:alpha=1,fade=out:st=$2:d=0.16:alpha=1[p$i];"
   FC2+="[$PREV][p$i]overlay=0:0:format=auto[q$i];"; PREV="q$i"
 done
-FC2+="[$PREV]fade=t=in:st=0:d=0.35:color=0xFDFDFB,fade=t=out:st=14.6:d=0.3:color=0xFDFDFB,format=yuv420p[out]"
+FC2+="[$PREV]fade=t=in:st=0:d=0.35:color=0x0B0F1A,fade=t=out:st=14.6:d=0.3:color=0x0B0F1A,format=yuv420p[out]"
 
 "$FF" -y -hide_banner -loglevel error "${INPUTS[@]}" -filter_complex "$FC2" \
   -map "[out]" -t $TOTAL -r 30 -an \

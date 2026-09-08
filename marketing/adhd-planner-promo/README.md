@@ -2,7 +2,11 @@
 
 `adhd_planner_promo_1080.mp4` is the 14.9 s Etsy listing video, cut from one
 41.5 s screen recording of the workbook in Google Sheets.
-`adhd_planner_cover_1080.jpg` is the frame at 1.1 s.
+`adhd_planner_cover_1080.jpg` is the frame at 1.2 s.
+`adhd_planner_dark_promo_1080.mp4` is the same film for the dark edition, cut
+from its own 48.8 s take — deep navy with a green glow behind the window, the
+accent the #7BFFA2 the dark workbook writes its own section headers in.
+`adhd_planner_dark_cover_1080.jpg` is its frame at 1.2 s.
 
 ## Written against a competitor
 
@@ -55,6 +59,29 @@ Tabs switch at 10.8 s (Tasks) and 21.2 s (Habits) in the take, so no shot
 crosses them. Sheets raised no toast during this recording; the frames were
 checked for it anyway.
 
+## The dark cut
+
+Its own take, so its own scroll pass and its own shots. Four this time, because
+this recording ends on something the light one does not have: the habit boxes
+being ticked while the counts move.
+
+| | shot | from the take |
+| ---: | --- | ---: |
+| 0.0–7.3 s | the Today sheet, held then scrolled, no cuts | 0.5–13.4 s |
+| 7.0–9.0 s | **Break it down** — one big task into steps | 14.60 s |
+| 8.7–10.6 s | the Energy list, picked | 18.35 s |
+| 10.4–14.9 s | the Habits grid, counting | 30.60 s |
+
+The last shot runs 4.5 s because it is the payoff and it moves: boxes get
+ticked, `Sleep before midnight` climbs from 10 days to 11, and `Days logged in
+total` goes 141 → 142 → 143 inside the frame. Its caption changes under it —
+*One per day. No streaks to lose.* then *Tick one box — the month keeps count* —
+so the shot never sits still with a stale line over it.
+
+Tabs switch at 13.6 s (Tasks) and 23.6 s (Habits) in this take. Its Today sheet
+comes to rest at 632 px rather than the light take's 824, because the page ends
+there; both stitch to the same eight blocks.
+
 ## The stitched page
 
 The recording shows one viewport at a time and scrolls in wheel steps, so the
@@ -69,7 +96,8 @@ scrolls what is left: 1.6 s held at the top, 5.0 s of eased travel, 0.7 s held.
 ## Rebuilding
 
 ```bash
-./build_adhd_video.sh <recording.webm> work adhd_planner_promo_1080.mp4
+./build_adhd_video.sh      <recording.webm> work  adhd_planner_promo_1080.mp4
+./build_adhd_video_dark.sh <recording.webm> workd adhd_planner_dark_promo_1080.mp4
 ```
 
 Needs `python3` with `pillow`, `numpy` and `imageio-ffmpeg`. Playfair Display
@@ -80,5 +108,5 @@ the timings above.
 
 The four cuts are the `SHOTS=(start length crop)` table at the top of the build
 script, written against a 1862×858 frame with no row-number gutter.
-`make_layers_adhd.py` owns everything drawn around the screen; `make_page.py`
+`make_layers_adhd.py` and `make_layers_adhd_dark.py` own everything drawn around the screen; `make_page.py`
 owns the page and its scroll.
