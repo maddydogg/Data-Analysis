@@ -42,14 +42,17 @@ python3 "$HERE/make_layers_uk.py" "$W/layers" "$W/fonts"
 #       sources are the British ones — charity shop, car boot sale, jumble
 #       sale, house clearance — and 45.00 for 10 is still 4.50 an item.
 #   s04 Dashboard — Period 06 Apr 2026 to 05 Apr 2027, net profit 1,898.00,
-#       and a chart whose months run Apr 2026 to Mar 2027.
+#       and a chart whose months run Apr 2026 to Mar 2027. The tab opens at
+#       33.1 s but the sheet does not draw until 34.0 — nine tenths of a second
+#       of blank white while Sheets loads it — so the shot starts at 34.05,
+#       after it is on screen, and holds the drawn sheet instead.
 #   s05 Tax Summary — total expenses 900.88, NET PROFIT 1,898.00, then
 #       372.2 miles at HMRC's rate, 167.49 off, 1,730.51 after mileage.
 SHOTS=(
   "s01  3.80 1.25 1000:563:0:110   2.48"
   "s02 10.42 0.66 1120:630:0:0     4.5455"
   "s03 19.10 2.00 1060:596:0:0     1.30"
-  "s04 33.20 1.75 1060:596:0:110   2.0571"
+  "s04 34.05 0.90 1060:596:0:110   4.00"
   "s05 44.45 1.00 760:428:0:330    3.72"
 )
 for s in "${SHOTS[@]}"; do

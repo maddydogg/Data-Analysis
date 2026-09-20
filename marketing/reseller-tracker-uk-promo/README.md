@@ -33,7 +33,7 @@ The film leads with what actually differs and lets the rest follow.
 | 0.0–3.1 s | **Setup — the UK shot: £, day 6 / month 4, 0.450, UK platform fees** | 3.80 s |
 | 2.8–5.8 s | Inventory & Sales — one row per item, blue in, green out | 10.42 s |
 | 5.5–8.1 s | Lots, at speed — the Source list, and a box of ten at 4.50 each | 19.10 s |
-| 7.9–11.5 s | Dashboard — 06 Apr 2026 to 05 Apr 2027, and a chart running Apr→Mar | 33.20 s |
+| 7.9–11.5 s | Dashboard — 06 Apr 2026 to 05 Apr 2027, and a chart running Apr→Mar | 34.05 s |
 | 11.2–14.9 s | Tax Summary — net profit, then the mileage off it | 44.45 s |
 
 The Setup shot is the listing's whole reason to exist and every UK mark in it
@@ -43,6 +43,11 @@ for the first 10,000 business miles by car. Check yours."* Beside them the
 platform table — **Vinted 0%, eBay (private) 0%, eBay (business) 15.9% + 0.48,
 Depop 2.9% + 0.30, Whatnot 10.9%, Etsy 10.5% + 0.36, car boot / cash 0%** —
 under the note *"UK rates as of 2026. eBay business incl. VAT."*
+
+The Dashboard tab opens at 33.1 s in the take, but Sheets does not draw the
+sheet until 34.0 — nine tenths of a second of blank white while it loads. That
+is not in the film: the shot starts at 34.05, once the sheet is on screen, and
+holds it. No frame of the film shows an empty window.
 
 The Lots shot is the only one played near speed, because something happens in
 it: the Source list opens and the sources are the British ones — charity shop,
