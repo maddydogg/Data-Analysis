@@ -1,0 +1,591 @@
+{
+ "checks": [
+  {
+   "name": "Tickets 0001-6000, each exactly once",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Every full name is unique",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Names are letters only (no spaces, hyphens, apostrophes)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Entry times within opening hours 16:00-20:29",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Towns, gates and stalls are valid",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Log is sorted by entry time",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Unique answer: all 18 clues together leave exactly one visitor",
+   "passed": true,
+   "detail": "survivors: ['Hazel Russell #3857']"
+  },
+  {
+   "name": "Every clue is needed: removing any one leaves more than one visitor",
+   "passed": true,
+   "detail": "Clue 1 removed -> 2 left; Clue 2 removed -> 2 left; Clue 3 removed -> 2 left; Clue 4 removed -> 3 left; Clue 5 removed -> 2 left; Clue 6 removed -> 3 left; Clue 7 removed -> 2 left; Clue 8 removed -> 2 left; Clue 9 removed -> 2 left; Clue 10 removed -> 2 left; Clue 11 removed -> 2 left; Clue 12 removed -> 2 left; Evidence A removed -> 2 left; Evidence B removed -> 4 left; Evidence C removed -> 2 left; Evidence D removed -> 3 left; Evidence E removed -> 4 left; Evidence F removed -> 3 left"
+  },
+  {
+   "name": "Each alternative reading on its own gives the same single answer",
+   "passed": true,
+   "detail": "Clue 2 [\u201cmore\u201d read as \u201cat least as many\u201d] -> 1; Clue 3 [\u201clater\u201d read as \u201cthe same or later\u201d] -> 1; Clue 4 [Y counted as a vowel] -> 1; Clue 4 [repeated vowels counted once] -> 1; Clue 5 [Y counted as a vowel] -> 1; Clue 6 [\u201cor higher\u201d missed (strictly above 2500)] -> 1; Evidence A [only the footbridge gate nearest the carousel] -> 1; Evidence B [first and last minutes of each snowfall excluded] -> 1; Evidence C [strictly before 19:48] -> 1; Evidence F [any letter used twice, not necessarily side by side] -> 1"
+  },
+  {
+   "name": "Every combination of readings (768 in total) gives the same answer",
+   "passed": true,
+   "detail": "proof: the killer passes every clue under every reading, and each of the other 5,999 visitors fails at least one clue under every reading"
+  },
+  {
+   "name": "Every clue rules out at least one finalist (a visitor who fits all the other clues)",
+   "passed": true,
+   "detail": "{'1': 1, '2': 1, '3': 1, '4': 2, '5': 1, '6': 2, '7': 1, '8': 1, '9': 1, '10': 1, '11': 1, '12': 1, 'A': 1, 'B': 3, 'C': 1, 'D': 2, 'E': 3, 'F': 2}"
+  },
+  {
+   "name": "Walkthrough uses all 18 clues once and ends on the killer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "No step in the walkthrough rules out zero visitors",
+   "passed": true,
+   "detail": "Evidence B: -3235 (2765) -> Evidence A: -1555 (1210) -> Evidence C: -60 (1150) -> Evidence D: -912 (238) -> Evidence E: -147 (91) -> Evidence F: -28 (63) -> Clue 9: -12 (51) -> Clue 11: -8 (43) -> Clue 10: -18 (25) -> Clue 6: -7 (18) -> Clue 7: -9 (9) -> Clue 8: -1 (8) -> Clue 1: -1 (7) -> Clue 2: -1 (6) -> Clue 3: -1 (5) -> Clue 4: -2 (3) -> Clue 5: -1 (2) -> Clue 12: -1 (1)"
+  },
+  {
+   "name": "Sealed Check: no finalist shares the killer's check number",
+   "passed": true,
+   "detail": "check number 011; other visitors with the same number: 7 of 5,999"
+  },
+  {
+   "name": "Evidence D: the stall directory's punch sellers match the clue",
+   "passed": true,
+   "detail": "[2, 5, 11, 20, 22, 25, 31]"
+  },
+  {
+   "name": "Evidence E: exactly one coach leaves at 21:15, and its towns match the clue",
+   "passed": true,
+   "detail": "[['Ashcombe', 'Dunmoor', 'Hartwell', 'Juniper Cross', 'Kestrel Bay', 'Marrowby', 'Oakhurst']]"
+  },
+  {
+   "name": "Evidence B: weather log periods are contiguous, non-overlapping and match the snow windows",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Evidence A: footbridges drawn at exactly the East and South gates",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Killer's own story is consistent (entered before buying, bought punch at a punch stall, lives on the 21:15 route)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Level-3 hints keep exactly the same visitors as their clues (all 18)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Examples and facts quoted in hints and house rules are correct",
+   "passed": true,
+   "detail": "Ida 3, Enid 4, Clara 5, Martha 6 letters: ok; Bennett has exactly two vowels: ok; Molly and Percy end in Y and pass clue 5: ok; ticket 0472 digits sum to 13: ok; 18:07 odd minutes, 18:40 even: ok; Oakes and Brook contain O: ok; Bell and Abbott have double letters; Garner repeats R but has no double letter: ok; Ada Webb passes clue 3: ok; Hint 9 names exactly the two-word towns: ok; Hint A names the footbridge gates: ok; Hint B quotes both snow windows: ok; Hint C quotes the receipt time: ok; Glossary example Garner is not a visitor surname (it is only an example): ok"
+  },
+  {
+   "name": "No hint names the killer or their ticket",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "No borrowed brands or titles (Killer Isn't, Clue/Cluedo, Traitors, Christie, Sherlock, ...)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "No famous-detective surnames in the name pool",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Every character in the text exists in the embedded fonts",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "[letter] every clue is printed word for word in the case book",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[letter] all 54 hints are printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[letter] the killer's name appears exactly once in the case book (their line in the log)",
+   "passed": true,
+   "detail": "1 times"
+  },
+  {
+   "name": "[letter] Visitor Log in the PDF matches the data line for line (6,000 rows)",
+   "passed": true,
+   "detail": "parsed 6000 rows"
+  },
+  {
+   "name": "[letter] the book has a clickable contents page and bookmarks",
+   "passed": true,
+   "detail": "24 bookmarks, 23 links on the contents page"
+  },
+  {
+   "name": "[letter] Fraunces and Nunito are embedded",
+   "passed": true,
+   "detail": "AAAAAA+Caveat-Medium, AAAAAA+CourierPrime-Bold, AAAAAA+CourierPrime-Regular, AAAAAA+Fraunces-Italic, AAAAAA+Fraunces-SemiBold, AAAAAA+Nunito-Bold, AAAAAA+Nunito-ExtraBold, AAAAAA+Nunito-Italic, AAAAAA+Nunito-Regular, Helvetica"
+  },
+  {
+   "name": "[letter] solution file names the same killer the code found",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[letter] solution walkthrough counts match the code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] every clue is printed word for word in the case book",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] all 54 hints are printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] the killer's name appears exactly once in the case book (their line in the log)",
+   "passed": true,
+   "detail": "1 times"
+  },
+  {
+   "name": "[a4] Visitor Log in the PDF matches the data line for line (6,000 rows)",
+   "passed": true,
+   "detail": "parsed 6000 rows"
+  },
+  {
+   "name": "[a4] the book has a clickable contents page and bookmarks",
+   "passed": true,
+   "detail": "24 bookmarks, 23 links on the contents page"
+  },
+  {
+   "name": "[a4] Fraunces and Nunito are embedded",
+   "passed": true,
+   "detail": "AAAAAA+Caveat-Medium, AAAAAA+CourierPrime-Bold, AAAAAA+CourierPrime-Regular, AAAAAA+Fraunces-Italic, AAAAAA+Fraunces-SemiBold, AAAAAA+Nunito-Bold, AAAAAA+Nunito-ExtraBold, AAAAAA+Nunito-Italic, AAAAAA+Nunito-Regular, Helvetica"
+  },
+  {
+   "name": "[a4] solution file names the same killer the code found",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] solution walkthrough counts match the code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] every clue is printed word for word in the case book",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] all 54 hints are printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] the killer's name appears exactly once in the case book (their line in the log)",
+   "passed": true,
+   "detail": "1 times"
+  },
+  {
+   "name": "[ipad] Visitor Log in the PDF matches the data line for line (6,000 rows)",
+   "passed": true,
+   "detail": "parsed 6000 rows"
+  },
+  {
+   "name": "[ipad] the book has a clickable contents page and bookmarks",
+   "passed": true,
+   "detail": "24 bookmarks, 23 links on the contents page"
+  },
+  {
+   "name": "[ipad] Fraunces and Nunito are embedded",
+   "passed": true,
+   "detail": "AAAAAA+Caveat-Medium, AAAAAA+CourierPrime-Bold, AAAAAA+CourierPrime-Regular, AAAAAA+Fraunces-Italic, AAAAAA+Fraunces-SemiBold, AAAAAA+Nunito-Bold, AAAAAA+Nunito-ExtraBold, AAAAAA+Nunito-Italic, AAAAAA+Nunito-Regular, Helvetica"
+  },
+  {
+   "name": "[ipad] solution file names the same killer the code found",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] solution walkthrough counts match the code",
+   "passed": true,
+   "detail": ""
+  }
+ ],
+ "answer": {
+  "entry": 1163,
+  "ticket": 3857,
+  "first": "Hazel",
+  "last": "Russell",
+  "town": "Marrowby",
+  "gate": "South",
+  "stall": 22
+ },
+ "necessity": {
+  "1": 2,
+  "2": 2,
+  "3": 2,
+  "4": 3,
+  "5": 2,
+  "6": 3,
+  "7": 2,
+  "8": 2,
+  "9": 2,
+  "10": 2,
+  "11": 2,
+  "12": 2,
+  "A": 2,
+  "B": 4,
+  "C": 2,
+  "D": 3,
+  "E": 4,
+  "F": 3
+ },
+ "alts": [
+  {
+   "clue": "Clue 2",
+   "reading": "\u201cmore\u201d read as \u201cat least as many\u201d",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Clue 3",
+   "reading": "\u201clater\u201d read as \u201cthe same or later\u201d",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Clue 4",
+   "reading": "Y counted as a vowel",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Clue 4",
+   "reading": "repeated vowels counted once",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Clue 5",
+   "reading": "Y counted as a vowel",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Clue 6",
+   "reading": "\u201cor higher\u201d missed (strictly above 2500)",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Evidence A",
+   "reading": "only the footbridge gate nearest the carousel",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Evidence B",
+   "reading": "first and last minutes of each snowfall excluded",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Evidence C",
+   "reading": "strictly before 19:48",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Evidence F",
+   "reading": "any letter used twice, not necessarily side by side",
+   "survivors": 1,
+   "same": true
+  }
+ ],
+ "walk": [
+  {
+   "id": "B",
+   "label": "Evidence B",
+   "out": 3235,
+   "left": 2765
+  },
+  {
+   "id": "A",
+   "label": "Evidence A",
+   "out": 1555,
+   "left": 1210
+  },
+  {
+   "id": "C",
+   "label": "Evidence C",
+   "out": 60,
+   "left": 1150
+  },
+  {
+   "id": "D",
+   "label": "Evidence D",
+   "out": 912,
+   "left": 238
+  },
+  {
+   "id": "E",
+   "label": "Evidence E",
+   "out": 147,
+   "left": 91
+  },
+  {
+   "id": "F",
+   "label": "Evidence F",
+   "out": 28,
+   "left": 63
+  },
+  {
+   "id": "9",
+   "label": "Clue 9",
+   "out": 12,
+   "left": 51
+  },
+  {
+   "id": "11",
+   "label": "Clue 11",
+   "out": 8,
+   "left": 43
+  },
+  {
+   "id": "10",
+   "label": "Clue 10",
+   "out": 18,
+   "left": 25
+  },
+  {
+   "id": "6",
+   "label": "Clue 6",
+   "out": 7,
+   "left": 18
+  },
+  {
+   "id": "7",
+   "label": "Clue 7",
+   "out": 9,
+   "left": 9
+  },
+  {
+   "id": "8",
+   "label": "Clue 8",
+   "out": 1,
+   "left": 8
+  },
+  {
+   "id": "1",
+   "label": "Clue 1",
+   "out": 1,
+   "left": 7
+  },
+  {
+   "id": "2",
+   "label": "Clue 2",
+   "out": 1,
+   "left": 6
+  },
+  {
+   "id": "3",
+   "label": "Clue 3",
+   "out": 1,
+   "left": 5
+  },
+  {
+   "id": "4",
+   "label": "Clue 4",
+   "out": 2,
+   "left": 3
+  },
+  {
+   "id": "5",
+   "label": "Clue 5",
+   "out": 1,
+   "left": 2
+  },
+  {
+   "id": "12",
+   "label": "Clue 12",
+   "out": 1,
+   "left": 1
+  }
+ ],
+ "finalists": [
+  {
+   "ticket": 2818,
+   "name": "Emily Wadding",
+   "clue": "B"
+  },
+  {
+   "ticket": 3475,
+   "name": "Mavis Tanner",
+   "clue": "B"
+  },
+  {
+   "ticket": 3514,
+   "name": "Edgar Nuttall",
+   "clue": "A"
+  },
+  {
+   "ticket": 3374,
+   "name": "Edith Winnard",
+   "clue": "11"
+  },
+  {
+   "ticket": 2764,
+   "name": "Beatrix Innes",
+   "clue": "2"
+  },
+  {
+   "ticket": 5196,
+   "name": "Elsie Lennard",
+   "clue": "5"
+  },
+  {
+   "ticket": 5062,
+   "name": "Mabel Tidwell",
+   "clue": "B"
+  },
+  {
+   "ticket": 5303,
+   "name": "Gilbert Kerrigan",
+   "clue": "4"
+  },
+  {
+   "ticket": 3859,
+   "name": "Bridget Chandler",
+   "clue": "F"
+  },
+  {
+   "ticket": 3440,
+   "name": "Cecil Pinnock",
+   "clue": "12"
+  },
+  {
+   "ticket": 4366,
+   "name": "Bernard Starling",
+   "clue": "F"
+  },
+  {
+   "ticket": 2702,
+   "name": "Ralph Sheppard",
+   "clue": "8"
+  },
+  {
+   "ticket": 3855,
+   "name": "Ethel Farrell",
+   "clue": "E"
+  },
+  {
+   "ticket": 601,
+   "name": "Emily Jarrett",
+   "clue": "6"
+  },
+  {
+   "ticket": 1666,
+   "name": "Cyril Perrin",
+   "clue": "6"
+  },
+  {
+   "ticket": 5329,
+   "name": "Agnes Linnell",
+   "clue": "D"
+  },
+  {
+   "ticket": 4334,
+   "name": "Oscar Parrish",
+   "clue": "7"
+  },
+  {
+   "ticket": 4814,
+   "name": "Ethel Tebbutt",
+   "clue": "10"
+  },
+  {
+   "ticket": 5026,
+   "name": "Abigail Bramwell",
+   "clue": "E"
+  },
+  {
+   "ticket": 4878,
+   "name": "Silas Wheeler",
+   "clue": "4"
+  },
+  {
+   "ticket": 2753,
+   "name": "Leonard Skerritt",
+   "clue": "9"
+  },
+  {
+   "ticket": 5433,
+   "name": "Daisy Ferrand",
+   "clue": "E"
+  },
+  {
+   "ticket": 3420,
+   "name": "Ned Garnett",
+   "clue": "3"
+  },
+  {
+   "ticket": 5318,
+   "name": "Sybil Wadding",
+   "clue": "D"
+  },
+  {
+   "ticket": 5408,
+   "name": "Esther Jarrett",
+   "clue": "1"
+  },
+  {
+   "ticket": 3785,
+   "name": "Kit Miller",
+   "clue": "C"
+  }
+ ],
+ "seal": "011",
+ "pages": {
+  "book_letter": 138,
+  "solution_letter": 13,
+  "book_a4": 129,
+  "solution_a4": 13,
+  "book_ipad": 117,
+  "solution_ipad": 11
+ }
+}
