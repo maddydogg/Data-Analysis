@@ -1,0 +1,203 @@
+{
+ "checks": [
+  {
+   "name": "Spoiler list loaded from the verification report",
+   "passed": true,
+   "detail": "95 forbidden tokens: killer name and ticket, Sealed Check number, 26 finalists (names + tickets), 36 level-2/3 hints, solution headings"
+  },
+  {
+   "name": "Control test: the scanner flags the killer's log page, the solution and the check page",
+   "passed": true,
+   "detail": "8 hits in the control sources"
+  },
+  {
+   "name": "Mockup 01-main: 2000x2000 PNG",
+   "passed": true,
+   "detail": "(2000, 2000)"
+  },
+  {
+   "name": "Mockup 01-main: no spoilers in any visible text (8 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 02-whats-inside: 2000x2000 PNG",
+   "passed": true,
+   "detail": "(2000, 2000)"
+  },
+  {
+   "name": "Mockup 02-whats-inside: no spoilers in any visible text (8 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 03-six-documents: 2000x2000 PNG",
+   "passed": true,
+   "detail": "(2000, 2000)"
+  },
+  {
+   "name": "Mockup 03-six-documents: no spoilers in any visible text (13 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 04-inspectors-notebook: 2000x2000 PNG",
+   "passed": true,
+   "detail": "(2000, 2000)"
+  },
+  {
+   "name": "Mockup 04-inspectors-notebook: no spoilers in any visible text (2 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 05-visitor-log-in-progress: 2000x2000 PNG",
+   "passed": true,
+   "detail": "(2000, 2000)"
+  },
+  {
+   "name": "Mockup 05-visitor-log-in-progress: no spoilers in any visible text (4 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 06-three-levels-of-hints: 2000x2000 PNG",
+   "passed": true,
+   "detail": "(2000, 2000)"
+  },
+  {
+   "name": "Mockup 06-three-levels-of-hints: no spoilers in any visible text (9 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 07-sealed-check: 2000x2000 PNG",
+   "passed": true,
+   "detail": "(2000, 2000)"
+  },
+  {
+   "name": "Mockup 07-sealed-check: no spoilers in any visible text (7 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 08-print-or-ipad: 2000x2000 PNG",
+   "passed": true,
+   "detail": "(2000, 2000)"
+  },
+  {
+   "name": "Mockup 08-print-or-ipad: no spoilers in any visible text (5 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 09-who-its-for: 2000x2000 PNG",
+   "passed": true,
+   "detail": "(2000, 2000)"
+  },
+  {
+   "name": "Mockup 09-who-its-for: no spoilers in any visible text (6 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 10-what-you-get: 2000x2000 PNG",
+   "passed": true,
+   "detail": "(2000, 2000)"
+  },
+  {
+   "name": "Mockup 10-what-you-get: no spoilers in any visible text (17 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Visitor Log page used in visuals contains neither the killer nor any finalist",
+   "passed": true,
+   "detail": "page 60"
+  },
+  {
+   "name": "Video: every one of 438 frames checked, no spoilers",
+   "passed": true,
+   "detail": "0 frames with hits"
+  },
+  {
+   "name": "Video: 1080x1080, 12-15 s, no sound",
+   "passed": true,
+   "detail": "{\"seconds\": 14.6, \"width\": 1080, \"height\": 1080, \"audio\": false, \"fps\": \"30\"}"
+  },
+  {
+   "name": "Delivery folder has exactly 4 files (Etsy allows 5)",
+   "passed": true,
+   "detail": "snowfall-at-ember-square_SOLUTION.zip, snowfall-at-ember-square_iPad.pdf, snowfall-at-ember-square_print-A4.pdf, snowfall-at-ember-square_print-US-Letter.pdf"
+  },
+  {
+   "name": "Delivery snowfall-at-ember-square_print-US-Letter.pdf is under 20 MB",
+   "passed": true,
+   "detail": "0.71 MB"
+  },
+  {
+   "name": "Delivery snowfall-at-ember-square_print-A4.pdf is under 20 MB",
+   "passed": true,
+   "detail": "0.71 MB"
+  },
+  {
+   "name": "Delivery snowfall-at-ember-square_iPad.pdf is under 20 MB",
+   "passed": true,
+   "detail": "0.69 MB"
+  },
+  {
+   "name": "Delivery snowfall-at-ember-square_SOLUTION.zip is under 20 MB",
+   "passed": true,
+   "detail": "0.4 MB"
+  },
+  {
+   "name": "Solution ZIP holds the three solution PDFs and is intact",
+   "passed": true,
+   "detail": "snowfall-at-ember-square_SOLUTION_print-US-Letter.pdf, snowfall-at-ember-square_SOLUTION_print-A4.pdf, snowfall-at-ember-square_SOLUTION_iPad.pdf"
+  },
+  {
+   "name": "Delivery snowfall-at-ember-square_iPad.pdf is a case book, not a solution",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Delivery snowfall-at-ember-square_print-A4.pdf is a case book, not a solution",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Delivery snowfall-at-ember-square_print-US-Letter.pdf is a case book, not a solution",
+   "passed": true,
+   "detail": ""
+  }
+ ],
+ "video": {
+  "seconds": 14.6,
+  "width": 1080,
+  "height": 1080,
+  "audio": false,
+  "fps": "30"
+ },
+ "delivery": [
+  {
+   "file": "snowfall-at-ember-square_print-US-Letter.pdf",
+   "mb": 0.71,
+   "ok": true
+  },
+  {
+   "file": "snowfall-at-ember-square_print-A4.pdf",
+   "mb": 0.71,
+   "ok": true
+  },
+  {
+   "file": "snowfall-at-ember-square_iPad.pdf",
+   "mb": 0.69,
+   "ok": true
+  },
+  {
+   "file": "snowfall-at-ember-square_SOLUTION.zip",
+   "mb": 0.4,
+   "ok": true
+  }
+ ]
+}
