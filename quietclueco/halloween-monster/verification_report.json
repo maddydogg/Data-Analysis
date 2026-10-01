@@ -1,0 +1,573 @@
+{
+ "checks": [
+  {
+   "name": "Tickets 0001-6000, each exactly once",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Every full name is unique",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Names are letters only (no spaces, hyphens, apostrophes)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Entry times within opening hours 16:00-20:29",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Towns, gates and stalls are valid",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Log is sorted by entry time",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Unique answer: all 18 clues together leave exactly one visitor",
+   "passed": true,
+   "detail": "survivors: ['Isabel Pettit #2719']"
+  },
+  {
+   "name": "Every clue is needed: removing any one leaves more than one visitor",
+   "passed": true,
+   "detail": "Clue 1 removed -> 2 left; Clue 2 removed -> 2 left; Clue 3 removed -> 3 left; Clue 4 removed -> 2 left; Clue 5 removed -> 2 left; Clue 6 removed -> 3 left; Clue 7 removed -> 2 left; Clue 8 removed -> 2 left; Clue 9 removed -> 2 left; Clue 10 removed -> 2 left; Clue 11 removed -> 2 left; Clue 12 removed -> 2 left; Evidence A removed -> 2 left; Evidence B removed -> 3 left; Evidence C removed -> 2 left; Evidence D removed -> 3 left; Evidence E removed -> 4 left; Evidence F removed -> 4 left"
+  },
+  {
+   "name": "Each alternative reading on its own gives the same single answer",
+   "passed": true,
+   "detail": "Clue 3 [N itself left out (only O to Z)] -> 1; Clue 5 [Y counted as a vowel] -> 1; Clue 6 [4000 itself counted as \u201cbelow\u201d] -> 1; Clue 7 [\u201cbigger\u201d read as \u201cthe same or bigger\u201d] -> 1; Evidence A [only the gargoyle gate beside the Laboratory Tower] -> 1; Evidence B [first and last minutes of each storm excluded] -> 1; Evidence C [strictly before 19:52] -> 1"
+  },
+  {
+   "name": "Every combination of readings (128 in total) gives the same answer",
+   "passed": true,
+   "detail": "proof: the killer passes every clue under every reading, and each of the other 5,999 visitors fails at least one clue under every reading"
+  },
+  {
+   "name": "Every clue rules out at least one finalist (a visitor who fits all the other clues)",
+   "passed": true,
+   "detail": "{'1': 1, '2': 1, '3': 2, '4': 1, '5': 1, '6': 2, '7': 1, '8': 1, '9': 1, '10': 1, '11': 1, '12': 1, 'A': 1, 'B': 2, 'C': 1, 'D': 2, 'E': 3, 'F': 3}"
+  },
+  {
+   "name": "Walkthrough uses all 18 clues once and ends on the killer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "No step in the walkthrough rules out zero visitors",
+   "passed": true,
+   "detail": "Evidence B: -3362 (2638) -> Evidence A: -1195 (1443) -> Evidence C: -221 (1222) -> Evidence D: -1004 (218) -> Evidence E: -122 (96) -> Evidence F: -50 (46) -> Clue 11: -17 (29) -> Clue 10: -10 (19) -> Clue 9: -3 (16) -> Clue 6: -4 (12) -> Clue 7: -1 (11) -> Clue 8: -3 (8) -> Clue 1: -1 (7) -> Clue 2: -1 (6) -> Clue 3: -2 (4) -> Clue 4: -1 (3) -> Clue 5: -1 (2) -> Clue 12: -1 (1)"
+  },
+  {
+   "name": "Sealed Check: no finalist shares the killer's check number",
+   "passed": true,
+   "detail": "check number 045; other visitors with the same number: 2 of 5,999"
+  },
+  {
+   "name": "Evidence D: the booth directory's potion-punch sellers match the clue",
+   "passed": true,
+   "detail": "[5, 8, 15, 20, 24, 33]"
+  },
+  {
+   "name": "Evidence E: exactly one night bus leaves at 21:20, and its towns match the clue",
+   "passed": true,
+   "detail": "[['Ashwick Fen', 'Duskwater', 'Gloamford', 'Mothwell', 'Pikesmere', 'Ravensholt', 'Underfell']]"
+  },
+  {
+   "name": "Evidence B: weather log periods are contiguous, non-overlapping and match the thunderstorm windows",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Evidence A: gargoyles are drawn above exactly the North and West gates, and the Laboratory Tower stands beside one of them",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Killer's own story is consistent (entered in a storm before buying, bought potion punch at a potion booth, lives on the night-bus route)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Level-3 hints keep exactly the same visitors as their clues (all 18)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Examples and facts quoted in hints and house rules are correct",
+   "passed": true,
+   "detail": "Ida 3, Nora 4, Clara 5, Martha 6 letters: ok; Bella Beck fails clue 2, Bella Monk passes: ok; Napier passes clue 3: ok; Ada, Clara and Nancy contain an A: ok; Fairley ends in Y and passes clue 5: ok; ticket 4000 fails clue 6: ok; ticket 0472 passes clue 7; a ticket like 3003 fails it: ok; 18:29 passes clue 8, 18:30 fails: ok; Rook and Barlow contain R: ok; Hint 9 names exactly the towns after M: ok; Hint A names the gargoyle gates: ok; Hint B quotes both storm windows: ok; Hint C quotes the receipt time: ok; Glossary: 18:07 has minutes 07, ticket 0472 first digit 0 last digit 2: ok"
+  },
+  {
+   "name": "No hint names the killer or their ticket",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "No borrowed brands or titles (Killer Isn't, Cluedo, Traitors, Christie, Sherlock, Frankenstein, Dracula, competitor titles ...)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "No famous-detective or famous-monster names in the name pools",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Every character in the text exists in the embedded fonts",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "[letter] every clue is printed word for word in the case book",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[letter] all 54 hints are printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[letter] the killer's name appears exactly once in the case book (their line in the log)",
+   "passed": true,
+   "detail": "1 times"
+  },
+  {
+   "name": "[letter] Visitor Log in the PDF matches the data line for line (6,000 rows)",
+   "passed": true,
+   "detail": "parsed 6000 rows"
+  },
+  {
+   "name": "[letter] the book has a clickable contents page and bookmarks",
+   "passed": true,
+   "detail": "24 bookmarks, 23 links on the contents page"
+  },
+  {
+   "name": "[letter] Fraunces and Nunito are embedded",
+   "passed": true,
+   "detail": "AAAAAA+Caveat-Medium, AAAAAA+CourierPrime-Bold, AAAAAA+CourierPrime-Regular, AAAAAA+Fraunces-Italic, AAAAAA+Fraunces-SemiBold, AAAAAA+Nunito-Bold, AAAAAA+Nunito-ExtraBold, AAAAAA+Nunito-Italic, AAAAAA+Nunito-Regular, Helvetica"
+  },
+  {
+   "name": "[letter] solution file names the same killer the code found",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[letter] solution walkthrough counts match the code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] every clue is printed word for word in the case book",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] all 54 hints are printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] the killer's name appears exactly once in the case book (their line in the log)",
+   "passed": true,
+   "detail": "1 times"
+  },
+  {
+   "name": "[a4] Visitor Log in the PDF matches the data line for line (6,000 rows)",
+   "passed": true,
+   "detail": "parsed 6000 rows"
+  },
+  {
+   "name": "[a4] the book has a clickable contents page and bookmarks",
+   "passed": true,
+   "detail": "24 bookmarks, 23 links on the contents page"
+  },
+  {
+   "name": "[a4] Fraunces and Nunito are embedded",
+   "passed": true,
+   "detail": "AAAAAA+Caveat-Medium, AAAAAA+CourierPrime-Bold, AAAAAA+CourierPrime-Regular, AAAAAA+Fraunces-Italic, AAAAAA+Fraunces-SemiBold, AAAAAA+Nunito-Bold, AAAAAA+Nunito-ExtraBold, AAAAAA+Nunito-Italic, AAAAAA+Nunito-Regular, Helvetica"
+  },
+  {
+   "name": "[a4] solution file names the same killer the code found",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] solution walkthrough counts match the code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] every clue is printed word for word in the case book",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] all 54 hints are printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] the killer's name appears exactly once in the case book (their line in the log)",
+   "passed": true,
+   "detail": "1 times"
+  },
+  {
+   "name": "[ipad] Visitor Log in the PDF matches the data line for line (6,000 rows)",
+   "passed": true,
+   "detail": "parsed 6000 rows"
+  },
+  {
+   "name": "[ipad] the book has a clickable contents page and bookmarks",
+   "passed": true,
+   "detail": "24 bookmarks, 23 links on the contents page"
+  },
+  {
+   "name": "[ipad] Fraunces and Nunito are embedded",
+   "passed": true,
+   "detail": "AAAAAA+Caveat-Medium, AAAAAA+CourierPrime-Bold, AAAAAA+CourierPrime-Regular, AAAAAA+Fraunces-Italic, AAAAAA+Fraunces-SemiBold, AAAAAA+Nunito-Bold, AAAAAA+Nunito-ExtraBold, AAAAAA+Nunito-Italic, AAAAAA+Nunito-Regular, Helvetica"
+  },
+  {
+   "name": "[ipad] solution file names the same killer the code found",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] solution walkthrough counts match the code",
+   "passed": true,
+   "detail": ""
+  }
+ ],
+ "answer": {
+  "entry": 1157,
+  "ticket": 2719,
+  "first": "Isabel",
+  "last": "Pettit",
+  "town": "Gloamford",
+  "gate": "West",
+  "stall": 33
+ },
+ "necessity": {
+  "1": 2,
+  "2": 2,
+  "3": 3,
+  "4": 2,
+  "5": 2,
+  "6": 3,
+  "7": 2,
+  "8": 2,
+  "9": 2,
+  "10": 2,
+  "11": 2,
+  "12": 2,
+  "A": 2,
+  "B": 3,
+  "C": 2,
+  "D": 3,
+  "E": 4,
+  "F": 4
+ },
+ "alts": [
+  {
+   "clue": "Clue 3",
+   "reading": "N itself left out (only O to Z)",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Clue 5",
+   "reading": "Y counted as a vowel",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Clue 6",
+   "reading": "4000 itself counted as \u201cbelow\u201d",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Clue 7",
+   "reading": "\u201cbigger\u201d read as \u201cthe same or bigger\u201d",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Evidence A",
+   "reading": "only the gargoyle gate beside the Laboratory Tower",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Evidence B",
+   "reading": "first and last minutes of each storm excluded",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Evidence C",
+   "reading": "strictly before 19:52",
+   "survivors": 1,
+   "same": true
+  }
+ ],
+ "walk": [
+  {
+   "id": "B",
+   "label": "Evidence B",
+   "out": 3362,
+   "left": 2638
+  },
+  {
+   "id": "A",
+   "label": "Evidence A",
+   "out": 1195,
+   "left": 1443
+  },
+  {
+   "id": "C",
+   "label": "Evidence C",
+   "out": 221,
+   "left": 1222
+  },
+  {
+   "id": "D",
+   "label": "Evidence D",
+   "out": 1004,
+   "left": 218
+  },
+  {
+   "id": "E",
+   "label": "Evidence E",
+   "out": 122,
+   "left": 96
+  },
+  {
+   "id": "F",
+   "label": "Evidence F",
+   "out": 50,
+   "left": 46
+  },
+  {
+   "id": "11",
+   "label": "Clue 11",
+   "out": 17,
+   "left": 29
+  },
+  {
+   "id": "10",
+   "label": "Clue 10",
+   "out": 10,
+   "left": 19
+  },
+  {
+   "id": "9",
+   "label": "Clue 9",
+   "out": 3,
+   "left": 16
+  },
+  {
+   "id": "6",
+   "label": "Clue 6",
+   "out": 4,
+   "left": 12
+  },
+  {
+   "id": "7",
+   "label": "Clue 7",
+   "out": 1,
+   "left": 11
+  },
+  {
+   "id": "8",
+   "label": "Clue 8",
+   "out": 3,
+   "left": 8
+  },
+  {
+   "id": "1",
+   "label": "Clue 1",
+   "out": 1,
+   "left": 7
+  },
+  {
+   "id": "2",
+   "label": "Clue 2",
+   "out": 1,
+   "left": 6
+  },
+  {
+   "id": "3",
+   "label": "Clue 3",
+   "out": 2,
+   "left": 4
+  },
+  {
+   "id": "4",
+   "label": "Clue 4",
+   "out": 1,
+   "left": 3
+  },
+  {
+   "id": "5",
+   "label": "Clue 5",
+   "out": 1,
+   "left": 2
+  },
+  {
+   "id": "12",
+   "label": "Clue 12",
+   "out": 1,
+   "left": 1
+  }
+ ],
+ "finalists": [
+  {
+   "ticket": 1317,
+   "name": "Tobias Sutton",
+   "clue": "B"
+  },
+  {
+   "ticket": 2316,
+   "name": "Ursula Onslow",
+   "clue": "B"
+  },
+  {
+   "ticket": 922,
+   "name": "Hannah Ibbott",
+   "clue": "3"
+  },
+  {
+   "ticket": 4829,
+   "name": "Nora Witton",
+   "clue": "6"
+  },
+  {
+   "ticket": 1234,
+   "name": "Lucian Tasker",
+   "clue": "12"
+  },
+  {
+   "ticket": 1245,
+   "name": "Fabian Wallis",
+   "clue": "D"
+  },
+  {
+   "ticket": 3446,
+   "name": "Dorian Witton",
+   "clue": "E"
+  },
+  {
+   "ticket": 1795,
+   "name": "Martha Wallis",
+   "clue": "11"
+  },
+  {
+   "ticket": 2794,
+   "name": "Ezra Wilmot",
+   "clue": "9"
+  },
+  {
+   "ticket": 543,
+   "name": "Magnus Witton",
+   "clue": "E"
+  },
+  {
+   "ticket": 1618,
+   "name": "Miriam Tebbit",
+   "clue": "D"
+  },
+  {
+   "ticket": 2515,
+   "name": "Philippa Phelps",
+   "clue": "2"
+  },
+  {
+   "ticket": 1312,
+   "name": "Marian Quayle",
+   "clue": "5"
+  },
+  {
+   "ticket": 899,
+   "name": "Maisie Osgood",
+   "clue": "10"
+  },
+  {
+   "ticket": 3842,
+   "name": "Magnus Sefton",
+   "clue": "7"
+  },
+  {
+   "ticket": 2196,
+   "name": "Walter Jessop",
+   "clue": "3"
+  },
+  {
+   "ticket": 2963,
+   "name": "Walter Pennick",
+   "clue": "F"
+  },
+  {
+   "ticket": 3387,
+   "name": "Winnie Pocock",
+   "clue": "4"
+  },
+  {
+   "ticket": 1745,
+   "name": "Lena Sallis",
+   "clue": "A"
+  },
+  {
+   "ticket": 2124,
+   "name": "Fabian Swales",
+   "clue": "E"
+  },
+  {
+   "ticket": 2083,
+   "name": "Vera Skelton",
+   "clue": "F"
+  },
+  {
+   "ticket": 4509,
+   "name": "Ursula Padley",
+   "clue": "6"
+  },
+  {
+   "ticket": 2385,
+   "name": "Bella Pellow",
+   "clue": "1"
+  },
+  {
+   "ticket": 606,
+   "name": "Cora Pickles",
+   "clue": "F"
+  },
+  {
+   "ticket": 1243,
+   "name": "Dahlia Stokes",
+   "clue": "8"
+  },
+  {
+   "ticket": 1123,
+   "name": "Bertha Swales",
+   "clue": "C"
+  }
+ ],
+ "seal": "045",
+ "pages": {
+  "book_letter": 138,
+  "solution_letter": 14,
+  "book_a4": 130,
+  "solution_a4": 14,
+  "book_ipad": 117,
+  "solution_ipad": 11
+ }
+}
