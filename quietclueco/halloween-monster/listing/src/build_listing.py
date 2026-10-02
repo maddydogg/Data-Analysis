@@ -9,14 +9,14 @@ import json, os, re, subprocess, sys
 from PIL import Image
 import imageio_ffmpeg
 import pymupdf as fitz
-import kit, mockups, video_noir, delivery
+import kit, mockups, video_found_footage as trailer, delivery
 import case_listing as CL
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LISTING = os.path.dirname(HERE)
 MOCK = os.path.join(LISTING, "mockups")
-VID = os.path.join(LISTING, "video", f"{CL.SLUG}_noir-video_1080.mp4")
-POSTER = os.path.join(LISTING, "video", f"{CL.SLUG}_noir-video_poster.png")
+VID = os.path.join(LISTING, "video", f"{CL.SLUG}_found-footage-trailer_1080.mp4")
+POSTER = os.path.join(LISTING, "video", f"{CL.SLUG}_found-footage-trailer_poster.png")
 DELIV = os.path.join(CL.CASE, "delivery")
 
 def probe(path):
@@ -61,7 +61,7 @@ def main():
        not kit.spoiler_scan([("pdf", "log", A.L.doc[A.log_page].get_text())], bad), f"page {A.log_page + 1}")
 
     # video
-    n, hits_total, hit_frames = video_noir.build(VID, POSTER)
+    n, hits_total, hit_frames = trailer.build(VID, POSTER)
     ok(f"Video: every one of {n} frames checked, no spoilers", hit_frames == 0,
        f"{hit_frames} frames with hits" if hit_frames else "0 frames with hits")
     pv = probe(VID)

@@ -14,13 +14,13 @@ It is built on the same engine as case No. 1 (`../christmas-market`), with its o
 | `solution/…_SOLUTION_*.pdf` | "The Envelope": answer, epilogue, step-by-step solution, finalists and the elimination index for all 6,000 tickets |
 | `delivery/` | The 4 files to upload to Etsy: 3 case-book PDFs and `storm-over-corvenmoor_SOLUTION.zip` |
 | `listing/mockups/` | 10 listing images, 2000×2000, plus an overview sheet |
-| `listing/video/` | Listing video, 1080×1080, 14.9 s, no sound, plus a poster frame |
+| `listing/video/` | Listing video: the found-footage trailer `storm-over-corvenmoor_found-footage-trailer_1080.mp4` (1080×1080, 14.9 s, no sound) with a poster frame and storyboard; the earlier noir video and the five trailer style concepts are kept for reference |
 | `listing/etsy_listing.md` | Title, 13 tags, price and description, ready to paste |
 | `listing/spoiler_check.md` / `.json` | Spoiler and format check of every mockup, every video frame and the delivery folder |
 | `verification_report.md` / `.json` | Code verification of the puzzle and the PDFs |
 | `previews/<version>/page-NNN.png` | PNG preview of every page |
 | `src/` | Generator: `case.py` (story, world, clues), `hints.py`, `generate.py`, `verify.py`, `render.py`, `build.py` |
-| `listing/src/` | Listing kit: `mockups.py`, `video_noir.py`, `delivery.py`, `build_listing.py` |
+| `listing/src/` | Listing kit: `mockups.py`, `video_found_footage.py` (trailer), `make_cover_art.py`, `horror_heroes.py`, `trailer_concepts.py`, `delivery.py`, `build_listing.py` |
 
 ## Rebuild
 

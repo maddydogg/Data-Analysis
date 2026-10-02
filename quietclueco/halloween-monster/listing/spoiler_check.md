@@ -54,8 +54,8 @@ How the spoiler check works: every mockup and every video frame is built from re
 - listing/mockups/storm-over-corvenmoor_09-who-its-for.png
 - listing/mockups/storm-over-corvenmoor_10-what-you-get.png
 - listing/mockups/storm-over-corvenmoor_overview.png
-- listing/video/storm-over-corvenmoor_noir-video_1080.mp4
-- listing/video/storm-over-corvenmoor_noir-video_poster.png
+- listing/video/storm-over-corvenmoor_found-footage-trailer_1080.mp4
+- listing/video/storm-over-corvenmoor_found-footage-trailer_poster.png
 - delivery/storm-over-corvenmoor_SOLUTION.zip
 - delivery/storm-over-corvenmoor_iPad.pdf
 - delivery/storm-over-corvenmoor_print-A4.pdf
