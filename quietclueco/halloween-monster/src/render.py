@@ -375,60 +375,21 @@ def section_header(key):
             "check": "Check your answer", "thanks": ""}.get(key, "")
 
 # ---- cover
+ART = os.path.join(HERE, "art")
+
 def draw_cover(b):
+    """Full-bleed cover art (1930s monster-movie one-sheet), rendered for this page shape by
+    listing/src/make_cover_art.py. The title is also written as invisible text so the PDF stays
+    searchable and accessible."""
     c, Lx = b.c, b.L; W, H = Lx.W, Lx.H
-    s = W / 612
-    c.setFillColor(GREEN); c.rect(0, 0, W, H, fill=1, stroke=0)
-    for i in range(6):                                     # darker sky towards the top
-        c.setFillColor(Color(0.05, 0.03, 0.09, alpha=0.12))
-        c.rect(0, H * (0.55 + i * 0.075), W, H, fill=1, stroke=0)
-    rng = random.Random(31)
-    c.setFillColor(Color(0.95, 0.92, 0.86, alpha=0.95)); c.circle(W * 0.84, H * 0.905, 40 * s, fill=1, stroke=0)
-    c.setFillColor(Color(0.95, 0.92, 0.86, alpha=0.12)); c.circle(W * 0.84, H * 0.905, 58 * s, fill=1, stroke=0)
-    for _ in range(40):                                    # faint stars
-        c.setFillColor(Color(0.95, 0.92, 0.86, alpha=rng.uniform(0.2, 0.6)))
-        c.circle(rng.uniform(0, W), rng.uniform(H * 0.86, H), rng.uniform(0.5, 1.4) * s, fill=1, stroke=0)
-    bolt(c, W * 0.12, H * 0.985, 70 * s, MUST); bolt(c, W * 0.62, H * 0.975, 46 * s, Color(0.9, 0.54, 0.17, alpha=0.7))
-    for bx, by, br in ((0.3, 0.93, 13), (0.42, 0.885, 9), (0.7, 0.86, 11), (0.92, 0.8, 8), (0.07, 0.82, 10)):
-        bat(c, W * bx, H * by, br * 2.1 * s, HexColor("#0D0A13"))
-    # castle silhouette
-    base = H * 0.13
-    dark = HexColor("#16111F")
-    c.setFillColor(dark); c.rect(0, 0, W, base, fill=1, stroke=0)
-    c.rect(W * 0.12, base, W * 0.76, H * 0.12, fill=1, stroke=0)
-    for i in range(16):
-        c.rect(W * 0.12 + i * W * 0.76 / 16, base + H * 0.12, W * 0.76 / 32, 9 * s, fill=1, stroke=0)
-    for tx, th, tw in ((0.1, 0.22, 0.12), (0.3, 0.18, 0.1), (0.5, 0.3, 0.13), (0.7, 0.2, 0.1), (0.9, 0.24, 0.12)):
-        tower(c, W * tx, base, W * tw, H * th, col=dark, roof=dark, window=HexColor("#F2B45A"))
-    bolt(c, W * 0.535, H * 0.66, 120 * s, HexColor("#F5D58A"))       # lightning strikes the Laboratory Tower
-    c.setFillColor(HexColor("#F2B45A"))
-    for i in range(9):
-        c.rect(W * 0.17 + i * W * 0.075, base + H * 0.045, 6 * s, 10 * s, fill=1, stroke=0)
-    for i, px in enumerate((0.08, 0.22, 0.78, 0.93)):
-        pumpkin(c, W * px, base * 0.55, (16 + (i % 2) * 5) * s, MUST, face=True, face_col=HexColor("#2A160A"))
-    # title panel
-    pw, ph = W * 0.78, H * 0.36
-    px, py = (W - pw) / 2, H * 0.46
-    c.setFillColor(PARCH); c.roundRect(px, py, pw, ph, 14, fill=1, stroke=0)
-    c.setStrokeColor(MUST); c.setLineWidth(2); c.roundRect(px + 7, py + 7, pw - 14, ph - 14, 10, fill=0, stroke=1)
-    monster_head(c, W / 2, py + ph + 4 * s, 30 * s)
-    c.setFillColor(CRAN); c.setFont("Nunito-ExtraBold", 10 * s)
-    c.drawCentredString(W / 2, py + ph - 48 * s, "A SPOOKY MURDER MYSTERY LOGIC PUZZLE")
-    c.setFillColor(GREEN); c.setFont("Fraunces-SemiBold", 44 * s)
-    c.drawCentredString(W / 2, py + ph - 98 * s, "Storm over")
-    c.drawCentredString(W / 2, py + ph - 144 * s, "Corvenmoor")
-    c.setFont("Fraunces-Italic", 15 * s); c.setFillColor(INK)
-    c.drawCentredString(W / 2, py + ph - 172 * s, C.SUBTITLE)
-    c.setStrokeColor(MUST); c.setLineWidth(1.2)
-    c.line(W / 2 - 90 * s, py + ph - 186 * s, W / 2 + 90 * s, py + ph - 186 * s)
-    c.setFont("Nunito-Bold", 13 * s); c.setFillColor(GREEN)
-    c.drawCentredString(W / 2, py + 44 * s, C.TAGLINE)
-    c.setFont("Nunito", 10.5 * s); c.setFillColor(SOFT)
-    c.drawCentredString(W / 2, py + 25 * s, f"Solo or together · {C.PLAYERS} · {C.PLAYTIME}")
-    # brand
-    c.setFillColor(PARCH); c.setFont("Fraunces-SemiBold", 16 * s)
-    c.drawCentredString(W / 2, 30 * s, C.BRAND)
-    c.setFont("Nunito", 8 * s); c.drawCentredString(W / 2, 17 * s, f"Printable case file · {C.CASE_NO}")
+    art = os.path.join(ART, f"cover_{Lx.fmt}.jpg")
+    if not os.path.exists(art):
+        raise FileNotFoundError(f"{art} is missing: run listing/src/make_cover_art.py first")
+    c.drawImage(art, 0, 0, W, H)
+    t = c.beginText(); t.setTextRenderMode(3); t.setFont("Nunito", 12)
+    for i, line in enumerate([C.TITLE, C.SUBTITLE, C.TAGLINE, f"{C.BRAND} · Printable case file · {C.CASE_NO}"]):
+        t.setTextOrigin(40, H - 60 - i * 16); t.textLine(line)
+    c.drawText(t)
 
 # ---- how to play
 def draw_howto(b):

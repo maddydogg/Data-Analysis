@@ -240,35 +240,43 @@ def bottom_strip(f, text=TAG, bg=(0x0A, 0x08, 0x0C), fg=(0xF2, 0xEC, 0xE0)):
     tracked(f, S / 2, S - 92, text.upper(), hf("oswald", 48, 500), fg, 4)
 
 # ---------------------------------------------------------------- 1. monster-movie poster
-def cover_monster_movie():
-    f = kit.Frame(CW, CH, (0, 0, 0)); img = f.img
+def cover_monster_movie(W=CW, H=CH):
+    """The chosen cover: a 1930s monster-movie one-sheet. Drawn for any page size: k scales
+    everything to the width, and the vertical layout is anchored to the top and bottom edges."""
+    k = W / 1200
+    f = kit.Frame(int(W), int(H), (0, 0, 0)); img = f.img
     gradient(img, (0x05, 0x0A, 0x07), (0x1C, 0x36, 0x1E))
-    lightning(img, bolt_path(170, -20, 700, 11, 60), 7, branch_seed=2)
-    lightning(img, bolt_path(1050, -20, 560, 5, 50), 5)
-    glow(img, ("ellipse", [180, 260, 1020, 1180]), (0x9B, 0xC5, 0x3D), 120, 120)
-    monster_bust(img, 600, 600, 470, (0x06, 0x0A, 0x07), rim=(0xB6, 0xE0, 0x4A), rim_blur=14)
-    d = ImageDraw.Draw(img)
-    castle(d, 1330, CW, (0x03, 0x05, 0x04), [(150, 380, 120), (420, 300, 100), (800, 470, 130), (1060, 340, 110)],
-           lit=(0xF2, 0xC1, 0x4E))
-    d.rectangle([0, 1330, CW, CH], fill=(0x03, 0x05, 0x04))
-    tracked(f, CW / 2, 70, "6,000 VISITORS. ONE OF THEM IS A KILLER.", fit("6,000 VISITORS. ONE OF THEM IS A KILLER.", "bebas", 76, 1040, track=6), (0xF4, 0xEA, 0xD0), 6)
+    yT = H - 620 * k                                   # top of the title block
+    lightning(img, bolt_path(170 * k, 150 * k, 760 * k, 11, 60 * k), max(2, int(7 * k)), branch_seed=2)
+    lightning(img, bolt_path(1050 * k, 150 * k, 620 * k, 5, 50 * k), max(2, int(5 * k)))
+    sF = min(1.0, (yT - 150 * k) / (1030 * k))
+    s = 470 * k * sF; cx = W / 2; cy = 150 * k + (yT - 150 * k) * 0.43
+    glow(img, ("ellipse", [cx - 420 * k, cy - 340 * k * sF, cx + 420 * k, cy + 580 * k * sF]), (0x9B, 0xC5, 0x3D), 120, 120 * k)
+    monster_bust(img, cx, cy, s, (0x06, 0x0A, 0x07), rim=(0xB6, 0xE0, 0x4A), rim_blur=14 * k)
+    d = ImageDraw.Draw(img); yC = H - 470 * k
+    castle(d, yC, W, (0x03, 0x05, 0x04), [(150 * k, 380 * k, 120 * k), (420 * k, 300 * k, 100 * k),
+                                          (800 * k, 470 * k, 130 * k), (1060 * k, 340 * k, 110 * k)], lit=(0xF2, 0xC1, 0x4E))
+    d.rectangle([0, yC, W, H], fill=(0x03, 0x05, 0x04))
+    tag = "6,000 VISITORS. ONE OF THEM IS A KILLER."
+    tracked(f, W / 2, 70 * k, tag, fit(tag, "bebas", 76 * k, 1040 * k, track=6 * k), (0xF4, 0xEA, 0xD0), 6 * k)
     # title: yellow with a red block extrusion, tilted like a hand-painted one-sheet
-    t = kit.Frame(CW, 560, (0, 0, 0)); t.img = Image.new("RGBA", (CW, 560), (0, 0, 0, 0)); td = t.draw()
-    lines = [("STORM OVER", hf("abril", 120)), ("CORVENMOOR", fit("CORVENMOOR", "abril", 210, 1080))]
-    y = 30
+    th = int(560 * k)
+    t = kit.Frame(int(W), th, (0, 0, 0)); t.img = Image.new("RGBA", (int(W), th), (0, 0, 0, 0)); td = t.draw()
+    lines = [("STORM OVER", hf("abril", 120 * k)), ("CORVENMOOR", fit("CORVENMOOR", "abril", 210 * k, 1080 * k))]
+    y = 30 * k
     for text, fnt in lines:
         w = fnt.getlength(text)
-        for k in range(16, 0, -1):
-            td.text((CW / 2 - w / 2 + k, y + k), text, font=fnt, fill=(0x8E, 0x1C, 0x14))
-        td.text((CW / 2 - w / 2, y), text, font=fnt, fill=(0xF2, 0xC1, 0x4E), stroke_width=4, stroke_fill=(0x1A, 0x08, 0x05))
+        for e in range(int(16 * k), 0, -1):
+            td.text((W / 2 - w / 2 + e, y + e), text, font=fnt, fill=(0x8E, 0x1C, 0x14))
+        td.text((W / 2 - w / 2, y), text, font=fnt, fill=(0xF2, 0xC1, 0x4E), stroke_width=max(2, int(4 * k)), stroke_fill=(0x1A, 0x08, 0x05))
         t.note("drawn", "text", text)
         y += fnt.size * 1.02
     rot = t.img.rotate(4, resample=Image.BICUBIC, expand=False)
-    img.alpha_composite(rot, (0, 1180)); f.sources += t.sources
-    bb = hf("oswald", 34, 300)
-    tracked(f, CW / 2, 1655, "QUIETCLUECO PRESENTS  ·  A HALLOWEEN MURDER MYSTERY PUZZLE", bb, (0xD8, 0xCF, 0xB8), 3)
-    tracked(f, CW / 2, 1702, "18 CLUES  ·  1–4 DETECTIVES  ·  PRINT AT HOME OR PLAY ON iPAD", bb, (0xD8, 0xCF, 0xB8), 3)
-    aged_paper(img, 3)
+    img.alpha_composite(rot, (0, int(yT))); f.sources += t.sources
+    bb = hf("oswald", 34 * k, 300)
+    tracked(f, W / 2, H - 145 * k, "QUIETCLUECO PRESENTS  ·  A HALLOWEEN MURDER MYSTERY PUZZLE", bb, (0xD8, 0xCF, 0xB8), 3 * k)
+    tracked(f, W / 2, H - 98 * k, "18 CLUES  ·  1–4 DETECTIVES  ·  PRINT AT HOME OR PLAY ON iPAD", bb, (0xD8, 0xCF, 0xB8), 3 * k)
+    aged_paper(img, 3, border=int(26 * k))
     return f
 
 def hero_monster_movie(cov):

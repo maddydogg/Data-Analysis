@@ -9,7 +9,7 @@ How the spoiler check works: every mockup and every video frame is built from re
 | 1 | Spoiler list loaded from the verification report | PASS | 95 forbidden tokens: killer name and ticket, Sealed Check number, 26 finalists (names + tickets), 36 level-2/3 hints, solution headings |
 | 2 | Control test: the scanner flags the killer's log page, the solution and the check page | PASS | 10 hits in the control sources |
 | 3 | Mockup 01-main: 2000x2000 PNG | PASS | (2000, 2000) |
-| 4 | Mockup 01-main: no spoilers in any visible text (8 sources) | PASS |  |
+| 4 | Mockup 01-main: no spoilers in any visible text (7 sources) | PASS |  |
 | 5 | Mockup 02-whats-inside: 2000x2000 PNG | PASS | (2000, 2000) |
 | 6 | Mockup 02-whats-inside: no spoilers in any visible text (8 sources) | PASS |  |
 | 7 | Mockup 03-six-documents: 2000x2000 PNG | PASS | (2000, 2000) |
@@ -32,9 +32,9 @@ How the spoiler check works: every mockup and every video frame is built from re
 | 24 | Video: every one of 447 frames checked, no spoilers | PASS | 0 frames with hits |
 | 25 | Video: 1080x1080, 12-15 s, no sound | PASS | {"seconds": 14.9, "width": 1080, "height": 1080, "audio": false, "fps": "30"} |
 | 26 | Delivery folder has exactly 4 files (Etsy allows 5) | PASS | storm-over-corvenmoor_SOLUTION.zip, storm-over-corvenmoor_iPad.pdf, storm-over-corvenmoor_print-A4.pdf, storm-over-corvenmoor_print-US-Letter.pdf |
-| 27 | Delivery storm-over-corvenmoor_print-US-Letter.pdf is under 20 MB | PASS | 0.72 MB |
-| 28 | Delivery storm-over-corvenmoor_print-A4.pdf is under 20 MB | PASS | 0.72 MB |
-| 29 | Delivery storm-over-corvenmoor_iPad.pdf is under 20 MB | PASS | 0.7 MB |
+| 27 | Delivery storm-over-corvenmoor_print-US-Letter.pdf is under 20 MB | PASS | 2.58 MB |
+| 28 | Delivery storm-over-corvenmoor_print-A4.pdf is under 20 MB | PASS | 2.74 MB |
+| 29 | Delivery storm-over-corvenmoor_iPad.pdf is under 20 MB | PASS | 1.75 MB |
 | 30 | Delivery storm-over-corvenmoor_SOLUTION.zip is under 20 MB | PASS | 0.41 MB |
 | 31 | Solution ZIP holds the three solution PDFs and is intact | PASS | storm-over-corvenmoor_SOLUTION_print-US-Letter.pdf, storm-over-corvenmoor_SOLUTION_print-A4.pdf, storm-over-corvenmoor_SOLUTION_iPad.pdf |
 | 32 | Delivery storm-over-corvenmoor_iPad.pdf is a case book, not a solution | PASS |  |

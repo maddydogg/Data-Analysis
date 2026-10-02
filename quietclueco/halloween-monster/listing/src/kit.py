@@ -9,11 +9,12 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 import pymupdf as fitz
 
 # ---------------------------------------------------------------- brand
-# Halloween palette (names kept from the house template): GREEN = night violet, CRAN = burnt
-# pumpkin, PARCH = bone, MUST = pumpkin.
-GREEN = (0x2E, 0x24, 0x40); CRAN = (0xB4, 0x50, 0x1F); PARCH = (0xF2, 0xEC, 0xE0)
-MUST = (0xE5, 0x8A, 0x2B); INK = (0x1E, 0x1B, 0x18); WHITE = (255, 255, 255)
-DEEP = (0x1C, 0x16, 0x28); PARCH_DARK = (0xE4, 0xDC, 0xCD); SOFT = (0x6B, 0x62, 0x59)
+# Monster-movie poster palette (names kept from the house template): GREEN = poster black-green,
+# CRAN = poster red, PARCH = aged cream, MUST = poster yellow.
+GREEN = (0x0E, 0x1A, 0x12); CRAN = (0x9E, 0x24, 0x18); PARCH = (0xF4, 0xEA, 0xD0)
+MUST = (0xF2, 0xC1, 0x4E); INK = (0x1E, 0x1B, 0x18); WHITE = (255, 255, 255)
+DEEP = (0x05, 0x0A, 0x07); PARCH_DARK = (0xE2, 0xD3, 0xAE); SOFT = (0x6B, 0x62, 0x59)
+ACID = (0x9B, 0xC5, 0x3D)
 MOSS = (0x5E, 0x7F, 0x35); MONSTER = (0x8D, 0xB2, 0x5A)
 
 FONT_DIR = None
@@ -22,13 +23,19 @@ def set_font_dir(d):
     FONT_DIR = d
 
 _fonts = {}
+HORROR_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts_horror")
 def font(name, size):
+    """Poster fonts: Abril Fatface for display, IM Fell for italic captions, Oswald for body and labels."""
     key = (name, int(size))
     if key not in _fonts:
-        files = {"display": "Fraunces-SemiBold", "display-italic": "Fraunces-Italic",
-                 "body": "Nunito-Regular", "bold": "Nunito-Bold", "black": "Nunito-ExtraBold",
-                 "hand": "Caveat-Medium"}
-        _fonts[key] = ImageFont.truetype(os.path.join(FONT_DIR, files[name] + ".ttf"), int(size))
+        files = {"display": (HORROR_DIR, "AbrilFatface-Regular.ttf", None), "display-italic": (HORROR_DIR, "IMFeENit28P.ttf", None),
+                 "body": (HORROR_DIR, "Oswald[wght].ttf", 400), "bold": (HORROR_DIR, "Oswald[wght].ttf", 500),
+                 "black": (HORROR_DIR, "Oswald[wght].ttf", 700), "hand": (FONT_DIR, "Caveat-Medium.ttf", None)}
+        d, fn, w = files[name]
+        f = ImageFont.truetype(os.path.join(d, fn), int(size))
+        if w:
+            f.set_variation_by_axes([w])
+        _fonts[key] = f
     return _fonts[key]
 
 # ---------------------------------------------------------------- PDF pages
@@ -168,19 +175,24 @@ def pumpkin(frame, cx, cy, r, col=MUST, face=True):
         d.polygon([(cx + px * r, cy + py * r) for px, py in mouth], fill=fc)
 
 def snow_field(frame, n, seed, area=None, alpha=(60, 190), size=(6, 22)):
-    """Night sky: faint stars plus a few bats. (Name kept from the house template.)"""
-    rng = random.Random(seed)
-    layer = Image.new("RGBA", frame.img.size, (0, 0, 0, 0))
-    d = ImageDraw.Draw(layer)
-    x0, y0, x1, y1 = area or (0, 0, frame.w, frame.h)
-    for _ in range(n):
-        r = rng.uniform(*size) * 0.22
-        x, y = rng.uniform(x0, x1), rng.uniform(y0, y1)
-        d.ellipse([x - r, y - r, x + r, y + r], fill=PARCH + (int(rng.uniform(*alpha) * 0.8),))
-    for _ in range(max(3, n // 18)):
-        bat(d, rng.uniform(x0, x1), rng.uniform(y0, y1), rng.uniform(size[1] * 1.6, size[1] * 3.2),
-            (0x12, 0x0D, 0x1A, int(rng.uniform(150, 230))))
-    frame.img.alpha_composite(layer)
+    """Dark poster background: black-green gradient, an acid-green glow, grain and a few bats.
+    (Name kept from the house template.)"""
+    w, h = frame.img.size; d = ImageDraw.Draw(frame.img)
+    for y in range(h):
+        t = y / h
+        d.line([(0, y), (w, y)], fill=tuple(int(a + (b - a) * t) for a, b in zip(DEEP, (0x1C, 0x36, 0x1E))) + (255,))
+    g = Image.new("RGBA", frame.img.size, (0, 0, 0, 0))
+    ImageDraw.Draw(g).ellipse([w * 0.15, h * 0.2, w * 0.85, h * 0.85], fill=ACID + (60,))
+    frame.img.alpha_composite(g.filter(ImageFilter.GaussianBlur(w * 0.1)))
+    rng = random.Random(seed); lay = Image.new("RGBA", frame.img.size, (0, 0, 0, 0)); ld = ImageDraw.Draw(lay)
+    for _ in range(max(3, n // 25)):
+        bat(ld, rng.uniform(0, w), rng.uniform(0, h * 0.5), rng.uniform(size[1] * 1.6, size[1] * 3), (0x02, 0x04, 0x03, 200))
+    frame.img.alpha_composite(lay)
+    grain(frame.img, 20)
+
+def grain(img, amount=20):
+    n = Image.effect_noise(img.size, 60).convert("L")
+    img.alpha_composite(Image.merge("RGBA", (n, n, n, Image.new("L", img.size, amount))))
 
 def string_lights(frame, y, sag, n, seed=1, width=None):
     d = frame.draw(); w = width or frame.w

@@ -16,7 +16,7 @@
    "detail": "(2000, 2000)"
   },
   {
-   "name": "Mockup 01-main: no spoilers in any visible text (8 sources)",
+   "name": "Mockup 01-main: no spoilers in any visible text (7 sources)",
    "passed": true,
    "detail": ""
   },
@@ -133,17 +133,17 @@
   {
    "name": "Delivery storm-over-corvenmoor_print-US-Letter.pdf is under 20 MB",
    "passed": true,
-   "detail": "0.72 MB"
+   "detail": "2.58 MB"
   },
   {
    "name": "Delivery storm-over-corvenmoor_print-A4.pdf is under 20 MB",
    "passed": true,
-   "detail": "0.72 MB"
+   "detail": "2.74 MB"
   },
   {
    "name": "Delivery storm-over-corvenmoor_iPad.pdf is under 20 MB",
    "passed": true,
-   "detail": "0.7 MB"
+   "detail": "1.75 MB"
   },
   {
    "name": "Delivery storm-over-corvenmoor_SOLUTION.zip is under 20 MB",
@@ -181,17 +181,17 @@
  "delivery": [
   {
    "file": "storm-over-corvenmoor_print-US-Letter.pdf",
-   "mb": 0.72,
+   "mb": 2.58,
    "ok": true
   },
   {
    "file": "storm-over-corvenmoor_print-A4.pdf",
-   "mb": 0.72,
+   "mb": 2.74,
    "ok": true
   },
   {
    "file": "storm-over-corvenmoor_iPad.pdf",
-   "mb": 0.7,
+   "mb": 1.75,
    "ok": true
   },
   {

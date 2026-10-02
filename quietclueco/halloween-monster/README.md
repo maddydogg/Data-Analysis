@@ -26,13 +26,18 @@ It is built on the same engine as case No. 1 (`../christmas-market`), with its o
 
 ```bash
 pip install reportlab pymupdf fonttools pillow imageio-ffmpeg
-cd src && python3 build.py                  # case book, solution, checks, previews
-cd ../listing/src && python3 build_listing.py   # mockups, video, delivery folder, spoiler check
+cd listing/src && python3 make_cover_art.py    # cover art for Letter, A4 and iPad -> src/art/
+cd ../../src && python3 build.py               # case book, solution, checks, previews
+cd ../listing/src && python3 build_listing.py  # mockups, video, delivery folder, spoiler check
 ```
 
 Both builds are deterministic and exit with a non-zero code if any check fails.
 
 ## Design notes
+
+- Cover and listing images use a 1930s monster-movie one-sheet style: a hooded figure with glowing eyes over the castle, lightning, a tilted yellow title with a red block shadow, a billing block and aged paper. The cover art is rendered for each page shape (`src/art/cover_*.jpg`, about 250 dpi for print) and placed full-bleed on page 1; the title is also there as invisible text, so the PDF stays searchable.
+- Poster fonts (Abril Fatface, Bebas Neue, Oswald, IM Fell, Cinzel, UnifrakturMaguntia: SIL OFL; Special Elite: Apache 2.0) are in `listing/src/fonts_horror/` with their licence files.
+- `listing/mockups/horror-heroes/` holds the five cover concepts that were compared; concept 1 was chosen.
 
 - The monster is our own design: a stitched green mask with shaggy hair and copper coils above the ears. There are no neck bolts or flat-topped head, and no names from existing films, books or competitor listings. `verify.py` checks the text for a list of banned names.
 - The place name Corvenmoor was checked against Etsy listings (via EverBee) and a web search before use.

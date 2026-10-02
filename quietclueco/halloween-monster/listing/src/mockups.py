@@ -24,14 +24,22 @@ def wrap(f, text, fnt, width):
     return "\n".join(lines)
 
 def paper_bg(f, seed=1):
-    """Bone-coloured paper with a faint bat pattern."""
-    layer = Image.new("RGBA", f.img.size, (0, 0, 0, 0))
-    d = ImageDraw.Draw(layer)
-    step = f.w // 8
-    for i in range(0, f.w, step):
-        for j in range(0, f.h, step):
-            kit.bat(d, i + step / 2 + (j // step % 2) * step * 0.24, j + step / 2, step * 0.11, PARCH_DARK + (255,))
-    f.img.alpha_composite(layer)
+    """Aged poster paper: cream with fold creases, foxing and grain."""
+    w, h = f.img.size
+    lay = Image.new("RGBA", f.img.size, (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    d.line([(w / 2, 0), (w / 2, h)], fill=(0x9A, 0x86, 0x60, 40), width=4)
+    for y in (h / 3, 2 * h / 3):
+        d.line([(0, y), (w, y)], fill=(0x9A, 0x86, 0x60, 34), width=4)
+    import random as _r
+    rng = _r.Random(seed)
+    for _ in range(90):
+        x, y, r = rng.uniform(0, w), rng.uniform(0, h), rng.uniform(6, 26)
+        d.ellipse([x - r, y - r, x + r, y + r], fill=(0xA0, 0x80, 0x40, 22))
+    f.img.alpha_composite(lay)
+    edge = Image.radial_gradient("L").resize((w, h)).point(lambda v: int(max(0, v - 120) * 0.9))
+    burn = Image.new("RGBA", (w, h), (0x8A, 0x66, 0x30, 255)); burn.putalpha(edge)
+    f.img.alpha_composite(burn)
+    kit.grain(f.img, 18)
 
 paper_bg_small = paper_bg
 
@@ -77,24 +85,9 @@ def holly_lane(r):
 
 # ---------------------------------------------------------------- the ten mockups
 def m01_main(A):
-    f = kit.Frame(S, S, GREEN)
-    kit.snow_field(f, 160, 11)
-    kit.string_lights(f, 30, 70, 22)
-    cover = A.L.image(0, 1640)
-    f.paste_page(cover, 690, 1110, angle=3)
-    fnt = kit.fit_font(f, CL.WORDS["hook"], "display", 210, 600)
-    f.text((1665, 300), CL.WORDS["hook"], fnt, PARCH, anchor="ma", align="center", spacing=0.05)
-    d = f.draw(); d.line([(1470, 800), (1860, 800)], fill=MUST, width=8)
-    y = 860
-    for i, line in enumerate(CL.WORDS["promise"]):
-        pf = kit.fit_font(f, line, "black", 90, 590)
-        f.text((1665, y), line, pf, MUST if i == 2 else PARCH, anchor="ma")
-        y += 128
-    pill_f = font("black", 70)
-    kit.pill(f, (1665, 1400), CL.WORDS["badges"][0], pill_f, MUST, GREEN)
-    kit.pill(f, (1665, 1560), CL.WORDS["badges"][1], pill_f, CRAN, PARCH)
-    f.text((1665, 1860), CL.WORDS["brand"], font("display", 64), PARCH, anchor="ma")
-    return f
+    """The chosen hero: the monster-movie one-sheet under a NOW SHOWING marquee."""
+    import horror_heroes as HH
+    return HH.hero_monster_movie(HH.cover_monster_movie())
 
 def m02_inside(A):
     f = kit.Frame(S, S, PARCH); paper_bg(f)
