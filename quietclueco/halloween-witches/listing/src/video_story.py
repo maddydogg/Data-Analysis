@@ -219,13 +219,14 @@ def text_card(t, t0, lines, src, bg=(0, 0, 0)):
         y += fn.size * 1.3
     return f.img
 
-def caption(img, text, t, t0, src, col=P.GOLD):
-    """Typewriter caption in the lower letterbox bar."""
+def caption(img, text, t, t0, src, col=(0xF5, 0xC8, 0x70)):
+    """Typewriter caption in the lower letterbox bar (shrinks to fit the width)."""
     n = int(len(text) * seg(t, t0, t0 + 0.8))
     if n <= 0:
         return
     f = kit.Frame(V, V, (0, 0, 0)); f.img = img
-    P.tracked(f, V / 2, V - BAR + 40, text[:n], P.hf("cinzel", 40, 700), col, 8)
+    fnt = P.fit(text, "cinzel", 40, V - 100, 700, track=8)
+    P.tracked(f, V / 2, V - BAR + 40 + (40 - fnt.size) / 2, text[:n], fnt, col, 8)
     src += f.sources
 
 # ---------------------------------------------------------------- scenes
@@ -382,7 +383,7 @@ def letterbox(img):
     d = ImageDraw.Draw(img); d.rectangle([0, 0, V, BAR], fill=(0, 0, 0)); d.rectangle([0, V - BAR, V, V], fill=(0, 0, 0))
 
 # ---------------------------------------------------------------- the old-film look
-def film(A, img, t, i):
+def film(A, img, t, i, cuts=None):
     rng = random.Random(i * 7919)
     dx, dy = rng.uniform(-2.5, 2.5), rng.uniform(-3, 3)                     # gate weave
     out = Image.new("RGBA", (V, V), (0, 0, 0, 255)); out.alpha_composite(img.convert("RGBA"), (int(dx), int(dy)))
@@ -398,7 +399,7 @@ def film(A, img, t, i):
         x, y, r = rng.uniform(0, V), rng.uniform(0, V), rng.uniform(1.5, 5)
         d.ellipse([x - r, y - r * 0.7, x + r, y + r * 0.7], fill=(0x10, 0x0A, 0x08, rng.randint(120, 220)))
     out.alpha_composite(A.vignette)
-    if any(0 <= t - c < 1 / FPS for c in CUTS):                            # splice flash
+    if any(0 <= t - c < 1 / FPS for c in (CUTS if cuts is None else cuts)):   # splice flash
         out.alpha_composite(Image.new("RGBA", (V, V), (0xFF, 0xF4, 0xE0, 120)))
     return out
 
