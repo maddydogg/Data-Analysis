@@ -1,0 +1,139 @@
+{
+ "checks": [
+  {
+   "name": "Spoiler list loaded for both cases",
+   "passed": true,
+   "detail": "183 tokens: both killers' names and tickets, both Sealed Check numbers, 50 finalists, 72 level-2/3 hints, solution headings"
+  },
+  {
+   "name": "Control test (Storm over Corvenmoor): the scanner flags the killer's log page, the solution and the check page",
+   "passed": true,
+   "detail": "7 labels hit"
+  },
+  {
+   "name": "Control test (Full Moon over Morrowmere): the scanner flags the killer's log page, the solution and the check page",
+   "passed": true,
+   "detail": "5 labels hit"
+  },
+  {
+   "name": "Image 01-double-feature-poster: 2000x2000 JPG",
+   "passed": true,
+   "detail": "1209 KB"
+  },
+  {
+   "name": "Image 01-double-feature-poster: no spoilers of either case in any visible text (11 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Image 02-two-cases: 2000x2000 JPG",
+   "passed": true,
+   "detail": "622 KB"
+  },
+  {
+   "name": "Image 02-two-cases: no spoilers of either case in any visible text (10 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Image 03-twelve-documents: 2000x2000 JPG",
+   "passed": true,
+   "detail": "646 KB"
+  },
+  {
+   "name": "Image 03-twelve-documents: no spoilers of either case in any visible text (31 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Image 04-visitor-logs-in-progress: 2000x2000 JPG",
+   "passed": true,
+   "detail": "740 KB"
+  },
+  {
+   "name": "Image 04-visitor-logs-in-progress: no spoilers of either case in any visible text (9 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Image 05-three-levels-of-hints: 2000x2000 JPG",
+   "passed": true,
+   "detail": "542 KB"
+  },
+  {
+   "name": "Image 05-three-levels-of-hints: no spoilers of either case in any visible text (9 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Image 06-sealed-check: 2000x2000 JPG",
+   "passed": true,
+   "detail": "531 KB"
+  },
+  {
+   "name": "Image 06-sealed-check: no spoilers of either case in any visible text (9 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Image 07-print-or-ipad: 2000x2000 JPG",
+   "passed": true,
+   "detail": "533 KB"
+  },
+  {
+   "name": "Image 07-print-or-ipad: no spoilers of either case in any visible text (7 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Image 08-who-its-for: 2000x2000 JPG",
+   "passed": true,
+   "detail": "605 KB"
+  },
+  {
+   "name": "Image 08-who-its-for: no spoilers of either case in any visible text (12 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Image 09-bundle-value: 2000x2000 JPG",
+   "passed": true,
+   "detail": "459 KB"
+  },
+  {
+   "name": "Image 09-bundle-value: no spoilers of either case in any visible text (17 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Image 10-what-you-get: 2000x2000 JPG",
+   "passed": true,
+   "detail": "1190 KB"
+  },
+  {
+   "name": "Image 10-what-you-get: no spoilers of either case in any visible text (19 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Image 01 carries the bundle title, both cases, 2 cases / 12,000 suspects / 2 killers, PRINTABLE and iPad",
+   "passed": true,
+   "detail": "all present"
+  },
+  {
+   "name": "Images show no Halloween wording (the bundle should live past 31 October)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Storm over Corvenmoor: the Visitor Log page used has neither the killer nor any finalist",
+   "passed": true,
+   "detail": "page 57"
+  },
+  {
+   "name": "Full Moon over Morrowmere: the Visitor Log page used has neither the killer nor any finalist",
+   "passed": true,
+   "detail": "page 48"
+  }
+ ]
+}

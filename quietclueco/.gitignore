@@ -3,3 +3,4 @@ __pycache__/
 !christmas-market/delivery/*.zip
 !halloween-monster/delivery/*.zip
 !halloween-witches/delivery/*.zip
+!bundle-spooky-season/delivery/*.zip

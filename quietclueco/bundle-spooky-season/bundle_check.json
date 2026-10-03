@@ -1,0 +1,237 @@
+{
+ "checks": [
+  {
+   "fmt": "letter",
+   "name": "Page count = 2 front pages + both case books",
+   "passed": true,
+   "detail": "278 = 2 + 138 + 138"
+  },
+  {
+   "fmt": "letter",
+   "name": "File is under 20 MB (Etsy limit per file)",
+   "passed": true,
+   "detail": "6.96 MB"
+  },
+  {
+   "fmt": "letter",
+   "name": "Both case books are included whole and in order (text of every page matches the source)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "fmt": "letter",
+   "name": "No solution content (epilogue, step-by-step, finalists table, elimination index, Envelope)",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "fmt": "letter",
+   "name": "Storm over Corvenmoor: the killer\u2019s name appears exactly once, on their own line of that case\u2019s Visitor Log",
+   "passed": true,
+   "detail": "1 time(s), page(s) [101]"
+  },
+  {
+   "fmt": "letter",
+   "name": "Full Moon over Morrowmere: the killer\u2019s name appears exactly once, on their own line of that case\u2019s Visitor Log",
+   "passed": true,
+   "detail": "1 time(s), page(s) [243]"
+  },
+  {
+   "fmt": "letter",
+   "name": "Bundle cover and programme page don\u2019t mention Halloween",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "fmt": "letter",
+   "name": "Bundle cover and programme page carry no killer names or Sealed Check numbers",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "fmt": "letter",
+   "name": "Programme page: one working link per section of both cases, each landing on that section",
+   "passed": true,
+   "detail": "34 links for 34 lines"
+  },
+  {
+   "fmt": "letter",
+   "name": "Every internal link of both case books still works and lands on the same page as in the case book",
+   "passed": true,
+   "detail": "64 links checked"
+  },
+  {
+   "fmt": "letter",
+   "name": "Bookmarks: cover, programme, one bookmark per case, and every bookmark of both case books nested under it",
+   "passed": true,
+   "detail": "54 bookmarks, 4 top level"
+  },
+  {
+   "fmt": "a4",
+   "name": "Page count = 2 front pages + both case books",
+   "passed": true,
+   "detail": "261 = 2 + 130 + 129"
+  },
+  {
+   "fmt": "a4",
+   "name": "File is under 20 MB (Etsy limit per file)",
+   "passed": true,
+   "detail": "7.42 MB"
+  },
+  {
+   "fmt": "a4",
+   "name": "Both case books are included whole and in order (text of every page matches the source)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "fmt": "a4",
+   "name": "No solution content (epilogue, step-by-step, finalists table, elimination index, Envelope)",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "fmt": "a4",
+   "name": "Storm over Corvenmoor: the killer\u2019s name appears exactly once, on their own line of that case\u2019s Visitor Log",
+   "passed": true,
+   "detail": "1 time(s), page(s) [95]"
+  },
+  {
+   "fmt": "a4",
+   "name": "Full Moon over Morrowmere: the killer\u2019s name appears exactly once, on their own line of that case\u2019s Visitor Log",
+   "passed": true,
+   "detail": "1 time(s), page(s) [228]"
+  },
+  {
+   "fmt": "a4",
+   "name": "Bundle cover and programme page don\u2019t mention Halloween",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "fmt": "a4",
+   "name": "Bundle cover and programme page carry no killer names or Sealed Check numbers",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "fmt": "a4",
+   "name": "Programme page: one working link per section of both cases, each landing on that section",
+   "passed": true,
+   "detail": "34 links for 34 lines"
+  },
+  {
+   "fmt": "a4",
+   "name": "Every internal link of both case books still works and lands on the same page as in the case book",
+   "passed": true,
+   "detail": "64 links checked"
+  },
+  {
+   "fmt": "a4",
+   "name": "Bookmarks: cover, programme, one bookmark per case, and every bookmark of both case books nested under it",
+   "passed": true,
+   "detail": "54 bookmarks, 4 top level"
+  },
+  {
+   "fmt": "ipad",
+   "name": "Page count = 2 front pages + both case books",
+   "passed": true,
+   "detail": "236 = 2 + 117 + 117"
+  },
+  {
+   "fmt": "ipad",
+   "name": "File is under 20 MB (Etsy limit per file)",
+   "passed": true,
+   "detail": "4.57 MB"
+  },
+  {
+   "fmt": "ipad",
+   "name": "Both case books are included whole and in order (text of every page matches the source)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "fmt": "ipad",
+   "name": "No solution content (epilogue, step-by-step, finalists table, elimination index, Envelope)",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "fmt": "ipad",
+   "name": "Storm over Corvenmoor: the killer\u2019s name appears exactly once, on their own line of that case\u2019s Visitor Log",
+   "passed": true,
+   "detail": "1 time(s), page(s) [87]"
+  },
+  {
+   "fmt": "ipad",
+   "name": "Full Moon over Morrowmere: the killer\u2019s name appears exactly once, on their own line of that case\u2019s Visitor Log",
+   "passed": true,
+   "detail": "1 time(s), page(s) [207]"
+  },
+  {
+   "fmt": "ipad",
+   "name": "Bundle cover and programme page don\u2019t mention Halloween",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "fmt": "ipad",
+   "name": "Bundle cover and programme page carry no killer names or Sealed Check numbers",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "fmt": "ipad",
+   "name": "Programme page: one working link per section of both cases, each landing on that section",
+   "passed": true,
+   "detail": "34 links for 34 lines"
+  },
+  {
+   "fmt": "ipad",
+   "name": "Every internal link of both case books still works and lands on the same page as in the case book",
+   "passed": true,
+   "detail": "64 links checked"
+  },
+  {
+   "fmt": "ipad",
+   "name": "Bookmarks: cover, programme, one bookmark per case, and every bookmark of both case books nested under it",
+   "passed": true,
+   "detail": "54 bookmarks, 4 top level"
+  },
+  {
+   "fmt": "zip",
+   "name": "SOLUTIONS ZIP holds the 6 solution files of both cases and is intact",
+   "passed": true,
+   "detail": "full-moon-over-morrowmere_SOLUTION_iPad.pdf, full-moon-over-morrowmere_SOLUTION_print-A4.pdf, full-moon-over-morrowmere_SOLUTION_print-US-Letter.pdf, storm-over-corvenmoor_SOLUTION_iPad.pdf, storm-over-corvenmoor_SOLUTION_print-A4.pdf, storm-over-corvenmoor_SOLUTION_print-US-Letter.pdf"
+  },
+  {
+   "fmt": "zip",
+   "name": "Each solution file names its case\u2019s killer (the right Envelope for each case)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "fmt": "zip",
+   "name": "SOLUTIONS ZIP is under 20 MB",
+   "passed": true,
+   "detail": "0.80 MB"
+  },
+  {
+   "fmt": "all",
+   "name": "Delivery folder has exactly 4 files (Etsy allows 5)",
+   "passed": true,
+   "detail": "bundle_SOLUTIONS.zip, bundle_iPad.pdf, bundle_print-A4.pdf, bundle_print-US-Letter.pdf"
+  }
+ ],
+ "pages": {
+  "letter": 278,
+  "a4": 261,
+  "ipad": 236
+ },
+ "files": [
+  "bundle_SOLUTIONS.zip",
+  "bundle_iPad.pdf",
+  "bundle_print-A4.pdf",
+  "bundle_print-US-Letter.pdf"
+ ]
+}
