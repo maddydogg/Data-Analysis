@@ -4,7 +4,7 @@
    "fmt": "letter",
    "name": "Page count = 2 front pages + both case books",
    "passed": true,
-   "detail": "278 = 2 + 138 + 138"
+   "detail": "279 = 2 + 138 + 139"
   },
   {
    "fmt": "letter",
@@ -224,7 +224,7 @@
   }
  ],
  "pages": {
-  "letter": 278,
+  "letter": 279,
   "a4": 261,
   "ipad": 236
  },

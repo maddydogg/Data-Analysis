@@ -50,7 +50,8 @@ HINTS = {
     "12": ["Only the first name matters.",
            "Capital or small makes no difference: Ida and Elsie both contain an I.",
            "Cross out every visitor whose first name contains the letter I."],
-    "A": ["Read Bryony’s note again: what did the visitor walk through on the way in?",
+    "A": ["Read Bryony’s note again: what did the visitor walk through on the way in? Then follow that "
+          "path on the fair map. A path can fork, so check every entrance it leads to, not just one.",
           "Find the Hob Stones on the fair map. Which footpaths run through them?",
           f"Only the paths to {STONES} run through the Hob Stones. Cross out every visitor who "
           f"came in by {NOT_STONES}."],
@@ -59,8 +60,8 @@ HINTS = {
           "There were two clear spells.",
           f"The full moon was out {WIN}. Cross out every visitor whose entry time is outside both "
           "spells. The log is sorted by entry time, so whole pages can go at once."],
-    "C": ["Mother Meridew writes down the time of every reading. When did she read the cup of the "
-          "lady with the crescent pin?",
+    "C": ["Mother Meridew’s book gives the time of the reading, not the time the lady came in. "
+          "What does the reading time tell you about when she must have arrived?",
           "Nobody can sit for a reading at the fair before they have come in.",
           f"The reading was at {C.READING_TIME}. Cross out every visitor who came in at "
           f"{C.tstr(C.tmin(C.READING_TIME) + 1)} or later."],

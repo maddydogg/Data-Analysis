@@ -10,15 +10,15 @@ How the spoiler check works: every mockup and every video frame is built from re
 | 2 | Control test: the scanner flags the killer's log page, the solution and the check page | PASS | 9 hits in the control sources |
 | 3 | Mockup 01-main: 2000x2000 JPG | PASS | (2000, 2000), 1103 KB |
 | 4 | Mockup 01-main: no spoilers in any visible text (8 sources) | PASS |  |
-| 5 | Mockup 02-six-documents: 2000x2000 JPG | PASS | (2000, 2000), 600 KB |
+| 5 | Mockup 02-six-documents: 2000x2000 JPG | PASS | (2000, 2000), 601 KB |
 | 6 | Mockup 02-six-documents: no spoilers in any visible text (17 sources) | PASS |  |
-| 7 | Mockup 03-fair-map: 2000x2000 JPG | PASS | (2000, 2000), 442 KB |
+| 7 | Mockup 03-fair-map: 2000x2000 JPG | PASS | (2000, 2000), 446 KB |
 | 8 | Mockup 03-fair-map: no spoilers in any visible text (7 sources) | PASS |  |
 | 9 | Mockup 04-inspectors-notebook: 2000x2000 JPG | PASS | (2000, 2000), 506 KB |
 | 10 | Mockup 04-inspectors-notebook: no spoilers in any visible text (6 sources) | PASS |  |
 | 11 | Mockup 05-visitor-log-in-progress: 2000x2000 JPG | PASS | (2000, 2000), 536 KB |
 | 12 | Mockup 05-visitor-log-in-progress: no spoilers in any visible text (7 sources) | PASS |  |
-| 13 | Mockup 06-three-levels-of-hints: 2000x2000 JPG | PASS | (2000, 2000), 470 KB |
+| 13 | Mockup 06-three-levels-of-hints: 2000x2000 JPG | PASS | (2000, 2000), 479 KB |
 | 14 | Mockup 06-three-levels-of-hints: no spoilers in any visible text (10 sources) | PASS |  |
 | 15 | Mockup 07-sealed-check: 2000x2000 JPG | PASS | (2000, 2000), 483 KB |
 | 16 | Mockup 07-sealed-check: no spoilers in any visible text (10 sources) | PASS |  |

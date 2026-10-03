@@ -446,7 +446,7 @@ def draw_map(b):
         c.drawPath(p, fill=0, stroke=1)
         c.setStrokeColor(HexColor("#7A6448")); c.setLineWidth(0.7); c.setDash(2, 2)
         c.drawPath(p, fill=0, stroke=1); c.setDash()
-    path([(ox, oy + 3 * u), (hx, hy)])                                  # from the drove road
+    path([(ox, oy + 1 * u), (hx, hy)])                                  # from the drove road (45°, so neither branch is "straight on")
     path([(hx, hy), (hx, cyy), (wl, cyy)])                              # to Mill Stile (west)
     path([(hx, hy), (cx, hy), (cx, wb)])                                # to Orchard Gap (south)
     path([(cx, wt), (cx, oy + size)])                                   # Bramble Gate to the village street
@@ -466,7 +466,16 @@ def draw_map(b):
     c.setFillColor(GREEN); c.setFont("Nunito-ExtraBold", 7.5 * Lx.s)
     c.drawString(hx + 9.5 * u, hy + 3.4 * u, "THE HOB STONES")
     c.setFillColor(SOFT); c.setFont("Nunito-Italic", 7 * Lx.s)
-    c.drawString(ox + 4 * u, oy + 1.4 * u, "from the drove road")
+    c.drawString(ox + 4 * u, oy + 0.9 * u, "from the drove road")
+    # the fork after the Hob Stones: both branches labelled the same way, with arrowheads
+    c.setFillColor(GREEN); c.setFont("Nunito-Bold", 6.6 * Lx.s)
+    c.saveState(); c.translate(hx - 2.4 * u, hy + 9 * u); c.rotate(90)
+    c.drawString(0, 0, "path to Mill Stile"); c.restoreState()
+    c.drawString(hx + 9.5 * u, hy - 4.6 * u, "path to Orchard Gap")
+    for (ax, ay, ang) in ((hx, hy + 22 * u, 90), (hx + 30 * u, hy, 0)):
+        c.saveState(); c.translate(ax, ay); c.rotate(ang)
+        p = c.beginPath(); p.moveTo(1.6 * u, 0); p.lineTo(-1.1 * u, 1.3 * u); p.lineTo(-1.1 * u, -1.3 * u); p.close()
+        c.setFillColor(GREEN); c.drawPath(p, fill=1, stroke=0); c.restoreState()
     c.drawRightString(cx - 2.6 * u, oy + size - 3 * u, "to the village street")
     c.saveState(); c.translate(ox + size - 2.2 * u, cyy + 4.5 * u); c.rotate(90)
     c.drawString(0, 0, "to the churchyard"); c.restoreState()

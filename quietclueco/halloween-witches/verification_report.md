@@ -1,6 +1,6 @@
 # Verification report: Full Moon over Morrowmere
 
-Result: **55 of 55 checks passed** — ALL CLEAR
+Result: **61 of 61 checks passed** — ALL CLEAR
 
 Answer found by the code: **Edna Elworthy**, ticket 4073, Hatherby, entered 19:23 by Orchard Gap, last stall 21.
 
@@ -31,38 +31,44 @@ Answer found by the code: **Edna Elworthy**, ticket 4073, Hatherby, entered 19:2
 | 21 | Evidence A: the Hob Stones lie on the paths to exactly Mill Stile and Orchard Gap | PASS |  |
 | 22 | Evidence E/F: the ledger says Thursday and the margin note says the same letter twice | PASS |  |
 | 23 | Killer's own story is consistent (came in under the moon before the reading, bought a rosehip-and-anise brew, lives on the Thursday round) | PASS |  |
-| 24 | Finalists don't point at the answer: for entrance, village, last stall, lane and entry hour the killer's value is shared by at least two finalists, is never the single most common value, and no value covers more than half the shortlist | PASS | entrance: killer's value shared by 9 of 23 finalists, most common value 12/24; village: killer's value shared by 5 of 23 finalists, most common value 8/24; last stall: killer's value shared by 3 of 23 finalists, most common value 6/24; lane: killer's value shared by 9 of 23 finalists, most common value 12/24; entry hour: killer's value shared by 8 of 23 finalists, most common value 11/24 |
-| 25 | Level-3 hints keep exactly the same visitors as their clues (all 18) | PASS |  |
-| 26 | Examples and facts quoted in hints and house rules are correct | PASS | Ada and Oscar pass clue 1; Bella and Yvonne fail: ok; Ruth Barlow passes clue 2 (4 and 6), Ruth Gale fails (4 and 4): ok; Ellwood has one E (passes clue 3), Elmore two, Abbott none (both fail): ok; Oscar (5) passes clue 4, Arthur (6) fails: ok; Edwards fails clue 5, Abbott passes: ok; ticket 0472 is even (fails clue 6): ok; 0472 has one zero (passes 7), 3006 two and 1234 none (fail): ok; 18:10 and 18:39 pass clue 8; 18:09 and 18:40 fail: ok; Hint 9 level 2 names exactly the villages with an H: ok; Ida and Elsie contain an I (fail clue 12): ok; Rowan Close is stalls 28-36: ok; Glossary: 18:07 has minutes 07; 0472/3006/1234 have 1/2/0 zeros: ok; Hint D names the two brews from the Book of Brews: ok; Hint A names Mill Stile and Orchard Gap: ok |
-| 27 | No hint names the killer or their ticket | PASS |  |
-| 28 | No borrowed brands, titles or famous witches in any text or name pool (Hocus Pocus, Sanderson, Practical Magic, Owens, Sabrina, Charmed, Halliwell, Wicked, Elphaba, Glinda, Agatha All Along, The Craft, Harry Potter, Hogwarts, Quidditch, Hermione, Discworld, Weatherwax, Kiki, Maleficent, Ursula, Winifred, Salem ...) | PASS |  |
-| 29 | No famous-detective or famous-witch names in the name pools | PASS |  |
-| 30 | Story characters and the killer's own names are kept out of the random name pools | PASS |  |
-| 31 | Every character in the text exists in the embedded fonts | PASS | [] |
-| 32 | [letter] every clue is printed word for word in the case book | PASS |  |
-| 33 | [letter] all 54 hints are printed word for word | PASS |  |
-| 34 | [letter] the killer's name appears exactly once in the case book (their line in the log) | PASS | 1 times |
-| 35 | [letter] Visitor Log in the PDF matches the data line for line (6,000 rows) | PASS | parsed 6000 rows |
-| 36 | [letter] the book has a clickable contents page and bookmarks | PASS | 24 bookmarks, 23 links on the contents page |
-| 37 | [letter] Fraunces and Nunito are embedded | PASS | AAAAAA+Caveat-Medium, AAAAAA+Fraunces-Italic, AAAAAA+Fraunces-SemiBold, AAAAAA+Nunito-Bold, AAAAAA+Nunito-ExtraBold, AAAAAA+Nunito-Italic, AAAAAA+Nunito-Regular, Helvetica |
-| 38 | [letter] solution file names the same killer the code found | PASS |  |
-| 39 | [letter] solution walkthrough counts match the code | PASS |  |
-| 40 | [a4] every clue is printed word for word in the case book | PASS |  |
-| 41 | [a4] all 54 hints are printed word for word | PASS |  |
-| 42 | [a4] the killer's name appears exactly once in the case book (their line in the log) | PASS | 1 times |
-| 43 | [a4] Visitor Log in the PDF matches the data line for line (6,000 rows) | PASS | parsed 6000 rows |
-| 44 | [a4] the book has a clickable contents page and bookmarks | PASS | 24 bookmarks, 23 links on the contents page |
-| 45 | [a4] Fraunces and Nunito are embedded | PASS | AAAAAA+Caveat-Medium, AAAAAA+Fraunces-Italic, AAAAAA+Fraunces-SemiBold, AAAAAA+Nunito-Bold, AAAAAA+Nunito-ExtraBold, AAAAAA+Nunito-Italic, AAAAAA+Nunito-Regular, Helvetica |
-| 46 | [a4] solution file names the same killer the code found | PASS |  |
-| 47 | [a4] solution walkthrough counts match the code | PASS |  |
-| 48 | [ipad] every clue is printed word for word in the case book | PASS |  |
-| 49 | [ipad] all 54 hints are printed word for word | PASS |  |
-| 50 | [ipad] the killer's name appears exactly once in the case book (their line in the log) | PASS | 1 times |
-| 51 | [ipad] Visitor Log in the PDF matches the data line for line (6,000 rows) | PASS | parsed 6000 rows |
-| 52 | [ipad] the book has a clickable contents page and bookmarks | PASS | 24 bookmarks, 23 links on the contents page |
-| 53 | [ipad] Fraunces and Nunito are embedded | PASS | AAAAAA+Caveat-Medium, AAAAAA+Fraunces-Italic, AAAAAA+Fraunces-SemiBold, AAAAAA+Nunito-Bold, AAAAAA+Nunito-ExtraBold, AAAAAA+Nunito-Italic, AAAAAA+Nunito-Regular, Helvetica |
-| 54 | [ipad] solution file names the same killer the code found | PASS |  |
-| 55 | [ipad] solution walkthrough counts match the code | PASS |  |
+| 24 | Map reading 'the stone path leads only to Mill Stile' leaves 0 visitors, so the mistake shows up at once | PASS | Mill only -> 0 left; Orchard only -> the same single answer |
+| 25 | Bryony's note names neither entrance and doesn't say 'straight'; the map labels both branches of the fork | PASS |  |
+| 26 | Hints catch the one-path misreading: level 1 for Evidence A says the path can fork to more than one entrance, level 3 names both; level 1 for Evidence C says the reading time is not the entry time | PASS |  |
+| 27 | Finalists don't point at the answer: for entrance, village, last stall, lane and entry hour the killer's value is shared by at least two finalists, is never the single most common value, and no value covers more than half the shortlist | PASS | entrance: killer's value shared by 9 of 23 finalists, most common value 12/24; village: killer's value shared by 5 of 23 finalists, most common value 8/24; last stall: killer's value shared by 3 of 23 finalists, most common value 6/24; lane: killer's value shared by 9 of 23 finalists, most common value 12/24; entry hour: killer's value shared by 8 of 23 finalists, most common value 11/24 |
+| 28 | Level-3 hints keep exactly the same visitors as their clues (all 18) | PASS |  |
+| 29 | Examples and facts quoted in hints and house rules are correct | PASS | Ada and Oscar pass clue 1; Bella and Yvonne fail: ok; Ruth Barlow passes clue 2 (4 and 6), Ruth Gale fails (4 and 4): ok; Ellwood has one E (passes clue 3), Elmore two, Abbott none (both fail): ok; Oscar (5) passes clue 4, Arthur (6) fails: ok; Edwards fails clue 5, Abbott passes: ok; ticket 0472 is even (fails clue 6): ok; 0472 has one zero (passes 7), 3006 two and 1234 none (fail): ok; 18:10 and 18:39 pass clue 8; 18:09 and 18:40 fail: ok; Hint 9 level 2 names exactly the villages with an H: ok; Ida and Elsie contain an I (fail clue 12): ok; Rowan Close is stalls 28-36: ok; Glossary: 18:07 has minutes 07; 0472/3006/1234 have 1/2/0 zeros: ok; Hint D names the two brews from the Book of Brews: ok; Hint A names Mill Stile and Orchard Gap: ok |
+| 30 | No hint names the killer or their ticket | PASS |  |
+| 31 | No borrowed brands, titles or famous witches in any text or name pool (Hocus Pocus, Sanderson, Practical Magic, Owens, Sabrina, Charmed, Halliwell, Wicked, Elphaba, Glinda, Agatha All Along, The Craft, Harry Potter, Hogwarts, Quidditch, Hermione, Discworld, Weatherwax, Kiki, Maleficent, Ursula, Winifred, Salem ...) | PASS |  |
+| 32 | No famous-detective or famous-witch names in the name pools | PASS |  |
+| 33 | Story characters and the killer's own names are kept out of the random name pools | PASS |  |
+| 34 | Every character in the text exists in the embedded fonts | PASS | [] |
+| 35 | [letter] every clue is printed word for word in the case book | PASS |  |
+| 36 | [letter] all 54 hints are printed word for word | PASS |  |
+| 37 | [letter] the killer's name appears exactly once in the case book (their line in the log) | PASS | 1 times |
+| 38 | [letter] Visitor Log in the PDF matches the data line for line (6,000 rows) | PASS | parsed 6000 rows |
+| 39 | [letter] the book has a clickable contents page and bookmarks | PASS | 24 bookmarks, 23 links on the contents page |
+| 40 | [letter] the fair map labels both branches after the Hob Stones, and the printed note is the corrected one | PASS |  |
+| 41 | [letter] Fraunces and Nunito are embedded | PASS | AAAAAA+Caveat-Medium, AAAAAA+Fraunces-Italic, AAAAAA+Fraunces-SemiBold, AAAAAA+Nunito-Bold, AAAAAA+Nunito-ExtraBold, AAAAAA+Nunito-Italic, AAAAAA+Nunito-Regular, Helvetica |
+| 42 | [letter] solution file names the same killer the code found | PASS |  |
+| 43 | [letter] solution walkthrough counts match the code | PASS |  |
+| 44 | [a4] every clue is printed word for word in the case book | PASS |  |
+| 45 | [a4] all 54 hints are printed word for word | PASS |  |
+| 46 | [a4] the killer's name appears exactly once in the case book (their line in the log) | PASS | 1 times |
+| 47 | [a4] Visitor Log in the PDF matches the data line for line (6,000 rows) | PASS | parsed 6000 rows |
+| 48 | [a4] the book has a clickable contents page and bookmarks | PASS | 24 bookmarks, 23 links on the contents page |
+| 49 | [a4] the fair map labels both branches after the Hob Stones, and the printed note is the corrected one | PASS |  |
+| 50 | [a4] Fraunces and Nunito are embedded | PASS | AAAAAA+Caveat-Medium, AAAAAA+Fraunces-Italic, AAAAAA+Fraunces-SemiBold, AAAAAA+Nunito-Bold, AAAAAA+Nunito-ExtraBold, AAAAAA+Nunito-Italic, AAAAAA+Nunito-Regular, Helvetica |
+| 51 | [a4] solution file names the same killer the code found | PASS |  |
+| 52 | [a4] solution walkthrough counts match the code | PASS |  |
+| 53 | [ipad] every clue is printed word for word in the case book | PASS |  |
+| 54 | [ipad] all 54 hints are printed word for word | PASS |  |
+| 55 | [ipad] the killer's name appears exactly once in the case book (their line in the log) | PASS | 1 times |
+| 56 | [ipad] Visitor Log in the PDF matches the data line for line (6,000 rows) | PASS | parsed 6000 rows |
+| 57 | [ipad] the book has a clickable contents page and bookmarks | PASS | 24 bookmarks, 23 links on the contents page |
+| 58 | [ipad] the fair map labels both branches after the Hob Stones, and the printed note is the corrected one | PASS |  |
+| 59 | [ipad] Fraunces and Nunito are embedded | PASS | AAAAAA+Caveat-Medium, AAAAAA+Fraunces-Italic, AAAAAA+Fraunces-SemiBold, AAAAAA+Nunito-Bold, AAAAAA+Nunito-ExtraBold, AAAAAA+Nunito-Italic, AAAAAA+Nunito-Regular, Helvetica |
+| 60 | [ipad] solution file names the same killer the code found | PASS |  |
+| 61 | [ipad] solution walkthrough counts match the code | PASS |  |
 
 ## Is every clue needed?
 
@@ -165,7 +171,7 @@ All 64 combinations of these readings were also covered (see the proof in the ch
 
 ## Page counts
 
-- book_letter: 138
+- book_letter: 139
 - solution_letter: 13
 - book_a4: 129
 - solution_a4: 13

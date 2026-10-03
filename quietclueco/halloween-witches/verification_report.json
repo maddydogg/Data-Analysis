@@ -116,6 +116,21 @@
    "detail": ""
   },
   {
+   "name": "Map reading 'the stone path leads only to Mill Stile' leaves 0 visitors, so the mistake shows up at once",
+   "passed": true,
+   "detail": "Mill only -> 0 left; Orchard only -> the same single answer"
+  },
+  {
+   "name": "Bryony's note names neither entrance and doesn't say 'straight'; the map labels both branches of the fork",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Hints catch the one-path misreading: level 1 for Evidence A says the path can fork to more than one entrance, level 3 names both; level 1 for Evidence C says the reading time is not the entry time",
+   "passed": true,
+   "detail": ""
+  },
+  {
    "name": "Finalists don't point at the answer: for entrance, village, last stall, lane and entry hour the killer's value is shared by at least two finalists, is never the single most common value, and no value covers more than half the shortlist",
    "passed": true,
    "detail": "entrance: killer's value shared by 9 of 23 finalists, most common value 12/24; village: killer's value shared by 5 of 23 finalists, most common value 8/24; last stall: killer's value shared by 3 of 23 finalists, most common value 6/24; lane: killer's value shared by 9 of 23 finalists, most common value 12/24; entry hour: killer's value shared by 8 of 23 finalists, most common value 11/24"
@@ -181,6 +196,11 @@
    "detail": "24 bookmarks, 23 links on the contents page"
   },
   {
+   "name": "[letter] the fair map labels both branches after the Hob Stones, and the printed note is the corrected one",
+   "passed": true,
+   "detail": ""
+  },
+  {
    "name": "[letter] Fraunces and Nunito are embedded",
    "passed": true,
    "detail": "AAAAAA+Caveat-Medium, AAAAAA+Fraunces-Italic, AAAAAA+Fraunces-SemiBold, AAAAAA+Nunito-Bold, AAAAAA+Nunito-ExtraBold, AAAAAA+Nunito-Italic, AAAAAA+Nunito-Regular, Helvetica"
@@ -221,6 +241,11 @@
    "detail": "24 bookmarks, 23 links on the contents page"
   },
   {
+   "name": "[a4] the fair map labels both branches after the Hob Stones, and the printed note is the corrected one",
+   "passed": true,
+   "detail": ""
+  },
+  {
    "name": "[a4] Fraunces and Nunito are embedded",
    "passed": true,
    "detail": "AAAAAA+Caveat-Medium, AAAAAA+Fraunces-Italic, AAAAAA+Fraunces-SemiBold, AAAAAA+Nunito-Bold, AAAAAA+Nunito-ExtraBold, AAAAAA+Nunito-Italic, AAAAAA+Nunito-Regular, Helvetica"
@@ -259,6 +284,11 @@
    "name": "[ipad] the book has a clickable contents page and bookmarks",
    "passed": true,
    "detail": "24 bookmarks, 23 links on the contents page"
+  },
+  {
+   "name": "[ipad] the fair map labels both branches after the Hob Stones, and the printed note is the corrected one",
+   "passed": true,
+   "detail": ""
   },
   {
    "name": "[ipad] Fraunces and Nunito are embedded",
@@ -577,7 +607,7 @@
  ],
  "seal": "523",
  "pages": {
-  "book_letter": 138,
+  "book_letter": 139,
   "solution_letter": 13,
   "book_a4": 129,
   "solution_a4": 13,

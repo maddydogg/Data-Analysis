@@ -184,6 +184,23 @@ def check_all(rows):
        and C.in_windows(kr["entry"], excl=True) and C.lane_of(kr["stall"]) != "Rowan Close"
        and "rosehip" in C.STALLS[kr["stall"]][1])
 
+    # ---- 7a. map readings of Evidence A (player test: "straight through the Hob Stones" read as one path)
+    others = [c["pred"] for c in C.CLUES if c["id"] != "A"]
+    one_gate = {g: survivors(rows, others + [lambda r, g=g: r["gate"] == g]) for g in sorted(C.STONE_GATES)}
+    note = " ".join(C.NOTE)
+    ok("Map reading 'the stone path leads only to Mill Stile' leaves 0 visitors, so the mistake shows up at once",
+       len(one_gate["Mill"]) == 0, f"Mill only -> {len(one_gate['Mill'])} left; Orchard only -> "
+       f"{[name(r) for r in one_gate['Orchard']] if one_gate['Orchard'] != [kr] else 'the same single answer'}")
+    ok("Bryony's note names neither entrance and doesn't say 'straight'; the map labels both branches of the fork",
+       "straight" not in note.lower() and "Hob Stones" in note and not any(n in note for n in C.GATE_NAMES.values())
+       and not any(g in note for g in C.GATES))
+    ok("Hints catch the one-path misreading: level 1 for Evidence A says the path can fork to more than one "
+       "entrance, level 3 names both; level 1 for Evidence C says the reading time is not the entry time",
+       "fork" in H.HINTS["A"][0] and "every entrance" in H.HINTS["A"][0]
+       and all(C.GATE_NAMES[g] in H.HINTS["A"][2] for g in C.STONE_GATES)
+       and "not the time" in H.HINTS["C"][0] and "came in" in H.HINTS["C"][0] and C.READING_TIME not in H.HINTS["C"][0])
+    rep["facts"]["map_readings"] = {g: len(v) for g, v in one_gate.items()}
+
     # ---- 7b. the shortlist must not point at the answer
     pool = [r for r, _ in fin]
     attrs = {"entrance": lambda r: r["gate"], "village": lambda r: r["town"], "last stall": lambda r: r["stall"],
@@ -333,6 +350,11 @@ def check_pdfs(rep, paths, rows):
            len(doc.get_toc()) >= 15 and any(l.get("kind") == fitz.LINK_GOTO or l.get("kind") == fitz.LINK_NAMED
                                              for l in doc[2].get_links()),
            f"{len(doc.get_toc())} bookmarks, {len(doc[2].get_links())} links on the contents page")
+        mp = next((p.get_text() for p in doc if "Fair map" in p.get_text() and "THE HOB STONES" in p.get_text()), "")
+        notep = next((norm(p.get_text()) for p in doc if "Bryony" in p.get_text() and "READINGS AT THE MOON FAIR" in p.get_text()), "")
+        ok(f"[{fmt}] the fair map labels both branches after the Hob Stones, and the printed note is the corrected one",
+           "path to Mill Stile" in mp and "path to Orchard Gap" in mp and "straight" not in notep.lower()
+           and "drove road by the stone path" in notep)
         fonts = {f[3] for p in doc for f in p.get_fonts()}
         emb = all(any(n in f for f in fonts) for n in ("Fraunces", "Nunito"))
         ok(f"[{fmt}] Fraunces and Nunito are embedded", emb, ", ".join(sorted(fonts)))

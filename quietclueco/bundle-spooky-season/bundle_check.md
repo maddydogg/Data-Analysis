@@ -4,7 +4,7 @@ Result: **37 of 37 checks passed**
 
 | # | File | Check | Result | Detail |
 |---|---|---|---|---|
-| 1 | letter | Page count = 2 front pages + both case books | PASS | 278 = 2 + 138 + 138 |
+| 1 | letter | Page count = 2 front pages + both case books | PASS | 279 = 2 + 138 + 139 |
 | 2 | letter | File is under 20 MB (Etsy limit per file) | PASS | 6.96 MB |
 | 3 | letter | Both case books are included whole and in order (text of every page matches the source) | PASS |  |
 | 4 | letter | No solution content (epilogue, step-by-step, finalists table, elimination index, Envelope) | PASS | [] |
@@ -51,6 +51,6 @@ Result: **37 of 37 checks passed**
 
 ## Page counts
 
-- bundle_print-US-Letter.pdf: 278 pages
+- bundle_print-US-Letter.pdf: 279 pages
 - bundle_print-A4.pdf: 261 pages
 - bundle_iPad.pdf: 236 pages

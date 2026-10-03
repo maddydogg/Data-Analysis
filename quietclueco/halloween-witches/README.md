@@ -8,7 +8,7 @@ It is built on the same engine as case No. 2 (`../halloween-monster`), with its 
 
 | Path | What it is |
 |---|---|
-| `print/full-moon-over-morrowmere_print-US-Letter.pdf` | Case book for printing, US Letter (138 pages) |
+| `print/full-moon-over-morrowmere_print-US-Letter.pdf` | Case book for printing, US Letter (139 pages) |
 | `print/full-moon-over-morrowmere_print-A4.pdf` | Case book for printing, A4 (129 pages) |
 | `ipad/full-moon-over-morrowmere_iPad.pdf` | Case book for Goodnotes / Notability, 768×1024 portrait, clickable contents and bookmarks (117 pages) |
 | `solution/…_SOLUTION_*.pdf` | "The Envelope": answer, epilogue, step-by-step solution, finalists and the elimination index for all 6,000 tickets |
@@ -54,6 +54,24 @@ No weather log, receipt or bus timetable this time; the evidence works through t
 - Cover and listing images use an old horror-mystery one-sheet style in the case palette (plum #2B1B3D, aubergine #4A2C5E, amethyst #8E5BB5, candle gold #E3A64B, moon parchment #EDE6D6, sage #8FA382). Only silhouettes and objects appear: a full moon, a figure in a pointed hat seen from behind, crows, rooftops, the standing stones, a cauldron, a hand holding a candle and moon phases. No faces, no studio logos, no composition of any real poster. Images 02–09 are lobby cards with a real page of the case inside.
 - Inside pages stay light and use Fraunces and Nunito. Poster fonts (Abril Fatface, Bebas Neue, Oswald, IM Fell, Cinzel: SIL OFL) are in `listing/src/fonts_horror/` with their licence files.
 - Place and character names (Morrowmere, Full Moon over Morrowmere, Hollis Drummond, Bryony Fettle, Mother Meridew, Barnaby Quell, Tobias Wick) were checked in EverBee and a web search before use. "Moonfall" was dropped because it is a 2022 film title.
+
+## Fix after a player test (before publication)
+
+A test player read Bryony's note ("came over the meadow and straight through the Hob Stones") as "straight along one path". That path leads to Mill Stile, but the killer came in at Orchard Gap, so a player who kept only Mill would cross out the killer at Evidence A.
+
+**Changes:**
+
+- **Bryony's note** now reads: "She came in off the drove road by the stone path, through the Hob Stones, under a full moon so bright her pin flashed like a new coin." It has no "straight" and names no entrance. Evidence A is unchanged: Mill Stile or Orchard Gap.
+- **Fair map.** The drove road now meets the Hob Stones at 45°, so neither branch is "straight on". Both branches after the stones are labelled ("path to Mill Stile", "path to Orchard Gap") and have matching arrowheads.
+- **Level-1 hint, Evidence A:** a path can fork, so check every entrance it leads to.
+- **Level-1 hint, Evidence C:** the reading time is not the time the lady came in.
+- **New checks in `verify.py`:**
+  - "Mill only" leaves 0 visitors, so the mistake shows at once.
+  - The note has no "straight" and names no entrance.
+  - The hints catch the misreading.
+  - Every PDF prints the corrected note and both fork labels.
+- **Still true after the fix:** the answer is unique, all 18 clues are needed, and the shortlist has no pattern.
+- **Rebuilt:** the PDFs, previews, delivery folder, mockups and the presentation video. The bundle (`../bundle-spooky-season`) was rebuilt from the corrected case.
 
 ## Answer (spoiler)
 

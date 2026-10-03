@@ -23,7 +23,7 @@
   {
    "name": "Mockup 02-six-documents: 2000x2000 JPG",
    "passed": true,
-   "detail": "(2000, 2000), 600 KB"
+   "detail": "(2000, 2000), 601 KB"
   },
   {
    "name": "Mockup 02-six-documents: no spoilers in any visible text (17 sources)",
@@ -33,7 +33,7 @@
   {
    "name": "Mockup 03-fair-map: 2000x2000 JPG",
    "passed": true,
-   "detail": "(2000, 2000), 442 KB"
+   "detail": "(2000, 2000), 446 KB"
   },
   {
    "name": "Mockup 03-fair-map: no spoilers in any visible text (7 sources)",
@@ -63,7 +63,7 @@
   {
    "name": "Mockup 06-three-levels-of-hints: 2000x2000 JPG",
    "passed": true,
-   "detail": "(2000, 2000), 470 KB"
+   "detail": "(2000, 2000), 479 KB"
   },
   {
    "name": "Mockup 06-three-levels-of-hints: no spoilers in any visible text (10 sources)",

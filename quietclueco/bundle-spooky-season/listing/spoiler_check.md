@@ -17,7 +17,7 @@ Every image is built from real PDF regions and code-drawn text. The builder reco
 | 9 | Image 03-twelve-documents: no spoilers of either case in any visible text (31 sources) | PASS |  |
 | 10 | Image 04-visitor-logs-in-progress: 2000x2000 JPG | PASS | 740 KB |
 | 11 | Image 04-visitor-logs-in-progress: no spoilers of either case in any visible text (9 sources) | PASS |  |
-| 12 | Image 05-three-levels-of-hints: 2000x2000 JPG | PASS | 542 KB |
+| 12 | Image 05-three-levels-of-hints: 2000x2000 JPG | PASS | 547 KB |
 | 13 | Image 05-three-levels-of-hints: no spoilers of either case in any visible text (9 sources) | PASS |  |
 | 14 | Image 06-sealed-check: 2000x2000 JPG | PASS | 531 KB |
 | 15 | Image 06-sealed-check: no spoilers of either case in any visible text (9 sources) | PASS |  |

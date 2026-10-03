@@ -16,7 +16,7 @@ The name has no "Halloween" in it, in the file names or on the cover, so the bun
 
 | File | What it is |
 |---|---|
-| `bundle_print-US-Letter.pdf` | Bundle cover, programme (contents), then both case books in full, without solutions (278 pages) |
+| `bundle_print-US-Letter.pdf` | Bundle cover, programme (contents), then both case books in full, without solutions (279 pages) |
 | `bundle_print-A4.pdf` | The same in A4 (261 pages) |
 | `bundle_iPad.pdf` | The same for iPad, 768×1024 (236 pages) |
 | `bundle_SOLUTIONS.zip` | The 6 solution files: Letter, A4 and iPad for each case |
