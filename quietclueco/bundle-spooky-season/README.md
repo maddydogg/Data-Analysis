@@ -36,7 +36,12 @@ Inside the bundle PDFs:
   - 10 is "What you get".
 - `etsy_listing.md`: the title, a price suggestion, the description with a "Why the double feature" section, and 26 tag candidates with Listadum data. Final tags are not chosen yet.
 - `spoiler_check.md` / `.json`: checks of the images (27/27).
-- No video. It will be made separately in Veo from the mockups.
+- `video/storm-and-moon-double-feature_double-feature-trailer_1080.mp4`: the listing video, drawn with code like the case trailers. It is 1080×1080, 15.0 s, 30 fps and silent.
+  - The marquee lights up, then a ticket tears into Feature 1 and Feature 2.
+  - Feature 1 is the storm over the castle; Feature 2 is the moon over the village.
+  - A split screen shows both Visitor Logs being struck through, then the poster.
+  - All 450 frames are spoiler-scanned for both cases: 0 hits.
+  - Build: `listing/src/make_storm_layers.py`, then `video_bundle.py`. A poster frame and a storyboard sit next to the video.
 
 ## Checks
 
