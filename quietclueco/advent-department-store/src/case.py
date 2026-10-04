@@ -423,8 +423,8 @@ DOCS = {
                        "across, or through the Winter Garden — one or the other, I’d swear to that much."),
             extra="The street plan is in Window 1."),
     5: dict(kind="statement", title="STATEMENT — TOY HALL, SECOND FLOOR",
-            statement=(TOYCLERK, "Brass magpie on her collar, bought nothing, looked at the train set for "
-                       "a minute. Then she went up the main stairs. I watched them all evening, waiting for "
+            statement=(TOYCLERK, "Brass magpie on her collar. She didn’t buy anything from my counter, just "
+                       "looked at the train set for a minute. Then she went up the main stairs. I watched them all evening, waiting for "
                        "my relief: she never came back down before the curtain."),
             extra="So her last purchase of the night was made somewhere higher up than the Toy Hall. "
                   "The store plan is in Window 1."),
@@ -443,8 +443,8 @@ DOCS = {
                        "two racks: A to M, or N to Z. Hers — the lady with the magpie — went in the second "
                        "rack. She never came back for it.")),
     9: dict(kind="docket", title="WATCHES & JEWELLERY — REPAIR DOCKET",
-            statement=("The watch repairer", "She brought in a little silver watch for a new glass. I copied "
-                       "her pass number onto the docket — the corner’s torn off now, but it was an odd "
+            statement=("The watch repairer", "She brought in a little silver watch for a new glass, and I fitted "
+                       "it while she waited. I copied her pass number onto the docket — the corner’s torn off now, but it was an odd "
                        "number, I remember thinking so.")),
     10: dict(kind="tree", title="NOTICE BOARD — THE GREAT TREE",
              statement=("Store guide, page 2", "Every clock in the Clock Gallery is set five minutes fast, "
@@ -467,8 +467,8 @@ DOCS = {
                         "verse. It rhymed because her first name ended on a vowel — we sang it long, "
                         "‘ah’ or ‘ee’ or ‘oh’. Nothing with a Y, I’m certain.")),
     14: dict(kind="ticket", title="TOY HALL — TICKET FOR THE TOY TRAIN RIDE",
-             statement=("The toy train guard", "She paid for a ride for a little boy who’d lost his "
-                        "mother in the crowd. I punch the pass number into the ticket. The holes are torn "
+             statement=("The toy train guard", "Before she went upstairs she paid for a ride for a little boy "
+                        "who’d lost his mother in the crowd. I punch the pass number into the ticket. The holes are torn "
                         "through, but I added the digits for the lucky-number game: they came to more "
                         "than ten.")),
     15: dict(kind="order", title="HABERDASHERY — MONOGRAM ORDER",
@@ -478,8 +478,8 @@ DOCS = {
     16: dict(kind="stamp", title="THE DOOR STAMP",
              statement=("Door rules", "Every pass is stamped at the door with a little clock face showing "
                         "the minute hand at the time of entry (the hour is not shown)."),
-             extra=(DOORMAN + ": “I saw the stamp when she held her pass up to the scanner: the minute hand "
-                    "pointed into the lower half of the face.”")),
+             extra=(DOORMAN + ": “Later on she showed me her pass to ask the way to the Toy Hall, and I saw "
+                    "the stamp: the minute hand pointed into the lower half of the face.”")),
     17: dict(kind="label", title="HATS & UMBRELLAS — HAT-BOX LABEL",
              statement=("The milliner", "I wrote her name on the hat-box label myself. Her surname "
                         "took up more room than her first name — more letters, I mean, not bigger ones.")),
@@ -494,8 +494,8 @@ DOCS = {
     20: dict(kind="pass", title="LANTERN PASSES — PRINTER’S NOTE",
              statement=("The printer", "We printed 2,400 passes for Lantern Night: numbers 0001 to 1200 on "
                         "green card, 1201 to 2400 on red."),
-             extra=(DOORMAN + ": “Her pass was red. I noticed it when she held it up to the scanner, because "
-                    "it matched the band’s coats.”")),
+             extra=(DOORMAN + ": “Her pass was red. I noticed it when she held it up to ask me the way, "
+                    "because it matched the band’s coats.”")),
     21: dict(kind="ledger", title="HOME & LINEN — DELIVERY LEDGER",
              statement=("The linen ledger", "She ordered a blanket to be sent on. The clerk spelled her "
                         "surname back to her and she said: ‘Only one E. People always add a second.’")),

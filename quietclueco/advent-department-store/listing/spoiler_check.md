@@ -24,7 +24,7 @@ How it works: every mockup and every video frame is built from real PDF regions 
 | 16 | Mockup 07-ipad-calendar: no spoilers in any visible text (4 sources) | PASS |  |
 | 17 | Mockup 08-who-its-for: 2000x2000 JPG | PASS | 372 KB |
 | 18 | Mockup 08-who-its-for: no spoilers in any visible text (9 sources) | PASS |  |
-| 19 | Mockup 09-whats-inside: 2000x2000 JPG | PASS | 367 KB |
+| 19 | Mockup 09-whats-inside: 2000x2000 JPG | PASS | 368 KB |
 | 20 | Mockup 09-whats-inside: no spoilers in any visible text (19 sources) | PASS |  |
 | 21 | Mockup 10-checked-by-code: 2000x2000 JPG | PASS | 278 KB |
 | 22 | Mockup 10-checked-by-code: no spoilers in any visible text (14 sources) | PASS |  |
