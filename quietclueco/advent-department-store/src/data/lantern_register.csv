@@ -1,0 +1,2401 @@
+entry,ticket,first,last,town,gate,stall
+16:01,0865,Viola,Moffatt,Pinchgate,Arcade,10
+16:02,0248,Walter,Stebbing,Furnace Row,Arcade,23
+16:02,0735,Alma,Marriott,Furnace Row,Garden,4
+16:02,1603,Harold,Northey,Lamplight Quay,Clock,9
+16:03,0096,Andrei,Ollett,Old Mint,Garden,16
+16:03,0105,Viola,Farrow,Tanners’ Reach,Tram,11
+16:03,0698,Ines,Maddock,Tanners’ Reach,Clock,8
+16:03,2005,Orla,Vintner,Saltmarket,Tram,4
+16:04,0740,Henry,Gorringe,Hollin Fields,Tram,9
+16:04,2146,Clement,Whitlowe,Rope Walk,Clock,6
+16:05,0659,Iris,Tyrrell,Saltmarket,Arcade,22
+16:05,1741,Ulric,Spiller,Tanners’ Reach,Arcade,15
+16:05,1960,Henry,Scarrott,Rope Walk,Tram,11
+16:05,2141,Zarina,Wassell,Ferrygate,Arcade,9
+16:06,1225,Sadie,Pennell,Bridgefoot,Tram,5
+16:06,1532,Josie,Maddock,Lamplight Quay,Clock,8
+16:06,1864,Hilary,Pennick,Ferrygate,Garden,4
+16:06,1947,Doris,Yarrow,Saltmarket,Clock,22
+16:07,0178,Wilbur,Hollins,Rope Walk,Garden,5
+16:07,0670,Ottoline,Varrell,Rope Walk,Tram,4
+16:08,1571,Greta,Baxter,Cathedral Close,Clock,20
+16:08,2047,Josie,Russett,Cathedral Close,Clock,15
+16:09,0112,Oscar,Ramsell,Pinchgate,Arcade,7
+16:09,0927,Ursel,Ollerton,Bellfounders,Tram,11
+16:10,0356,Ada,Vintner,Tanners’ Reach,Garden,11
+16:10,0674,Beatrix,Tarrell,Rope Walk,Arcade,1
+16:11,0921,Lottie,Garnett,Lamplight Quay,Arcade,13
+16:11,0997,Nina,Goodall,Saltmarket,Arcade,17
+16:11,1008,Laurie,Neville,Saltmarket,Garden,22
+16:11,2236,Una,Dawlish,Bellfounders,Clock,9
+16:11,2397,Lorena,Horrocks,Cathedral Close,Garden,3
+16:12,1082,Louisa,Sallis,Cathedral Close,Arcade,1
+16:12,2396,Wendell,Tillott,Hollin Fields,Clock,11
+16:13,0984,Norine,Ellery,Tanners’ Reach,Tram,8
+16:13,1301,Mabel,Redmayne,Lamplight Quay,Arcade,18
+16:13,1705,Cora,Tappell,Hollin Fields,Garden,13
+16:14,0673,Thea,Sutcliffe,Old Mint,Arcade,14
+16:14,2087,Gerald,Lomas,Furnace Row,Garden,5
+16:15,0994,Lottie,Quinnell,Ferrygate,Tram,22
+16:15,1392,Stella,Nettleton,Pinchgate,Tram,3
+16:16,1669,Maud,Woollard,Hollin Fields,Garden,8
+16:16,2277,Una,Sallis,Bellfounders,Clock,17
+16:17,1599,Dora,Brierley,Ferrygate,Arcade,13
+16:18,0744,Yolande,Hammond,Pinchgate,Tram,9
+16:18,1768,Agnes,Carrick,Saltmarket,Tram,24
+16:19,0489,Cherie,Pantridge,Saltmarket,Arcade,18
+16:19,0796,Zarina,Rummell,Ferrygate,Tram,1
+16:19,1312,Rowena,Archer,Coldharbour,Garden,17
+16:19,1314,Percy,Hollins,Rope Walk,Garden,21
+16:19,1511,Rhoda,Ramsell,Larchwood,Arcade,20
+16:19,1579,Marcia,Farrow,Pinchgate,Tram,14
+16:19,2133,Cora,Osborne,Coldharbour,Garden,9
+16:19,2230,Thea,Osborne,Gasworks,Clock,18
+16:19,2345,Winnie,Nettleton,Hollin Fields,Garden,12
+16:20,0073,Louisa,Prentice,Pinchgate,Tram,20
+16:20,0252,Cherie,Sutcliffe,Tanners’ Reach,Arcade,17
+16:20,2143,Willa,Ellery,Bridgefoot,Clock,14
+16:21,0447,Esmond,Tennant,Old Mint,Garden,22
+16:21,1323,Roxane,Ellery,Cathedral Close,Clock,6
+16:21,1496,Serena,Amory,Bridgefoot,Tram,12
+16:21,1794,Thea,Purcell,Coldharbour,Garden,5
+16:22,0959,Mercy,Wallace,Lamplight Quay,Tram,12
+16:22,1206,Agnes,Upcott,Cathedral Close,Arcade,23
+16:22,1825,Hector,Whitlowe,Larchwood,Garden,19
+16:23,0041,Bruno,Amory,Hollin Fields,Arcade,13
+16:23,0086,Norine,Dawlish,Furnace Row,Clock,2
+16:23,0454,Norine,Tebbs,Gasworks,Garden,4
+16:23,0926,Gertie,Brough,Cathedral Close,Tram,10
+16:24,0054,Wilfred,Dunning,Saltmarket,Arcade,2
+16:24,2338,Morris,Nuttall,Bridgefoot,Arcade,10
+16:25,1346,Nina,Wellbank,Lamplight Quay,Arcade,14
+16:25,1430,Hector,Quayle,Larchwood,Arcade,14
+16:25,2379,Gwen,Tillott,Pinchgate,Clock,17
+16:26,1021,Doris,Blackmore,Larchwood,Clock,2
+16:26,1224,Edgar,Yarrow,Rope Walk,Tram,15
+16:26,1470,Nerina,Norrell,Lamplight Quay,Arcade,22
+16:27,0928,Myrtle,Orrell,Saltmarket,Arcade,1
+16:27,1056,Wendell,Amory,Ferrygate,Arcade,1
+16:27,2243,Wanda,Sommers,Bridgefoot,Arcade,3
+16:28,0736,Tobias,Sallett,Cathedral Close,Garden,12
+16:28,1374,Wendell,Neville,Cathedral Close,Arcade,1
+16:28,2100,Sadie,Turrell,Larchwood,Clock,13
+16:29,0408,Cecil,Bagnall,Furnace Row,Arcade,4
+16:29,1467,Pearl,Fennell,Saltmarket,Garden,1
+16:29,2111,Tamsin,Neville,Pinchgate,Arcade,22
+16:30,1538,Una,Gilchrist,Coldharbour,Clock,14
+16:30,1954,Bertha,Finney,Bridgefoot,Tram,5
+16:30,2099,Sabine,Wyllie,Ferrygate,Arcade,14
+16:30,2113,Una,Winnell,Furnace Row,Arcade,8
+16:31,0163,Cora,Kellett,Lamplight Quay,Tram,2
+16:31,0561,Tobias,Hammond,Ferrygate,Arcade,23
+16:31,1706,Flora,Sennett,Bellfounders,Tram,3
+16:32,0768,Rosina,Woollard,Bridgefoot,Tram,15
+16:32,0864,Olive,Sommers,Hollin Fields,Arcade,1
+16:33,1642,Norma,Wallace,Tanners’ Reach,Tram,24
+16:34,0846,Ruth,Tebb,Gasworks,Garden,18
+16:34,1418,Gerald,Jarrett,Bellfounders,Tram,10
+16:34,2373,Oscar,Rolland,Cathedral Close,Clock,9
+16:35,0642,Mavis,Mossop,Ferrygate,Tram,11
+16:35,1380,Felix,Prentice,Pinchgate,Tram,24
+16:35,2203,Elsie,Upcott,Pinchgate,Clock,11
+16:35,2308,Roxane,Collier,Rope Walk,Arcade,11
+16:36,0084,Tobias,Collier,Furnace Row,Tram,10
+16:36,0132,Marina,Stebbing,Cathedral Close,Arcade,16
+16:36,1836,Bella,Woollard,Ferrygate,Tram,15
+16:37,0767,Willa,Dunning,Cathedral Close,Clock,24
+16:37,1791,Annie,Zeller,Furnace Row,Clock,14
+16:38,0238,Robert,Ormside,Tanners’ Reach,Tram,8
+16:38,2070,Thora,Skerritt,Saltmarket,Arcade,16
+16:38,2307,Orla,Liddell,Saltmarket,Arcade,9
+16:39,1007,Otto,Ormside,Lamplight Quay,Garden,6
+16:40,0328,Wanda,Toller,Coldharbour,Tram,18
+16:40,2089,Andrea,Vellacott,Hollin Fields,Garden,22
+16:40,2254,Doreen,Mellor,Saltmarket,Arcade,1
+16:41,0537,Amos,Pollitt,Coldharbour,Garden,23
+16:42,2082,Tobias,Abney,Saltmarket,Clock,9
+16:43,1978,Andrei,Wyllie,Bridgefoot,Clock,5
+16:43,2093,Enid,Naylor,Coldharbour,Arcade,22
+16:44,0525,Rupert,Yarrow,Cathedral Close,Clock,4
+16:44,0929,Clement,Purcell,Coldharbour,Arcade,1
+16:44,2276,Hattie,Stebbing,Cathedral Close,Arcade,12
+16:45,0426,Wilfred,Unsworth,Saltmarket,Garden,18
+16:46,0520,Celia,Stannard,Ferrygate,Tram,13
+16:46,0557,Mavis,Penny,Cathedral Close,Arcade,6
+16:46,1334,Wilfred,Abney,Rope Walk,Clock,5
+16:46,1510,Clement,Finney,Cathedral Close,Tram,24
+16:46,1728,Clara,Barnet,Cathedral Close,Clock,7
+16:46,2160,Arthur,Wollaston,Lamplight Quay,Clock,15
+16:47,1799,Gracie,Redmayne,Furnace Row,Garden,4
+16:47,2011,Bella,Tappell,Tanners’ Reach,Arcade,8
+16:48,1244,Sabine,Moffatt,Ferrygate,Garden,22
+16:48,1276,Ingrid,Neville,Tanners’ Reach,Arcade,18
+16:48,1872,Andrea,Woodall,Larchwood,Clock,6
+16:49,0723,Serena,Vassall,Saltmarket,Garden,22
+16:49,0884,Ursel,Radley,Hollin Fields,Clock,4
+16:49,1159,Selma,Weller,Saltmarket,Tram,9
+16:49,1494,Herbert,Prentice,Bridgefoot,Garden,19
+16:49,1949,Hector,Jarrett,Hollin Fields,Clock,19
+16:49,2064,Gilbert,Seddon,Pinchgate,Tram,10
+16:50,0332,Laurie,Upsall,Old Mint,Garden,13
+16:50,1203,Enid,Ollerton,Gasworks,Clock,11
+16:50,1256,Gwen,Mossop,Gasworks,Tram,19
+16:50,1587,Annie,Yewell,Bridgefoot,Arcade,17
+16:50,1939,Gerald,Hadley,Cathedral Close,Tram,1
+16:51,0977,Marina,Hebden,Old Mint,Arcade,20
+16:51,1938,Thea,Stebbing,Cathedral Close,Garden,5
+16:51,2106,Laura,Weller,Cathedral Close,Tram,20
+16:51,2306,Hilary,Baxter,Bridgefoot,Tram,14
+16:52,0011,Arlene,Swallow,Coldharbour,Garden,4
+16:52,0154,Hazel,Webb,Tanners’ Reach,Tram,16
+16:52,0197,Edgar,Rowell,Coldharbour,Arcade,6
+16:52,0757,Ethel,Wellbank,Saltmarket,Tram,21
+16:52,0876,Flora,Youell,Larchwood,Clock,21
+16:52,1330,Marcia,Carrick,Bellfounders,Clock,2
+16:52,1882,Otto,Hassall,Tanners’ Reach,Tram,8
+16:52,2378,Ernest,Penny,Ferrygate,Arcade,1
+16:53,0417,Ada,Kellett,Rope Walk,Garden,19
+16:53,0487,Hector,Parrish,Tanners’ Reach,Garden,11
+16:53,0950,Irene,Rolland,Gasworks,Arcade,6
+16:53,1611,Lilian,Anstey,Lamplight Quay,Garden,18
+16:54,0821,Norma,Redmayne,Tanners’ Reach,Arcade,18
+16:54,0869,Yolande,Quayle,Lamplight Quay,Tram,4
+16:54,0893,Yolande,Varley,Bridgefoot,Clock,6
+16:54,0919,Yolande,Sutcliffe,Saltmarket,Tram,5
+16:54,1032,Wilfred,Kimber,Larchwood,Arcade,7
+16:54,1746,Laura,Wallace,Bridgefoot,Arcade,18
+16:54,2270,Serena,Wells,Old Mint,Garden,17
+16:55,0664,Bella,Tarrell,Saltmarket,Clock,1
+16:55,2135,Selma,Unsworth,Larchwood,Tram,12
+16:56,0161,Cora,Maddock,Gasworks,Tram,20
+16:56,1432,Margie,Tillott,Lamplight Quay,Clock,12
+16:56,1616,Amos,Woodall,Saltmarket,Garden,17
+16:56,2179,Bertha,Yelland,Furnace Row,Garden,12
+16:58,0838,Isla,Pantridge,Cathedral Close,Garden,19
+16:58,1144,Arlene,Potter,Gasworks,Garden,11
+16:58,2001,Selma,Scarrott,Bridgefoot,Clock,11
+16:59,1110,Rhoda,Huxley,Coldharbour,Tram,9
+16:59,2339,Robert,Seddon,Coldharbour,Garden,23
+17:00,0035,Martha,Orrell,Gasworks,Garden,18
+17:00,0113,Morris,Rossiter,Gasworks,Arcade,9
+17:00,0845,Rowena,Lambert,Old Mint,Tram,8
+17:00,1002,Wilfred,Mellor,Saltmarket,Clock,1
+17:00,1478,Wilfred,Lambert,Rope Walk,Tram,8
+17:00,1487,Miriam,Russett,Hollin Fields,Tram,5
+17:01,0501,Dorita,Bullock,Bridgefoot,Tram,2
+17:01,0806,Herbert,Harker,Tanners’ Reach,Garden,23
+17:01,1259,Winnie,Yewell,Ferrygate,Clock,3
+17:01,1554,Ivor,Neill,Rope Walk,Arcade,9
+17:01,2189,Maud,Oddie,Bellfounders,Garden,20
+17:02,0195,Bella,Rawlins,Ferrygate,Tram,15
+17:02,0756,Sorcha,Yewell,Tanners’ Reach,Arcade,14
+17:02,1417,Gloria,Toller,Tanners’ Reach,Clock,6
+17:03,0273,Sorcha,Wells,Hollin Fields,Arcade,20
+17:03,0398,Ada,Eastwick,Bellfounders,Garden,3
+17:03,0647,Sabine,Pennell,Larchwood,Tram,10
+17:03,0870,Willa,Zeller,Old Mint,Clock,22
+17:04,0840,Ruth,Moffatt,Larchwood,Arcade,24
+17:04,1828,Noel,Beckett,Larchwood,Tram,23
+17:04,2187,Lorena,Ogden,Saltmarket,Clock,5
+17:05,1061,Ivor,Whittle,Gasworks,Clock,6
+17:05,1455,Lottie,Stebbing,Ferrygate,Arcade,6
+17:05,1685,Thea,Anstey,Bridgefoot,Clock,20
+17:05,2045,Cora,Amory,Hollin Fields,Clock,2
+17:06,0144,Harold,Tebb,Coldharbour,Arcade,21
+17:06,0573,Celia,Pettit,Ferrygate,Arcade,12
+17:06,0951,Esther,Whittle,Bridgefoot,Arcade,6
+17:06,1023,Annie,Spiller,Ferrygate,Clock,1
+17:06,1671,Annie,Anstey,Saltmarket,Garden,5
+17:06,2083,Ottoline,Brough,Cathedral Close,Clock,24
+17:07,0625,Agnes,Sellars,Old Mint,Tram,10
+17:07,0682,Marnie,Neill,Gasworks,Tram,22
+17:07,0832,Enid,Weller,Old Mint,Tram,20
+17:07,1214,Celia,Denning,Saltmarket,Garden,21
+17:07,1529,Cecil,Tollett,Furnace Row,Arcade,14
+17:07,1626,Enid,Pursell,Ferrygate,Garden,1
+17:07,1770,Mabel,Quinnell,Coldharbour,Garden,5
+17:07,2312,Doreen,Yelland,Lamplight Quay,Arcade,1
+17:08,0215,Lorna,Wallace,Lamplight Quay,Garden,12
+17:08,0404,Norine,Zennor,Larchwood,Arcade,19
+17:08,0552,Selma,Varrell,Saltmarket,Arcade,9
+17:08,0710,Nora,Vintner,Saltmarket,Arcade,21
+17:08,1090,Pearl,Ashby,Gasworks,Tram,16
+17:08,1122,Noel,Dallow,Larchwood,Tram,9
+17:08,1136,Myrtle,Beckett,Lamplight Quay,Arcade,9
+17:08,2355,Hilary,Marriott,Ferrygate,Clock,13
+17:09,0383,Ingrid,Garnett,Coldharbour,Arcade,14
+17:09,0861,Dorita,Bagnall,Lamplight Quay,Arcade,17
+17:09,1471,Rowena,Upsall,Furnace Row,Tram,6
+17:09,1930,Robert,Brough,Larchwood,Tram,19
+17:09,1985,Percy,Carrick,Lamplight Quay,Arcade,17
+17:09,2119,Wendell,Blackmore,Bellfounders,Tram,17
+17:10,0263,Amos,Hassall,Pinchgate,Tram,15
+17:10,1185,Hilary,Pottell,Old Mint,Arcade,1
+17:10,1789,Isla,Vellacott,Rope Walk,Clock,18
+17:10,1976,Mavis,Yewell,Coldharbour,Garden,17
+17:11,0862,Gertie,Unsworth,Cathedral Close,Clock,11
+17:11,0913,Doris,Prentice,Bellfounders,Arcade,15
+17:11,1369,Wanda,Harker,Rope Walk,Arcade,19
+17:11,1914,Rupert,Moffatt,Ferrygate,Clock,10
+17:11,2218,Roxane,Yarrow,Tanners’ Reach,Tram,9
+17:11,2309,Flora,Dawlish,Rope Walk,Tram,2
+17:11,2366,Laura,Moffatt,Coldharbour,Tram,6
+17:12,0169,Gerald,Hollins,Coldharbour,Clock,9
+17:12,1103,Harriet,Warrell,Gasworks,Tram,4
+17:12,1228,Ida,Mellor,Saltmarket,Garden,5
+17:12,1235,Lucia,Gilchrist,Saltmarket,Clock,10
+17:12,2298,Ines,Brierley,Larchwood,Arcade,20
+17:13,1393,Rita,Hammond,Gasworks,Arcade,23
+17:13,1440,Orsola,Spiller,Hollin Fields,Tram,12
+17:13,1504,Annie,Hassall,Cathedral Close,Clock,9
+17:13,1561,Beatrix,Seddon,Saltmarket,Arcade,3
+17:13,2114,Lorna,Tappell,Saltmarket,Clock,20
+17:13,2175,Hilary,Innes,Tanners’ Reach,Tram,18
+17:13,2310,Leon,Carrick,Bridgefoot,Tram,24
+17:14,0771,Celia,Liddell,Coldharbour,Clock,19
+17:15,1283,Hector,Tollett,Hollin Fields,Arcade,5
+17:15,1401,Nadia,Orrell,Old Mint,Clock,3
+17:15,1668,Enid,Tuckett,Coldharbour,Arcade,10
+17:15,2086,Arthur,Willett,Cathedral Close,Arcade,10
+17:16,0051,Doreen,Yarrow,Bellfounders,Clock,21
+17:16,0416,Rosina,Sellick,Rope Walk,Arcade,4
+17:16,1114,Daisy,Lomas,Hollin Fields,Tram,5
+17:16,1162,Teresa,Sherratt,Old Mint,Clock,14
+17:16,1536,Valery,Parrish,Bellfounders,Garden,15
+17:16,1786,Freda,Roskell,Furnace Row,Garden,21
+17:17,0005,Gwen,Pursell,Rope Walk,Arcade,4
+17:17,0015,Morris,Finney,Old Mint,Garden,1
+17:17,0406,Carina,Lockett,Bellfounders,Arcade,12
+17:17,0979,Lorna,Wardell,Coldharbour,Arcade,17
+17:17,1088,Freda,Seddon,Coldharbour,Arcade,20
+17:17,1840,Ingrid,Sallis,Ferrygate,Clock,14
+17:18,0335,Rupert,Ollett,Old Mint,Clock,23
+17:18,1293,Greta,Russett,Coldharbour,Arcade,1
+17:18,1813,Rowena,Pursell,Furnace Row,Arcade,1
+17:19,0446,Maisie,Hassall,Furnace Row,Tram,11
+17:19,1526,Wendell,Beckett,Gasworks,Clock,8
+17:20,0392,Gwen,Tebbs,Bridgefoot,Garden,4
+17:20,1160,Greta,Dawlish,Rope Walk,Arcade,12
+17:20,1577,Andrea,Parrish,Larchwood,Clock,7
+17:21,0116,Amos,Upsall,Coldharbour,Tram,18
+17:21,0427,Zarina,Wallace,Hollin Fields,Garden,20
+17:21,0991,Anna,Oddie,Lamplight Quay,Garden,14
+17:21,1753,Roland,Ellery,Bridgefoot,Garden,9
+17:21,1962,Walter,Tennant,Hollin Fields,Tram,3
+17:22,0937,Pearl,Finney,Bellfounders,Clock,5
+17:22,1345,Martha,Ollerton,Hollin Fields,Garden,22
+17:22,1399,Wilbur,Whitlowe,Rope Walk,Tram,17
+17:22,1657,Cyril,Zeller,Old Mint,Garden,15
+17:22,2084,Dorita,Varrell,Old Mint,Garden,20
+17:23,0230,Tobias,Woodall,Lamplight Quay,Arcade,14
+17:23,0315,Nora,Hebden,Bridgefoot,Arcade,1
+17:23,0912,Marcus,Bagnall,Saltmarket,Arcade,24
+17:23,0944,Tamara,Norrell,Saltmarket,Arcade,16
+17:23,1227,Maisie,Jarrett,Lamplight Quay,Tram,14
+17:23,1640,Percy,Iddon,Saltmarket,Tram,17
+17:23,1676,Olive,Roskell,Bellfounders,Garden,5
+17:23,1809,Marina,Zeller,Coldharbour,Tram,14
+17:23,2223,Orsola,Rushden,Bellfounders,Tram,9
+17:23,2304,Tamara,Whittle,Gasworks,Arcade,18
+17:23,2357,Teresa,Pantridge,Hollin Fields,Tram,20
+17:24,0064,Ethel,Redmayne,Lamplight Quay,Arcade,23
+17:24,0949,Wanda,Hadley,Cathedral Close,Garden,10
+17:24,1011,Gertie,Oddie,Tanners’ Reach,Clock,15
+17:24,1094,Andrea,Vassall,Saltmarket,Clock,10
+17:24,1507,Hattie,Roskell,Old Mint,Garden,22
+17:24,1734,Jack,Pursell,Old Mint,Tram,1
+17:24,2010,Celia,Dobbs,Ferrygate,Arcade,3
+17:25,0490,Minnie,Pennick,Bellfounders,Clock,15
+17:25,0514,Rita,Norrell,Bridgefoot,Clock,8
+17:25,0638,Ulric,Fairbank,Bellfounders,Garden,4
+17:25,1091,Zora,Purcell,Saltmarket,Clock,20
+17:25,1309,Marina,Tollett,Hollin Fields,Tram,23
+17:25,1347,Bertha,Tebbs,Old Mint,Garden,20
+17:25,1472,Carmen,Rowell,Bridgefoot,Tram,5
+17:25,1859,Pearl,Pottell,Rope Walk,Garden,1
+17:25,2060,Esmond,Ollerton,Furnace Row,Clock,9
+17:25,2132,Milo,Yarrow,Bellfounders,Arcade,24
+17:25,2167,Wanda,Vossell,Cathedral Close,Arcade,21
+17:25,2192,Herbert,Shipden,Cathedral Close,Garden,11
+17:26,1593,Elvira,Wassell,Old Mint,Arcade,20
+17:26,2348,Amos,Weller,Bridgefoot,Arcade,9
+17:27,0145,Amos,Wyllie,Old Mint,Garden,15
+17:27,0435,Rita,Allard,Furnace Row,Arcade,5
+17:27,0721,Wanda,Neill,Furnace Row,Arcade,9
+17:27,1049,Lena,Wyllie,Pinchgate,Tram,8
+17:28,0091,Maisie,Anstey,Saltmarket,Clock,17
+17:28,0102,Edgar,Baxter,Old Mint,Arcade,5
+17:28,0107,Viola,Usher,Rope Walk,Clock,14
+17:28,0415,Rosina,Lattimer,Gasworks,Clock,18
+17:28,0607,Ivor,Pollard,Pinchgate,Clock,4
+17:28,0652,Alma,Purcell,Tanners’ Reach,Clock,14
+17:28,0663,Harold,Toller,Lamplight Quay,Garden,2
+17:28,0729,Margie,Tarrell,Hollin Fields,Tram,22
+17:28,1292,Martha,Hollins,Hollin Fields,Clock,9
+17:28,1402,Doris,Toller,Saltmarket,Clock,7
+17:28,1605,Tobias,Tappell,Gasworks,Tram,6
+17:28,2389,Agnes,Gorringe,Rope Walk,Arcade,2
+17:29,0094,Jack,Sellars,Bellfounders,Tram,1
+17:29,0533,Orla,Sanderell,Lamplight Quay,Garden,5
+17:29,1217,Orsola,Sellars,Old Mint,Garden,20
+17:29,1602,Margie,Neville,Larchwood,Arcade,12
+17:29,2185,Nora,Blackmore,Gasworks,Garden,23
+17:30,0374,Celia,Carrick,Cathedral Close,Garden,22
+17:30,0421,Marcus,Ramsell,Bridgefoot,Clock,14
+17:30,0512,Marnie,Rushden,Saltmarket,Clock,22
+17:30,0974,Zora,Noakes,Bellfounders,Clock,18
+17:30,1763,Leon,Collier,Coldharbour,Clock,14
+17:31,0066,Teresa,Nevill,Old Mint,Clock,9
+17:31,0227,Josie,Rolland,Bellfounders,Clock,7
+17:31,1784,Edith,Pennell,Saltmarket,Clock,6
+17:31,1854,Norine,Toller,Tanners’ Reach,Arcade,20
+17:31,1863,Norine,Winnell,Hollin Fields,Arcade,22
+17:31,1865,Tamara,Quinnell,Old Mint,Tram,20
+17:31,1876,Leon,Ollett,Bellfounders,Garden,7
+17:31,2346,Vera,Yelland,Bellfounders,Arcade,3
+17:32,0189,Flora,Vossell,Cathedral Close,Garden,23
+17:32,1137,Hector,Hassall,Saltmarket,Clock,9
+17:32,1262,Alma,Corrigan,Gasworks,Tram,20
+17:32,1562,Tamara,Vossell,Bellfounders,Garden,22
+17:33,0150,Mirela,Rennie,Saltmarket,Clock,4
+17:33,0322,Zora,Turrell,Furnace Row,Tram,7
+17:33,0357,Roxane,Usher,Hollin Fields,Clock,4
+17:33,0403,Flora,Goodall,Old Mint,Arcade,7
+17:33,0760,Agnes,Baxter,Tanners’ Reach,Clock,13
+17:33,0871,Tobias,Seddon,Bellfounders,Tram,1
+17:33,1164,Margie,Spiller,Hollin Fields,Tram,1
+17:33,1177,Sorcha,Brough,Larchwood,Clock,6
+17:33,1298,Milo,Iddon,Hollin Fields,Arcade,23
+17:33,1437,Nora,Kaye,Bridgefoot,Garden,9
+17:33,1838,Cherie,Pursell,Old Mint,Clock,23
+17:33,2002,Wanda,Yarrow,Gasworks,Tram,6
+17:33,2012,Dora,Moffatt,Hollin Fields,Clock,20
+17:33,2115,Gertie,Weller,Coldharbour,Arcade,16
+17:34,0343,Wendell,Elwes,Lamplight Quay,Arcade,13
+17:34,0717,Doreen,Elwes,Gasworks,Garden,17
+17:34,0792,Margie,Yardley,Cathedral Close,Clock,21
+17:34,1070,Greta,Yelland,Hollin Fields,Arcade,11
+17:34,1121,Arthur,Corrigan,Saltmarket,Arcade,17
+17:34,1157,Sadie,Sellars,Hollin Fields,Tram,10
+17:34,2235,Marina,Gilchrist,Gasworks,Arcade,22
+17:35,0087,Ulric,Wyllie,Tanners’ Reach,Tram,5
+17:35,0272,Nora,Vellacott,Gasworks,Clock,12
+17:35,0413,Carmen,Garnett,Furnace Row,Garden,21
+17:35,0687,Valery,Fennell,Rope Walk,Garden,18
+17:35,0730,Otto,Usher,Old Mint,Clock,20
+17:35,0946,Pearl,Webb,Pinchgate,Arcade,1
+17:35,0983,Mabel,Finney,Lamplight Quay,Arcade,3
+17:35,2050,Wanda,Mellor,Lamplight Quay,Clock,6
+17:36,0529,Teresa,Eastwick,Pinchgate,Garden,11
+17:36,1638,Sadie,Wollaston,Lamplight Quay,Arcade,2
+17:36,2035,Willa,Ollerton,Gasworks,Clock,24
+17:37,0202,Felix,Marriott,Larchwood,Arcade,24
+17:37,0337,Judith,Shipden,Larchwood,Arcade,11
+17:37,0371,Ida,Allard,Larchwood,Tram,11
+17:37,0908,Esmond,Roskell,Saltmarket,Arcade,5
+17:37,1229,Ines,Ellery,Larchwood,Arcade,8
+17:37,1637,Greta,Wollaston,Rope Walk,Clock,8
+17:37,1653,Serena,Sallett,Old Mint,Garden,20
+17:37,1725,Frances,Kaye,Hollin Fields,Garden,16
+17:37,2278,Lucia,Seddon,Old Mint,Garden,16
+17:38,0284,Gloria,Prentice,Furnace Row,Arcade,14
+17:38,0306,Gwen,Ormside,Bridgefoot,Clock,18
+17:38,0622,Hector,Tappell,Bellfounders,Garden,22
+17:38,0694,Robert,Pollard,Tanners’ Reach,Arcade,9
+17:38,0828,Daisy,Pottell,Furnace Row,Tram,1
+17:38,1729,Carmen,Willett,Old Mint,Garden,20
+17:38,1797,Marina,Lomas,Saltmarket,Tram,16
+17:38,2349,Myrtle,Northey,Old Mint,Tram,22
+17:39,0181,Willa,Neville,Lamplight Quay,Clock,4
+17:39,0295,Miriam,Ollerton,Hollin Fields,Garden,9
+17:39,0548,Hazel,Fennell,Bellfounders,Arcade,2
+17:39,0649,Noel,Parrish,Pinchgate,Arcade,1
+17:39,0911,Harriet,Towell,Old Mint,Tram,8
+17:39,0989,Hilary,Scarrott,Old Mint,Arcade,22
+17:39,1015,Rowena,Rimmer,Gasworks,Garden,18
+17:39,1189,Arthur,Denning,Bridgefoot,Garden,9
+17:39,1248,Maud,Bramall,Furnace Row,Tram,6
+17:39,1502,Hilary,Wardell,Rope Walk,Garden,6
+17:39,1844,Frances,Sommers,Coldharbour,Arcade,1
+17:39,2040,Jack,Blackmore,Bellfounders,Clock,20
+17:40,0758,Hilary,Tebb,Larchwood,Clock,10
+17:40,1517,Lena,Rawlins,Larchwood,Arcade,10
+17:40,1966,Hilary,Goodall,Ferrygate,Clock,19
+17:41,0149,Andrei,Upsall,Saltmarket,Garden,11
+17:41,0645,Tamara,Merrick,Rope Walk,Arcade,1
+17:41,0753,Ursel,Kellett,Furnace Row,Garden,16
+17:41,1059,Frances,Jessop,Hollin Fields,Clock,20
+17:41,1473,Philippa,Lacey,Hollin Fields,Clock,20
+17:41,1892,Vera,Brough,Saltmarket,Tram,5
+17:41,1917,Ernest,Blackmore,Lamplight Quay,Garden,15
+17:41,2337,Beatrix,Sanderell,Bellfounders,Tram,9
+17:42,0283,Henry,Sellick,Saltmarket,Clock,8
+17:42,1322,Martha,Barnet,Lamplight Quay,Arcade,16
+17:42,1378,Anna,Ormside,Saltmarket,Arcade,5
+17:42,1810,Andrea,Nuttall,Rope Walk,Tram,6
+17:42,1868,Zelie,Farrow,Pinchgate,Arcade,6
+17:42,2020,Ida,Tarrell,Larchwood,Clock,9
+17:42,2028,Gloria,Lambert,Bellfounders,Arcade,24
+17:42,2153,Arlene,Finney,Bridgefoot,Garden,12
+17:43,0038,Serena,Ogden,Cathedral Close,Tram,20
+17:43,0123,Edith,Varrell,Pinchgate,Tram,5
+17:43,0171,Philippa,Brough,Bridgefoot,Garden,5
+17:43,0278,Irene,Ramsell,Gasworks,Garden,22
+17:43,0581,Hattie,Bullock,Cathedral Close,Garden,11
+17:43,0742,Carla,Mellor,Gasworks,Tram,2
+17:43,0808,Oscar,Penny,Lamplight Quay,Clock,11
+17:43,1306,Wendell,Darnell,Hollin Fields,Arcade,17
+17:43,2162,Ernest,Tyrrell,Cathedral Close,Tram,14
+17:44,0159,Lorna,Venning,Furnace Row,Arcade,20
+17:44,0193,Willa,Lomas,Cathedral Close,Arcade,6
+17:44,0473,Alma,Fennell,Coldharbour,Arcade,22
+17:44,0746,Oscar,Skerritt,Bridgefoot,Garden,15
+17:44,0907,Otto,Varley,Cathedral Close,Clock,19
+17:44,0925,Milo,Baxter,Old Mint,Clock,24
+17:44,1058,Wanda,Rushden,Ferrygate,Clock,16
+17:44,1106,Oscar,Northey,Old Mint,Garden,11
+17:45,0889,Louisa,Kimber,Bridgefoot,Tram,14
+17:45,1142,Flora,Purcell,Old Mint,Tram,2
+17:45,1684,Sabine,Zeller,Pinchgate,Tram,12
+17:45,2252,Nadia,Sennett,Furnace Row,Arcade,4
+17:46,0061,Dora,Dobbs,Hollin Fields,Clock,21
+17:46,0124,Ruth,Yardley,Larchwood,Tram,16
+17:46,0689,Valery,Dallow,Gasworks,Clock,11
+17:46,0763,Ines,Toller,Lamplight Quay,Clock,1
+17:46,0795,Lena,Vellacott,Bridgefoot,Clock,24
+17:46,1658,Dorita,Zeller,Saltmarket,Tram,6
+17:46,1660,Bruno,Barnet,Cathedral Close,Garden,5
+17:47,0160,Sabrine,Unsworth,Saltmarket,Clock,7
+17:47,0172,Agnes,Finney,Bellfounders,Tram,20
+17:47,0276,Jack,Webb,Tanners’ Reach,Garden,14
+17:47,0574,Petra,Denning,Ferrygate,Clock,1
+17:47,1013,Morris,Abney,Hollin Fields,Clock,18
+17:47,1120,Amos,Pell,Pinchgate,Arcade,8
+17:47,1239,Esther,Liddell,Rope Walk,Arcade,5
+17:47,1569,Norma,Gilchrist,Furnace Row,Tram,1
+17:47,1793,Lilian,Newall,Hollin Fields,Arcade,21
+17:47,1831,Hazel,Towell,Ferrygate,Clock,5
+17:47,1929,Philippa,Chadwick,Furnace Row,Arcade,23
+17:48,0665,Nina,Roskell,Tanners’ Reach,Garden,5
+17:48,0699,Selma,Pottell,Bellfounders,Clock,3
+17:48,1001,Judith,Sallett,Pinchgate,Tram,17
+17:48,1155,Noel,Willett,Saltmarket,Tram,17
+17:48,2194,Walter,Prentice,Tanners’ Reach,Tram,19
+17:48,2293,Mercy,Woodall,Saltmarket,Clock,14
+17:49,0534,Arthur,Mossop,Larchwood,Arcade,11
+17:49,0637,Maisie,Northey,Cathedral Close,Tram,14
+17:49,1051,Wilfred,Corrigan,Rope Walk,Tram,17
+17:49,1131,Audrey,Farrow,Larchwood,Tram,1
+17:49,1282,Ulric,Unsworth,Saltmarket,Clock,12
+17:49,1349,Carla,Ramsell,Bridgefoot,Arcade,8
+17:49,1379,Maud,Unsworth,Rope Walk,Tram,16
+17:49,1435,Noel,Mossop,Lamplight Quay,Garden,6
+17:50,0281,Vera,Prentice,Bridgefoot,Tram,10
+17:50,0288,Mercy,Lockett,Ferrygate,Clock,11
+17:50,1607,Dorita,Osborne,Furnace Row,Arcade,16
+17:50,1674,Bertha,Pottell,Coldharbour,Garden,11
+17:50,1688,Gilbert,Pantridge,Bellfounders,Garden,21
+17:50,2147,Maisie,Skerritt,Cathedral Close,Arcade,5
+17:51,0002,Ingrid,Pell,Saltmarket,Tram,9
+17:51,0003,Serena,Yarrow,Hollin Fields,Arcade,7
+17:51,0012,Percy,Tillott,Bellfounders,Tram,12
+17:51,0587,Clement,Marriott,Pinchgate,Arcade,4
+17:51,0646,Pearl,Sherratt,Ferrygate,Tram,14
+17:51,0672,Rhoda,Bagnall,Bellfounders,Clock,4
+17:51,0895,Andrea,Varley,Pinchgate,Tram,5
+17:51,1035,Arthur,Northey,Rope Walk,Clock,2
+17:51,1332,Hattie,Seddon,Larchwood,Garden,20
+17:51,1387,Rupert,Mellor,Bridgefoot,Arcade,3
+17:51,1585,Myrtle,Pollard,Ferrygate,Clock,5
+17:51,1924,Leon,Corrigan,Furnace Row,Arcade,20
+17:51,2324,Louisa,Ashby,Rope Walk,Clock,9
+17:52,0190,Felix,Zeller,Larchwood,Garden,5
+17:52,0684,Elvira,Rushden,Saltmarket,Clock,20
+17:52,0784,Selma,Rawlins,Bellfounders,Arcade,5
+17:52,0842,Felix,Vassall,Pinchgate,Tram,6
+17:52,0987,Wanda,Ollerton,Hollin Fields,Clock,24
+17:52,2222,Ulric,Swallow,Hollin Fields,Tram,21
+17:53,0365,Mabel,Perrott,Bridgefoot,Tram,17
+17:53,0711,Petra,Rawlins,Bellfounders,Arcade,15
+17:53,0745,Harriet,Carrick,Lamplight Quay,Clock,4
+17:53,0811,Ingrid,Usher,Old Mint,Tram,14
+17:53,1166,Vera,Russett,Saltmarket,Arcade,19
+17:53,1186,Felix,Potter,Cathedral Close,Tram,5
+17:53,1549,Zarina,Scarrott,Coldharbour,Arcade,18
+17:53,2214,Rupert,Woodall,Bridgefoot,Tram,4
+17:54,0121,Doreen,Hadley,Ferrygate,Arcade,15
+17:54,0307,Serena,Pell,Hollin Fields,Garden,3
+17:54,0441,Annie,Wellbank,Pinchgate,Arcade,4
+17:54,0733,Lorena,Woollard,Hollin Fields,Tram,10
+17:54,1539,Sorcha,Bramall,Coldharbour,Clock,3
+17:54,1879,Vera,Ollett,Bridgefoot,Tram,10
+17:54,1885,Edgar,Ramsell,Rope Walk,Arcade,6
+17:55,0081,Rowena,Sellars,Furnace Row,Tram,4
+17:55,0451,Carla,Osborne,Furnace Row,Arcade,24
+17:55,0600,Laura,Woodall,Lamplight Quay,Garden,5
+17:55,0883,Esmond,Yelland,Ferrygate,Arcade,18
+17:55,1333,Robert,Youell,Coldharbour,Clock,4
+17:55,1443,Una,Rawlins,Bridgefoot,Clock,1
+17:55,1701,Elsie,Goodall,Old Mint,Tram,16
+17:55,1722,Gerald,Redmayne,Hollin Fields,Arcade,5
+17:55,1823,Cherie,Allard,Old Mint,Clock,16
+17:55,2258,Zelie,Wells,Ferrygate,Tram,17
+17:56,0179,Audrey,Yewell,Hollin Fields,Arcade,19
+17:56,0289,Gloria,Rummell,Hollin Fields,Tram,18
+17:56,1085,Blanche,Nuttall,Cathedral Close,Arcade,14
+17:56,1270,Zora,Nuttall,Pinchgate,Garden,22
+17:56,1328,Ulric,Rimmer,Lamplight Quay,Clock,13
+17:57,0152,Gloria,Sallis,Lamplight Quay,Clock,5
+17:57,0586,Daisy,Stebbing,Bridgefoot,Tram,23
+17:57,0939,Robert,Zennor,Coldharbour,Clock,1
+17:57,0971,Miriam,Harker,Cathedral Close,Garden,16
+17:57,1272,Gloria,Thackray,Tanners’ Reach,Tram,1
+17:57,1594,Lorna,Spiller,Old Mint,Arcade,7
+17:57,1816,Orsola,Woodall,Tanners’ Reach,Clock,4
+17:57,1850,Ursel,Sennett,Coldharbour,Garden,10
+17:57,1899,Cecil,Beckett,Tanners’ Reach,Garden,16
+17:57,2004,Herbert,Osborne,Lamplight Quay,Arcade,9
+17:58,0106,Nerina,Seddon,Old Mint,Arcade,17
+17:58,0128,Bertha,Northey,Coldharbour,Garden,16
+17:58,0330,Roland,Elwes,Furnace Row,Garden,1
+17:58,0414,Marnie,Rowell,Bellfounders,Garden,3
+17:58,0547,Laura,Woollard,Rope Walk,Clock,9
+17:58,0585,Dora,Nevill,Saltmarket,Arcade,21
+17:58,0794,Cecil,Cotterill,Coldharbour,Tram,20
+17:58,1128,Andrea,Kellett,Hollin Fields,Arcade,20
+17:58,1149,Josie,Yelland,Larchwood,Clock,4
+17:58,1522,Harriet,Parrish,Saltmarket,Clock,8
+17:58,1680,Martha,Sommers,Hollin Fields,Garden,1
+17:58,1814,Percy,Marriott,Pinchgate,Clock,14
+17:58,2019,Carla,Farrow,Gasworks,Tram,4
+17:59,0286,Judith,Corrigan,Tanners’ Reach,Clock,24
+17:59,0690,Olive,Sturdevan,Tanners’ Reach,Clock,17
+17:59,0737,Edith,Hassall,Rope Walk,Clock,6
+17:59,1105,Hattie,Maddock,Rope Walk,Tram,11
+17:59,1376,Marcia,Swallow,Pinchgate,Garden,19
+17:59,1397,Daisy,Rummell,Tanners’ Reach,Arcade,9
+17:59,1412,Doris,Innes,Bridgefoot,Garden,24
+17:59,1537,Myrtle,Allard,Bellfounders,Garden,1
+17:59,2075,Milo,Sanderell,Furnace Row,Clock,17
+17:59,2154,Maud,Nuttall,Saltmarket,Garden,16
+17:59,2265,Marcia,Ogden,Furnace Row,Arcade,1
+18:00,0125,Margie,Noakes,Saltmarket,Arcade,2
+18:00,0164,Blanche,Bramall,Gasworks,Clock,13
+18:00,0177,Ingrid,Wollaston,Rope Walk,Clock,10
+18:00,0260,Frances,Tebb,Pinchgate,Clock,19
+18:00,0268,Thora,Rushden,Tanners’ Reach,Arcade,8
+18:00,1047,Mabel,Croft,Saltmarket,Arcade,22
+18:00,1442,Stella,Noakes,Cathedral Close,Garden,13
+18:00,1513,Zelie,Orrell,Coldharbour,Garden,1
+18:00,1636,Lilian,Abney,Bridgefoot,Clock,22
+18:00,1827,Willa,Shipden,Hollin Fields,Clock,11
+18:01,0026,Tobias,Webb,Coldharbour,Clock,15
+18:01,0325,Gilbert,Hebden,Pinchgate,Tram,14
+18:01,0327,Tobias,Woollard,Saltmarket,Clock,17
+18:01,0530,Carmen,Hadley,Old Mint,Tram,2
+18:01,1097,Lilian,Toller,Gasworks,Arcade,17
+18:01,1158,Rita,Hollins,Old Mint,Clock,20
+18:01,1422,Serena,Rimmer,Coldharbour,Arcade,10
+18:01,1656,Wendell,Weller,Coldharbour,Arcade,5
+18:01,1665,Mavis,Prentice,Ferrygate,Arcade,22
+18:01,1824,Zelie,Tuckett,Old Mint,Arcade,2
+18:01,1910,Celia,Bolton,Saltmarket,Clock,24
+18:01,1989,Sadie,Rossiter,Old Mint,Arcade,8
+18:01,1996,Flora,Liddell,Coldharbour,Clock,9
+18:01,2170,Otto,Beckett,Larchwood,Clock,18
+18:01,2267,Sadie,Nuttall,Old Mint,Arcade,10
+18:01,2300,Greta,Yardley,Coldharbour,Clock,20
+18:01,2377,Milo,Vassall,Pinchgate,Arcade,11
+18:02,0339,Mirela,Ollett,Coldharbour,Garden,7
+18:02,1251,Nadia,Russett,Ferrygate,Clock,5
+18:02,1546,Ivor,Hebden,Saltmarket,Clock,23
+18:02,1837,Sabine,Ashby,Ferrygate,Arcade,10
+18:02,1941,Gloria,Yarrow,Saltmarket,Clock,12
+18:02,2325,Willa,Noakes,Hollin Fields,Arcade,8
+18:03,0400,Sabrine,Ollett,Lamplight Quay,Arcade,4
+18:03,0596,Iris,Spiller,Coldharbour,Tram,8
+18:03,0639,Harriet,Tappell,Bridgefoot,Clock,15
+18:03,1302,Doris,Thackray,Old Mint,Clock,2
+18:03,1433,Sabine,Tarrell,Old Mint,Clock,11
+18:03,2069,Iris,Baxter,Bridgefoot,Garden,21
+18:04,0384,Xenia,Hebden,Saltmarket,Arcade,17
+18:04,0605,Cecil,Stebbing,Saltmarket,Arcade,17
+18:04,1172,Thea,Sturdevan,Coldharbour,Arcade,11
+18:04,1200,Noel,Purcell,Old Mint,Clock,10
+18:04,1265,Carina,Brierley,Bridgefoot,Tram,5
+18:04,2200,Flora,Scarrott,Rope Walk,Arcade,6
+18:05,0021,Herbert,Collier,Gasworks,Arcade,7
+18:05,0119,Bruno,Osborne,Coldharbour,Clock,16
+18:05,0221,Myrtle,Sallett,Coldharbour,Clock,1
+18:05,0562,Agnes,Bramall,Coldharbour,Arcade,13
+18:05,1348,Sabine,Rawlins,Coldharbour,Clock,6
+18:05,1534,Willa,Jarrett,Saltmarket,Clock,19
+18:05,1543,Laura,Rowell,Saltmarket,Garden,8
+18:05,1608,Ulric,Hebden,Pinchgate,Garden,23
+18:05,1693,Petra,Rushden,Lamplight Quay,Tram,8
+18:05,1931,Jack,Brough,Cathedral Close,Tram,19
+18:05,2120,Nadia,Gilchrist,Rope Walk,Arcade,19
+18:05,2177,Yvette,Lockett,Ferrygate,Clock,14
+18:06,0090,Cora,Hassall,Coldharbour,Tram,4
+18:06,0923,Bernard,Farrow,Rope Walk,Arcade,4
+18:06,1381,Celia,Sherratt,Saltmarket,Garden,6
+18:06,1492,Ursel,Anstey,Saltmarket,Clock,10
+18:06,1987,Percy,Sturdevan,Coldharbour,Clock,7
+18:06,2116,Petra,Pollard,Pinchgate,Tram,1
+18:07,0319,Hattie,Scarrott,Bridgefoot,Arcade,5
+18:07,0390,Wilbur,Nuttall,Ferrygate,Tram,13
+18:07,0686,Otto,Yewell,Bellfounders,Garden,4
+18:07,0932,Clement,Whittle,Bridgefoot,Clock,9
+18:07,1072,Freda,Webb,Hollin Fields,Arcade,8
+18:07,1340,Maisie,Sutcliffe,Hollin Fields,Garden,11
+18:07,1556,Otto,Lomas,Furnace Row,Arcade,1
+18:07,1606,Hector,Rowell,Rope Walk,Arcade,9
+18:07,1902,Thea,Kimber,Lamplight Quay,Arcade,18
+18:07,1981,Ethel,Hebden,Furnace Row,Arcade,18
+18:07,2171,Esmond,Bullock,Tanners’ Reach,Tram,14
+18:07,2315,Lucia,Denning,Old Mint,Garden,18
+18:07,2356,Margie,Dunning,Saltmarket,Arcade,20
+18:07,2400,Olive,Rushden,Rope Walk,Arcade,19
+18:08,0201,Carmen,Finney,Furnace Row,Clock,10
+18:08,1249,Henry,Horrocks,Ferrygate,Clock,24
+18:08,1552,Mirela,Bagnall,Lamplight Quay,Clock,10
+18:08,2372,Mavis,Fairbank,Saltmarket,Garden,1
+18:09,0168,Henry,Pell,Ferrygate,Arcade,16
+18:09,0308,Nina,Woodall,Ferrygate,Clock,15
+18:09,0837,Alma,Tillott,Furnace Row,Arcade,1
+18:09,0999,Freda,Lockett,Larchwood,Garden,11
+18:09,1970,Carla,Noakes,Ferrygate,Garden,24
+18:10,0071,Lucia,Wardell,Saltmarket,Tram,19
+18:10,0139,Norma,Hollins,Bellfounders,Tram,10
+18:10,0261,Oscar,Pottell,Pinchgate,Clock,22
+18:10,0653,Mercy,Lattimer,Cathedral Close,Arcade,4
+18:10,0835,Sadie,Purcell,Furnace Row,Tram,24
+18:10,1269,Cyril,Hassall,Ferrygate,Garden,11
+18:10,1384,Gracie,Pottell,Lamplight Quay,Clock,1
+18:10,1518,Grace,Elwes,Lamplight Quay,Arcade,16
+18:10,1749,Bertha,Tillott,Larchwood,Garden,8
+18:10,1781,Yolande,Winnell,Coldharbour,Arcade,1
+18:10,1822,Tamara,Lomas,Rope Walk,Arcade,11
+18:10,1898,Bruno,Vassall,Coldharbour,Clock,16
+18:10,1919,Martha,Quinnell,Saltmarket,Clock,18
+18:10,2079,Alma,Wallace,Saltmarket,Arcade,14
+18:10,2188,Una,Lattimer,Saltmarket,Tram,21
+18:10,2229,Beatrix,Rawlins,Gasworks,Tram,12
+18:11,0350,Nora,Sennett,Bridgefoot,Tram,15
+18:11,0500,Percy,Innes,Saltmarket,Clock,24
+18:11,0881,Orla,Vossell,Tanners’ Reach,Arcade,14
+18:11,1208,Roland,Upsall,Old Mint,Clock,4
+18:11,1326,Daisy,Farrow,Lamplight Quay,Garden,8
+18:11,1477,Clement,Kellett,Coldharbour,Garden,7
+18:11,1545,Noel,Rushden,Rope Walk,Arcade,13
+18:11,1720,Carina,Thackray,Cathedral Close,Garden,20
+18:11,1726,Percy,Farrow,Larchwood,Tram,2
+18:11,1774,Carla,Tarrell,Cathedral Close,Clock,9
+18:11,2137,Norine,Goodall,Coldharbour,Arcade,1
+18:12,0153,Ida,Tillott,Lamplight Quay,Tram,22
+18:12,0353,Sabrine,Pennell,Hollin Fields,Clock,17
+18:12,0707,Elsie,Harker,Ferrygate,Tram,18
+18:12,0943,Laura,Upsall,Hollin Fields,Arcade,2
+18:12,1141,Flora,Zennor,Saltmarket,Clock,10
+18:12,1182,Percy,Stebbing,Tanners’ Reach,Clock,10
+18:12,1943,Celia,Rennie,Pinchgate,Clock,14
+18:12,2176,Mabel,Rushden,Lamplight Quay,Clock,7
+18:12,2198,Maisie,Sellick,Tanners’ Reach,Garden,20
+18:12,2266,Wilbur,Seddon,Coldharbour,Clock,11
+18:13,0240,Vesna,Wassell,Saltmarket,Clock,15
+18:13,0485,Milo,Tuckett,Larchwood,Clock,1
+18:13,0491,Martha,Ogden,Hollin Fields,Tram,17
+18:13,0816,Sabine,Parrish,Saltmarket,Arcade,13
+18:13,1029,Andrea,Pell,Coldharbour,Tram,4
+18:13,1065,Edith,Quinnell,Hollin Fields,Arcade,15
+18:13,1075,Bella,Dobbs,Hollin Fields,Arcade,23
+18:13,1299,Tobias,Warrell,Saltmarket,Tram,13
+18:13,1485,Philippa,Redmayne,Pinchgate,Clock,20
+18:13,1717,Tobias,Hebden,Larchwood,Arcade,4
+18:13,1757,Mercy,Innes,Rope Walk,Clock,8
+18:13,1795,Serena,Newall,Hollin Fields,Clock,18
+18:13,2017,Ida,Sallett,Pinchgate,Garden,2
+18:13,2072,Rita,Thackray,Pinchgate,Tram,14
+18:14,1133,Lucia,Lattimer,Bellfounders,Garden,2
+18:14,1254,Lorna,Rossiter,Gasworks,Garden,7
+18:14,1600,Marcia,Sturdevan,Saltmarket,Garden,6
+18:14,1884,Carina,Mossop,Gasworks,Clock,1
+18:14,2140,Ethel,Finney,Rope Walk,Clock,11
+18:14,2165,Bertha,Fennell,Lamplight Quay,Clock,12
+18:15,0085,Gwen,Quayle,Bridgefoot,Arcade,6
+18:15,0277,Henry,Wassell,Gasworks,Tram,9
+18:15,0714,Teresa,Horrocks,Lamplight Quay,Tram,20
+18:15,1317,Nerina,Hebden,Ferrygate,Clock,1
+18:15,1361,Selma,Darnell,Larchwood,Clock,17
+18:15,1984,Ursel,Yewell,Pinchgate,Clock,23
+18:15,2216,Carmen,Newall,Lamplight Quay,Arcade,9
+18:15,2217,Isla,Dobbs,Rope Walk,Tram,4
+18:15,2380,Rhoda,Pantridge,Gasworks,Arcade,10
+18:16,0370,Flora,Lambert,Cathedral Close,Arcade,9
+18:16,0444,Hazel,Denning,Coldharbour,Arcade,9
+18:16,0507,Gertie,Naylor,Cathedral Close,Garden,20
+18:16,0850,Robert,Bramall,Gasworks,Clock,18
+18:16,1540,Mercy,Carrick,Hollin Fields,Clock,1
+18:16,1559,Bruno,Woodall,Bellfounders,Tram,2
+18:16,1803,Harold,Tappell,Saltmarket,Clock,20
+18:17,0393,Vera,Blackmore,Old Mint,Tram,21
+18:17,0629,Cecil,Pettit,Lamplight Quay,Garden,17
+18:17,0836,Cherie,Lacey,Saltmarket,Clock,16
+18:17,0904,Judith,Hadley,Tanners’ Reach,Arcade,10
+18:17,1009,Judith,Sutcliffe,Tanners’ Reach,Tram,13
+18:17,1310,Maud,Roskell,Saltmarket,Arcade,11
+18:17,1449,Ottoline,Bolton,Ferrygate,Clock,9
+18:17,1589,Herbert,Winnell,Coldharbour,Clock,3
+18:17,1860,Esmond,Mossop,Pinchgate,Arcade,5
+18:17,1921,Josie,Innes,Old Mint,Clock,19
+18:17,2279,Rupert,Seddon,Larchwood,Clock,21
+18:18,0331,Andrei,Hadley,Larchwood,Garden,21
+18:18,0613,Louisa,Weller,Coldharbour,Arcade,17
+18:18,1053,Maisie,Roskell,Larchwood,Garden,17
+18:18,1213,Zarina,Wyllie,Furnace Row,Tram,1
+18:18,2391,Thea,Lattimer,Saltmarket,Garden,12
+18:19,0285,Teresa,Bolton,Lamplight Quay,Tram,3
+18:19,1364,Carmen,Dallow,Pinchgate,Tram,17
+18:19,1439,Tobias,Gilchrist,Old Mint,Clock,22
+18:19,1441,Clara,Sutcliffe,Saltmarket,Clock,17
+18:19,1453,Herbert,Lambert,Tanners’ Reach,Clock,9
+18:19,1764,Tobias,Sherratt,Tanners’ Reach,Arcade,10
+18:19,1874,Nadia,Oddie,Bridgefoot,Clock,21
+18:19,1896,Laura,Ormside,Saltmarket,Tram,23
+18:19,1993,Una,Lambert,Gasworks,Garden,23
+18:19,2041,Bella,Norrell,Cathedral Close,Arcade,18
+18:19,2107,Willa,Yewell,Pinchgate,Garden,1
+18:19,2215,Martha,Huxley,Pinchgate,Tram,11
+18:20,0037,Cyril,Upcott,Bellfounders,Garden,2
+18:20,0120,Lorena,Pollard,Larchwood,Clock,16
+18:20,0358,Isla,Purcell,Pinchgate,Garden,6
+18:20,0363,Winnie,Iddon,Old Mint,Clock,5
+18:20,0380,Marcus,Brierley,Furnace Row,Clock,1
+18:20,0705,Roland,Innes,Tanners’ Reach,Clock,10
+18:20,0786,Andrei,Varrell,Furnace Row,Tram,1
+18:20,0830,Norine,Russett,Rope Walk,Tram,8
+18:20,1183,Lucia,Lambert,Rope Walk,Arcade,6
+18:20,1406,Doreen,Abney,Saltmarket,Tram,9
+18:20,1469,Marina,Scarrott,Hollin Fields,Arcade,20
+18:20,1553,Irene,Northey,Larchwood,Tram,6
+18:20,1582,Esmond,Oddie,Pinchgate,Clock,6
+18:20,1710,Gloria,Denning,Saltmarket,Garden,24
+18:20,1751,Zelie,Winnell,Rope Walk,Clock,9
+18:20,1777,Mercy,Wardell,Hollin Fields,Tram,12
+18:20,1963,Hattie,Finney,Ferrygate,Garden,5
+18:20,2316,Miriam,Denning,Tanners’ Reach,Garden,14
+18:21,0127,Alma,Dallow,Larchwood,Tram,6
+18:21,0143,Ingrid,Blackmore,Lamplight Quay,Garden,6
+18:21,0822,Gilbert,Mellor,Gasworks,Garden,17
+18:21,1212,Bertha,Pennick,Gasworks,Garden,1
+18:21,1289,Nerina,Wells,Hollin Fields,Tram,22
+18:21,1474,Amos,Maddock,Cathedral Close,Clock,15
+18:21,1655,Carla,Sallis,Saltmarket,Clock,11
+18:21,1733,Nadia,Dunning,Larchwood,Tram,21
+18:21,1752,Stella,Pottell,Cathedral Close,Clock,6
+18:21,1766,Noel,Huxley,Saltmarket,Arcade,17
+18:21,1818,Gloria,Naylor,Lamplight Quay,Tram,19
+18:22,0040,Ethel,Corrigan,Pinchgate,Garden,19
+18:22,0849,Rosina,Eastwick,Gasworks,Tram,4
+18:22,0953,Rhoda,Parrish,Bellfounders,Garden,12
+18:22,1277,Lena,Wallace,Ferrygate,Tram,1
+18:22,1772,Ursel,Vassall,Hollin Fields,Tram,7
+18:22,1961,Stella,Rennie,Lamplight Quay,Clock,13
+18:22,1974,Milo,Liddell,Furnace Row,Garden,22
+18:22,2015,Gertie,Tappell,Old Mint,Garden,22
+18:22,2081,Hazel,Liddell,Furnace Row,Tram,12
+18:22,2155,Clara,Whitlowe,Ferrygate,Garden,5
+18:22,2197,Mirela,Norrell,Hollin Fields,Garden,9
+18:22,2220,Bertha,Sellars,Lamplight Quay,Clock,14
+18:23,0205,Maisie,Brough,Lamplight Quay,Clock,4
+18:23,0253,Jack,Abney,Hollin Fields,Garden,10
+18:23,0347,Tamara,Stannard,Rope Walk,Tram,5
+18:23,0799,Herbert,Yewell,Old Mint,Arcade,5
+18:23,0818,Grace,Sallis,Pinchgate,Garden,12
+18:23,1161,Dorita,Pollitt,Saltmarket,Clock,19
+18:23,1445,Hilary,Sommers,Hollin Fields,Tram,19
+18:23,1964,Tamara,Ashby,Lamplight Quay,Garden,6
+18:23,1973,Otto,Moffatt,Tanners’ Reach,Tram,7
+18:23,2031,Hattie,Sturdevan,Pinchgate,Tram,14
+18:23,2071,Gwen,Oddie,Bellfounders,Arcade,11
+18:23,2260,Edgar,Roskell,Larchwood,Arcade,12
+18:24,0200,Tamsin,Sommers,Bridgefoot,Arcade,18
+18:24,0324,Lilian,Denning,Furnace Row,Arcade,21
+18:24,0503,Mabel,Sturdevan,Saltmarket,Arcade,6
+18:24,0696,Lena,Vossell,Cathedral Close,Garden,21
+18:24,0858,Andrea,Unsworth,Bridgefoot,Garden,17
+18:24,1109,Elvira,Tappell,Bellfounders,Garden,18
+18:24,1175,Sadie,Sherratt,Ferrygate,Tram,10
+18:24,1307,Gertie,Wyllie,Saltmarket,Arcade,1
+18:24,1335,Esmond,Rimmer,Rope Walk,Clock,11
+18:24,1460,Doris,Perrott,Rope Walk,Garden,5
+18:24,1475,Doreen,Kellett,Hollin Fields,Tram,4
+18:24,1695,Felix,Whittle,Cathedral Close,Clock,6
+18:24,2094,Amos,Jarrett,Coldharbour,Arcade,10
+18:24,2129,Judith,Wellbank,Rope Walk,Garden,21
+18:24,2190,Hattie,Mellor,Saltmarket,Arcade,15
+18:24,2350,Teresa,Kellett,Cathedral Close,Arcade,15
+18:24,2375,Marina,Tarrell,Saltmarket,Garden,9
+18:25,0468,Oscar,Shipden,Bridgefoot,Garden,22
+18:25,0782,Amos,Pennick,Lamplight Quay,Arcade,4
+18:25,1044,Nerina,Vellacott,Old Mint,Garden,19
+18:25,1139,Cecil,Gorringe,Ferrygate,Clock,13
+18:25,1147,Gwen,Lomas,Gasworks,Arcade,11
+18:25,1174,Clement,Elwes,Tanners’ Reach,Tram,15
+18:25,2273,Blanche,Winnell,Saltmarket,Arcade,11
+18:25,2313,Ingrid,Jarrett,Saltmarket,Arcade,18
+18:26,0236,Esmond,Neville,Saltmarket,Clock,3
+18:26,0291,Bella,Yelland,Lamplight Quay,Arcade,16
+18:26,0294,Philippa,Sommers,Larchwood,Arcade,13
+18:26,0387,Greta,Penny,Saltmarket,Tram,9
+18:26,0499,Bernard,Nettleton,Gasworks,Tram,1
+18:26,0882,Minnie,Nevill,Saltmarket,Clock,1
+18:26,1528,Lottie,Innes,Bellfounders,Garden,16
+18:26,1857,Rowena,Denning,Hollin Fields,Tram,22
+18:26,1900,Enid,Yelland,Saltmarket,Arcade,5
+18:26,2238,Grace,Abney,Tanners’ Reach,Tram,13
+18:26,2253,Orsola,Noakes,Saltmarket,Arcade,9
+18:26,2371,Herbert,Sommers,Tanners’ Reach,Clock,14
+18:27,0298,Orsola,Brough,Saltmarket,Clock,24
+18:27,0301,Felix,Maddock,Hollin Fields,Garden,4
+18:27,0362,Mirela,Pennick,Bridgefoot,Clock,19
+18:27,0410,Ines,Anstey,Larchwood,Arcade,7
+18:27,0608,Rita,Potter,Rope Walk,Arcade,24
+18:27,0852,Ada,Wellbank,Coldharbour,Tram,2
+18:27,0935,Ada,Russett,Gasworks,Arcade,7
+18:27,1071,Wilfred,Stebbing,Lamplight Quay,Clock,14
+18:27,1555,Ottoline,Hadley,Hollin Fields,Garden,3
+18:27,1625,Carina,Swallow,Hollin Fields,Tram,22
+18:27,1955,Olive,Horrocks,Ferrygate,Garden,20
+18:27,2101,Andrei,Mossop,Ferrygate,Tram,11
+18:27,2225,Lena,Pennell,Saltmarket,Tram,23
+18:28,0117,Tamara,Croft,Rope Walk,Arcade,15
+18:28,0463,Cherie,Woollard,Bellfounders,Arcade,20
+18:28,0575,Edgar,Wassell,Bellfounders,Clock,18
+18:28,0582,Ottoline,Pennick,Rope Walk,Arcade,8
+18:28,0635,Ernest,Hammond,Coldharbour,Arcade,12
+18:28,0636,Petra,Quinnell,Rope Walk,Garden,9
+18:28,0747,Sabrine,Noakes,Bridgefoot,Clock,14
+18:28,0843,Nina,Innes,Old Mint,Clock,14
+18:28,1296,Mirela,Rawlins,Ferrygate,Clock,4
+18:28,1366,Ruth,Tappell,Cathedral Close,Garden,12
+18:28,1873,Nina,Hammond,Cathedral Close,Arcade,18
+18:28,2121,Clara,Turrell,Saltmarket,Clock,17
+18:28,2321,Clara,Pettit,Coldharbour,Tram,9
+18:28,2390,Una,Hadley,Saltmarket,Clock,20
+18:29,0597,Josie,Vassall,Saltmarket,Clock,1
+18:29,0655,Ada,Tebb,Bellfounders,Clock,21
+18:29,0848,Tamsin,Wollaston,Coldharbour,Clock,10
+18:29,1037,Ulric,Pell,Coldharbour,Tram,4
+18:29,1148,Cyril,Potter,Lamplight Quay,Garden,18
+18:29,1413,Serena,Vellacott,Old Mint,Arcade,8
+18:29,1634,Bernard,Rennie,Ferrygate,Tram,4
+18:29,1918,Percy,Pennick,Gasworks,Clock,24
+18:29,1958,Marnie,Gorringe,Saltmarket,Clock,10
+18:29,2149,Henry,Webb,Lamplight Quay,Clock,10
+18:29,2207,Nina,Rimmer,Hollin Fields,Clock,11
+18:30,0293,Margie,Sommers,Old Mint,Garden,15
+18:30,0422,Cherie,Rossiter,Hollin Fields,Garden,4
+18:30,0472,Gerald,Baxter,Cathedral Close,Garden,14
+18:30,0576,Ines,Venning,Old Mint,Garden,2
+18:30,1457,Rosina,Pottell,Larchwood,Tram,20
+18:30,1881,Zora,Orrell,Furnace Row,Tram,4
+18:30,1952,Jack,Vossell,Saltmarket,Arcade,22
+18:30,2199,Thea,Innes,Rope Walk,Arcade,24
+18:31,0279,Selma,Wells,Bellfounders,Arcade,23
+18:31,0438,Morris,Bramall,Old Mint,Garden,1
+18:31,0671,Teresa,Shipden,Saltmarket,Arcade,18
+18:31,0751,Bernard,Upsall,Coldharbour,Arcade,4
+18:31,0903,Vera,Rushden,Gasworks,Arcade,4
+18:31,1041,Nadia,Wells,Bridgefoot,Clock,7
+18:31,1100,Henry,Merrick,Tanners’ Reach,Arcade,7
+18:31,1108,Ruth,Penny,Furnace Row,Arcade,20
+18:31,1210,Esmond,Nuttall,Pinchgate,Garden,7
+18:31,1622,Nadia,Nettleton,Larchwood,Arcade,21
+18:31,1623,Lorena,Nuttall,Old Mint,Garden,20
+18:31,1724,Bella,Sutcliffe,Lamplight Quay,Tram,10
+18:31,2173,Verena,Pennock,Old Mint,Tram,20
+18:31,2333,Ulric,Zennor,Gasworks,Arcade,3
+18:31,2334,Rosina,Rushden,Cathedral Close,Garden,13
+18:32,0681,Lorna,Corrigan,Cathedral Close,Tram,20
+18:32,0708,Nora,Ormside,Bellfounders,Garden,10
+18:32,0775,Nerina,Barnet,Tanners’ Reach,Clock,14
+18:32,0890,Elvira,Venning,Ferrygate,Tram,2
+18:32,0986,Lorna,Darnell,Furnace Row,Garden,6
+18:32,1024,Noel,Halliday,Coldharbour,Garden,12
+18:32,1026,Marina,Rawlins,Bellfounders,Clock,19
+18:32,1040,Ernest,Sutcliffe,Lamplight Quay,Arcade,9
+18:32,1273,Carla,Orrell,Hollin Fields,Tram,22
+18:32,1654,Dorita,Lomas,Pinchgate,Garden,19
+18:32,1877,Doreen,Weller,Bridgefoot,Garden,7
+18:33,0014,Gwen,Garnett,Lamplight Quay,Garden,17
+18:33,0039,Milo,Sennett,Hollin Fields,Arcade,1
+18:33,0155,Gloria,Lacey,Bridgefoot,Garden,9
+18:33,0282,Beatrix,Corrigan,Old Mint,Arcade,23
+18:33,0378,Ida,Oddie,Bellfounders,Garden,13
+18:33,0509,Laura,Yardley,Old Mint,Garden,14
+18:33,0688,Marcia,Seddon,Furnace Row,Clock,20
+18:33,0825,Ursel,Towell,Pinchgate,Arcade,17
+18:33,0867,Gloria,Beckett,Tanners’ Reach,Arcade,17
+18:33,1173,Tobias,Brierley,Saltmarket,Arcade,19
+18:33,1444,Roland,Carrick,Coldharbour,Clock,9
+18:33,1581,Edgar,Ollett,Hollin Fields,Tram,24
+18:33,1708,Laurie,Liddell,Pinchgate,Arcade,3
+18:33,1848,Alma,Halliday,Hollin Fields,Clock,5
+18:33,1923,Valery,Pursell,Hollin Fields,Garden,1
+18:34,0101,Frances,Rossiter,Coldharbour,Arcade,13
+18:34,0122,Felix,Seddon,Pinchgate,Arcade,21
+18:34,0247,Mabel,Roskell,Bridgefoot,Arcade,3
+18:34,0275,Cyril,Lomas,Rope Walk,Tram,6
+18:34,0405,Wendell,Pottell,Rope Walk,Clock,18
+18:34,0452,Henry,Swallow,Saltmarket,Clock,16
+18:34,0662,Noel,Pantridge,Tanners’ Reach,Arcade,5
+18:34,1129,Laurie,Quayle,Ferrygate,Garden,20
+18:34,1515,Iris,Ashby,Pinchgate,Garden,18
+18:34,1521,Gracie,Youell,Rope Walk,Garden,23
+18:34,1627,Oscar,Whitlowe,Ferrygate,Clock,9
+18:34,1845,Bruno,Rossiter,Old Mint,Tram,22
+18:34,2056,Martha,Stebbing,Larchwood,Garden,14
+18:34,2343,Milo,Collier,Lamplight Quay,Tram,5
+18:35,0299,Viola,Bolton,Saltmarket,Arcade,19
+18:35,0902,Dora,Ramsell,Cathedral Close,Arcade,16
+18:35,0924,Maud,Seddon,Lamplight Quay,Tram,20
+18:35,1215,Ivor,Pell,Coldharbour,Arcade,17
+18:35,1365,Andrei,Tyrrell,Furnace Row,Garden,20
+18:35,1454,Blanche,Varley,Saltmarket,Arcade,1
+18:35,1520,Margie,Mossop,Rope Walk,Garden,6
+18:35,1785,Sorcha,Sommers,Hollin Fields,Garden,22
+18:35,1830,Ines,Neville,Hollin Fields,Arcade,4
+18:35,1983,Greta,Hollins,Gasworks,Tram,5
+18:35,2151,Audrey,Cotterill,Bellfounders,Tram,20
+18:36,0006,Louisa,Rowell,Hollin Fields,Tram,4
+18:36,0217,Rupert,Upcott,Lamplight Quay,Arcade,3
+18:36,0482,Hector,Lacey,Furnace Row,Arcade,15
+18:36,0495,Esther,Iddon,Old Mint,Arcade,24
+18:36,0739,Josie,Ollett,Saltmarket,Tram,20
+18:36,0755,Josie,Sennett,Ferrygate,Arcade,24
+18:36,0898,Rupert,Thackray,Lamplight Quay,Arcade,20
+18:36,1086,Oscar,Mellor,Old Mint,Arcade,3
+18:36,1565,Hattie,Bolton,Saltmarket,Tram,14
+18:36,1696,Noel,Goodall,Saltmarket,Clock,15
+18:36,1711,Wanda,Rawlins,Saltmarket,Arcade,9
+18:36,2130,Nina,Wallace,Lamplight Quay,Garden,23
+18:36,2226,Thea,Sellars,Cathedral Close,Clock,20
+18:36,2331,Iris,Tollett,Furnace Row,Garden,22
+18:37,0346,Henry,Quinnell,Gasworks,Tram,14
+18:37,0407,Henry,Anstey,Old Mint,Arcade,6
+18:37,0409,Harold,Iddon,Tanners’ Reach,Arcade,24
+18:37,0443,Otto,Wallace,Furnace Row,Arcade,6
+18:37,0486,Pearl,Whitlowe,Saltmarket,Clock,20
+18:37,0524,Judith,Vintner,Bellfounders,Arcade,17
+18:37,1152,Frances,Vintner,Larchwood,Tram,10
+18:37,1245,Annie,Nuttall,Cathedral Close,Garden,2
+18:37,1447,Arlene,Mossop,Pinchgate,Garden,10
+18:37,1832,Judith,Purcell,Tanners’ Reach,Arcade,10
+18:37,1870,Maisie,Hollins,Coldharbour,Clock,14
+18:37,1889,Tamsin,Garnett,Saltmarket,Clock,4
+18:37,2022,Selma,Tebb,Saltmarket,Arcade,21
+18:37,2034,Elvira,Zennor,Lamplight Quay,Tram,19
+18:37,2227,Thea,Jessop,Old Mint,Clock,1
+18:38,0134,Dorita,Denning,Old Mint,Tram,4
+18:38,0493,Frances,Baxter,Larchwood,Garden,21
+18:38,0847,Iris,Zeller,Old Mint,Arcade,3
+18:38,1220,Dorita,Naylor,Bellfounders,Garden,5
+18:38,1226,Tobias,Northey,Cathedral Close,Arcade,22
+18:38,1344,Yvette,Sallett,Larchwood,Arcade,16
+18:38,1428,Ulric,Corrigan,Rope Walk,Clock,6
+18:38,1542,Philippa,Oddie,Saltmarket,Arcade,20
+18:38,2358,Lena,Lockett,Old Mint,Clock,8
+18:39,0009,Nora,Sellars,Gasworks,Arcade,1
+18:39,0267,Philippa,Yelland,Pinchgate,Clock,4
+18:39,0580,Ruth,Tarrell,Tanners’ Reach,Tram,14
+18:39,0716,Gerald,Wardell,Cathedral Close,Tram,1
+18:39,1295,Roland,Purcell,Hollin Fields,Tram,22
+18:39,1398,Agnes,Tillott,Cathedral Close,Arcade,1
+18:39,1578,Freda,Sellick,Lamplight Quay,Tram,2
+18:39,1620,Yvette,Bramall,Tanners’ Reach,Arcade,8
+18:39,1621,Rhoda,Lacey,Pinchgate,Arcade,10
+18:39,2233,Sabine,Darnell,Bridgefoot,Clock,11
+18:39,2291,Selma,Neill,Cathedral Close,Garden,22
+18:40,0034,Jack,Marriott,Gasworks,Clock,1
+18:40,0317,Mercy,Stebbing,Saltmarket,Tram,1
+18:40,0654,Zarina,Dallow,Bellfounders,Arcade,3
+18:40,0866,Marnie,Pell,Bellfounders,Arcade,15
+18:40,0964,Dora,Beckett,Lamplight Quay,Clock,8
+18:40,1240,Bruno,Rummell,Bridgefoot,Garden,20
+18:40,1385,Marnie,Goodall,Hollin Fields,Arcade,5
+18:40,1468,Thora,Rossiter,Larchwood,Clock,8
+18:40,1609,Sabrine,Anstey,Rope Walk,Clock,2
+18:40,2067,Mavis,Sallett,Ferrygate,Clock,1
+18:40,2393,Lilian,Moffatt,Lamplight Quay,Arcade,8
+18:41,0545,Carla,Pollitt,Cathedral Close,Garden,3
+18:41,0610,Edgar,Hadley,Cathedral Close,Garden,8
+18:41,1052,Rosina,Willett,Pinchgate,Garden,9
+18:41,1068,Ines,Nevill,Cathedral Close,Garden,1
+18:41,1339,Carmen,Redmayne,Pinchgate,Clock,20
+18:41,1672,Lorna,Woodall,Rope Walk,Clock,14
+18:41,1895,Agnes,Rummell,Larchwood,Tram,5
+18:41,1928,Nora,Lacey,Cathedral Close,Garden,6
+18:41,2039,Blanche,Woollard,Furnace Row,Garden,14
+18:42,0304,Ottoline,Quayle,Saltmarket,Clock,21
+18:42,0433,Valery,Pennick,Cathedral Close,Arcade,6
+18:42,0539,Nadia,Rossiter,Cathedral Close,Arcade,14
+18:42,0675,Bella,Woodall,Bellfounders,Arcade,15
+18:42,0914,Vesna,Cotterill,Larchwood,Clock,4
+18:42,1219,Olive,Sutcliffe,Saltmarket,Arcade,1
+18:42,1575,Audrey,Perrott,Cathedral Close,Tram,11
+18:42,1742,Alma,Scarrott,Lamplight Quay,Arcade,3
+18:42,1829,Tamsin,Yelland,Cathedral Close,Clock,6
+18:43,0245,Walter,Liddell,Larchwood,Tram,13
+18:43,0312,Jack,Barnet,Hollin Fields,Arcade,1
+18:43,0584,Cecil,Ormside,Saltmarket,Arcade,6
+18:43,0732,Mirela,Yewell,Pinchgate,Arcade,11
+18:43,1151,Vera,Norrell,Larchwood,Tram,4
+18:43,1242,Ingrid,Fairbank,Ferrygate,Arcade,19
+18:43,1434,Laura,Baxter,Hollin Fields,Tram,1
+18:43,2024,Arlene,Kaye,Ferrygate,Arcade,4
+18:44,0028,Philippa,Baxter,Bridgefoot,Tram,6
+18:44,0033,Felix,Denning,Gasworks,Garden,9
+18:44,0188,Freda,Anstey,Saltmarket,Garden,13
+18:44,0259,Enid,Marriott,Rope Walk,Garden,20
+18:44,0428,Clement,Sellars,Cathedral Close,Clock,4
+18:44,0522,Olive,Iddon,Cathedral Close,Tram,15
+18:44,1064,Clement,Mellor,Hollin Fields,Clock,6
+18:44,1117,Leon,Wollaston,Hollin Fields,Arcade,6
+18:44,1271,Serena,Tappell,Saltmarket,Tram,4
+18:44,1386,Bertha,Rolland,Lamplight Quay,Tram,21
+18:44,1612,Marcus,Wallace,Ferrygate,Garden,11
+18:44,1798,Cecil,Sanderell,Cathedral Close,Garden,1
+18:44,2292,Gerald,Brough,Hollin Fields,Garden,21
+18:45,0032,Hazel,Wardell,Cathedral Close,Arcade,18
+18:45,0527,Edith,Turrell,Cathedral Close,Garden,17
+18:45,0532,Lorena,Wyllie,Ferrygate,Arcade,11
+18:45,0693,Ethel,Yardley,Saltmarket,Tram,17
+18:45,0761,Cecil,Weller,Coldharbour,Arcade,10
+18:45,1305,Martha,Denning,Saltmarket,Tram,13
+18:45,1530,Irene,Amory,Saltmarket,Arcade,5
+18:45,2326,Norma,Merrick,Hollin Fields,Clock,10
+18:45,2347,Doris,Spiller,Tanners’ Reach,Arcade,6
+18:46,0020,Andrei,Lomas,Gasworks,Tram,15
+18:46,0540,Ingrid,Archer,Coldharbour,Clock,5
+18:46,0748,Clara,Brough,Gasworks,Tram,8
+18:46,1074,Jack,Bolton,Larchwood,Clock,13
+18:46,1336,Arlene,Weller,Tanners’ Reach,Garden,1
+18:46,1337,Sadie,Prentice,Saltmarket,Arcade,2
+18:46,1388,Thea,Penny,Lamplight Quay,Tram,19
+18:46,1628,Stella,Spiller,Rope Walk,Arcade,16
+18:46,1639,Ernest,Venning,Pinchgate,Garden,14
+18:46,1750,Judith,Pursell,Saltmarket,Garden,5
+18:46,1758,Harriet,Northey,Bellfounders,Garden,10
+18:46,1783,Vesna,Anstey,Hollin Fields,Tram,16
+18:46,1916,Wilbur,Wellbank,Bridgefoot,Tram,3
+18:46,2166,Isla,Usher,Gasworks,Garden,9
+18:46,2180,Philippa,Gorringe,Pinchgate,Garden,1
+18:46,2246,Wendell,Ramsell,Bellfounders,Tram,14
+18:47,0001,Sabrine,Yelland,Tanners’ Reach,Garden,7
+18:47,0008,Ivor,Upsall,Gasworks,Garden,20
+18:47,0290,Milo,Pottell,Saltmarket,Arcade,2
+18:47,0695,Norine,Usher,Ferrygate,Tram,5
+18:47,0731,Harold,Yardley,Cathedral Close,Arcade,18
+18:47,0877,Rowena,Tappell,Coldharbour,Tram,21
+18:47,1092,Bella,Ormside,Gasworks,Garden,12
+18:47,1241,Nora,Rawlins,Hollin Fields,Arcade,8
+18:47,1632,Rowena,Nuttall,Gasworks,Arcade,20
+18:47,1673,Alma,Pantridge,Gasworks,Arcade,1
+18:47,1690,Nora,Sherratt,Rope Walk,Tram,4
+18:47,1851,Wilfred,Tebb,Ferrygate,Arcade,13
+18:47,1852,Leon,Vassall,Saltmarket,Clock,14
+18:47,2013,Robert,Sallett,Furnace Row,Arcade,17
+18:47,2385,Philippa,Pursell,Furnace Row,Clock,1
+18:48,0264,Walter,Quinnell,Bridgefoot,Clock,14
+18:48,0270,Xenia,Tennant,Larchwood,Garden,5
+18:48,0351,Leon,Wassell,Pinchgate,Clock,20
+18:48,0377,Ingrid,Sommers,Gasworks,Clock,15
+18:48,0498,Myrtle,Fennell,Gasworks,Tram,22
+18:48,0709,Norma,Venning,Hollin Fields,Clock,12
+18:48,1031,Gilbert,Pettit,Coldharbour,Arcade,17
+18:48,1107,Thora,Yelland,Bellfounders,Clock,18
+18:48,1113,Lucia,Wyllie,Saltmarket,Clock,1
+18:48,1125,Margie,Pollard,Ferrygate,Arcade,14
+18:48,1394,Zarina,Rowell,Bridgefoot,Tram,1
+18:48,1570,Blanche,Rummell,Pinchgate,Clock,4
+18:48,1968,Marcia,Neill,Furnace Row,Clock,13
+18:48,2351,Zora,Brierley,Saltmarket,Tram,20
+18:48,2365,Celia,Ellery,Ferrygate,Clock,7
+18:48,2374,Rhoda,Stebbing,Tanners’ Reach,Garden,11
+18:49,0055,Viola,Kaye,Hollin Fields,Arcade,13
+18:49,0080,Andrea,Rolland,Saltmarket,Arcade,9
+18:49,0162,Blanche,Vellacott,Ferrygate,Garden,16
+18:49,0218,Mirela,Turrell,Cathedral Close,Tram,7
+18:49,0631,Andrei,Sallett,Tanners’ Reach,Clock,20
+18:49,0888,Rowena,Jarrett,Tanners’ Reach,Arcade,10
+18:49,1281,Rupert,Russett,Ferrygate,Clock,5
+18:49,1533,Harold,Neville,Saltmarket,Garden,10
+18:49,1610,Iris,Oddie,Gasworks,Arcade,1
+18:49,1760,Gloria,Nuttall,Saltmarket,Arcade,20
+18:49,1953,Carla,Goodall,Old Mint,Arcade,3
+18:49,2172,Elsie,Winnell,Bellfounders,Arcade,7
+18:49,2184,Sabrine,Vellacott,Hollin Fields,Clock,1
+18:49,2294,Iris,Dobbs,Cathedral Close,Arcade,16
+18:50,0137,Tamsin,Pennick,Saltmarket,Arcade,11
+18:50,0138,Noel,Whitlowe,Old Mint,Arcade,20
+18:50,0894,Annie,Fairbank,Cathedral Close,Clock,14
+18:50,1527,Laurie,Tuckett,Hollin Fields,Garden,20
+18:50,2287,Cecil,Jarrett,Lamplight Quay,Clock,1
+18:50,2392,Louisa,Redmayne,Bridgefoot,Arcade,7
+18:51,0045,Martha,Eastwick,Rope Walk,Clock,11
+18:51,0131,Cherie,Sellick,Cathedral Close,Arcade,6
+18:51,0165,Esther,Potter,Old Mint,Arcade,17
+18:51,0208,Thea,Halliday,Saltmarket,Clock,7
+18:51,0536,Lilian,Mossop,Hollin Fields,Tram,9
+18:51,0578,Ottoline,Osborne,Gasworks,Clock,3
+18:51,0599,Lena,Pursell,Larchwood,Arcade,22
+18:51,0787,Marnie,Liddell,Lamplight Quay,Garden,9
+18:51,1769,Anna,Rawlins,Pinchgate,Arcade,12
+18:51,2240,Percy,Varrell,Bellfounders,Clock,11
+18:51,2302,Enid,Neill,Bellfounders,Tram,1
+18:51,2327,Rita,Lattimer,Cathedral Close,Clock,20
+18:52,0972,Nora,Sutcliffe,Saltmarket,Garden,19
+18:52,1150,Ethel,Whitlowe,Coldharbour,Clock,14
+18:52,1193,Mercy,Halliday,Gasworks,Clock,1
+18:52,1363,Otto,Nevill,Tanners’ Reach,Clock,9
+18:52,1588,Harold,Pennell,Coldharbour,Clock,1
+18:52,1801,Martha,Vassall,Cathedral Close,Clock,3
+18:52,2063,Gracie,Nettleton,Tanners’ Reach,Arcade,11
+18:52,2080,Lorena,Lattimer,Tanners’ Reach,Tram,10
+18:52,2103,Roland,Penny,Pinchgate,Arcade,6
+18:53,0619,Tobias,Upcott,Hollin Fields,Arcade,21
+18:53,0676,Agnes,Hammond,Lamplight Quay,Clock,19
+18:53,0715,Carmen,Goodall,Saltmarket,Tram,4
+18:53,1067,Minnie,Upsall,Furnace Row,Clock,8
+18:53,1294,Ethel,Pettit,Bridgefoot,Clock,18
+18:53,1446,Clement,Liddell,Hollin Fields,Arcade,22
+18:53,1481,Effie,Halliday,Cathedral Close,Clock,1
+18:53,1856,Ernest,Radley,Tanners’ Reach,Tram,1
+18:53,1903,Morris,Pell,Coldharbour,Arcade,21
+18:53,2003,Teresa,Ramsell,Hollin Fields,Tram,13
+18:53,2038,Cyril,Youell,Bridgefoot,Tram,19
+18:53,2043,Ines,Nettleton,Gasworks,Clock,13
+18:53,2088,Bertha,Usher,Gasworks,Clock,8
+18:53,2249,Roxane,Thackray,Ferrygate,Garden,15
+18:54,0182,Ivor,Redmayne,Cathedral Close,Arcade,1
+18:54,0214,Yvette,Zeller,Ferrygate,Garden,7
+18:54,0305,Marnie,Harker,Coldharbour,Garden,1
+18:54,0614,Rosina,Neville,Pinchgate,Arcade,10
+18:54,0801,Maud,Maddock,Tanners’ Reach,Clock,12
+18:54,0820,Andrea,Orrell,Larchwood,Tram,24
+18:54,0844,Gwen,Hassall,Bellfounders,Clock,24
+18:54,1551,Carla,Zeller,Pinchgate,Garden,14
+18:54,1574,Valery,Willett,Cathedral Close,Clock,10
+18:54,1755,Ernest,Norrell,Larchwood,Arcade,17
+18:54,1982,Laura,Barnet,Cathedral Close,Arcade,10
+18:54,2044,Dorita,Parrish,Cathedral Close,Tram,10
+18:55,0074,Dorita,Sennett,Bridgefoot,Clock,2
+18:55,0077,Nina,Towell,Coldharbour,Garden,14
+18:55,0246,Dorita,Yardley,Saltmarket,Garden,4
+18:55,0397,Walter,Tebbs,Tanners’ Reach,Arcade,4
+18:55,0434,Milo,Wardell,Cathedral Close,Garden,9
+18:55,0464,Sabine,Tappell,Old Mint,Tram,4
+18:55,0535,Dorita,Northey,Pinchgate,Clock,19
+18:55,0572,Lena,Skerritt,Furnace Row,Arcade,1
+18:55,0980,Percy,Halliday,Rope Walk,Clock,8
+18:55,0985,Laura,Rossiter,Saltmarket,Clock,9
+18:55,1181,Lena,Stannard,Ferrygate,Arcade,5
+18:55,1291,Willa,Marriott,Saltmarket,Arcade,11
+18:55,1566,Ada,Oddie,Cathedral Close,Clock,11
+18:55,1572,Grace,Dallow,Tanners’ Reach,Clock,18
+18:55,1866,Greta,Yarrow,Coldharbour,Clock,9
+18:55,1911,Sadie,Neill,Larchwood,Clock,17
+18:55,2007,Rita,Neill,Bellfounders,Tram,6
+18:55,2213,Wanda,Usher,Bridgefoot,Arcade,8
+18:55,2382,Noel,Sellars,Cathedral Close,Garden,16
+18:55,2388,Morris,Pottell,Furnace Row,Garden,20
+18:56,0395,Hattie,Northey,Coldharbour,Tram,16
+18:56,0431,Herbert,Jarrett,Coldharbour,Garden,5
+18:56,1205,Esther,Sallis,Hollin Fields,Arcade,1
+18:56,1263,Marina,Maddock,Saltmarket,Arcade,17
+18:56,1324,Celia,Sallett,Tanners’ Reach,Clock,17
+18:56,1368,Lorna,Denning,Old Mint,Tram,13
+18:56,1516,Bernard,Rossiter,Larchwood,Garden,1
+18:56,1748,Bella,Lattimer,Bellfounders,Arcade,13
+18:56,1908,Maisie,Varley,Cathedral Close,Arcade,11
+18:56,2077,Gerald,Huxley,Gasworks,Clock,6
+18:56,2174,Wilbur,Pettit,Lamplight Quay,Clock,17
+18:57,0367,Annie,Tebb,Ferrygate,Tram,6
+18:57,0386,Rosina,Bramall,Ferrygate,Tram,12
+18:57,0470,Una,Varrell,Saltmarket,Tram,23
+18:57,0560,Nina,Rossiter,Gasworks,Clock,17
+18:57,0773,Judith,Barnet,Bellfounders,Garden,8
+18:57,0776,Rupert,Hollins,Lamplight Quay,Arcade,18
+18:57,1018,Mercy,Blackmore,Gasworks,Clock,20
+18:57,1207,Una,Garnett,Ferrygate,Clock,16
+18:57,1280,Clement,Darnell,Gasworks,Clock,1
+18:57,1618,Tamara,Varley,Gasworks,Garden,4
+18:57,1719,Harriet,Huxley,Old Mint,Tram,22
+18:57,1925,Rhoda,Moffatt,Hollin Fields,Tram,15
+18:58,0167,Grace,Pantridge,Old Mint,Arcade,2
+18:58,0255,Grace,Carrick,Gasworks,Garden,1
+18:58,0340,Ethel,Lomas,Cathedral Close,Arcade,12
+18:58,0455,Judith,Lambert,Pinchgate,Arcade,19
+18:58,0467,Agnes,Osborne,Cathedral Close,Clock,22
+18:58,0604,Bertha,Perrott,Lamplight Quay,Tram,9
+18:58,0802,Sabine,Elwes,Furnace Row,Garden,2
+18:58,0834,Mavis,Pell,Saltmarket,Arcade,17
+18:58,1087,Ida,Vintner,Bridgefoot,Garden,24
+18:58,1119,Rupert,Allard,Hollin Fields,Clock,1
+18:58,1313,Blanche,Unsworth,Old Mint,Clock,19
+18:58,1776,Jack,Noakes,Hollin Fields,Arcade,9
+18:58,2014,Dora,Barnet,Bellfounders,Clock,14
+18:59,0909,Valery,Neville,Coldharbour,Clock,24
+18:59,0934,Nina,Sellars,Coldharbour,Clock,1
+18:59,1404,Wilbur,Zeller,Pinchgate,Garden,16
+18:59,1560,Sorcha,Tyrrell,Bridgefoot,Garden,4
+18:59,1761,Carmen,Tebb,Bridgefoot,Tram,24
+18:59,1787,Ruth,Jessop,Saltmarket,Garden,15
+18:59,2092,Gilbert,Perrott,Pinchgate,Garden,24
+18:59,2232,Sorcha,Harker,Rope Walk,Garden,8
+18:59,2245,Percy,Ellery,Furnace Row,Garden,6
+18:59,2250,Lorna,Neville,Saltmarket,Tram,3
+19:00,0323,Celia,Pollitt,Tanners’ Reach,Arcade,7
+19:00,0457,Mirela,Fairbank,Saltmarket,Clock,22
+19:00,0506,Maud,Yewell,Hollin Fields,Arcade,5
+19:00,0551,Noel,Liddell,Pinchgate,Tram,1
+19:00,0621,Morris,Eastwick,Saltmarket,Arcade,12
+19:00,0628,Beatrix,Upsall,Coldharbour,Clock,4
+19:00,0897,Wanda,Lattimer,Old Mint,Clock,13
+19:00,0945,Clement,Spiller,Saltmarket,Arcade,19
+19:00,1118,Noel,Quayle,Coldharbour,Clock,15
+19:00,1253,Celia,Quinnell,Ferrygate,Arcade,10
+19:00,1700,Hazel,Radley,Old Mint,Arcade,23
+19:00,1796,Myrtle,Elwes,Saltmarket,Clock,16
+19:00,2386,Celia,Goodall,Hollin Fields,Clock,4
+19:00,2398,Iris,Ormside,Hollin Fields,Tram,6
+19:01,0056,Ulric,Stannard,Saltmarket,Tram,16
+19:01,0309,Rita,Pursell,Hollin Fields,Clock,24
+19:01,0420,Zora,Darnell,Cathedral Close,Garden,20
+19:01,0563,Yvette,Hollins,Old Mint,Clock,3
+19:01,0749,Nerina,Rummell,Coldharbour,Garden,1
+19:01,0891,Cherie,Rennie,Rope Walk,Tram,11
+19:01,1115,Blanche,Yardley,Old Mint,Arcade,1
+19:01,1462,Audrey,Brierley,Lamplight Quay,Clock,9
+19:01,1643,Elsie,Amory,Hollin Fields,Tram,10
+19:01,1754,Maud,Collier,Saltmarket,Arcade,24
+19:01,2006,Ulric,Russett,Larchwood,Tram,20
+19:01,2018,Blanche,Gilchrist,Lamplight Quay,Arcade,24
+19:01,2136,Herbert,Rawlins,Furnace Row,Arcade,17
+19:01,2159,Rosina,Shipden,Tanners’ Reach,Clock,18
+19:01,2342,Dora,Venning,Pinchgate,Arcade,9
+19:02,0031,Maisie,Farrow,Pinchgate,Arcade,8
+19:02,0336,Iris,Prentice,Cathedral Close,Clock,5
+19:02,1006,Cyril,Orrell,Cathedral Close,Arcade,23
+19:02,1192,Bella,Parrish,Furnace Row,Arcade,17
+19:02,1246,Carina,Varley,Lamplight Quay,Arcade,10
+19:02,1842,Myrtle,Ogden,Saltmarket,Arcade,4
+19:02,2381,Mirela,Lattimer,Saltmarket,Arcade,21
+19:03,0053,Esther,Vellacott,Lamplight Quay,Clock,11
+19:03,0354,Orsola,Yewell,Tanners’ Reach,Arcade,15
+19:03,0461,Marnie,Huxley,Lamplight Quay,Arcade,15
+19:03,0484,Carmen,Thackray,Furnace Row,Arcade,1
+19:03,0650,Vesna,Tappell,Bridgefoot,Tram,10
+19:03,0743,Josie,Ollerton,Hollin Fields,Garden,20
+19:03,0961,Tobias,Norrell,Cathedral Close,Garden,13
+19:03,0968,Laura,Archer,Old Mint,Tram,21
+19:03,0981,Louisa,Parrish,Rope Walk,Clock,7
+19:03,1427,Orsola,Allard,Tanners’ Reach,Garden,17
+19:03,1967,Morris,Collier,Old Mint,Clock,17
+19:03,2169,Percy,Turrell,Gasworks,Tram,18
+19:03,2201,Grace,Pettit,Rope Walk,Arcade,21
+19:03,2257,Gwen,Stebbing,Saltmarket,Garden,24
+19:03,2305,Clara,Spiller,Tanners’ Reach,Arcade,23
+19:03,2394,Ottoline,Beckett,Saltmarket,Garden,9
+19:04,0089,Leon,Wallace,Saltmarket,Tram,12
+19:04,0274,Gerald,Chadwick,Ferrygate,Tram,7
+19:04,0480,Andrei,Wassell,Saltmarket,Arcade,19
+19:04,0609,Sadie,Varrell,Gasworks,Arcade,2
+19:04,0669,Una,Mellor,Saltmarket,Garden,18
+19:04,0960,Tobias,Innes,Saltmarket,Arcade,2
+19:04,1373,Vera,Sallis,Larchwood,Garden,8
+19:04,1506,Marnie,Tebb,Lamplight Quay,Tram,21
+19:04,1737,Miriam,Collier,Saltmarket,Arcade,20
+19:04,1912,Marina,Radley,Bridgefoot,Garden,18
+19:04,2008,Hilary,Whitlowe,Lamplight Quay,Arcade,4
+19:05,0239,Henry,Sturdevan,Tanners’ Reach,Arcade,23
+19:05,0292,Noel,Sturdevan,Gasworks,Clock,14
+19:05,0778,Ines,Potter,Furnace Row,Arcade,8
+19:05,0982,Myrtle,Eastwick,Rope Walk,Arcade,23
+19:05,1019,Nora,Nuttall,Pinchgate,Tram,19
+19:05,1146,Marcus,Tennant,Furnace Row,Garden,21
+19:05,1223,Selma,Lacey,Hollin Fields,Arcade,22
+19:05,1419,Bella,Russett,Bridgefoot,Tram,13
+19:05,1651,Ruth,Towell,Coldharbour,Garden,17
+19:05,1815,Tamsin,Quinnell,Rope Walk,Clock,9
+19:05,2073,Ada,Chadwick,Gasworks,Arcade,6
+19:05,2138,Percy,Woodall,Rope Walk,Tram,1
+19:05,2150,Hector,Bullock,Bridgefoot,Tram,9
+19:05,2264,Leon,Vellacott,Bellfounders,Arcade,16
+19:05,2319,Rowena,Purcell,Bellfounders,Tram,17
+19:05,2353,Edgar,Jarrett,Rope Walk,Tram,16
+19:06,0047,Amos,Purcell,Gasworks,Garden,10
+19:06,0658,Isla,Wyllie,Saltmarket,Clock,8
+19:06,1237,Freda,Sennett,Pinchgate,Clock,15
+19:06,1311,Thea,Wellbank,Larchwood,Clock,14
+19:06,2049,Annie,Kimber,Larchwood,Garden,7
+19:07,0063,Vera,Vossell,Saltmarket,Garden,20
+19:07,0612,Tobias,Usher,Lamplight Quay,Garden,16
+19:07,0777,Annie,Whittle,Saltmarket,Arcade,8
+19:07,1076,Wilbur,Yelland,Rope Walk,Arcade,9
+19:08,0109,Otto,Whittle,Coldharbour,Arcade,7
+19:08,0643,Ursel,Ollett,Tanners’ Reach,Tram,15
+19:08,0700,Bertha,Shipden,Furnace Row,Tram,10
+19:08,0819,Esmond,Seddon,Bellfounders,Clock,9
+19:08,1101,Beatrix,Wallace,Ferrygate,Arcade,1
+19:08,1356,Mavis,Whittle,Rope Walk,Tram,2
+19:08,1395,Myrtle,Kimber,Saltmarket,Arcade,12
+19:08,1416,Wilfred,Dobbs,Saltmarket,Garden,23
+19:08,1641,Laura,Vintner,Pinchgate,Tram,9
+19:08,1790,Serena,Denning,Tanners’ Reach,Arcade,16
+19:08,2196,Hilary,Kaye,Lamplight Quay,Arcade,11
+19:08,2274,Tobias,Parrish,Bridgefoot,Clock,22
+19:09,0019,Mavis,Upcott,Ferrygate,Clock,1
+19:09,0076,Lena,Sherratt,Gasworks,Garden,17
+19:09,0133,Rita,Finney,Furnace Row,Clock,21
+19:09,0232,Maisie,Tennant,Bridgefoot,Clock,12
+19:09,0313,Hector,Hadley,Bridgefoot,Arcade,17
+19:09,0425,Wilfred,Tillott,Furnace Row,Arcade,3
+19:09,0442,Gilbert,Wardell,Saltmarket,Clock,16
+19:09,0752,Edith,Wellbank,Cathedral Close,Arcade,16
+19:09,0783,Sadie,Fairbank,Furnace Row,Clock,16
+19:09,0922,Roland,Newall,Cathedral Close,Tram,2
+19:09,0963,Bernard,Quinnell,Bellfounders,Arcade,24
+19:09,1073,Wilbur,Ollerton,Coldharbour,Arcade,3
+19:09,1232,Greta,Lomas,Hollin Fields,Clock,20
+19:09,1238,Hilary,Corrigan,Lamplight Quay,Clock,9
+19:09,1290,Xenia,Dunning,Pinchgate,Arcade,15
+19:09,1321,Gilbert,Venning,Coldharbour,Clock,23
+19:09,1390,Percy,Webb,Larchwood,Tram,1
+19:09,1771,Esther,Newall,Saltmarket,Clock,8
+19:09,2068,Philippa,Radley,Cathedral Close,Clock,10
+19:09,2234,Olive,Yewell,Tanners’ Reach,Clock,2
+19:10,0029,Martha,Newall,Lamplight Quay,Garden,11
+19:10,0082,Tamsin,Corrigan,Larchwood,Arcade,21
+19:10,0176,Marcia,Vossell,Cathedral Close,Clock,1
+19:10,0334,Myrtle,Corrigan,Ferrygate,Arcade,11
+19:10,0412,Enid,Turrell,Furnace Row,Garden,11
+19:10,0565,Audrey,Maddock,Larchwood,Arcade,7
+19:10,0661,Lucia,Blackmore,Furnace Row,Clock,11
+19:10,0975,Vera,Nettleton,Bridgefoot,Garden,20
+19:10,1250,Yvette,Roskell,Saltmarket,Tram,18
+19:10,1456,Selma,Vellacott,Hollin Fields,Garden,23
+19:10,1580,Josie,Scarrott,Bellfounders,Garden,24
+19:10,1635,Ethel,Cotterill,Larchwood,Clock,14
+19:10,1735,Mercy,Pennell,Lamplight Quay,Tram,20
+19:10,2023,Viola,Upcott,Cathedral Close,Tram,5
+19:10,2085,Vera,Rolland,Old Mint,Arcade,15
+19:10,2157,Zarina,Dawlish,Bellfounders,Clock,1
+19:10,2202,Vesna,Wardell,Saltmarket,Garden,19
+19:10,2314,Selma,Sherratt,Furnace Row,Arcade,18
+19:11,0183,Mabel,Norrell,Saltmarket,Garden,14
+19:11,0237,Walter,Halliday,Cathedral Close,Tram,1
+19:11,0345,Mavis,Collier,Lamplight Quay,Tram,14
+19:11,0508,Roxane,Sennett,Furnace Row,Garden,24
+19:11,1050,Olive,Innes,Hollin Fields,Garden,3
+19:11,1184,Noel,Rimmer,Coldharbour,Arcade,9
+19:11,1663,Olive,Rennie,Gasworks,Clock,20
+19:11,2037,Wanda,Barnet,Bridgefoot,Arcade,21
+19:12,0262,Zelie,Yarrow,Saltmarket,Clock,9
+19:12,0549,Vesna,Pantridge,Saltmarket,Arcade,12
+19:12,0592,Carla,Kellett,Old Mint,Arcade,21
+19:12,0827,Freda,Hassall,Hollin Fields,Tram,4
+19:12,0872,Viola,Bullock,Cathedral Close,Garden,2
+19:12,1362,Miriam,Usher,Cathedral Close,Tram,2
+19:12,1659,Ruth,Winnell,Lamplight Quay,Tram,15
+19:12,1687,Andrei,Marriott,Ferrygate,Clock,1
+19:12,2364,Ivor,Yelland,Hollin Fields,Garden,20
+19:12,2370,Doris,Tebb,Bridgefoot,Clock,3
+19:13,0097,Ivor,Towell,Cathedral Close,Garden,17
+19:13,0375,Orla,Gorringe,Bridgefoot,Clock,1
+19:13,0579,Wilfred,Pollitt,Gasworks,Garden,16
+19:13,0930,Yvette,Pantridge,Larchwood,Arcade,6
+19:13,1260,Milo,Radley,Rope Walk,Clock,23
+19:13,1662,Serena,Sallis,Larchwood,Arcade,14
+19:13,1713,Enid,Orrell,Coldharbour,Tram,3
+19:13,1802,Olive,Abney,Rope Walk,Clock,9
+19:13,1922,Elvira,Newall,Old Mint,Tram,9
+19:13,1942,Mabel,Iddon,Saltmarket,Clock,10
+19:13,1997,Hector,Turrell,Furnace Row,Tram,7
+19:13,2360,Thea,Merrick,Larchwood,Tram,10
+19:14,0174,Felix,Archer,Lamplight Quay,Arcade,14
+19:14,0287,Nora,Gorringe,Furnace Row,Arcade,12
+19:14,0329,Martha,Sanderell,Hollin Fields,Arcade,9
+19:14,0359,Laurie,Parrish,Tanners’ Reach,Arcade,22
+19:14,0555,Edgar,Penny,Pinchgate,Arcade,16
+19:14,0719,Edgar,Rennie,Gasworks,Arcade,14
+19:14,0878,Freda,Yarrow,Furnace Row,Clock,1
+19:14,0905,Daisy,Wyllie,Bellfounders,Clock,1
+19:14,1138,Hattie,Russett,Saltmarket,Tram,4
+19:14,1190,Blanche,Lacey,Old Mint,Arcade,1
+19:14,1436,Noel,Gorringe,Ferrygate,Garden,17
+19:14,1564,Annie,Darnell,Pinchgate,Arcade,21
+19:14,2148,Lorna,Usher,Tanners’ Reach,Garden,13
+19:15,0379,Andrei,Osborne,Pinchgate,Arcade,5
+19:15,0857,Thora,Bolton,Bridgefoot,Arcade,4
+19:15,1287,Daisy,Tuckett,Old Mint,Tram,13
+19:15,1358,Leon,Rimmer,Tanners’ Reach,Tram,9
+19:15,1592,Lucia,Ramsell,Rope Walk,Clock,20
+19:15,1833,Rowena,Ogden,Larchwood,Clock,9
+19:15,1972,Bella,Zeller,Bellfounders,Garden,22
+19:15,1988,Vera,Croft,Old Mint,Tram,10
+19:15,2052,Bruno,Winnell,Saltmarket,Garden,17
+19:16,0184,Dora,Oddie,Ferrygate,Clock,18
+19:16,0186,Petra,Eastwick,Bridgefoot,Garden,17
+19:16,0372,Miriam,Bullock,Rope Walk,Garden,4
+19:16,0459,Elsie,Rowell,Old Mint,Tram,24
+19:16,0483,Mirela,Iddon,Ferrygate,Arcade,24
+19:16,0556,Anna,Youell,Saltmarket,Tram,20
+19:16,0667,Cecil,Rolland,Hollin Fields,Clock,3
+19:16,0785,Otto,Rawlins,Bridgefoot,Tram,8
+19:16,1095,Nadia,Pollard,Old Mint,Tram,18
+19:16,1202,Frances,Neville,Cathedral Close,Tram,12
+19:16,1411,Nadia,Osborne,Bellfounders,Arcade,16
+19:16,1448,Harold,Neill,Larchwood,Garden,6
+19:16,1646,Ruth,Vintner,Tanners’ Reach,Clock,11
+19:16,1718,Norine,Huxley,Rope Walk,Tram,18
+19:16,1820,Gracie,Varley,Old Mint,Clock,16
+19:16,1897,Hector,Garnett,Hollin Fields,Tram,18
+19:16,1901,Mavis,Corrigan,Larchwood,Clock,10
+19:16,1977,Ursel,Kimber,Old Mint,Tram,10
+19:16,2098,Ulric,Tollett,Cathedral Close,Arcade,1
+19:17,0018,Lottie,Stannard,Tanners’ Reach,Arcade,1
+19:17,0062,Roxane,Tuckett,Furnace Row,Tram,17
+19:17,0070,Laurie,Farrow,Coldharbour,Clock,11
+19:17,0234,Herbert,Iddon,Furnace Row,Clock,3
+19:17,0244,Walter,Seddon,Saltmarket,Arcade,12
+19:17,0494,Ursel,Weller,Tanners’ Reach,Tram,22
+19:17,0519,Ida,Skerritt,Pinchgate,Clock,16
+19:17,0521,Mercy,Potter,Bellfounders,Clock,6
+19:17,0538,Lorena,Sennett,Tanners’ Reach,Tram,2
+19:17,0995,Stella,Baxter,Old Mint,Tram,9
+19:17,1130,Norma,Thackray,Lamplight Quay,Arcade,16
+19:17,1486,Dorita,Lacey,Lamplight Quay,Garden,21
+19:17,2142,Dora,Wells,Old Mint,Arcade,7
+19:18,0142,Ernest,Vellacott,Pinchgate,Clock,12
+19:18,0242,Wilbur,Archer,Ferrygate,Clock,20
+19:18,0321,Teresa,Huxley,Rope Walk,Arcade,4
+19:18,0429,Selma,Redmayne,Ferrygate,Garden,5
+19:18,0725,Bertha,Whittle,Tanners’ Reach,Arcade,9
+19:18,0780,Marcus,Wells,Tanners’ Reach,Clock,4
+19:18,0906,Esther,Anstey,Saltmarket,Arcade,4
+19:18,1165,Mercy,Bramall,Larchwood,Garden,2
+19:18,1180,Mercy,Tillott,Gasworks,Arcade,11
+19:18,1195,Norma,Bullock,Tanners’ Reach,Arcade,13
+19:18,1862,Andrei,Carrick,Bellfounders,Garden,9
+19:18,1999,Norine,Wellbank,Tanners’ Reach,Arcade,7
+19:18,2204,Oscar,Turrell,Coldharbour,Garden,21
+19:18,2255,Walter,Archer,Coldharbour,Clock,5
+19:18,2323,Ursel,Osborne,Rope Walk,Clock,16
+19:19,0223,Amos,Vintner,Hollin Fields,Arcade,20
+19:19,0436,Una,Maddock,Saltmarket,Clock,10
+19:19,0544,Percy,Chadwick,Gasworks,Garden,11
+19:19,1033,Carla,Huxley,Tanners’ Reach,Arcade,10
+19:19,1083,Mabel,Marriott,Hollin Fields,Clock,15
+19:19,1112,Wilbur,Wyllie,Bellfounders,Tram,10
+19:19,1258,Una,Pennell,Old Mint,Tram,18
+19:19,1264,Xenia,Carrick,Ferrygate,Garden,11
+19:19,1331,Doris,Ollett,Ferrygate,Clock,20
+19:19,1341,Cecil,Moffatt,Hollin Fields,Garden,2
+19:19,1420,Zarina,Perrott,Saltmarket,Clock,17
+19:19,1459,Teresa,Fairbank,Saltmarket,Tram,7
+19:19,1558,Judith,Pollitt,Rope Walk,Clock,6
+19:19,1601,Edith,Seddon,Cathedral Close,Arcade,4
+19:19,1686,Judith,Tappell,Old Mint,Clock,14
+19:19,2078,Margie,Webb,Lamplight Quay,Arcade,3
+19:19,2123,Valery,Halliday,Bridgefoot,Clock,11
+19:19,2168,Rupert,Tebbs,Saltmarket,Arcade,5
+19:20,0310,Tamara,Rossiter,Ferrygate,Clock,22
+19:20,0462,Bernard,Webb,Coldharbour,Arcade,21
+19:20,0595,Arlene,Pell,Old Mint,Arcade,18
+19:20,0831,Vesna,Radley,Ferrygate,Tram,14
+19:20,0892,Carina,Sallis,Cathedral Close,Tram,6
+19:20,1045,Elvira,Purcell,Tanners’ Reach,Garden,1
+19:20,1163,Gloria,Tuckett,Bridgefoot,Arcade,3
+19:20,1315,Leon,Tebbs,Tanners’ Reach,Tram,7
+19:20,1438,Otto,Sommers,Lamplight Quay,Garden,22
+19:20,1595,Grace,Woodall,Hollin Fields,Tram,3
+19:20,1756,Andrei,Ashby,Saltmarket,Tram,1
+19:20,1913,Iris,Wollaston,Gasworks,Garden,16
+19:20,2251,Orla,Wallace,Old Mint,Garden,20
+19:20,2268,Felix,Brierley,Larchwood,Arcade,18
+19:20,2282,Noel,Russett,Saltmarket,Clock,12
+19:20,2295,Thora,Beckett,Rope Walk,Clock,1
+19:21,0199,Teresa,Pell,Saltmarket,Clock,9
+19:21,0376,Hattie,Hadley,Bridgefoot,Arcade,24
+19:21,0810,Marcia,Towell,Saltmarket,Garden,5
+19:21,1066,Daisy,Lambert,Bridgefoot,Arcade,14
+19:21,1909,Ada,Stebbing,Saltmarket,Arcade,11
+19:21,2025,Lorna,Lacey,Pinchgate,Tram,11
+19:21,2191,Bruno,Toller,Furnace Row,Tram,3
+19:21,2212,Rita,Anstey,Old Mint,Arcade,10
+19:21,2320,Effie,Pollitt,Old Mint,Garden,18
+19:21,2336,Jack,Wassell,Bellfounders,Tram,14
+19:22,0010,Iris,Cotterill,Rope Walk,Tram,13
+19:22,0194,Arthur,Hebden,Lamplight Quay,Tram,17
+19:22,0598,Lorena,Pennell,Ferrygate,Clock,8
+19:22,0988,Ines,Quinnell,Lamplight Quay,Garden,9
+19:22,1230,Bruno,Corrigan,Bridgefoot,Arcade,14
+19:22,1740,Rita,Gorringe,Tanners’ Reach,Clock,19
+19:22,1893,Ingrid,Newall,Hollin Fields,Garden,24
+19:22,1944,Lilian,Stannard,Coldharbour,Arcade,4
+19:22,2206,Herbert,Sennett,Bridgefoot,Tram,17
+19:22,2237,Zora,Ashby,Bridgefoot,Arcade,14
+19:23,0216,Gertie,Swallow,Furnace Row,Clock,10
+19:23,0554,Esmond,Pennell,Pinchgate,Garden,7
+19:23,0812,Arlene,Neill,Rope Walk,Arcade,16
+19:23,0955,Miriam,Kellett,Rope Walk,Arcade,7
+19:23,1143,Wanda,Rolland,Cathedral Close,Garden,15
+19:23,2228,Vesna,Noakes,Furnace Row,Garden,4
+19:23,2231,Flora,Farrow,Saltmarket,Arcade,9
+19:23,2280,Frances,Varley,Bellfounders,Garden,21
+19:24,0224,Walter,Rummell,Furnace Row,Arcade,18
+19:24,0569,Alma,Thackray,Cathedral Close,Clock,10
+19:24,0804,Nadia,Potter,Bridgefoot,Tram,7
+19:24,1396,Viola,Tillott,Coldharbour,Arcade,13
+19:24,1703,Sabrine,Moffatt,Hollin Fields,Clock,22
+19:24,1714,Andrea,Woollard,Saltmarket,Tram,8
+19:24,1775,Lilian,Dallow,Cathedral Close,Arcade,1
+19:24,1971,Bertha,Vintner,Cathedral Close,Arcade,18
+19:24,2118,Lilian,Skerritt,Ferrygate,Clock,3
+19:24,2124,Audrey,Rennie,Larchwood,Arcade,5
+19:25,0059,Philippa,Collier,Cathedral Close,Garden,12
+19:25,0078,Thea,Whitlowe,Saltmarket,Garden,1
+19:25,0764,Henry,Brierley,Bridgefoot,Tram,16
+19:25,1084,Harriet,Wollaston,Ferrygate,Garden,1
+19:25,1405,Wanda,Thackray,Larchwood,Garden,10
+19:25,1548,Serena,Zennor,Saltmarket,Arcade,18
+19:25,1630,Petra,Amory,Bellfounders,Garden,20
+19:25,1681,Vera,Skerritt,Tanners’ Reach,Arcade,14
+19:25,1692,Norma,Unsworth,Bellfounders,Arcade,3
+19:25,1805,Irene,Mellor,Hollin Fields,Garden,21
+19:25,1979,Andrei,Ramsell,Bridgefoot,Arcade,10
+19:25,2183,Clement,Maddock,Bridgefoot,Clock,17
+19:26,0004,Miriam,Zennor,Saltmarket,Arcade,20
+19:26,0058,Tamara,Warrell,Old Mint,Garden,1
+19:26,0450,Stella,Fennell,Hollin Fields,Garden,16
+19:26,0765,Andrea,Amory,Hollin Fields,Arcade,20
+19:26,1030,Annie,Allard,Hollin Fields,Arcade,11
+19:26,1089,Milo,Jarrett,Gasworks,Clock,10
+19:26,1231,Zora,Bullock,Old Mint,Clock,6
+19:26,1320,Orla,Darnell,Old Mint,Tram,4
+19:26,1353,Carina,Vossell,Lamplight Quay,Arcade,4
+19:26,1370,Philippa,Harker,Hollin Fields,Garden,21
+19:26,1488,Lottie,Rawlins,Furnace Row,Arcade,20
+19:26,1596,Leon,Woollard,Cathedral Close,Arcade,20
+19:26,1664,Ivor,Garnett,Furnace Row,Arcade,13
+19:26,1666,Rowena,Fairbank,Saltmarket,Clock,1
+19:26,2127,Ines,Wallace,Cathedral Close,Tram,12
+19:27,0475,Judith,Sellars,Gasworks,Arcade,17
+19:27,0488,Doreen,Gilchrist,Pinchgate,Tram,9
+19:27,0504,Pearl,Towell,Bridgefoot,Clock,13
+19:27,0678,Ingrid,Orrell,Coldharbour,Tram,19
+19:27,0885,Mabel,Maddock,Saltmarket,Tram,17
+19:27,0901,Zora,Tennant,Cathedral Close,Arcade,13
+19:27,1098,Petra,Merrick,Pinchgate,Clock,20
+19:27,1400,Miriam,Unsworth,Coldharbour,Tram,2
+19:27,1495,Bernard,Woodall,Bridgefoot,Clock,1
+19:27,1715,Thora,Youell,Old Mint,Clock,24
+19:27,1843,Tobias,Denning,Old Mint,Clock,14
+19:27,1956,Ethel,Bullock,Gasworks,Clock,5
+19:27,2097,Isla,Harker,Old Mint,Arcade,10
+19:27,2144,Lilian,Hollins,Old Mint,Garden,20
+19:27,2384,Xenia,Prentice,Bellfounders,Arcade,23
+19:28,0007,Daisy,Garnett,Saltmarket,Garden,6
+19:28,0068,Ida,Halliday,Tanners’ Reach,Arcade,8
+19:28,0093,Gracie,Archer,Larchwood,Clock,2
+19:28,0136,Cecil,Fennell,Cathedral Close,Tram,11
+19:28,0266,Elsie,Varley,Old Mint,Tram,21
+19:28,0373,Irene,Seddon,Cathedral Close,Arcade,19
+19:28,0471,Hector,Ellery,Larchwood,Garden,1
+19:28,0713,Hector,Rolland,Saltmarket,Garden,1
+19:28,1514,Olive,Allard,Coldharbour,Tram,4
+19:28,1762,Cyril,Yelland,Bridgefoot,Clock,16
+19:28,1869,Roland,Finney,Saltmarket,Arcade,14
+19:28,1934,Robert,Zeller,Coldharbour,Arcade,23
+19:28,2042,Maud,Horrocks,Gasworks,Tram,2
+19:28,2261,Cyril,Bagnall,Bridgefoot,Garden,12
+19:29,0044,Maisie,Quayle,Tanners’ Reach,Arcade,14
+19:29,0158,Vesna,Lambert,Coldharbour,Garden,13
+19:29,0394,Rhoda,Ellery,Rope Walk,Clock,12
+19:29,0517,Teresa,Radley,Bridgefoot,Arcade,12
+19:29,0633,Nina,Chadwick,Saltmarket,Clock,5
+19:29,0641,Cecil,Barnet,Ferrygate,Garden,10
+19:29,1153,Esmond,Tyrrell,Furnace Row,Clock,10
+19:29,1509,Bruno,Upsall,Ferrygate,Clock,9
+19:29,1778,Ulric,Varrell,Larchwood,Garden,1
+19:29,2105,Felix,Wellbank,Furnace Row,Clock,3
+19:29,2284,Gilbert,Cotterill,Cathedral Close,Tram,24
+19:30,0196,Ernest,Bagnall,Gasworks,Arcade,23
+19:30,0481,Josie,Potter,Bellfounders,Arcade,3
+19:30,1937,Hilary,Newall,Rope Walk,Clock,2
+19:30,2029,Judith,Penny,Larchwood,Arcade,18
+19:30,2030,Zarina,Finney,Hollin Fields,Arcade,12
+19:30,2091,Winnie,Allard,Old Mint,Tram,15
+19:30,2361,Edith,Ormside,Saltmarket,Arcade,15
+19:31,0233,Ruth,Hebden,Tanners’ Reach,Arcade,13
+19:31,0391,Tamsin,Redmayne,Old Mint,Arcade,17
+19:31,0875,Stella,Unsworth,Bellfounders,Tram,8
+19:31,1154,Hilary,Sutcliffe,Old Mint,Clock,9
+19:31,1497,Ida,Bolton,Hollin Fields,Tram,9
+19:31,2161,Anna,Sanderell,Furnace Row,Garden,12
+19:32,0225,Frances,Fennell,Furnace Row,Tram,14
+19:32,0497,Ulric,Finney,Cathedral Close,Garden,2
+19:32,0854,Gloria,Ogden,Ferrygate,Clock,3
+19:32,1493,Norma,Sellick,Pinchgate,Clock,16
+19:32,1524,Lilian,Baxter,Gasworks,Garden,10
+19:32,1835,Rita,Noakes,Larchwood,Tram,7
+19:32,1853,Yvette,Ellery,Rope Walk,Clock,11
+19:32,1891,Noel,Allard,Saltmarket,Garden,13
+19:32,1920,Olive,Neville,Cathedral Close,Arcade,3
+19:32,1969,Carmen,Pell,Pinchgate,Arcade,11
+19:32,2128,Carina,Pollard,Cathedral Close,Arcade,24
+19:33,0203,Yolande,Roskell,Lamplight Quay,Tram,14
+19:33,0243,Felix,Gilchrist,Old Mint,Clock,1
+19:33,0505,Cora,Towell,Ferrygate,Garden,22
+19:33,0685,Annie,Perrott,Cathedral Close,Arcade,8
+19:33,0741,Gloria,Lockett,Saltmarket,Garden,14
+19:33,0805,Agnes,Vassall,Saltmarket,Tram,18
+19:33,0874,Mercy,Ashby,Hollin Fields,Clock,10
+19:33,1990,Norma,Darnell,Lamplight Quay,Tram,19
+19:33,2376,Effie,Yarrow,Bridgefoot,Tram,21
+19:34,0206,Xenia,Vossell,Bellfounders,Clock,15
+19:34,1116,Rupert,Radley,Pinchgate,Garden,14
+19:34,1284,Winnie,Lomas,Rope Walk,Arcade,13
+19:34,1499,Tamara,Scarrott,Tanners’ Reach,Garden,23
+19:34,1523,Arlene,Upcott,Saltmarket,Garden,19
+19:34,1935,Jack,Hebden,Rope Walk,Arcade,4
+19:35,0024,Viola,Youell,Hollin Fields,Clock,1
+19:35,0057,Maisie,Sennett,Tanners’ Reach,Arcade,11
+19:35,0135,Serena,Ellery,Hollin Fields,Arcade,1
+19:35,0141,Flora,Woodall,Saltmarket,Garden,1
+19:35,0626,Carmen,Gorringe,Saltmarket,Tram,24
+19:35,0790,Herbert,Yarrow,Bridgefoot,Arcade,3
+19:35,0969,Hilary,Upsall,Rope Walk,Arcade,20
+19:35,1267,Rhoda,Amory,Saltmarket,Arcade,22
+19:35,1327,Petra,Rossiter,Saltmarket,Arcade,8
+19:35,1414,Grace,Merrick,Coldharbour,Tram,3
+19:35,1698,Enid,Redmayne,Hollin Fields,Clock,20
+19:35,2051,Irene,Sellick,Furnace Row,Tram,19
+19:35,2062,Cora,Iddon,Hollin Fields,Arcade,20
+19:35,2262,Ida,Iddon,Gasworks,Clock,1
+19:36,0126,Daisy,Innes,Coldharbour,Tram,11
+19:36,0382,Dorita,Tyrrell,Tanners’ Reach,Garden,17
+19:36,0863,Cherie,Quinnell,Saltmarket,Garden,17
+19:36,1055,Margie,Tebbs,Ferrygate,Tram,4
+19:36,1069,Ida,Rolland,Coldharbour,Tram,8
+19:36,1371,Doris,Fennell,Saltmarket,Clock,7
+19:36,1377,Olive,Naylor,Cathedral Close,Tram,15
+19:36,1743,Arlene,Eastwick,Saltmarket,Clock,16
+19:36,2110,Herbert,Thackray,Pinchgate,Arcade,1
+19:36,2186,Esther,Neill,Furnace Row,Arcade,4
+19:37,0023,Stella,Woodall,Pinchgate,Clock,13
+19:37,0103,Cyril,Liddell,Pinchgate,Tram,13
+19:37,0250,Zelie,Amory,Pinchgate,Tram,11
+19:37,0510,Alma,Seddon,Saltmarket,Garden,12
+19:37,0615,Edgar,Horrocks,Larchwood,Clock,13
+19:37,1134,Josie,Fennell,Saltmarket,Tram,9
+19:37,1576,Bella,Lambert,Furnace Row,Tram,6
+19:37,1808,Oscar,Ogden,Saltmarket,Clock,15
+19:38,0017,Lena,Barnet,Saltmarket,Tram,13
+19:38,0092,Wilfred,Purcell,Larchwood,Arcade,10
+19:38,0326,Marina,Kellett,Lamplight Quay,Clock,1
+19:38,0807,Maisie,Radley,Coldharbour,Clock,14
+19:38,1043,Ruth,Ramsell,Bridgefoot,Tram,4
+19:38,1268,Zelie,Osborne,Hollin Fields,Tram,17
+19:38,1505,Rita,Vintner,Larchwood,Arcade,3
+19:38,1619,Laura,Rummell,Hollin Fields,Clock,8
+19:38,1679,Myrtle,Innes,Lamplight Quay,Clock,4
+19:38,2209,Nadia,Gorringe,Rope Walk,Tram,21
+19:39,0419,Nora,Ogden,Cathedral Close,Clock,9
+19:39,0962,Ernest,Zeller,Gasworks,Clock,21
+19:39,1038,Irene,Pell,Ferrygate,Arcade,14
+19:39,1288,Thea,Tennant,Lamplight Quay,Clock,16
+19:39,1887,Nerina,Ormside,Furnace Row,Garden,19
+19:40,0513,Cora,Ollerton,Cathedral Close,Clock,12
+19:40,0589,Oscar,Ellery,Saltmarket,Tram,21
+19:40,0931,Ottoline,Liddell,Saltmarket,Tram,5
+19:40,1403,Beatrix,Pottell,Bridgefoot,Arcade,6
+19:40,1480,Flora,Sellars,Bridgefoot,Garden,10
+19:40,1697,Ida,Beckett,Pinchgate,Clock,4
+19:40,1804,Myrtle,Spiller,Pinchgate,Arcade,19
+19:40,1855,Annie,Gorringe,Bellfounders,Clock,10
+19:40,1959,Thea,Radley,Rope Walk,Clock,12
+19:41,0583,Roland,Pettit,Furnace Row,Tram,5
+19:41,0800,Arthur,Bramall,Cathedral Close,Arcade,14
+19:41,1005,Ernest,Weller,Tanners’ Reach,Arcade,1
+19:41,1020,Jack,Farrow,Pinchgate,Tram,13
+19:41,1042,Iris,Pursell,Bridgefoot,Garden,22
+19:41,1096,Esmond,Osborne,Rope Walk,Garden,17
+19:41,1450,Marnie,Farrow,Rope Walk,Tram,10
+19:41,1557,Lucia,Norrell,Gasworks,Arcade,20
+19:41,1590,Mabel,Gorringe,Saltmarket,Clock,20
+19:41,1712,Herbert,Pantridge,Tanners’ Reach,Clock,5
+19:41,1730,Ethel,Pottell,Saltmarket,Garden,7
+19:41,1894,Audrey,Horrocks,Hollin Fields,Arcade,23
+19:41,1945,Lucia,Pettit,Lamplight Quay,Tram,11
+19:41,1986,Mavis,Pursell,Hollin Fields,Tram,13
+19:41,2066,Esmond,Huxley,Larchwood,Garden,4
+19:41,2104,Annie,Purcell,Ferrygate,Clock,16
+19:41,2344,Gloria,Webb,Saltmarket,Arcade,18
+19:42,0265,Maud,Tappell,Cathedral Close,Arcade,7
+19:42,0316,Lottie,Warrell,Hollin Fields,Garden,1
+19:42,0750,Gerald,Hebden,Old Mint,Garden,15
+19:42,0868,Willa,Roskell,Ferrygate,Arcade,12
+19:42,1464,Philippa,Naylor,Ferrygate,Arcade,5
+19:42,1466,Ingrid,Abney,Bridgefoot,Garden,5
+19:42,1489,Yvette,Ramsell,Hollin Fields,Garden,20
+19:42,1544,Louisa,Mellor,Old Mint,Arcade,21
+19:42,1821,Wilfred,Tebbs,Saltmarket,Clock,17
+19:42,2332,Enid,Brierley,Gasworks,Garden,5
+19:43,0060,Marnie,Maddock,Pinchgate,Garden,2
+19:43,0474,Sorcha,Merrick,Saltmarket,Clock,11
+19:43,0477,Maud,Sallis,Larchwood,Arcade,20
+19:43,0567,Freda,Harker,Gasworks,Arcade,1
+19:43,0759,Oscar,Hammond,Larchwood,Tram,14
+19:43,0886,Pearl,Moffatt,Old Mint,Clock,13
+19:43,1017,Louisa,Zeller,Bellfounders,Garden,10
+19:43,1491,Roland,Skerritt,Larchwood,Tram,11
+19:43,1677,Norma,Rushden,Larchwood,Arcade,18
+19:43,2027,Carina,Dallow,Larchwood,Garden,20
+19:44,0602,Agnes,Bagnall,Saltmarket,Clock,21
+19:44,1145,Josie,Abney,Bellfounders,Tram,15
+19:44,1343,Doris,Purcell,Lamplight Quay,Garden,11
+19:44,1812,Zelie,Horrocks,Cathedral Close,Arcade,16
+19:45,0593,Lena,Neville,Tanners’ Reach,Tram,23
+19:45,0620,Hazel,Vellacott,Tanners’ Reach,Garden,14
+19:45,1352,Vera,Wardell,Bellfounders,Clock,4
+19:45,1483,Arthur,Thackray,Lamplight Quay,Arcade,16
+19:45,1615,Gertie,Spiller,Tanners’ Reach,Clock,9
+19:45,1759,Rupert,Sallis,Lamplight Quay,Arcade,9
+19:46,0257,Gracie,Elwes,Hollin Fields,Clock,4
+19:46,0644,Ivor,Innes,Ferrygate,Tram,9
+19:46,0738,Maisie,Denning,Hollin Fields,Clock,18
+19:46,0992,Miriam,Quayle,Furnace Row,Garden,13
+19:46,1204,Greta,Darnell,Ferrygate,Clock,9
+19:46,1285,Andrea,Innes,Old Mint,Tram,9
+19:46,2054,Yolande,Pennell,Gasworks,Clock,3
+19:46,2178,Orsola,Zennor,Pinchgate,Arcade,17
+19:46,2340,Xenia,Vellacott,Pinchgate,Clock,16
+19:47,0157,Serena,Nevill,Ferrygate,Clock,11
+19:47,0249,Teresa,Neill,Saltmarket,Tram,19
+19:47,0300,Marnie,Yewell,Tanners’ Reach,Arcade,17
+19:47,0590,Mercy,Woollard,Gasworks,Arcade,1
+19:47,0624,Nadia,Prentice,Gasworks,Garden,15
+19:47,0954,Bertha,Hebden,Tanners’ Reach,Clock,2
+19:47,1278,Xenia,Gilchrist,Saltmarket,Arcade,5
+19:48,0703,Xenia,Pennell,Larchwood,Arcade,7
+19:48,1127,Gwen,Usher,Rope Walk,Clock,22
+19:48,1199,Cherie,Innes,Gasworks,Garden,6
+19:48,1266,Ethel,Dobbs,Hollin Fields,Tram,21
+19:48,1410,Ernest,Liddell,Pinchgate,Clock,20
+19:48,1461,Lorena,Perrott,Furnace Row,Clock,3
+19:48,1563,Rita,Pettit,Hollin Fields,Arcade,17
+19:48,1694,Leon,Pottell,Lamplight Quay,Tram,19
+19:48,2195,Doreen,Ramsell,Lamplight Quay,Arcade,10
+19:49,0079,Ines,Usher,Saltmarket,Clock,15
+19:49,0111,Wilbur,Fairbank,Bridgefoot,Tram,17
+19:49,0198,Effie,Jarrett,Gasworks,Clock,12
+19:49,0211,Nadia,Wassell,Bellfounders,Arcade,17
+19:49,0222,Cora,Scarrott,Bellfounders,Arcade,22
+19:49,1338,Vera,Noakes,Saltmarket,Tram,4
+19:49,1465,Jack,Swallow,Saltmarket,Garden,20
+19:49,1547,Carina,Roskell,Furnace Row,Arcade,22
+19:49,1940,Tamara,Thackray,Coldharbour,Tram,18
+19:49,1950,Hattie,Garnett,Gasworks,Clock,21
+19:49,2055,Myrtle,Tyrrell,Larchwood,Arcade,8
+19:50,0049,Carina,Stannard,Saltmarket,Tram,23
+19:50,0256,Rhoda,Sturdevan,Hollin Fields,Arcade,5
+19:50,0727,Doreen,Croft,Ferrygate,Garden,3
+19:50,1111,Sabine,Russett,Saltmarket,Arcade,1
+19:50,1170,Esther,Tennant,Gasworks,Arcade,23
+19:50,1716,Cherie,Tuckett,Old Mint,Arcade,13
+19:50,1904,Zelie,Redmayne,Saltmarket,Tram,6
+19:50,1932,Ingrid,Barnet,Pinchgate,Garden,7
+19:50,2205,Pearl,Darnell,Ferrygate,Garden,14
+19:50,2210,Blanche,Halliday,Larchwood,Clock,17
+19:51,0453,Rosina,Anstey,Cathedral Close,Garden,21
+19:51,0702,Isla,Lacey,Bellfounders,Tram,6
+19:51,1057,Daisy,Vintner,Pinchgate,Tram,10
+19:51,1079,Agnes,Harker,Old Mint,Arcade,23
+19:51,1156,Gwen,Finney,Bridgefoot,Arcade,6
+19:51,1359,Clement,Pantridge,Cathedral Close,Garden,9
+19:51,2221,Laurie,Sallis,Cathedral Close,Arcade,23
+19:51,2259,Clara,Zennor,Bridgefoot,Garden,9
+19:51,2359,Henry,Tennant,Saltmarket,Clock,19
+19:52,0025,Agnes,Perrott,Old Mint,Arcade,13
+19:52,0254,Thea,Chadwick,Saltmarket,Tram,12
+19:52,0258,Gloria,Wollaston,Bridgefoot,Garden,16
+19:52,0502,Morris,Ollerton,Old Mint,Clock,9
+19:52,1221,Mabel,Lomas,Old Mint,Clock,18
+19:52,1274,Bruno,Yewell,Lamplight Quay,Arcade,16
+19:52,1948,Tamsin,Bullock,Tanners’ Reach,Tram,12
+19:52,2367,Roland,Dawlish,Gasworks,Tram,12
+19:53,0228,Winnie,Huxley,Bridgefoot,Garden,18
+19:53,0411,Esmond,Lattimer,Tanners’ Reach,Arcade,23
+19:53,0896,Olive,Penny,Pinchgate,Clock,9
+19:53,1196,Mirela,Pettit,Rope Walk,Arcade,1
+19:53,1631,Henry,Abney,Bridgefoot,Clock,17
+19:53,1732,Miriam,Ellery,Tanners’ Reach,Garden,9
+19:53,2211,Hattie,Tyrrell,Gasworks,Clock,24
+19:54,0231,Gilbert,Russett,Ferrygate,Garden,19
+19:54,0424,Serena,Beckett,Furnace Row,Clock,20
+19:54,0611,Selma,Bolton,Old Mint,Arcade,15
+19:54,0855,Sabine,Kellett,Old Mint,Clock,12
+19:54,0998,Rosina,Pantridge,Furnace Row,Tram,24
+19:54,1423,Ethel,Webb,Cathedral Close,Tram,18
+19:54,1839,Thea,Hammond,Cathedral Close,Garden,24
+19:54,2126,Carina,Wassell,Rope Walk,Garden,4
+19:54,2224,Mercy,Pollitt,Rope Walk,Arcade,14
+19:54,2363,Carla,Zennor,Tanners’ Reach,Tram,20
+19:55,0651,Gracie,Woollard,Saltmarket,Tram,9
+19:55,1187,Thea,Spiller,Lamplight Quay,Arcade,4
+19:55,1234,Greta,Parrish,Lamplight Quay,Clock,4
+19:55,1479,Vesna,Sturdevan,Furnace Row,Garden,3
+19:55,1550,Winnie,Woollard,Rope Walk,Arcade,12
+19:55,2383,Bella,Tebbs,Gasworks,Arcade,4
+19:56,0100,Wanda,Spiller,Saltmarket,Tram,13
+19:56,0478,Ines,Sherratt,Tanners’ Reach,Arcade,23
+19:56,0518,Rita,Rolland,Coldharbour,Garden,9
+19:56,0679,Nerina,Pollard,Pinchgate,Clock,22
+19:56,0706,Olive,Tuckett,Cathedral Close,Tram,10
+19:56,0824,Wilbur,Wollaston,Tanners’ Reach,Tram,10
+19:56,0941,Zarina,Merrick,Ferrygate,Garden,3
+19:56,1218,Bernard,Zeller,Gasworks,Tram,18
+19:56,1372,Frances,Potter,Saltmarket,Tram,15
+19:56,1905,Bernard,Thackray,Tanners’ Reach,Arcade,10
+19:56,2059,Lottie,Halliday,Bellfounders,Garden,21
+19:56,2152,Cyril,Webb,Coldharbour,Arcade,13
+19:56,2256,Sabrine,Wassell,Gasworks,Arcade,5
+19:57,0210,Maud,Chadwick,Coldharbour,Arcade,6
+19:57,1048,Laurie,Ollett,Bridgefoot,Clock,11
+19:57,1426,Isla,Winnell,Furnace Row,Tram,2
+19:57,1525,Audrey,Pell,Cathedral Close,Clock,18
+19:57,2395,Edgar,Nettleton,Larchwood,Clock,3
+19:58,0212,Esmond,Weller,Pinchgate,Garden,12
+19:58,0360,Josie,Eastwick,Old Mint,Clock,12
+19:58,0568,Gertie,Baxter,Gasworks,Tram,13
+19:58,0666,Tobias,Bramall,Bridgefoot,Tram,6
+19:58,0860,Greta,Carrick,Bellfounders,Tram,22
+19:58,1126,Laurie,Brierley,Tanners’ Reach,Garden,1
+19:58,1421,Pearl,Prentice,Old Mint,Tram,17
+19:58,1647,Blanche,Dunning,Lamplight Quay,Clock,5
+19:58,1779,Cherie,Varrell,Saltmarket,Clock,9
+19:59,0099,Esther,Finney,Coldharbour,Tram,2
+19:59,0523,Norma,Sennett,Pinchgate,Clock,16
+19:59,0550,Wendell,Prentice,Bridgefoot,Arcade,6
+19:59,0564,Cherie,Rawlins,Cathedral Close,Clock,10
+19:59,0571,Doris,Unsworth,Saltmarket,Tram,1
+19:59,1407,Zarina,Fennell,Larchwood,Tram,1
+19:59,1649,Gracie,Roskell,Saltmarket,Clock,4
+19:59,1878,Milo,Dawlish,Bridgefoot,Arcade,4
+19:59,2208,Walter,Vossell,Larchwood,Garden,10
+19:59,2329,Gloria,Moffatt,Bridgefoot,Clock,6
+20:00,0114,Yolande,Russett,Gasworks,Arcade,1
+20:00,0187,Percy,Allard,Saltmarket,Clock,1
+20:00,0364,Bella,Wellbank,Bridgefoot,Clock,17
+20:00,0683,Lorna,Russett,Pinchgate,Tram,19
+20:00,0734,Morris,Kimber,Gasworks,Clock,15
+20:00,0781,Rupert,Ellery,Bellfounders,Tram,11
+20:00,1216,Philippa,Sherratt,Tanners’ Reach,Tram,1
+20:00,1375,Ernest,Spiller,Cathedral Close,Garden,6
+20:00,2053,Iris,Penny,Old Mint,Tram,15
+20:01,0423,Cecil,Kellett,Lamplight Quay,Arcade,7
+20:01,0528,Sorcha,Chadwick,Larchwood,Garden,21
+20:01,0762,Rita,Tarrell,Saltmarket,Garden,20
+20:01,1080,Gerald,Sanderell,Coldharbour,Arcade,4
+20:01,1176,Willa,Eastwick,Rope Walk,Arcade,8
+20:01,1236,Dorita,Finney,Rope Walk,Arcade,6
+20:01,1279,Judith,Vellacott,Bellfounders,Clock,9
+20:01,2131,Lorna,Osborne,Tanners’ Reach,Arcade,2
+20:01,2134,Orla,Redmayne,Bellfounders,Garden,9
+20:02,0302,Rosina,Ellery,Old Mint,Arcade,1
+20:02,0355,Esther,Rawlins,Tanners’ Reach,Clock,4
+20:02,0553,Esmond,Unsworth,Bridgefoot,Garden,22
+20:02,0712,Percy,Finney,Saltmarket,Garden,5
+20:02,1022,Winnie,Skerritt,Saltmarket,Garden,13
+20:02,1303,Yolande,Sellick,Coldharbour,Tram,24
+20:02,1788,Andrea,Lomas,Rope Walk,Tram,1
+20:02,1817,Myrtle,Neill,Gasworks,Clock,10
+20:02,1906,Philippa,Venning,Saltmarket,Tram,7
+20:03,0052,Annie,Rennie,Pinchgate,Tram,1
+20:03,0603,Agnes,Youell,Saltmarket,Arcade,15
+20:03,1054,Elvira,Sallis,Cathedral Close,Tram,14
+20:03,1078,Ida,Chadwick,Saltmarket,Clock,20
+20:03,1484,Noel,Tillott,Cathedral Close,Clock,11
+20:04,0627,Marcia,Corrigan,Hollin Fields,Clock,15
+20:04,0948,Vera,Gilchrist,Bellfounders,Garden,18
+20:04,1247,Valery,Goodall,Rope Walk,Arcade,5
+20:04,1382,Ida,Ollerton,Bellfounders,Arcade,14
+20:04,2368,Lorena,Noakes,Saltmarket,Arcade,7
+20:04,2387,Dorita,Redmayne,Gasworks,Clock,6
+20:05,0606,Sabine,Quayle,Hollin Fields,Arcade,10
+20:05,0720,Lilian,Roskell,Old Mint,Arcade,17
+20:05,0722,Marina,Rowell,Rope Walk,Tram,23
+20:05,0887,Hattie,Winnell,Hollin Fields,Garden,21
+20:05,1519,Zora,Pell,Saltmarket,Arcade,4
+20:05,1780,Roland,Brough,Rope Walk,Garden,4
+20:05,2286,Harriet,Spiller,Coldharbour,Clock,1
+20:06,0180,Minnie,Northey,Saltmarket,Clock,11
+20:06,0940,Rupert,Perrott,Tanners’ Reach,Tram,17
+20:06,0947,Ruth,Sallett,Old Mint,Tram,6
+20:06,1325,Edith,Lockett,Furnace Row,Garden,19
+20:06,1476,Milo,Garnett,Pinchgate,Garden,6
+20:06,2247,Amos,Scarrott,Saltmarket,Arcade,5
+20:07,0151,Margie,Rawlins,Saltmarket,Tram,10
+20:07,0251,Anna,Jessop,Hollin Fields,Arcade,19
+20:07,0381,Edgar,Wyllie,Lamplight Quay,Arcade,21
+20:07,0809,Annie,Wallace,Rope Walk,Clock,6
+20:07,0942,Anna,Darnell,Hollin Fields,Clock,23
+20:07,1014,Philippa,Norrell,Gasworks,Garden,4
+20:07,1252,Audrey,Tebb,Coldharbour,Clock,11
+20:07,1451,Gilbert,Stebbing,Saltmarket,Tram,9
+20:07,1463,Enid,Farrow,Hollin Fields,Tram,5
+20:07,1849,Xenia,Stebbing,Coldharbour,Garden,14
+20:07,1965,Winnie,Beckett,Lamplight Quay,Arcade,11
+20:07,1992,Judith,Sallis,Coldharbour,Arcade,20
+20:08,0191,Miriam,Woodall,Saltmarket,Arcade,16
+20:08,1682,Lottie,Darnell,Bridgefoot,Arcade,22
+20:08,2109,Noel,Orrell,Bridgefoot,Arcade,6
+20:09,0022,Arlene,Ramsell,Ferrygate,Tram,18
+20:09,0185,Marnie,Dawlish,Bellfounders,Clock,7
+20:09,0385,Otto,Ramsell,Saltmarket,Garden,14
+20:09,0594,Cora,Dawlish,Bridgefoot,Tram,24
+20:09,0797,Laura,Beckett,Old Mint,Garden,23
+20:09,1010,Louisa,Denning,Bellfounders,Tram,24
+20:09,1508,Tobias,Unsworth,Rope Walk,Tram,2
+20:09,1723,Ingrid,Goodall,Old Mint,Arcade,3
+20:09,1927,Una,Dallow,Larchwood,Tram,18
+20:09,2058,Philippa,Roskell,Saltmarket,Clock,24
+20:09,2164,Willa,Norrell,Rope Walk,Arcade,10
+20:10,0098,Milo,Oddie,Cathedral Close,Clock,19
+20:10,0146,Gwen,Stannard,Gasworks,Tram,24
+20:10,0156,Ida,Rowell,Bellfounders,Clock,13
+20:10,0318,Thea,Barnet,Furnace Row,Clock,8
+20:10,0680,Rupert,Nuttall,Old Mint,Arcade,3
+20:10,0957,Gilbert,Swallow,Cathedral Close,Clock,20
+20:10,1243,Wendell,Swallow,Gasworks,Clock,11
+20:10,1409,Mabel,Cotterill,Saltmarket,Arcade,14
+20:10,1597,Tobias,Tuckett,Rope Walk,Arcade,11
+20:10,1704,Bernard,Wells,Cathedral Close,Arcade,7
+20:10,1792,Margie,Vassall,Saltmarket,Arcade,15
+20:10,1858,Ernest,Archer,Bridgefoot,Clock,1
+20:10,1995,Doris,Usher,Gasworks,Clock,10
+20:10,2065,Ernest,Hebden,Cathedral Close,Tram,14
+20:11,0341,Willa,Ogden,Lamplight Quay,Arcade,12
+20:11,0349,Ivor,Swallow,Saltmarket,Clock,1
+20:11,0458,Hazel,Wellbank,Furnace Row,Arcade,4
+20:11,1081,Mercy,Abney,Larchwood,Arcade,17
+20:11,1169,Ernest,Nuttall,Cathedral Close,Garden,9
+20:11,1567,Doris,Abney,Larchwood,Garden,11
+20:12,0088,Rowena,Mellor,Gasworks,Arcade,12
+20:12,0344,Freda,Orrell,Pinchgate,Clock,17
+20:12,0851,Celia,Finney,Gasworks,Tram,21
+20:12,0938,Thea,Fennell,Cathedral Close,Arcade,14
+20:12,1036,Maisie,Ollett,Coldharbour,Clock,8
+20:12,1201,Irene,Baxter,Bellfounders,Tram,14
+20:12,1275,Rowena,Sallis,Bellfounders,Tram,22
+20:13,0016,Dorita,Weller,Bridgefoot,Clock,11
+20:13,0130,Yvette,Yewell,Hollin Fields,Arcade,16
+20:13,0361,Zora,Hollins,Larchwood,Arcade,9
+20:13,0826,Willa,Gorringe,Hollin Fields,Arcade,6
+20:13,1179,Amos,Denning,Saltmarket,Clock,12
+20:13,1297,Bella,Marriott,Old Mint,Clock,20
+20:13,1678,Rosina,Brough,Tanners’ Reach,Tram,1
+20:13,1699,Myrtle,Hadley,Lamplight Quay,Clock,1
+20:13,1765,Wilbur,Ollett,Hollin Fields,Tram,10
+20:13,1767,Ida,Ormside,Rope Walk,Garden,23
+20:13,1773,Edgar,Sherratt,Saltmarket,Garden,12
+20:13,1946,Rhoda,Rimmer,Coldharbour,Garden,1
+20:13,2112,Ines,Halliday,Pinchgate,Clock,13
+20:13,2289,Nadia,Brierley,Cathedral Close,Tram,10
+20:14,0226,Wilfred,Sanderell,Bellfounders,Arcade,10
+20:14,0229,Milo,Wyllie,Bridgefoot,Arcade,5
+20:14,0311,Gwen,Yarrow,Saltmarket,Arcade,2
+20:14,0314,Zelie,Roskell,Cathedral Close,Clock,24
+20:14,0496,Winnie,Norrell,Gasworks,Arcade,9
+20:14,2048,Anna,Dobbs,Saltmarket,Garden,13
+20:15,0118,Zelie,Liddell,Ferrygate,Garden,1
+20:15,1683,Elsie,Rennie,Furnace Row,Garden,14
+20:15,2000,Elsie,Roskell,Old Mint,Garden,12
+20:16,0072,Norma,Woodall,Larchwood,Arcade,5
+20:16,0083,Yolande,Woodall,Larchwood,Arcade,5
+20:16,0269,Rosina,Skerritt,Saltmarket,Arcade,17
+20:16,0558,Alma,Skerritt,Furnace Row,Clock,5
+20:16,0588,Maud,Varley,Old Mint,Clock,22
+20:16,1255,Annie,Pettit,Ferrygate,Arcade,2
+20:16,1861,Pearl,Amory,Lamplight Quay,Arcade,4
+20:16,1880,Felix,Nuttall,Ferrygate,Garden,14
+20:17,0042,Audrey,Fennell,Tanners’ Reach,Clock,3
+20:17,0793,Milo,Brough,Coldharbour,Garden,2
+20:17,1739,Wilfred,Cotterill,Cathedral Close,Garden,21
+20:17,2108,Lottie,Russett,Larchwood,Tram,15
+20:18,0013,Una,Kellett,Hollin Fields,Tram,1
+20:18,0456,Judith,Dunning,Pinchgate,Tram,11
+20:18,0570,Rosina,Tyrrell,Gasworks,Tram,1
+20:18,0815,Nerina,Spiller,Saltmarket,Arcade,2
+20:18,1308,Cecil,Croft,Tanners’ Reach,Tram,11
+20:18,1644,Nina,Corrigan,Ferrygate,Arcade,1
+20:18,1661,Irene,Redmayne,Saltmarket,Arcade,20
+20:18,1890,Josie,Rossiter,Furnace Row,Tram,14
+20:18,2016,Bernard,Parrish,Furnace Row,Garden,11
+20:18,2163,Doris,Penny,Larchwood,Arcade,9
+20:18,2330,Gwen,Archer,Saltmarket,Arcade,12
+20:19,0067,Elvira,Tebb,Larchwood,Arcade,3
+20:19,0859,Nina,Zeller,Gasworks,Arcade,7
+20:19,1222,Elvira,Innes,Bridgefoot,Arcade,20
+20:19,1745,Nina,Perrott,Lamplight Quay,Tram,21
+20:19,1994,Wilbur,Dunning,Rope Walk,Tram,13
+20:19,2026,Bella,Ellery,Bellfounders,Arcade,11
+20:19,2076,Amos,Sturdevan,Tanners’ Reach,Tram,12
+20:19,2181,Edith,Spiller,Larchwood,Clock,12
+20:19,2244,Wendell,Carrick,Hollin Fields,Clock,3
+20:20,0108,Nadia,Spiller,Old Mint,Garden,11
+20:20,0170,Olive,Rummell,Hollin Fields,Tram,6
+20:20,0449,Roland,Vellacott,Coldharbour,Clock,1
+20:20,1012,Edith,Shipden,Bridgefoot,Garden,23
+20:20,1354,Lorna,Tillott,Larchwood,Arcade,4
+20:20,1826,Lorena,Wollaston,Cathedral Close,Clock,10
+20:21,0147,Rupert,Sallett,Gasworks,Clock,6
+20:21,0333,Miriam,Vossell,Rope Walk,Clock,21
+20:21,0541,Lottie,Tarrell,Old Mint,Arcade,14
+20:21,0880,Ada,Parrish,Saltmarket,Arcade,4
+20:21,1004,Ada,Merrick,Gasworks,Arcade,7
+20:21,1304,Wilfred,Ramsell,Bellfounders,Arcade,12
+20:21,1383,Zarina,Tebbs,Tanners’ Reach,Garden,1
+20:21,1591,Edith,Gilchrist,Old Mint,Tram,10
+20:21,1691,Percy,Willett,Furnace Row,Clock,8
+20:21,2117,Orsola,Iddon,Ferrygate,Clock,5
+20:22,0280,Mavis,Stannard,Larchwood,Clock,4
+20:22,0677,Bernard,Hammond,Lamplight Quay,Tram,21
+20:22,0853,Edgar,Sallett,Old Mint,Garden,20
+20:22,0920,Bertha,Redmayne,Gasworks,Arcade,21
+20:22,0973,Ines,Tollett,Cathedral Close,Clock,17
+20:22,0978,Greta,Perrott,Rope Walk,Arcade,15
+20:22,2299,Lottie,Blackmore,Rope Walk,Garden,10
+20:23,0148,Andrea,Hammond,Saltmarket,Clock,16
+20:23,0219,Robert,Pennick,Tanners’ Reach,Tram,1
+20:23,0396,Teresa,Oddie,Bridgefoot,Clock,21
+20:23,0833,Mavis,Dunning,Old Mint,Garden,19
+20:23,1027,Carmen,Archer,Rope Walk,Arcade,10
+20:23,1077,Harriet,Lockett,Lamplight Quay,Arcade,3
+20:23,1541,Cherie,Moffatt,Larchwood,Clock,10
+20:23,2156,Norma,Vossell,Furnace Row,Arcade,12
+20:24,0623,Dora,Radley,Old Mint,Arcade,8
+20:24,0657,Enid,Pennell,Pinchgate,Tram,23
+20:24,1197,Yolande,Denning,Saltmarket,Clock,13
+20:24,1408,Ethel,Newall,Lamplight Quay,Clock,3
+20:24,1738,Arthur,Pettit,Rope Walk,Arcade,21
+20:24,2281,Robert,Tappell,Furnace Row,Clock,23
+20:24,2301,Una,Baxter,Rope Walk,Garden,2
+20:25,0065,Stella,Rushden,Pinchgate,Tram,13
+20:25,0770,Roland,Willett,Pinchgate,Arcade,5
+20:25,1102,Grace,Stebbing,Coldharbour,Clock,1
+20:25,1490,Annie,Tyrrell,Lamplight Quay,Clock,22
+20:25,1645,Gertie,Pantridge,Cathedral Close,Tram,15
+20:25,2057,Lena,Baxter,Rope Walk,Tram,3
+20:25,2242,Cora,Swallow,Furnace Row,Garden,7
+20:25,2328,Ines,Perrott,Tanners’ Reach,Garden,14
+20:26,0036,Thora,Upsall,Hollin Fields,Clock,22
+20:26,0075,Thora,Lockett,Ferrygate,Arcade,11
+20:26,0439,Cecil,Hollins,Furnace Row,Arcade,12
+20:26,0601,Leon,Nuttall,Rope Walk,Garden,1
+20:26,1319,Leon,Tillott,Saltmarket,Garden,3
+20:26,1425,Gracie,Warrell,Old Mint,Tram,22
+20:26,1806,Harriet,Pollitt,Tanners’ Reach,Tram,23
+20:26,2335,Edith,Yarrow,Tanners’ Reach,Garden,2
+20:26,2354,Wendell,Pursell,Bellfounders,Arcade,1
+20:27,0479,Orla,Zeller,Rope Walk,Arcade,1
+20:27,0814,Andrei,Tebb,Old Mint,Arcade,10
+20:27,1063,Martha,Lockett,Ferrygate,Arcade,20
+20:27,1123,Nadia,Dobbs,Bridgefoot,Tram,22
+20:27,1357,Freda,Bagnall,Tanners’ Reach,Garden,20
+20:27,2263,Carina,Amory,Hollin Fields,Garden,8
+20:28,0432,Sadie,Yarrow,Old Mint,Arcade,15
+20:28,0648,Nina,Nettleton,Hollin Fields,Arcade,24
+20:28,0726,Ingrid,Kimber,Saltmarket,Clock,2
+20:28,1584,Nora,Allard,Ferrygate,Clock,24
+20:28,1633,Minnie,Bagnall,Saltmarket,Arcade,16
+20:28,1975,Tamara,Roskell,Rope Walk,Arcade,1
+20:28,2125,Milo,Tennant,Cathedral Close,Garden,6
+20:29,1167,Winnie,Ollerton,Gasworks,Tram,3
+20:29,1670,Milo,Marriott,Cathedral Close,Garden,14
+20:29,1886,Effie,Mossop,Saltmarket,Arcade,22
+20:29,2290,Zora,Wells,Old Mint,Garden,20
+20:30,0970,Sadie,Lattimer,Saltmarket,Arcade,20
+20:30,1000,Cherie,Ramsell,Larchwood,Clock,1
+20:30,1257,Serena,Towell,Bridgefoot,Tram,5
+20:30,1503,Greta,Kimber,Saltmarket,Garden,20
+20:30,1604,Blanche,Pennick,Old Mint,Arcade,19
+20:30,2032,Orla,Sallis,Bridgefoot,Arcade,18
+20:30,2090,Dora,Tyrrell,Saltmarket,Clock,16
+20:31,0069,Xenia,Woollard,Saltmarket,Clock,20
+20:31,0515,Martha,Dobbs,Saltmarket,Arcade,22
+20:31,2061,Orla,Lacey,Bellfounders,Tram,11
+20:32,0389,Viola,Tebb,Saltmarket,Clock,10
+20:32,0566,Sabine,Lambert,Saltmarket,Arcade,20
+20:32,0823,Daisy,Carrick,Cathedral Close,Arcade,16
+20:33,0366,Marcus,Lattimer,Hollin Fields,Clock,4
+20:33,1140,Irene,Harker,Lamplight Quay,Garden,19
+20:33,1355,Nora,Bagnall,Larchwood,Arcade,24
+20:34,0175,Una,Ormside,Gasworks,Garden,2
+20:34,0399,Nora,Darnell,Furnace Row,Arcade,17
+20:34,0448,Hector,Sutcliffe,Pinchgate,Arcade,24
+20:34,0460,Noel,Bolton,Hollin Fields,Tram,24
+20:34,1736,Orsola,Yelland,Saltmarket,Clock,3
+20:34,1888,Harold,Rowell,Hollin Fields,Clock,1
+20:34,1991,Blanche,Newall,Rope Walk,Clock,2
+20:35,0104,Gilbert,Nuttall,Cathedral Close,Clock,1
+20:35,0303,Carina,Whittle,Pinchgate,Garden,16
+20:35,0772,Judith,Orrell,Gasworks,Tram,9
+20:35,2239,Elsie,Sellars,Old Mint,Tram,4
+20:35,2271,Bella,Elwes,Coldharbour,Garden,9
+20:36,0095,Ines,Quayle,Tanners’ Reach,Garden,21
+20:36,1360,Sorcha,Cotterill,Ferrygate,Arcade,21
+20:36,1834,Stella,Radley,Tanners’ Reach,Garden,21
+20:36,1951,Roxane,Gorringe,Gasworks,Arcade,15
+20:36,2193,Gertie,Lomas,Coldharbour,Arcade,5
+20:37,0559,Clara,Upsall,Furnace Row,Tram,20
+20:37,0668,Sadie,Hebden,Furnace Row,Clock,5
+20:37,0718,Elsie,Anstey,Saltmarket,Arcade,21
+20:37,0910,Judith,Wyllie,Lamplight Quay,Clock,3
+20:37,2095,Edith,Zeller,Larchwood,Tram,4
+20:37,2102,Lena,Pottell,Bridgefoot,Arcade,10
+20:38,0213,Andrei,Potter,Coldharbour,Tram,6
+20:38,0915,Frances,Hammond,Lamplight Quay,Clock,24
+20:38,1016,Pearl,Spiller,Larchwood,Clock,4
+20:38,1744,Una,Ogden,Bellfounders,Tram,6
+20:39,0027,Walter,Neill,Bellfounders,Tram,20
+20:39,0048,Sorcha,Pettit,Rope Walk,Tram,20
+20:39,0110,Orla,Yardley,Larchwood,Arcade,13
+20:39,1367,Olive,Winnell,Hollin Fields,Clock,14
+20:40,0050,Gerald,Abney,Saltmarket,Arcade,9
+20:40,0115,Vera,Kaye,Saltmarket,Arcade,6
+20:40,0207,Judith,Wollaston,Larchwood,Clock,7
+20:40,0368,Audrey,Elwes,Cathedral Close,Clock,10
+20:40,0542,Maisie,Lockett,Hollin Fields,Clock,23
+20:40,0691,Walter,Corrigan,Larchwood,Tram,8
+20:40,0916,Olive,Webb,Coldharbour,Tram,9
+20:40,0976,Percy,Shipden,Ferrygate,Arcade,22
+20:40,1025,Hazel,Tuckett,Pinchgate,Arcade,22
+20:40,1721,Ulric,Maddock,Furnace Row,Garden,19
+20:40,1915,Sorcha,Redmayne,Saltmarket,Garden,10
+20:41,0173,Stella,Rolland,Larchwood,Garden,21
+20:41,0774,Otto,Dawlish,Gasworks,Garden,11
+20:41,0917,Thea,Whittle,Tanners’ Reach,Clock,9
+20:41,1104,Sabrine,Dobbs,Cathedral Close,Tram,13
+20:41,1350,Dora,Upsall,Bellfounders,Garden,22
+20:41,1415,Freda,Wallace,Saltmarket,Garden,18
+20:41,1500,Cecil,Towell,Hollin Fields,Clock,19
+20:41,1501,Ursel,Tollett,Gasworks,Arcade,15
+20:41,1907,Maud,Tillott,Rope Walk,Arcade,19
+20:41,2033,Wilfred,Rolland,Ferrygate,Arcade,9
+20:41,2318,Doris,Pursell,Hollin Fields,Clock,20
+20:42,0577,Josie,Lomas,Furnace Row,Garden,1
+20:42,1583,Sabrine,Northey,Bellfounders,Clock,1
+20:42,1617,Mercy,Huxley,Saltmarket,Clock,7
+20:42,1926,Maud,Rowell,Bridgefoot,Clock,13
+20:42,2074,Gilbert,Pell,Saltmarket,Arcade,6
+20:43,0030,Teresa,Rolland,Bridgefoot,Arcade,21
+20:43,0591,Lottie,Amory,Larchwood,Clock,10
+20:43,1782,Maisie,Pollard,Saltmarket,Clock,1
+20:44,0338,Edith,Nuttall,Gasworks,Arcade,6
+20:44,0437,Dorita,Prentice,Bellfounders,Garden,7
+20:44,1039,Mavis,Pennell,Bridgefoot,Arcade,3
+20:44,1132,Rowena,Ramsell,Rope Walk,Tram,13
+20:44,1458,Myrtle,Yardley,Saltmarket,Arcade,18
+20:44,1613,Norma,Dawlish,Lamplight Quay,Garden,22
+20:44,1702,Cyril,Swallow,Bellfounders,Garden,11
+20:45,0140,Lilian,Halliday,Saltmarket,Arcade,11
+20:45,0990,Cherie,Varley,Lamplight Quay,Clock,14
+20:45,1709,Wilbur,Rolland,Cathedral Close,Arcade,15
+20:45,2269,Edgar,Lockett,Hollin Fields,Garden,16
+20:45,2369,Nadia,Dallow,Old Mint,Arcade,24
+20:46,0899,Effie,Quinnell,Bridgefoot,Garden,15
+20:46,0936,Lottie,Abney,Larchwood,Clock,11
+20:46,1933,Edith,Bullock,Ferrygate,Garden,11
+20:46,1998,Celia,Kellett,Saltmarket,Arcade,19
+20:47,0320,Wanda,Sutcliffe,Pinchgate,Clock,1
+20:47,0469,Leon,Roskell,Coldharbour,Tram,13
+20:47,0900,Herbert,Wells,Furnace Row,Arcade,1
+20:47,1135,Audrey,Varley,Pinchgate,Clock,3
+20:47,1194,Ethel,Willett,Saltmarket,Clock,20
+20:47,1211,Hazel,Stebbing,Hollin Fields,Arcade,12
+20:47,1957,Orsola,Tebb,Bridgefoot,Clock,18
+20:48,0348,Cyril,Warrell,Coldharbour,Clock,18
+20:48,1586,Ada,Fennell,Pinchgate,Garden,23
+20:48,1689,Hazel,Willett,Saltmarket,Arcade,9
+20:48,1867,Esmond,Wellbank,Old Mint,Garden,20
+20:48,2297,Norine,Beckett,Cathedral Close,Tram,10
+20:49,0166,Esmond,Pantridge,Larchwood,Clock,24
+20:49,0543,Frances,Tarrell,Hollin Fields,Clock,13
+20:49,1424,Wilfred,Goodall,Bridgefoot,Garden,20
+20:49,1883,Selma,Yelland,Bridgefoot,Clock,19
+20:49,2341,Margie,Brough,Bellfounders,Garden,21
+20:50,0476,Dora,Harker,Saltmarket,Clock,9
+20:50,0839,Harold,Barnet,Furnace Row,Arcade,20
+20:50,1046,Felix,Allard,Furnace Row,Garden,3
+20:50,1318,Lottie,Potter,Bellfounders,Tram,18
+20:51,0401,Lucia,Potter,Saltmarket,Arcade,20
+20:52,0813,Xenia,Yelland,Larchwood,Clock,13
+20:52,0817,Rita,Weller,Saltmarket,Arcade,9
+20:52,1342,Ulric,Rowell,Ferrygate,Arcade,9
+20:52,1452,Carla,Anstey,Bridgefoot,Garden,22
+20:52,2122,Walter,Innes,Saltmarket,Clock,4
+20:53,0271,Annie,Liddell,Bellfounders,Garden,19
+20:53,0632,Bella,Shipden,Saltmarket,Garden,15
+20:53,0656,Pearl,Orrell,Tanners’ Reach,Garden,5
+20:53,0692,Margie,Woollard,Hollin Fields,Clock,1
+20:53,1286,Josie,Penny,Gasworks,Clock,22
+20:53,1652,Myrtle,Kellett,Gasworks,Arcade,6
+20:53,1811,Nadia,Pettit,Saltmarket,Tram,8
+20:54,0791,Annie,Maddock,Old Mint,Garden,23
+20:55,0660,Myrtle,Vossell,Bellfounders,Garden,14
+20:55,0766,Otto,Eastwick,Bellfounders,Tram,10
+20:55,1191,Laura,Newall,Ferrygate,Arcade,4
+20:56,0526,Rhoda,Yardley,Saltmarket,Garden,10
+20:56,1535,Mavis,Rushden,Ferrygate,Garden,14
+20:56,1629,Winnie,Pollard,Old Mint,Tram,4
+20:56,1731,Una,Tappell,Old Mint,Garden,9
+20:56,1841,Iris,Purcell,Gasworks,Arcade,7
+20:56,2219,Bernard,Blackmore,Pinchgate,Clock,9
+20:56,2322,Vesna,Towell,Tanners’ Reach,Garden,3
+20:57,0728,Clement,Tennant,Gasworks,Tram,6
+20:57,1062,Leon,Naylor,Tanners’ Reach,Tram,23
+20:57,1099,Clara,Ormside,Bellfounders,Tram,4
+20:57,1171,Yolande,Ellery,Gasworks,Arcade,3
+20:57,1300,Clement,Seddon,Saltmarket,Arcade,1
+20:58,0789,Marcia,Wellbank,Pinchgate,Arcade,18
+20:58,0993,Gerald,Liddell,Coldharbour,Clock,8
+20:58,1498,Celia,Ormside,Lamplight Quay,Clock,21
+20:58,1573,Ernest,Maddock,Cathedral Close,Tram,11
+20:58,1871,Hattie,Zeller,Coldharbour,Arcade,11
+20:58,1875,Zelie,Ollett,Lamplight Quay,Clock,13
+20:59,0754,Henry,Woodall,Bellfounders,Arcade,15
+20:59,0841,Pearl,Lambert,Bridgefoot,Tram,17
+20:59,1028,Zora,Anstey,Bellfounders,Garden,11
+20:59,1482,Jack,Denning,Pinchgate,Arcade,19
+20:59,2158,Zarina,Kellett,Larchwood,Garden,7
+21:00,0129,Cecil,Quayle,Coldharbour,Garden,1
+21:00,0192,Margie,Rossiter,Tanners’ Reach,Clock,22
+21:00,0388,Mercy,Sturdevan,Saltmarket,Garden,2
+21:00,1124,Valery,Toller,Bridgefoot,Tram,17
+21:00,1727,Rosina,Upcott,Rope Walk,Garden,1
+21:01,0046,Serena,Brierley,Pinchgate,Clock,17
+21:01,0617,Ernest,Elwes,Hollin Fields,Clock,20
+21:01,0640,Mercy,Unsworth,Tanners’ Reach,Clock,1
+21:01,0829,Una,Halliday,Bridgefoot,Clock,24
+21:01,0956,Lucia,Toller,Old Mint,Arcade,22
+21:01,1034,Dora,Rowell,Coldharbour,Garden,16
+21:01,1093,Ottoline,Oddie,Bellfounders,Tram,16
+21:01,2046,Petra,Ashby,Saltmarket,Arcade,1
+21:02,0546,Lucia,Horrocks,Tanners’ Reach,Tram,5
+21:02,2283,Zora,Vossell,Saltmarket,Clock,6
+21:02,2362,Sorcha,Quinnell,Gasworks,Tram,5
+21:03,0465,Gerald,Tennant,Saltmarket,Clock,7
+21:03,2399,Ivor,Tyrrell,Furnace Row,Clock,11
+21:04,0634,Henry,Pettit,Saltmarket,Garden,2
+21:04,0704,Martha,Vellacott,Gasworks,Garden,4
+21:04,0803,Thora,Hollins,Hollin Fields,Arcade,16
+21:04,0856,Edgar,Vintner,Ferrygate,Clock,1
+21:04,1198,Hector,Sturdevan,Coldharbour,Tram,1
+21:04,2182,Cecil,Amory,Bellfounders,Arcade,15
+21:04,2288,Lorna,Rennie,Saltmarket,Tram,22
+21:05,0297,Lottie,Croft,Pinchgate,Garden,7
+21:05,0511,Tamara,Carrick,Lamplight Quay,Garden,20
+21:05,1329,Wilfred,Venning,Bridgefoot,Arcade,21
+21:05,2285,Mirela,Beckett,Bellfounders,Arcade,1
+21:06,0342,Selma,Jessop,Bridgefoot,Clock,19
+21:06,0616,Greta,Beckett,Ferrygate,Clock,18
+21:06,0779,Morris,Wallace,Furnace Row,Clock,19
+21:06,0967,Orsola,Penny,Gasworks,Garden,3
+21:06,1667,Nadia,Whittle,Pinchgate,Tram,10
+21:06,1847,Tamsin,Sturdevan,Larchwood,Garden,19
+21:06,2352,Ulric,Shipden,Gasworks,Garden,5
+21:07,0430,Roxane,Barnet,Gasworks,Tram,6
+21:07,0873,Elsie,Pell,Larchwood,Clock,14
+21:07,1060,Mavis,Gilchrist,Bridgefoot,Tram,14
+21:07,2021,Iris,Sherratt,Saltmarket,Garden,6
+21:08,0516,Rhoda,Sommers,Ferrygate,Arcade,14
+21:08,0701,Mabel,Ramsell,Tanners’ Reach,Arcade,5
+21:08,0724,Ingrid,Yarrow,Rope Walk,Clock,12
+21:08,1389,Bertha,Sutcliffe,Old Mint,Garden,20
+21:08,1512,Otto,Prentice,Gasworks,Arcade,15
+21:08,1936,Ida,Cotterill,Furnace Row,Tram,13
+21:08,2009,Rita,Yardley,Bridgefoot,Garden,7
+21:09,0445,Ines,Bullock,Old Mint,Garden,16
+21:09,0879,Ulric,Blackmore,Pinchgate,Garden,22
+21:09,1003,Beatrix,Blackmore,Tanners’ Reach,Arcade,14
+21:09,1233,Louisa,Merrick,Rope Walk,Arcade,20
+21:09,1807,Yolande,Innes,Tanners’ Reach,Arcade,8
+21:09,2311,Mavis,Neville,Rope Walk,Arcade,8
+21:09,2317,Ida,Finney,Hollin Fields,Arcade,11
+21:10,0220,Amos,Redmayne,Ferrygate,Arcade,24
+21:10,0531,Vera,Lattimer,Gasworks,Clock,13
+21:10,0966,Oscar,Oddie,Ferrygate,Clock,16
+21:10,1675,Enid,Quayle,Ferrygate,Clock,1
+21:10,2145,Marina,Neville,Furnace Row,Arcade,10
+21:11,0204,Petra,Woodall,Bellfounders,Arcade,10
+21:11,0418,Ingrid,Lambert,Ferrygate,Garden,12
+21:11,0440,Wendell,Pennick,Lamplight Quay,Garden,12
+21:11,0798,Clara,Corrigan,Saltmarket,Garden,3
+21:11,1800,Winnie,Stannard,Saltmarket,Clock,5
+21:11,1819,Zora,Neville,Furnace Row,Clock,18
+21:11,1846,Cecil,Tuckett,Furnace Row,Clock,1
+21:12,0918,Oscar,Warrell,Furnace Row,Arcade,11
+21:12,0965,Oscar,Kimber,Bellfounders,Clock,4
+21:12,1168,Elvira,Sherratt,Gasworks,Arcade,21
+21:12,1747,Marina,Nettleton,Furnace Row,Arcade,1
+21:15,0466,Daisy,Hebden,Larchwood,Arcade,1
+21:15,1316,Carina,Farrow,Hollin Fields,Clock,1
+21:15,1431,Marcus,Elwes,Coldharbour,Garden,22
+21:15,1614,Maisie,Rolland,Hollin Fields,Clock,12
+21:16,0952,Bernard,Lambert,Cathedral Close,Arcade,2
+21:16,1178,Serena,Kimber,Saltmarket,Garden,23
+21:16,1391,Gracie,Quinnell,Bellfounders,Clock,17
+21:16,1980,Lena,Fennell,Hollin Fields,Clock,20
+21:17,0697,Ivor,Wells,Old Mint,Tram,22
+21:18,0996,Ethel,Kaye,Tanners’ Reach,Clock,21
+21:18,1261,Gloria,Tappell,Old Mint,Clock,17
+21:18,2036,Ethel,Sennett,Larchwood,Arcade,19
+21:18,2296,Annie,Willett,Rope Walk,Arcade,17
+21:18,2303,Hector,Quinnell,Bridgefoot,Clock,12
+21:20,0235,Clara,Wassell,Old Mint,Tram,11
+21:20,0369,Rupert,Toller,Old Mint,Garden,5
+21:20,1209,Lottie,Beckett,Saltmarket,Tram,14
+21:20,1429,Willa,Innes,Coldharbour,Arcade,15
+21:20,1624,Freda,Russett,Pinchgate,Garden,6
+21:20,2139,Nadia,Moffatt,Bellfounders,Tram,17
+21:21,1598,Philippa,Ellery,Hollin Fields,Arcade,4
+21:21,2275,Ada,Rolland,Ferrygate,Clock,1
+21:22,0492,Olive,Dunning,Bellfounders,Clock,5
+21:22,2248,Walter,Maddock,Saltmarket,Garden,1
+21:23,0043,Ruth,Ellery,Tanners’ Reach,Tram,6
+21:23,1707,Hattie,Wyllie,Gasworks,Tram,9
+21:24,0209,Pearl,Huxley,Lamplight Quay,Tram,5
+21:24,0402,Marnie,Youell,Larchwood,Tram,2
+21:24,1648,Ingrid,Corrigan,Bellfounders,Arcade,6
+21:24,2096,Marnie,Whittle,Tanners’ Reach,Garden,9
+21:25,0933,Harriet,Hollins,Bellfounders,Clock,1
+21:25,1650,Ines,Purcell,Furnace Row,Garden,7
+21:26,1351,Gilbert,Ellery,Lamplight Quay,Tram,6
+21:26,1568,Margie,Upsall,Ferrygate,Tram,9
+21:27,0241,Herbert,Rimmer,Gasworks,Arcade,22
+21:27,1188,Wilbur,Radley,Lamplight Quay,Garden,14
+21:27,1531,Marcus,Pell,Coldharbour,Garden,12
+21:27,2241,Herbert,Bramall,Hollin Fields,Garden,8
+21:27,2272,Ruth,Thackray,Lamplight Quay,Tram,20
+21:28,0352,Dorita,Willett,Pinchgate,Arcade,10
+21:28,0630,Ida,Ogden,Gasworks,Garden,7
+21:28,0769,Nora,Marriott,Gasworks,Clock,5
+21:28,0788,Norine,Vintner,Tanners’ Reach,Tram,24
+21:29,0296,Judith,Weller,Coldharbour,Garden,7
+21:29,0618,Marcus,Pantridge,Rope Walk,Garden,23
+21:29,0958,Maisie,Tappell,Gasworks,Tram,1

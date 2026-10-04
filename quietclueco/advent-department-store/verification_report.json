@@ -1,0 +1,1041 @@
+{
+ "checks": [
+  {
+   "name": "Passes 0001-2400, each exactly once",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Every full name is unique",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Names are letters only (no spaces, hyphens, apostrophes)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Times in within opening hours 16:00-21:29",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Districts, doors and tills are valid",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Register is sorted by time in",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Unique answer: windows 3\u201323 together leave exactly one pass",
+   "passed": true,
+   "detail": "survivors: ['Verena Pennock #2173']"
+  },
+  {
+   "name": "Every window is needed: leaving any one out leaves more than one pass",
+   "passed": true,
+   "detail": "Window 3 left out -> 2 left; Window 4 left out -> 3 left; Window 5 left out -> 2 left; Window 6 left out -> 2 left; Window 7 left out -> 2 left; Window 8 left out -> 2 left; Window 9 left out -> 2 left; Window 10 left out -> 2 left; Window 11 left out -> 2 left; Window 12 left out -> 2 left; Window 13 left out -> 3 left; Window 14 left out -> 2 left; Window 15 left out -> 3 left; Window 16 left out -> 2 left; Window 17 left out -> 3 left; Window 18 left out -> 2 left; Window 19 left out -> 3 left; Window 20 left out -> 3 left; Window 21 left out -> 3 left; Window 22 left out -> 3 left; Window 23 left out -> 3 left"
+  },
+  {
+   "name": "Each alternative reading on its own gives the same single answer (18 readings)",
+   "passed": true,
+   "detail": "Window 3 [first and last minute of each set left out] -> 1; Window 4 [the Clock Door at the far corner of the yard counted as \u2018straight across\u2019 too] -> 1; Window 5 [the Clock Gallery is only between floors, so it doesn\u2019t count] -> 1; Window 5 [the Roof Terrace is outdoors, not a floor of the store] -> 1; Window 6 [the two named stops counted as \u2018between\u2019 too] -> 1; Window 8 [\u201cthe second half of the alphabet\u201d read as starting at M] -> 1; Window 10 [the five minutes forgotten (19:00 or earlier)] -> 1; Window 10 [strictly before 18:55] -> 1; Window 11 [districts that only touch the park at a corner counted as \u2018next to\u2019 too] -> 1; Window 12 [any counter that sells cocoa in any form, tins and powder included] -> 1; Window 13 [Y counted as a vowel] -> 1; Window 14 [\u201cmore than ten\u201d read as \u201cten or more\u201d] -> 1; Window 15 [any letter used twice, even apart] -> 1; Window 16 [hands lying exactly on 3 or 9 (minutes 15 and 45) left out] -> 1; Window 16 [\u2018lower half\u2019 read as \u2018pointing roughly down\u2019 (minutes 20 to 40)] -> 1; Window 17 [\u201cmore letters\u201d read as \u201cat least as many\u201d] -> 1; Window 18 [leading zeros ignored (0472 read as 472)] -> 1; Window 21 [\u201cexactly once\u201d read as \u201cat least once\u201d] -> 1"
+  },
+  {
+   "name": "Every combination of readings (110,592 in total) gives the same answer",
+   "passed": true,
+   "detail": "proof: the killer passes every window under every reading, and each of the other 2,399 passes fails at least one window under every reading"
+  },
+  {
+   "name": "Plans and spatial words (straight, through, opposite, higher, between floors, between, next to, lower half): all 20 reasonable readings keep the killer and give the same single answer",
+   "passed": true,
+   "detail": "W4 [\u2018straight across\u2019 = only the door directly opposite the shelter (Tram)] -> 1; W4 [both routes, plus the Clock Door at the corner of the yard] -> 1; W4 [\u2018the shelter opposite the store\u2019: any door on Tramway Yard or reached from it] -> 1; W5 [everything above the Second Floor (official)] -> 1; W5 [half-landings are between floors, so they don\u2019t count] -> 1; W5 [the Roof Terrace is outdoors, so it doesn\u2019t count] -> 1; W5 [only full floors count: the Third Floor] -> 1; W5 [\u2018higher up\u2019 taken loosely: the Second Floor itself counts too] -> 1; W6 [stops strictly between Vell Bridge and Gasworks (official)] -> 1; W6 [the two named stops included] -> 1; W6 [\u2018between\u2019 read on the map, not along the route: the district on the straight line from Bridgefoot to Gasworks (Old Mint)] -> 1; W6 [\u2018between\u2019 read on the map, generously: every district the straight line from Bridgefoot to Gasworks passes or grazes (Ferrygate, Old Mint, Pinchgate)] -> 1; W11 [shares a side with the park (official)] -> 1; W11 [a corner touch counts too] -> 1; W16 [minutes 15\u201345 (official)] -> 1; W16 [minutes 16\u201344 (hands on 3 or 9 left out)] -> 1; W16 [pointing roughly down: minutes 20\u201340] -> 1; W16 [pointing straight down only: minutes 25\u201335] -> 1; W10 [the five minutes forgotten: 19:00 or earlier] -> 1; W10 [the five minutes subtracted twice: 18:50 or earlier] -> 1"
+  },
+  {
+   "name": "Far-fetched readings that would drop the killer leave nobody at all, so the slip shows at once",
+   "passed": true,
+   "detail": "W4 [only \u2018through the Winter Garden\u2019 (ignoring \u2018straight across\u2019)] -> 0 left; W5 [only the very next level up (the Clock Gallery)] -> 0 left"
+  },
+  {
+   "name": "Every window rules out at least one finalist (a pass that fits all the other windows)",
+   "passed": true,
+   "detail": "{'3': 1, '4': 2, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, '10': 1, '11': 1, '12': 1, '13': 2, '14': 1, '15': 2, '16': 1, '17': 2, '18': 1, '19': 2, '20': 2, '21': 2, '22': 2, '23': 2}"
+  },
+  {
+   "name": "Calendar order uses all 21 windows once and ends on the killer on Day 23",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Every day from 3 to 23 rules out at least one pass",
+   "passed": true,
+   "detail": "D3: -1261 (1139) -> D4: -646 (493) -> D5: -347 (146) -> D6: -88 (58) -> D7: -10 (48) -> D8: -8 (40) -> D9: -9 (31) -> D10: -5 (26) -> D11: -3 (23) -> D12: -2 (21) -> D13: -3 (18) -> D14: -1 (17) -> D15: -2 (15) -> D16: -1 (14) -> D17: -2 (12) -> D18: -1 (11) -> D19: -2 (9) -> D20: -2 (7) -> D21: -2 (5) -> D22: -2 (3) -> D23: -2 (1)"
+  },
+  {
+   "name": "The ending stays open: at least 7 passes after Day 19, 5 after Day 20, 3 after Day 21 and 2 after Day 22",
+   "passed": true,
+   "detail": "after Day 19: 9, Day 20: 7, Day 21: 5, Day 22: 3, Day 23: 1"
+  },
+  {
+   "name": "Sealed Check: no finalist shares the killer's check number",
+   "passed": true,
+   "detail": "check number 224; other passes with the same number: 3 of 2,399"
+  },
+  {
+   "name": "Window 3: the band programme prints exactly the three sets in the clue",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Window 4: the newsvendor gives both routes and names no door",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Window 5: the Toy Hall is on the Second Floor, the Clock Gallery is a half-landing between the Second and Third Floors, and the lift doesn\u2019t decide anything",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Window 6: the conductor names Vell Bridge and Gasworks, both on Route 7, and no district",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Window 11: exactly four districts share a side with Vell Park",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Window 12: the store guide names exactly the striped-cup counters, and the trap (tins, powder) points to counters outside the clue",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Window 10: the store guide says the gallery clocks run five minutes fast, and the clockmaker says seven o\u2019clock",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Window 20: the printer\u2019s note matches the clue (green 0001\u20131200, red 1201\u20132400)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Killer\u2019s own story is consistent with every document",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Finalists don't point at the answer: for door, district, last till and entry hour the killer's value is shared by at least two finalists, is never the single most common value, and no value covers more than half the shortlist",
+   "passed": true,
+   "detail": "door: killer's value shared by 12 of 29 finalists, most common value 15/30; district: killer's value shared by 12 of 29 finalists, most common value 15/30; last till: killer's value shared by 12 of 29 finalists, most common value 15/30; entry hour: killer's value shared by 12 of 29 finalists, most common value 15/30"
+  },
+  {
+   "name": "Finalists all have different first names and different surnames",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Level-3 hints keep exactly the same passes as their windows (all 21)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Examples and facts quoted in hints and house rules are correct",
+   "passed": true,
+   "detail": "Rita and Laura contain an R: ok; 0472 is even; 0+4+7+2 = 13 > 10; 2+3+1+0 = 6: ok; Laura and Annie end on a vowel; Henry and Mabel don't: ok; Wallace and Carrier have a double letter; Hebden has two Es apart and no double: ok; Ruth Barlow passes Window 17, Ruth Gale fails: ok; 4825 has four different digits; 1301 and 0402 don't: ok; Marina and Gertie have six letters; Clara and Harriet don't: ok; Lacey has one E, Ellery two, Pollard none: ok; Sally Sutton fails Window 22, Maria Pell passes: ok; Mary Pell has an even total (8): ok; House rules: Ellery has two Es, Lacey one; 0472 digits add to 13: ok; Hint 16: a quarter past to a quarter to = minutes 15 to 45: ok"
+  },
+  {
+   "name": "Names used as examples in hints are not in the register",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "No hint names the killer or their pass",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "No borrowed brands, titles, real stores or names from the earlier cases in any text or name pool",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "No famous-detective, Christmas-story or store-founder surnames in the name pools",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Story characters and the killer's own names are kept out of the random name pools",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Every character in the text exists in the embedded fonts",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "[letter] each of the 24 windows starts on its own page, in order",
+   "passed": true,
+   "detail": "first pages: [8, 11, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79]"
+  },
+  {
+   "name": "[letter] every window\u2019s question is printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[letter] every window\u2019s evidence text is printed word for word",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "[letter] all 63 hints are printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[letter] the killer's name appears exactly once in the calendar (their line in the register)",
+   "passed": true,
+   "detail": "1 times"
+  },
+  {
+   "name": "[letter] check-ins on Windows 6, 12 and 18 print the counts the code found",
+   "passed": true,
+   "detail": "{6: 58, 12: 21, 18: 11}"
+  },
+  {
+   "name": "[letter] Lantern Register in the PDF matches the data line for line (2,400 rows)",
+   "passed": true,
+   "detail": "parsed 2400 rows"
+  },
+  {
+   "name": "[letter] the book has a clickable contents page and bookmarks",
+   "passed": true,
+   "detail": "43 bookmarks"
+  },
+  {
+   "name": "[letter] set-up pages include the envelope template and day numbers 1\u201324",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[letter] Fraunces and Nunito are embedded",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[letter] solution file names the same killer the code found",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[letter] solution day-by-day counts match the code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[letter] the calendar itself has no solution pages",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] each of the 24 windows starts on its own page, in order",
+   "passed": true,
+   "detail": "first pages: [8, 11, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76]"
+  },
+  {
+   "name": "[a4] every window\u2019s question is printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] every window\u2019s evidence text is printed word for word",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "[a4] all 63 hints are printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] the killer's name appears exactly once in the calendar (their line in the register)",
+   "passed": true,
+   "detail": "1 times"
+  },
+  {
+   "name": "[a4] check-ins on Windows 6, 12 and 18 print the counts the code found",
+   "passed": true,
+   "detail": "{6: 58, 12: 21, 18: 11}"
+  },
+  {
+   "name": "[a4] Lantern Register in the PDF matches the data line for line (2,400 rows)",
+   "passed": true,
+   "detail": "parsed 2400 rows"
+  },
+  {
+   "name": "[a4] the book has a clickable contents page and bookmarks",
+   "passed": true,
+   "detail": "43 bookmarks"
+  },
+  {
+   "name": "[a4] set-up pages include the envelope template and day numbers 1\u201324",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] Fraunces and Nunito are embedded",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] solution file names the same killer the code found",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] solution day-by-day counts match the code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] the calendar itself has no solution pages",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] each of the 24 windows starts on its own page, in order",
+   "passed": true,
+   "detail": "first pages: [6, 9, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70]"
+  },
+  {
+   "name": "[ipad] every window\u2019s question is printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] every window\u2019s evidence text is printed word for word",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "[ipad] all 63 hints are printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] the killer's name appears exactly once in the calendar (their line in the register)",
+   "passed": true,
+   "detail": "1 times"
+  },
+  {
+   "name": "[ipad] check-ins on Windows 6, 12 and 18 print the counts the code found",
+   "passed": true,
+   "detail": "{6: 58, 12: 21, 18: 11}"
+  },
+  {
+   "name": "[ipad] Lantern Register in the PDF matches the data line for line (2,400 rows)",
+   "passed": true,
+   "detail": "parsed 2400 rows"
+  },
+  {
+   "name": "[ipad] the book has a clickable contents page and bookmarks",
+   "passed": true,
+   "detail": "41 bookmarks"
+  },
+  {
+   "name": "[ipad] the calendar page has 24 tappable windows, each opening its own day",
+   "passed": true,
+   "detail": "24 link targets"
+  },
+  {
+   "name": "[ipad] every window page links back to the calendar",
+   "passed": true,
+   "detail": "24 of 24"
+  },
+  {
+   "name": "[ipad] Fraunces and Nunito are embedded",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] solution file names the same killer the code found",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] solution day-by-day counts match the code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] the calendar itself has no solution pages",
+   "passed": true,
+   "detail": ""
+  }
+ ],
+ "answer": {
+  "entry": 1111,
+  "ticket": 2173,
+  "first": "Verena",
+  "last": "Pennock",
+  "town": "Old Mint",
+  "gate": "Tram",
+  "stall": 20
+ },
+ "necessity": {
+  "3": 2,
+  "4": 3,
+  "5": 2,
+  "6": 2,
+  "7": 2,
+  "8": 2,
+  "9": 2,
+  "10": 2,
+  "11": 2,
+  "12": 2,
+  "13": 3,
+  "14": 2,
+  "15": 3,
+  "16": 2,
+  "17": 3,
+  "18": 2,
+  "19": 3,
+  "20": 3,
+  "21": 3,
+  "22": 3,
+  "23": 3
+ },
+ "alts": [
+  {
+   "clue": "Window 3",
+   "reading": "first and last minute of each set left out",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Window 4",
+   "reading": "the Clock Door at the far corner of the yard counted as \u2018straight across\u2019 too",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Window 5",
+   "reading": "the Clock Gallery is only between floors, so it doesn\u2019t count",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Window 5",
+   "reading": "the Roof Terrace is outdoors, not a floor of the store",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Window 6",
+   "reading": "the two named stops counted as \u2018between\u2019 too",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Window 8",
+   "reading": "\u201cthe second half of the alphabet\u201d read as starting at M",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Window 10",
+   "reading": "the five minutes forgotten (19:00 or earlier)",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Window 10",
+   "reading": "strictly before 18:55",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Window 11",
+   "reading": "districts that only touch the park at a corner counted as \u2018next to\u2019 too",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Window 12",
+   "reading": "any counter that sells cocoa in any form, tins and powder included",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Window 13",
+   "reading": "Y counted as a vowel",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Window 14",
+   "reading": "\u201cmore than ten\u201d read as \u201cten or more\u201d",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Window 15",
+   "reading": "any letter used twice, even apart",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Window 16",
+   "reading": "hands lying exactly on 3 or 9 (minutes 15 and 45) left out",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Window 16",
+   "reading": "\u2018lower half\u2019 read as \u2018pointing roughly down\u2019 (minutes 20 to 40)",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Window 17",
+   "reading": "\u201cmore letters\u201d read as \u201cat least as many\u201d",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Window 18",
+   "reading": "leading zeros ignored (0472 read as 472)",
+   "survivors": 1,
+   "same": true
+  },
+  {
+   "clue": "Window 21",
+   "reading": "\u201cexactly once\u201d read as \u201cat least once\u201d",
+   "survivors": 1,
+   "same": true
+  }
+ ],
+ "spatial": [
+  {
+   "window": 4,
+   "word": "straight / through",
+   "kind": "reasonable",
+   "reading": "\u2018straight across\u2019 = only the door directly opposite the shelter (Tram)",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 4,
+   "word": "straight / through",
+   "kind": "reasonable",
+   "reading": "both routes, plus the Clock Door at the corner of the yard",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 4,
+   "word": "opposite",
+   "kind": "reasonable",
+   "reading": "\u2018the shelter opposite the store\u2019: any door on Tramway Yard or reached from it",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 4,
+   "word": "through",
+   "kind": "far-fetched",
+   "reading": "only \u2018through the Winter Garden\u2019 (ignoring \u2018straight across\u2019)",
+   "survivors": 0,
+   "killer_kept": false,
+   "same": false
+  },
+  {
+   "window": 5,
+   "word": "higher / between floors",
+   "kind": "reasonable",
+   "reading": "everything above the Second Floor (official)",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 5,
+   "word": "higher / between floors",
+   "kind": "reasonable",
+   "reading": "half-landings are between floors, so they don\u2019t count",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 5,
+   "word": "higher / between floors",
+   "kind": "reasonable",
+   "reading": "the Roof Terrace is outdoors, so it doesn\u2019t count",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 5,
+   "word": "higher / between floors",
+   "kind": "reasonable",
+   "reading": "only full floors count: the Third Floor",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 5,
+   "word": "higher",
+   "kind": "reasonable",
+   "reading": "\u2018higher up\u2019 taken loosely: the Second Floor itself counts too",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 5,
+   "word": "higher / between floors",
+   "kind": "far-fetched",
+   "reading": "only the very next level up (the Clock Gallery)",
+   "survivors": 0,
+   "killer_kept": false,
+   "same": false
+  },
+  {
+   "window": 6,
+   "word": "between",
+   "kind": "reasonable",
+   "reading": "stops strictly between Vell Bridge and Gasworks (official)",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 6,
+   "word": "between",
+   "kind": "reasonable",
+   "reading": "the two named stops included",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 6,
+   "word": "between",
+   "kind": "reasonable",
+   "reading": "\u2018between\u2019 read on the map, not along the route: the district on the straight line from Bridgefoot to Gasworks (Old Mint)",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 6,
+   "word": "between",
+   "kind": "reasonable",
+   "reading": "\u2018between\u2019 read on the map, generously: every district the straight line from Bridgefoot to Gasworks passes or grazes (Ferrygate, Old Mint, Pinchgate)",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 11,
+   "word": "next to",
+   "kind": "reasonable",
+   "reading": "shares a side with the park (official)",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 11,
+   "word": "next to",
+   "kind": "reasonable",
+   "reading": "a corner touch counts too",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 16,
+   "word": "lower half / below",
+   "kind": "reasonable",
+   "reading": "minutes 15\u201345 (official)",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 16,
+   "word": "lower half / below",
+   "kind": "reasonable",
+   "reading": "minutes 16\u201344 (hands on 3 or 9 left out)",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 16,
+   "word": "lower half / below",
+   "kind": "reasonable",
+   "reading": "pointing roughly down: minutes 20\u201340",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 16,
+   "word": "lower half / below",
+   "kind": "reasonable",
+   "reading": "pointing straight down only: minutes 25\u201335",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 10,
+   "word": "before / clocks",
+   "kind": "reasonable",
+   "reading": "the five minutes forgotten: 19:00 or earlier",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "window": 10,
+   "word": "before / clocks",
+   "kind": "reasonable",
+   "reading": "the five minutes subtracted twice: 18:50 or earlier",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  }
+ ],
+ "checkpoints": {
+  "6": 58,
+  "12": 21,
+  "18": 11
+ },
+ "walk": [
+  {
+   "id": "3",
+   "day": 3,
+   "label": "Window 3",
+   "out": 1261,
+   "left": 1139
+  },
+  {
+   "id": "4",
+   "day": 4,
+   "label": "Window 4",
+   "out": 646,
+   "left": 493
+  },
+  {
+   "id": "5",
+   "day": 5,
+   "label": "Window 5",
+   "out": 347,
+   "left": 146
+  },
+  {
+   "id": "6",
+   "day": 6,
+   "label": "Window 6",
+   "out": 88,
+   "left": 58
+  },
+  {
+   "id": "7",
+   "day": 7,
+   "label": "Window 7",
+   "out": 10,
+   "left": 48
+  },
+  {
+   "id": "8",
+   "day": 8,
+   "label": "Window 8",
+   "out": 8,
+   "left": 40
+  },
+  {
+   "id": "9",
+   "day": 9,
+   "label": "Window 9",
+   "out": 9,
+   "left": 31
+  },
+  {
+   "id": "10",
+   "day": 10,
+   "label": "Window 10",
+   "out": 5,
+   "left": 26
+  },
+  {
+   "id": "11",
+   "day": 11,
+   "label": "Window 11",
+   "out": 3,
+   "left": 23
+  },
+  {
+   "id": "12",
+   "day": 12,
+   "label": "Window 12",
+   "out": 2,
+   "left": 21
+  },
+  {
+   "id": "13",
+   "day": 13,
+   "label": "Window 13",
+   "out": 3,
+   "left": 18
+  },
+  {
+   "id": "14",
+   "day": 14,
+   "label": "Window 14",
+   "out": 1,
+   "left": 17
+  },
+  {
+   "id": "15",
+   "day": 15,
+   "label": "Window 15",
+   "out": 2,
+   "left": 15
+  },
+  {
+   "id": "16",
+   "day": 16,
+   "label": "Window 16",
+   "out": 1,
+   "left": 14
+  },
+  {
+   "id": "17",
+   "day": 17,
+   "label": "Window 17",
+   "out": 2,
+   "left": 12
+  },
+  {
+   "id": "18",
+   "day": 18,
+   "label": "Window 18",
+   "out": 1,
+   "left": 11
+  },
+  {
+   "id": "19",
+   "day": 19,
+   "label": "Window 19",
+   "out": 2,
+   "left": 9
+  },
+  {
+   "id": "20",
+   "day": 20,
+   "label": "Window 20",
+   "out": 2,
+   "left": 7
+  },
+  {
+   "id": "21",
+   "day": 21,
+   "label": "Window 21",
+   "out": 2,
+   "left": 5
+  },
+  {
+   "id": "22",
+   "day": 22,
+   "label": "Window 22",
+   "out": 2,
+   "left": 3
+  },
+  {
+   "id": "23",
+   "day": 23,
+   "label": "Window 23",
+   "out": 2,
+   "left": 1
+  }
+ ],
+ "finalists": [
+  {
+   "ticket": 2089,
+   "name": "Andrea Vellacott",
+   "clue": "3"
+  },
+  {
+   "ticket": 427,
+   "name": "Zarina Wallace",
+   "clue": "20"
+  },
+  {
+   "ticket": 1345,
+   "name": "Martha Ollerton",
+   "clue": "23"
+  },
+  {
+   "ticket": 2084,
+   "name": "Dorita Varrell",
+   "clue": "9"
+  },
+  {
+   "ticket": 2357,
+   "name": "Teresa Pantridge",
+   "clue": "15"
+  },
+  {
+   "ticket": 1507,
+   "name": "Hattie Roskell",
+   "clue": "7"
+  },
+  {
+   "ticket": 1309,
+   "name": "Marina Tollett",
+   "clue": "12"
+  },
+  {
+   "ticket": 1347,
+   "name": "Bertha Tebbs",
+   "clue": "17"
+  },
+  {
+   "ticket": 1593,
+   "name": "Elvira Wassell",
+   "clue": "4"
+  },
+  {
+   "ticket": 729,
+   "name": "Margie Tarrell",
+   "clue": "20"
+  },
+  {
+   "ticket": 1217,
+   "name": "Orsola Sellars",
+   "clue": "18"
+  },
+  {
+   "ticket": 1863,
+   "name": "Norine Winnell",
+   "clue": "4"
+  },
+  {
+   "ticket": 1865,
+   "name": "Tamara Quinnell",
+   "clue": "23"
+  },
+  {
+   "ticket": 1653,
+   "name": "Serena Sallett",
+   "clue": "22"
+  },
+  {
+   "ticket": 1729,
+   "name": "Carmen Willett",
+   "clue": "13"
+  },
+  {
+   "ticket": 2349,
+   "name": "Myrtle Northey",
+   "clue": "15"
+  },
+  {
+   "ticket": 1289,
+   "name": "Nerina Wells",
+   "clue": "17"
+  },
+  {
+   "ticket": 2015,
+   "name": "Gertie Tappell",
+   "clue": "14"
+  },
+  {
+   "ticket": 2197,
+   "name": "Mirela Norrell",
+   "clue": "5"
+  },
+  {
+   "ticket": 1857,
+   "name": "Rowena Denning",
+   "clue": "8"
+  },
+  {
+   "ticket": 1625,
+   "name": "Carina Swallow",
+   "clue": "21"
+  },
+  {
+   "ticket": 1457,
+   "name": "Rosina Pottell",
+   "clue": "6"
+  },
+  {
+   "ticket": 1623,
+   "name": "Lorena Nuttall",
+   "clue": "21"
+  },
+  {
+   "ticket": 1273,
+   "name": "Carla Orrell",
+   "clue": "19"
+  },
+  {
+   "ticket": 1845,
+   "name": "Bruno Rossiter",
+   "clue": "19"
+  },
+  {
+   "ticket": 1365,
+   "name": "Andrei Tyrrell",
+   "clue": "11"
+  },
+  {
+   "ticket": 1785,
+   "name": "Sorcha Sommers",
+   "clue": "22"
+  },
+  {
+   "ticket": 1295,
+   "name": "Roland Purcell",
+   "clue": "13"
+  },
+  {
+   "ticket": 1527,
+   "name": "Laurie Tuckett",
+   "clue": "16"
+  },
+  {
+   "ticket": 1425,
+   "name": "Gracie Warrell",
+   "clue": "10"
+  }
+ ],
+ "seal": "224",
+ "pages": {
+  "book_letter": 89,
+  "solution_letter": 8,
+  "book_a4": 85,
+  "solution_a4": 8,
+  "book_ipad": 77,
+  "solution_ipad": 6
+ }
+}
