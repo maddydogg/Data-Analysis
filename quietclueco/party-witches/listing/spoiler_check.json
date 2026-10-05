@@ -1,0 +1,194 @@
+{
+ "checks": [
+  {
+   "name": "Spoiler list loaded: the solution, all 12 secrets, every Round 2 and 3 line and card, the sealed pages",
+   "passed": true,
+   "detail": "114 tokens"
+  },
+  {
+   "name": "Control test: the scanner catches the solution page, a Round 2 card and a whole booklet front with its secret",
+   "passed": true,
+   "detail": "15 hits"
+  },
+  {
+   "name": "Mockup 01-party-poster: 2000x2000 JPG",
+   "passed": true,
+   "detail": "1104 KB"
+  },
+  {
+   "name": "Mockup 01-party-poster: no spoilers in any visible text (7 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 02-everything-in-the-kit: 2000x2000 JPG",
+   "passed": true,
+   "detail": "606 KB"
+  },
+  {
+   "name": "Mockup 02-everything-in-the-kit: no spoilers in any visible text (13 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 03-character-booklets: 2000x2000 JPG",
+   "passed": true,
+   "detail": "582 KB"
+  },
+  {
+   "name": "Mockup 03-character-booklets: no spoilers in any visible text (11 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 04-invitations: 2000x2000 JPG",
+   "passed": true,
+   "detail": "523 KB"
+  },
+  {
+   "name": "Mockup 04-invitations: no spoilers in any visible text (9 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 05-round-one-evidence: 2000x2000 JPG",
+   "passed": true,
+   "detail": "540 KB"
+  },
+  {
+   "name": "Mockup 05-round-one-evidence: no spoilers in any visible text (7 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 06-host-guide-host-can-play: 2000x2000 JPG",
+   "passed": true,
+   "detail": "598 KB"
+  },
+  {
+   "name": "Mockup 06-host-guide-host-can-play: no spoilers in any visible text (9 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 07-potion-menu: 2000x2000 JPG",
+   "passed": true,
+   "detail": "428 KB"
+  },
+  {
+   "name": "Mockup 07-potion-menu: no spoilers in any visible text (6 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 08-awards-and-badges: 2000x2000 JPG",
+   "passed": true,
+   "detail": "448 KB"
+  },
+  {
+   "name": "Mockup 08-awards-and-badges: no spoilers in any visible text (7 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 09-how-the-evening-goes: 2000x2000 JPG",
+   "passed": true,
+   "detail": "1177 KB"
+  },
+  {
+   "name": "Mockup 09-how-the-evening-goes: no spoilers in any visible text (31 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 10-what-you-get: 2000x2000 JPG",
+   "passed": true,
+   "detail": "1188 KB"
+  },
+  {
+   "name": "Mockup 10-what-you-get: no spoilers in any visible text (24 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Image 01 carries the title, \u201c6\u201312 players\u201d and \u201cPrintable party kit\u201d",
+   "passed": true,
+   "detail": "all present"
+  },
+  {
+   "name": "Only Round 1 evidence cards appear in the mockups",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Booklets appear only above the secret (no \u201cYour secret\u201d box in any image)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Host guide pages in the images all come before the sealed section",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Video trailer: every one of 405 frames scanned, no spoilers",
+   "passed": true,
+   "detail": "0 frames with hits"
+  },
+  {
+   "name": "Video trailer: 1080x1080, 12\u201315 s, no sound",
+   "passed": true,
+   "detail": "{\"seconds\": 13.5, \"width\": 1080, \"height\": 1080, \"audio\": false}"
+  },
+  {
+   "name": "Video presentation: every one of 420 frames scanned, no spoilers",
+   "passed": true,
+   "detail": "0 frames with hits"
+  },
+  {
+   "name": "Video presentation: 1080x1080, 12\u201315 s, no sound",
+   "passed": true,
+   "detail": "{\"seconds\": 14.0, \"width\": 1080, \"height\": 1080, \"audio\": false}"
+  },
+  {
+   "name": "Stop list: no borrowed brands, films, books, party-game names or real witch trials in any image or caption",
+   "passed": true,
+   "detail": "139 strings checked"
+  },
+  {
+   "name": "Delivery holds exactly 5 files (the Etsy limit), each under 20 MB",
+   "passed": true,
+   "detail": "murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf, murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf, murder-at-the-lantern-supper_INVITATIONS.zip, murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf, murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf"
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: no solution anywhere in the player kit",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: no solution anywhere in the player kit",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Archive murder-at-the-lantern-supper_files-for-sale.zip written",
+   "passed": true,
+   "detail": "9.2 MB"
+  },
+  {
+   "name": "Archive murder-at-the-lantern-supper_10-mockups-JPG.zip written",
+   "passed": true,
+   "detail": "7.0 MB"
+  },
+  {
+   "name": "Archive murder-at-the-lantern-supper_old-film-trailer_1080.mp4 written",
+   "passed": true,
+   "detail": "7.2 MB"
+  },
+  {
+   "name": "Archive murder-at-the-lantern-supper_kit-presentation_1080.mp4 written",
+   "passed": true,
+   "detail": "12.7 MB"
+  }
+ ]
+}

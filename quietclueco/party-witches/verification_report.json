@@ -1,0 +1,820 @@
+{
+ "checks": [
+  {
+   "name": "Plan: every door and sightline joins two rooms on the plan",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Plan: every room can be reached from the front door",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "Plan: the Lantern Room is reached only by the stair in the Still Room",
+   "passed": true,
+   "detail": "['Still Room']"
+  },
+  {
+   "name": "The killer\u2019s route (Great Hall \u2192 herb garden \u2192 Still Room and back) follows doors on the plan",
+   "passed": true,
+   "detail": "Great Hall \u2192 Herb Garden \u2192 Still Room \u2192 Herb Garden \u2192 Great Hall"
+  },
+  {
+   "name": "Timeline: nobody moves more than three doors in a quarter of an hour",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "Timeline: every character (and Rowena) has a room for every quarter hour",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Character\u2013time\u2013place table: every card and every booklet line matches the true timeline, under every reading of the place words (who was where, who could see whom)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Only the killer gives a false account, and only of their own whereabouts",
+   "passed": true,
+   "detail": "clementine r1.2: says Cloakroom at ['22:15']"
+  },
+  {
+   "name": "Rowena\u2019s movements on the cards match the timeline (Kitchen at 22:00, Lantern Room at 22:15, Still Room from 22:30)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "At the poisoning the killer was really in the Still Room, and every other guest really elsewhere",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "With every card and every booklet, exactly one person could have poisoned the glass, and it is the killer",
+   "passed": true,
+   "detail": "['clementine']"
+  },
+  {
+   "name": "Every reading of the place words and of the time window, both readings of the house rules, and every guest count from 6 to 12 give the same single answer (84 combinations)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "With only the 6 core roles (no extra guests), the cards and booklets still give exactly one answer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "No clue the solution needs belongs to an extra role: every line from the 6 extra roles can be removed without changing the answer",
+   "passed": true,
+   "detail": "5 lines from extra roles"
+  },
+  {
+   "name": "Lines from the extra roles never point away from the killer (adding them keeps the killer in)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Casting table: 6 guests play the 6 core roles; each extra guest adds one extra role, up to 12",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Suspects left by round: 6 at the start, at least 3 after Round 1, at least 2 after Round 2, 1 after Round 3",
+   "passed": true,
+   "detail": "6 \u2192 4 \u2192 2 \u2192 1"
+  },
+  {
+   "name": "The curve holds at every guest count from 6 to 12 (the extra roles never solve it early)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Every key clue is needed: removing any one of them leaves two or more suspects",
+   "passed": true,
+   "detail": "without card 1: Cordelia Heatherly, Silas Ashgrove, Clementine Reed; without card 2: Marigold Fenn, Clementine Reed; without card 9: Marigold Fenn, Clementine Reed; without rufus r2.1: Cordelia Heatherly, Clementine Reed; without isadora r1.2: Silas Ashgrove, Clementine Reed"
+  },
+  {
+   "name": "The key clues are exactly the cards marked key plus two booklet lines; every one belongs to a core role or is a card on the table",
+   "passed": true,
+   "detail": "card 1, card 2, card 9, isadora r1.2, rufus r2.1"
+  },
+  {
+   "name": "No \u201cstraight\u201d anywhere (the lesson of the Hob Stones)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "The place phrase \u201cacross the landing from the tower door\u201d is printed where a player will read it",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Stop list: no borrowed brands, films, books, other party games or real witch trials (whole words)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Spooky, not gory: no blood, wounds or weapons in any text",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Nothing from the solution of case No. 3 (its killer, victim, ticket, village or stall)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "No character shares a name with a famous fictional witch",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "The killer is one of the 6 core roles",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "No solution in any player material or in the open part of the host guide",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "The killer\u2019s own booklet never says they did it, and never mentions the garden, the foxglove or the wax",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Every booklet has a part for all three rounds, a secret, a costume, a candle colour and questions to ask",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: under 20 MB",
+   "passed": true,
+   "detail": "0.9 MB, 65 pages"
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: no solution anywhere in the player kit",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: Cordelia Heatherly\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: Marigold Fenn\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: Silas Ashgrove\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: Clementine Reed\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: Rufus Hawthorn\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: Isadora Quince\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: Mother Meridew\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: Linnet Fairweather\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: Tamsin Rook\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: Percival Hobb\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: Ned Quarrie\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: Bryony Fettle\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: clue card 1 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: clue card 2 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: clue card 3 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: clue card 4 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: clue card 5 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: clue card 6 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: clue card 7 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: clue card 8 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: clue card 9 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: clue card 10 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: clue card 11 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: under 20 MB",
+   "passed": true,
+   "detail": "0.8 MB, 15 pages"
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: has a sealed solution section",
+   "passed": true,
+   "detail": "page 12"
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: nothing from the solution before the sealed section",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: the sealed section holds the answer, the reasoning and the timeline table",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: the sealed section is the last part of the guide",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: under 20 MB",
+   "passed": true,
+   "detail": "0.9 MB, 65 pages"
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: no solution anywhere in the player kit",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: Cordelia Heatherly\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: Marigold Fenn\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: Silas Ashgrove\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: Clementine Reed\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: Rufus Hawthorn\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: Isadora Quince\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: Mother Meridew\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: Linnet Fairweather\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: Tamsin Rook\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: Percival Hobb\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: Ned Quarrie\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: Bryony Fettle\u2019s booklet is complete",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: clue card 1 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: clue card 2 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: clue card 3 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: clue card 4 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: clue card 5 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: clue card 6 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: clue card 7 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: clue card 8 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: clue card 9 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: clue card 10 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: clue card 11 printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: under 20 MB",
+   "passed": true,
+   "detail": "0.8 MB, 14 pages"
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: has a sealed solution section",
+   "passed": true,
+   "detail": "page 12"
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: nothing from the solution before the sealed section",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: the sealed section holds the answer, the reasoning and the timeline table",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: the sealed section is the last part of the guide",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Delivery: 5 files (the Etsy limit), each under 20 MB",
+   "passed": true,
+   "detail": "murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf 0.8 MB, murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf 0.8 MB, murder-at-the-lantern-supper_INVITATIONS.zip 6.4 MB, murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf 0.9 MB, murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf 0.9 MB"
+  },
+  {
+   "name": "Invitations ZIP: 2 fillable PDFs, 13 phone pictures and a README, intact",
+   "passed": true,
+   "detail": "16 files"
+  },
+  {
+   "name": "The invitation PDF has fillable fields",
+   "passed": true,
+   "detail": "5 fields"
+  }
+ ],
+ "facts": {
+  "readings": [
+   {
+    "reading": "window: the quarter from 22:15 only; \u201cacross the landing from the tower door\u201d: the Gallery (the only room facing the tower door on the plan)",
+    "strict": false,
+    "result": [
+     "clementine"
+    ]
+   },
+   {
+    "reading": "window: the quarter from 22:15 only; \u201cacross the landing from the tower door\u201d: the Gallery (the only room facing the tower door on the plan)",
+    "strict": true,
+    "result": [
+     "clementine"
+    ]
+   },
+   {
+    "reading": "window: the quarter from 22:15 only; \u201cacross the landing from the tower door\u201d: any room on the upper floor except the tower",
+    "strict": false,
+    "result": [
+     "clementine"
+    ]
+   },
+   {
+    "reading": "window: the quarter from 22:15 only; \u201cacross the landing from the tower door\u201d: any room on the upper floor except the tower",
+    "strict": true,
+    "result": [
+     "clementine"
+    ]
+   },
+   {
+    "reading": "window: the quarter from 22:15 only; \u201cacross the landing from the tower door\u201d: the upper landing, Gallery or tower doorway",
+    "strict": false,
+    "result": [
+     "clementine"
+    ]
+   },
+   {
+    "reading": "window: the quarter from 22:15 only; \u201cacross the landing from the tower door\u201d: the upper landing, Gallery or tower doorway",
+    "strict": true,
+    "result": [
+     "clementine"
+    ]
+   },
+   {
+    "reading": "window: 22:15 and the 22:30 quarter as well; \u201cacross the landing from the tower door\u201d: the Gallery (the only room facing the tower door on the plan)",
+    "strict": false,
+    "result": [
+     "clementine"
+    ]
+   },
+   {
+    "reading": "window: 22:15 and the 22:30 quarter as well; \u201cacross the landing from the tower door\u201d: the Gallery (the only room facing the tower door on the plan)",
+    "strict": true,
+    "result": [
+     "clementine"
+    ]
+   },
+   {
+    "reading": "window: 22:15 and the 22:30 quarter as well; \u201cacross the landing from the tower door\u201d: any room on the upper floor except the tower",
+    "strict": false,
+    "result": [
+     "clementine"
+    ]
+   },
+   {
+    "reading": "window: 22:15 and the 22:30 quarter as well; \u201cacross the landing from the tower door\u201d: any room on the upper floor except the tower",
+    "strict": true,
+    "result": [
+     "clementine"
+    ]
+   },
+   {
+    "reading": "window: 22:15 and the 22:30 quarter as well; \u201cacross the landing from the tower door\u201d: the upper landing, Gallery or tower doorway",
+    "strict": false,
+    "result": [
+     "clementine"
+    ]
+   },
+   {
+    "reading": "window: 22:15 and the 22:30 quarter as well; \u201cacross the landing from the tower door\u201d: the upper landing, Gallery or tower doorway",
+    "strict": true,
+    "result": [
+     "clementine"
+    ]
+   }
+  ],
+  "casting": {
+   "6": [
+    "Cordelia Heatherly",
+    "Marigold Fenn",
+    "Silas Ashgrove",
+    "Clementine Reed",
+    "Rufus Hawthorn",
+    "Isadora Quince"
+   ],
+   "7": [
+    "Cordelia Heatherly",
+    "Marigold Fenn",
+    "Silas Ashgrove",
+    "Clementine Reed",
+    "Rufus Hawthorn",
+    "Isadora Quince",
+    "Mother Meridew"
+   ],
+   "8": [
+    "Cordelia Heatherly",
+    "Marigold Fenn",
+    "Silas Ashgrove",
+    "Clementine Reed",
+    "Rufus Hawthorn",
+    "Isadora Quince",
+    "Mother Meridew",
+    "Linnet Fairweather"
+   ],
+   "9": [
+    "Cordelia Heatherly",
+    "Marigold Fenn",
+    "Silas Ashgrove",
+    "Clementine Reed",
+    "Rufus Hawthorn",
+    "Isadora Quince",
+    "Mother Meridew",
+    "Linnet Fairweather",
+    "Tamsin Rook"
+   ],
+   "10": [
+    "Cordelia Heatherly",
+    "Marigold Fenn",
+    "Silas Ashgrove",
+    "Clementine Reed",
+    "Rufus Hawthorn",
+    "Isadora Quince",
+    "Mother Meridew",
+    "Linnet Fairweather",
+    "Tamsin Rook",
+    "Percival Hobb"
+   ],
+   "11": [
+    "Cordelia Heatherly",
+    "Marigold Fenn",
+    "Silas Ashgrove",
+    "Clementine Reed",
+    "Rufus Hawthorn",
+    "Isadora Quince",
+    "Mother Meridew",
+    "Linnet Fairweather",
+    "Tamsin Rook",
+    "Percival Hobb",
+    "Ned Quarrie"
+   ],
+   "12": [
+    "Cordelia Heatherly",
+    "Marigold Fenn",
+    "Silas Ashgrove",
+    "Clementine Reed",
+    "Rufus Hawthorn",
+    "Isadora Quince",
+    "Mother Meridew",
+    "Linnet Fairweather",
+    "Tamsin Rook",
+    "Percival Hobb",
+    "Ned Quarrie",
+    "Bryony Fettle"
+   ]
+  },
+  "curve": [
+   {
+    "round": 0,
+    "left": [
+     "Cordelia Heatherly",
+     "Marigold Fenn",
+     "Silas Ashgrove",
+     "Clementine Reed",
+     "Rufus Hawthorn",
+     "Isadora Quince"
+    ]
+   },
+   {
+    "round": 1,
+    "left": [
+     "Cordelia Heatherly",
+     "Marigold Fenn",
+     "Clementine Reed",
+     "Rufus Hawthorn"
+    ]
+   },
+   {
+    "round": 2,
+    "left": [
+     "Marigold Fenn",
+     "Clementine Reed"
+    ]
+   },
+   {
+    "round": 3,
+    "left": [
+     "Clementine Reed"
+    ]
+   }
+  ],
+  "key": [
+   {
+    "id": "card 1",
+    "text": "At ten o\u2019clock Rowena poured her blackberry cordial into her green glass in the Kitchen and took a sip in front of Tamsin the cook. \u201cPerfect",
+    "without": [
+     "Cordelia Heatherly",
+     "Silas Ashgrove",
+     "Clementine Reed"
+    ]
+   },
+   {
+    "id": "card 2",
+    "text": "Every guest at the Lantern Supper carries a lantern with a candle of their own colour. Bryony writes them all down at the door, as she does ",
+    "without": [
+     "Marigold Fenn",
+     "Clementine Reed"
+    ]
+   },
+   {
+    "id": "card 9",
+    "text": "Under Inspector Drummond\u2019s lens: a single drip of candle wax on the rim of the green glass, hard and smooth. It fell from the poisoner\u2019s own",
+    "without": [
+     "Marigold Fenn",
+     "Clementine Reed"
+    ]
+   },
+   {
+    "id": "rufus r2.1",
+    "text": "The peal card is out. Tell everyone exactly what you saw: \u201cI rang the practice peal from a quarter past ten until half past without a break.",
+    "without": [
+     "Cordelia Heatherly",
+     "Clementine Reed"
+    ]
+   },
+   {
+    "id": "isadora r1.2",
+    "text": "Where were you? \u201cFrom ten o\u2019clock I played cards in the Library with Silas Ashgrove and Mother Meridew until twenty to eleven. Silas didn\u2019t ",
+    "without": [
+     "Silas Ashgrove",
+     "Clementine Reed"
+    ]
+   }
+  ],
+  "timeline": {
+   "rowena": [
+    "Great Hall",
+    "Great Hall",
+    "Kitchen",
+    "Lantern Room",
+    "Still Room",
+    "Still Room"
+   ],
+   "cordelia": [
+    "Great Hall",
+    "Great Hall",
+    "Great Hall",
+    "Gallery",
+    "Gallery",
+    "Great Hall"
+   ],
+   "marigold": [
+    "Still Room",
+    "Kitchen",
+    "Kitchen",
+    "Pantry",
+    "Kitchen",
+    "Kitchen"
+   ],
+   "silas": [
+    "Great Hall",
+    "Parlour",
+    "Library",
+    "Library",
+    "Library",
+    "Great Hall"
+   ],
+   "clementine": [
+    "Great Hall",
+    "Parlour",
+    "Great Hall",
+    "Still Room",
+    "Great Hall",
+    "Great Hall"
+   ],
+   "rufus": [
+    "Porch",
+    "Porch",
+    "Porch",
+    "Bell Tower",
+    "Bell Tower",
+    "Porch"
+   ],
+   "isadora": [
+    "Great Hall",
+    "Great Hall",
+    "Library",
+    "Library",
+    "Library",
+    "Great Hall"
+   ],
+   "meridew": [
+    "Great Hall",
+    "Great Hall",
+    "Library",
+    "Library",
+    "Library",
+    "Great Hall"
+   ],
+   "linnet": [
+    "Great Hall",
+    "Great Hall",
+    "Great Hall",
+    "Great Hall",
+    "Great Hall",
+    "Still Room"
+   ],
+   "tamsin": [
+    "Kitchen",
+    "Kitchen",
+    "Kitchen",
+    "Kitchen",
+    "Kitchen",
+    "Kitchen"
+   ],
+   "percival": [
+    "Porch",
+    "Great Hall",
+    "Great Hall",
+    "Great Hall",
+    "Great Hall",
+    "Great Hall"
+   ],
+   "ned": [
+    "Great Hall",
+    "Great Hall",
+    "Great Hall",
+    "Great Hall",
+    "Great Hall",
+    "Great Hall"
+   ],
+   "bryony": [
+    "Herb Garden",
+    "Great Hall",
+    "Great Hall",
+    "Great Hall",
+    "Herb Garden",
+    "Great Hall"
+   ]
+  }
+ }
+}
