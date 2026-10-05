@@ -21,6 +21,7 @@ Story: on Lantern Night the department store Quillon & Daughters in the fictiona
 | `out/` | Archives (not in git): `…_files-for-sale.zip`, `…_10-mockups-JPG.zip` and both videos |
 | `src/` | `case.py` (story, store, city, clues), `hints.py`, `generate.py`, `verify.py`, `art.py` (night scenes), `cover.py`, `render.py`, `build.py` |
 | `listing/src/` | `mockups.py`, `video.py`, `build_listing.py`, `kit.py`, `cal_listing.py` |
+| `listing/v2/` | Variant 2 of the listing assets (“action”): 10 mockups, trailer and calendar presentation, spoiler check. Built by `listing/src/build_listing_v2.py` from `action.py`, `cover_v2.py`, `mockups_v2.py`, `video_v2.py`; archives go to `out/v2-action/` |
 
 ## Rebuild
 
@@ -28,6 +29,7 @@ Story: on Lantern Night the department store Quillon & Daughters in the fictiona
 pip install reportlab pymupdf fonttools pillow imageio-ffmpeg
 cd src && python3 build.py --art                 # register, checks, art, PDFs, previews
 cd ../listing/src && python3 build_listing.py    # mockups, videos, delivery, archives, spoiler check
+python3 build_listing_v2.py                      # variant 2 (action): mockups, videos, archives, checks
 ```
 
 Both builds are deterministic and exit non-zero if any check fails.

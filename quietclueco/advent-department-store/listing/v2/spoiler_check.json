@@ -1,0 +1,159 @@
+{
+ "checks": [
+  {
+   "name": "Spoiler list loaded from the verification report",
+   "passed": true,
+   "detail": "149 forbidden tokens"
+  },
+  {
+   "name": "Mockup 01-main: 2000x2000 JPG",
+   "passed": true,
+   "detail": "851 KB"
+  },
+  {
+   "name": "Mockup 01-main: no spoilers in any visible text (10 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 02-the-calendar: 2000x2000 JPG",
+   "passed": true,
+   "detail": "752 KB"
+  },
+  {
+   "name": "Mockup 02-the-calendar: no spoilers in any visible text (8 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 03-day-1-the-case: 2000x2000 JPG",
+   "passed": true,
+   "detail": "818 KB"
+  },
+  {
+   "name": "Mockup 03-day-1-the-case: no spoilers in any visible text (6 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 04-day-2-the-register: 2000x2000 JPG",
+   "passed": true,
+   "detail": "818 KB"
+  },
+  {
+   "name": "Mockup 04-day-2-the-register: no spoilers in any visible text (6 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 05-day-3-first-clue: 2000x2000 JPG",
+   "passed": true,
+   "detail": "723 KB"
+  },
+  {
+   "name": "Mockup 05-day-3-first-clue: no spoilers in any visible text (7 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 06-print-and-fold: 2000x2000 JPG",
+   "passed": true,
+   "detail": "718 KB"
+  },
+  {
+   "name": "Mockup 06-print-and-fold: no spoilers in any visible text (9 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 07-ipad-calendar: 2000x2000 JPG",
+   "passed": true,
+   "detail": "756 KB"
+  },
+  {
+   "name": "Mockup 07-ipad-calendar: no spoilers in any visible text (5 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 08-who-its-for: 2000x2000 JPG",
+   "passed": true,
+   "detail": "917 KB"
+  },
+  {
+   "name": "Mockup 08-who-its-for: no spoilers in any visible text (9 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 09-whats-inside: 2000x2000 JPG",
+   "passed": true,
+   "detail": "841 KB"
+  },
+  {
+   "name": "Mockup 09-whats-inside: no spoilers in any visible text (15 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Mockup 10-checked-by-code: 2000x2000 JPG",
+   "passed": true,
+   "detail": "667 KB"
+  },
+  {
+   "name": "Mockup 10-checked-by-code: no spoilers in any visible text (14 sources)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Image 01 carries the title, 24 days, PRINTABLE and iPad",
+   "passed": true,
+   "detail": "all present"
+  },
+  {
+   "name": "Only Windows 1\u20133 appear in the mockups",
+   "passed": true,
+   "detail": "[1, 2, 3]"
+  },
+  {
+   "name": "Video trailer: every one of 405 frames checked, no spoilers",
+   "passed": true,
+   "detail": "0 frames with hits"
+  },
+  {
+   "name": "Video trailer: 1080x1080, 12\u201315 s, no sound",
+   "passed": true,
+   "detail": "{\"seconds\": 13.5, \"width\": 1080, \"height\": 1080, \"audio\": false, \"fps\": \"30\"}"
+  },
+  {
+   "name": "Video presentation: every one of 420 frames checked, no spoilers",
+   "passed": true,
+   "detail": "0 frames with hits"
+  },
+  {
+   "name": "Video presentation: 1080x1080, 12\u201315 s, no sound",
+   "passed": true,
+   "detail": "{\"seconds\": 14.0, \"width\": 1080, \"height\": 1080, \"audio\": false, \"fps\": \"30\"}"
+  },
+  {
+   "name": "Stop list: no borrowed brands, titles or real stores in any drawn text or caption (whole words)",
+   "passed": true,
+   "detail": "95 strings checked"
+  },
+  {
+   "name": "Mockup ZIP holds the 10 images and is intact",
+   "passed": true,
+   "detail": "7.7 MB"
+  },
+  {
+   "name": "Archive the-windows-at-quillons_v2-action_trailer_1080.mp4 written",
+   "passed": true,
+   "detail": "18.4 MB"
+  },
+  {
+   "name": "Archive the-windows-at-quillons_v2-action_calendar-presentation_1080.mp4 written",
+   "passed": true,
+   "detail": "11.7 MB"
+  }
+ ]
+}
