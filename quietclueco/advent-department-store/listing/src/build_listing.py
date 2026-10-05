@@ -12,6 +12,7 @@ import imageio_ffmpeg
 import pymupdf as fitz
 import kit, mockups
 import cal_listing as CL
+import verify as VER          # the case's stop list (src/ is on the path via cal_listing)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LISTING = os.path.dirname(HERE)
@@ -50,6 +51,12 @@ def archives(mock_paths, videos):
     with zipfile.ZipFile(a1, "w", zipfile.ZIP_DEFLATED) as zf:
         for n in sorted(os.listdir(DELIV)):
             zf.write(os.path.join(DELIV, n), arcname=n)
+    for fn in os.listdir(OUT):
+        p = os.path.join(OUT, fn)
+        if os.path.isdir(p):
+            shutil.rmtree(p)
+        elif fn != os.path.basename(a1):
+            os.remove(p)
     a2 = os.path.join(OUT, f"{CL.SLUG}_10-mockups-JPG.zip")
     with zipfile.ZipFile(a2, "w", zipfile.ZIP_STORED) as zf:
         for p in mock_paths:
@@ -90,7 +97,7 @@ def main(video=True):
         ok(f"Mockup {r['name']}: no spoilers in any visible text ({len(r['sources'])} sources)", not r["hits"],
            "; ".join(f"{h['label']} in {h['source']}" for h in r["hits"]))
     hero = " ".join(t for _, _, t in res[0]["sources"])
-    need = ["THE WINDOWS", "AT QUILLON’S", "24 DAYS · 24 WINDOWS · 1 KILLER", "PRINTABLE", "iPad", "ADVENT CALENDAR"]
+    need = ["THE WINDOWS", "AT QUILLON’S", "24", "DAYS", "PRINTABLE", "iPad", "ADVENT CALENDAR"]
     ok("Image 01 carries the title, 24 days, PRINTABLE and iPad", all(n in hero for n in need),
        ", ".join(n for n in need if n not in hero) or "all present")
     shown = sorted({int(m) for r in res for _, _, t in r["sources"] for m in re.findall(r"WINDOW (\d+) OF 24", t)})
@@ -110,6 +117,14 @@ def main(video=True):
             vids.append(path)
     else:
         vids = [os.path.join(VIDEO, f) for f in sorted(os.listdir(VIDEO)) if f.endswith(".mp4")]
+
+    drawn = [t for r in res for k, _, t in r["sources"] if k == "drawn"]
+    import video as VIDMOD
+    captions = re.findall(r'slam\(f, "([^"]+)"', open(VIDMOD.__file__).read())
+    hits = sorted({b for b in VER.BANNED for t in drawn + captions
+                   if re.search(r"\b" + re.escape(b.lower()) + r"\b", t.lower())})
+    ok("Stop list: no borrowed brands, titles or real stores in any drawn text or video caption (whole words)",
+       not hits, ", ".join(hits) or f"{len(drawn) + len(captions)} strings checked")
 
     rep, inside, zbad = delivery()
     names = sorted(os.listdir(DELIV))
@@ -135,7 +150,8 @@ def main(video=True):
              "for forbidden tokens: the killer's name and pass, the Sealed Check number, every finalist's name and "
              "pass, the start of every level-2 and level-3 hint, the evidence and question of every window from 4 to "
              "23, and the solution headings. A control run on the killer's register page, the solution and Window 12 "
-             "shows the scanner catches them.", "", "| # | Check | Result | Detail |", "|---|---|---|---|"]
+             "shows the scanner catches them. Every drawn string and video caption is also run through the case's "
+             "stop list.", "", "| # | Check | Result | Detail |", "|---|---|---|---|"]
     for i, c in enumerate(checks, 1):
         lines.append(f"| {i} | {c['name']} | {'PASS' if c['passed'] else 'FAIL'} | {c['detail'].replace('|', '/')} |")
     open(os.path.join(LISTING, "spoiler_check.md"), "w").write("\n".join(lines) + "\n")

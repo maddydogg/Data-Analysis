@@ -13,77 +13,77 @@
   {
    "name": "Mockup 01-main: 2000x2000 JPG",
    "passed": true,
-   "detail": "855 KB"
+   "detail": "851 KB"
   },
   {
-   "name": "Mockup 01-main: no spoilers in any visible text (8 sources)",
+   "name": "Mockup 01-main: no spoilers in any visible text (10 sources)",
    "passed": true,
    "detail": ""
   },
   {
    "name": "Mockup 02-the-calendar: 2000x2000 JPG",
    "passed": true,
-   "detail": "351 KB"
+   "detail": "752 KB"
   },
   {
-   "name": "Mockup 02-the-calendar: no spoilers in any visible text (9 sources)",
+   "name": "Mockup 02-the-calendar: no spoilers in any visible text (8 sources)",
    "passed": true,
    "detail": ""
   },
   {
    "name": "Mockup 03-day-1-the-case: 2000x2000 JPG",
    "passed": true,
-   "detail": "432 KB"
+   "detail": "818 KB"
   },
   {
-   "name": "Mockup 03-day-1-the-case: no spoilers in any visible text (5 sources)",
+   "name": "Mockup 03-day-1-the-case: no spoilers in any visible text (6 sources)",
    "passed": true,
    "detail": ""
   },
   {
    "name": "Mockup 04-day-2-the-register: 2000x2000 JPG",
    "passed": true,
-   "detail": "472 KB"
+   "detail": "818 KB"
   },
   {
-   "name": "Mockup 04-day-2-the-register: no spoilers in any visible text (5 sources)",
+   "name": "Mockup 04-day-2-the-register: no spoilers in any visible text (6 sources)",
    "passed": true,
    "detail": ""
   },
   {
    "name": "Mockup 05-day-3-first-clue: 2000x2000 JPG",
    "passed": true,
-   "detail": "360 KB"
+   "detail": "723 KB"
   },
   {
-   "name": "Mockup 05-day-3-first-clue: no spoilers in any visible text (6 sources)",
+   "name": "Mockup 05-day-3-first-clue: no spoilers in any visible text (7 sources)",
    "passed": true,
    "detail": ""
   },
   {
    "name": "Mockup 06-print-and-fold: 2000x2000 JPG",
    "passed": true,
-   "detail": "368 KB"
+   "detail": "718 KB"
   },
   {
-   "name": "Mockup 06-print-and-fold: no spoilers in any visible text (8 sources)",
+   "name": "Mockup 06-print-and-fold: no spoilers in any visible text (9 sources)",
    "passed": true,
    "detail": ""
   },
   {
    "name": "Mockup 07-ipad-calendar: 2000x2000 JPG",
    "passed": true,
-   "detail": "265 KB"
+   "detail": "756 KB"
   },
   {
-   "name": "Mockup 07-ipad-calendar: no spoilers in any visible text (4 sources)",
+   "name": "Mockup 07-ipad-calendar: no spoilers in any visible text (5 sources)",
    "passed": true,
    "detail": ""
   },
   {
    "name": "Mockup 08-who-its-for: 2000x2000 JPG",
    "passed": true,
-   "detail": "372 KB"
+   "detail": "917 KB"
   },
   {
    "name": "Mockup 08-who-its-for: no spoilers in any visible text (9 sources)",
@@ -93,17 +93,17 @@
   {
    "name": "Mockup 09-whats-inside: 2000x2000 JPG",
    "passed": true,
-   "detail": "368 KB"
+   "detail": "841 KB"
   },
   {
-   "name": "Mockup 09-whats-inside: no spoilers in any visible text (19 sources)",
+   "name": "Mockup 09-whats-inside: no spoilers in any visible text (15 sources)",
    "passed": true,
    "detail": ""
   },
   {
    "name": "Mockup 10-checked-by-code: 2000x2000 JPG",
    "passed": true,
-   "detail": "278 KB"
+   "detail": "667 KB"
   },
   {
    "name": "Mockup 10-checked-by-code: no spoilers in any visible text (14 sources)",
@@ -146,6 +146,11 @@
    "detail": "{\"seconds\": 14.0, \"width\": 1080, \"height\": 1080, \"audio\": false, \"fps\": \"30\"}"
   },
   {
+   "name": "Stop list: no borrowed brands, titles or real stores in any drawn text or video caption (whole words)",
+   "passed": true,
+   "detail": "95 strings checked"
+  },
+  {
    "name": "Delivery folder has exactly 4 files (Etsy allows 5)",
    "passed": true,
    "detail": "the-windows-at-quillons_SOLUTION.zip, the-windows-at-quillons_iPad.pdf, the-windows-at-quillons_print-A4.pdf, the-windows-at-quillons_print-US-Letter.pdf"
@@ -153,17 +158,17 @@
   {
    "name": "Delivery the-windows-at-quillons_print-US-Letter.pdf is under 20 MB",
    "passed": true,
-   "detail": "5.54 MB"
+   "detail": "5.65 MB"
   },
   {
    "name": "Delivery the-windows-at-quillons_print-A4.pdf is under 20 MB",
    "passed": true,
-   "detail": "5.56 MB"
+   "detail": "5.67 MB"
   },
   {
    "name": "Delivery the-windows-at-quillons_iPad.pdf is under 20 MB",
    "passed": true,
-   "detail": "5.43 MB"
+   "detail": "5.53 MB"
   },
   {
    "name": "Delivery the-windows-at-quillons_SOLUTION.zip is under 20 MB",
@@ -193,36 +198,36 @@
   {
    "name": "Archive the-windows-at-quillons_files-for-sale.zip written",
    "passed": true,
-   "detail": "13.7 MB"
+   "detail": "13.9 MB"
   },
   {
    "name": "Archive the-windows-at-quillons_10-mockups-JPG.zip written",
    "passed": true,
-   "detail": "4.0 MB"
+   "detail": "7.7 MB"
   },
   {
    "name": "Archive the-windows-at-quillons_trailer_1080.mp4 written",
    "passed": true,
-   "detail": "18.6 MB"
+   "detail": "18.4 MB"
   },
   {
    "name": "Archive the-windows-at-quillons_calendar-presentation_1080.mp4 written",
    "passed": true,
-   "detail": "8.7 MB"
+   "detail": "11.7 MB"
   }
  ],
  "delivery": [
   {
    "file": "the-windows-at-quillons_print-US-Letter.pdf",
-   "mb": 5.54
+   "mb": 5.65
   },
   {
    "file": "the-windows-at-quillons_print-A4.pdf",
-   "mb": 5.56
+   "mb": 5.67
   },
   {
    "file": "the-windows-at-quillons_iPad.pdf",
-   "mb": 5.43
+   "mb": 5.53
   },
   {
    "file": "the-windows-at-quillons_SOLUTION.zip",
