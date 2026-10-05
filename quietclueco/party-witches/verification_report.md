@@ -1,6 +1,6 @@
 # Murder at the Lantern Supper: verification report
 
-Result: **93 of 93 checks passed**
+Result: **103 of 103 checks passed**
 
 | # | Check | Result | Detail |
 |---|---|---|---|
@@ -59,8 +59,8 @@ Result: **93 of 93 checks passed**
 | 53 | murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: clue card 9 printed word for word | PASS |  |
 | 54 | murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: clue card 10 printed word for word | PASS |  |
 | 55 | murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf: clue card 11 printed word for word | PASS |  |
-| 56 | murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: under 20 MB | PASS | 0.8 MB, 15 pages |
-| 57 | murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: has a sealed solution section | PASS | page 12 |
+| 56 | murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: under 20 MB | PASS | 0.8 MB, 17 pages |
+| 57 | murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: has a sealed solution section | PASS | page 14 |
 | 58 | murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: nothing from the solution before the sealed section | PASS |  |
 | 59 | murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: the sealed section holds the answer, the reasoning and the timeline table | PASS |  |
 | 60 | murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: the sealed section is the last part of the guide | PASS |  |
@@ -89,14 +89,24 @@ Result: **93 of 93 checks passed**
 | 83 | murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: clue card 9 printed word for word | PASS |  |
 | 84 | murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: clue card 10 printed word for word | PASS |  |
 | 85 | murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf: clue card 11 printed word for word | PASS |  |
-| 86 | murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: under 20 MB | PASS | 0.8 MB, 14 pages |
-| 87 | murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: has a sealed solution section | PASS | page 12 |
+| 86 | murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: under 20 MB | PASS | 0.8 MB, 16 pages |
+| 87 | murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: has a sealed solution section | PASS | page 14 |
 | 88 | murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: nothing from the solution before the sealed section | PASS |  |
 | 89 | murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: the sealed section holds the answer, the reasoning and the timeline table | PASS |  |
 | 90 | murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: the sealed section is the last part of the guide | PASS |  |
-| 91 | Delivery: 5 files (the Etsy limit), each under 20 MB | PASS | murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf 0.8 MB, murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf 0.8 MB, murder-at-the-lantern-supper_INVITATIONS.zip 6.4 MB, murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf 0.9 MB, murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf 0.9 MB |
-| 92 | Invitations ZIP: 2 fillable PDFs, 13 phone pictures and a README, intact | PASS | 16 files |
-| 93 | The invitation PDF has fillable fields | PASS | 5 fields |
+| 91 | murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: page numbers settled (the guide was laid out twice and came out the same) | PASS |  |
+| 92 | murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: “What to print” gives the booklet pages of every role, matching the player kit | PASS | Cordelia 5–8, Marigold 9–12, Silas 13–16, Clementine 17–20, Rufus 21–24, Isadora 25–28, Mother 29–32, Linnet 33–36, Tamsin 37–40, Percival 41–44, Ned 45–48, Bryony 49–52 |
+| 93 | murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: the print list covers the table items, 2–3 plans, cut accusation sheets and the sealed pages (14–17) | PASS |  |
+| 94 | murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: the sealed section really starts on the page the print list names | PASS | page 14 |
+| 95 | murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: the host’s new blocks are in the open part of the guide (host counts as a guest, the host reads the Inspector’s lines and plays, a guest may read the Inspector’s lines, order of introductions, cards read aloud, then face up, absent characters) | PASS |  |
+| 96 | murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: page numbers settled (the guide was laid out twice and came out the same) | PASS |  |
+| 97 | murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: “What to print” gives the booklet pages of every role, matching the player kit | PASS | Cordelia 5–8, Marigold 9–12, Silas 13–16, Clementine 17–20, Rufus 21–24, Isadora 25–28, Mother 29–32, Linnet 33–36, Tamsin 37–40, Percival 41–44, Ned 45–48, Bryony 49–52 |
+| 98 | murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: the print list covers the table items, 2–3 plans, cut accusation sheets and the sealed pages (14–16) | PASS |  |
+| 99 | murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: the sealed section really starts on the page the print list names | PASS | page 14 |
+| 100 | murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: the host’s new blocks are in the open part of the guide (host counts as a guest, the host reads the Inspector’s lines and plays, a guest may read the Inspector’s lines, order of introductions, cards read aloud, then face up, absent characters) | PASS |  |
+| 101 | Delivery: 5 files (the Etsy limit), each under 20 MB | PASS | murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf 0.8 MB, murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf 0.8 MB, murder-at-the-lantern-supper_INVITATIONS.zip 6.4 MB, murder-at-the-lantern-supper_PLAYER-KIT_A4.pdf 0.9 MB, murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf 0.9 MB |
+| 102 | Invitations ZIP: 2 fillable PDFs, 13 phone pictures and a README, intact | PASS | 16 files |
+| 103 | The invitation PDF has fillable fields | PASS | 5 fields |
 
 ## Suspects left after each round (6 core roles)
 

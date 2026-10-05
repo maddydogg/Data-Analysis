@@ -56,16 +56,60 @@ def phone_invites(outdir, banner):
         paths.append(invitations.phone_png(os.path.join(outdir, f"{i:02d}_{k}.png"), art, rows))
     return paths
 
+def check_host_print_list(rep, paths, host_layout):
+    """The host guide's print list and its page numbers match the player kit and the guide itself."""
+    import pymupdf as fitz
+    ok = lambda name, passed, detail="": rep["checks"].append(dict(name=name, passed=bool(passed), detail=str(detail)))
+    for fmt, (km, kp, hm, hp, stable) in host_layout.items():
+        doc = fitz.open(paths[f"host_{fmt}"]); pages = [" ".join(pg.get_text().split()) for pg in doc]
+        tag = os.path.basename(paths[f"host_{fmt}"])
+        ok(f"{tag}: page numbers settled (the guide was laid out twice and came out the same)", stable and len(pages) == hp)
+        kr = render.page_ranges(km, kp)
+        pl = " ".join(pages[hm["What to print"] - 1:hm["Guests, players and the host"] - 1])
+        miss = [C.name(k) for k in C.CORE + C.ADD_ORDER
+                if f"{C.name(k)}" not in pl or render.pages_txt(kr[f"Booklet: {C.name(k)}"]) not in pl]
+        ok(f"{tag}: “What to print” gives the booklet pages of every role, matching the player kit", not miss,
+           ", ".join(miss) or ", ".join(f"{C.name(k).split()[0]} {render.pages_txt(kr[f'Booklet: {C.name(k)}'])}"
+                                        for k in C.CORE + C.ADD_ORDER))
+        need = [render.pages_txt(kr[k]) for k in ("House rules", "Plan of Larkwell Hall", "Evidence cards",
+                                                    "Detective’s notes", "Accusation sheet", "Name badges",
+                                                    "Potion menu", "Awards")]
+        sealed = hm["SEALED SOLUTION"]
+        ok(f"{tag}: the print list covers the table items, 2–3 plans, cut accusation sheets and the sealed pages "
+           f"({sealed}–{hp})", all(x in pl for x in need) and "2–3 copies" in pl and "cut in half" in pl
+           and f"{sealed}–{hp}" in pl and "6 guests" in pl and "12 guests" in pl)
+        sealed_actual = next(i for i, t in enumerate(pages) if "SEALED SOLUTION" in t and "STOP" in t) + 1
+        ok(f"{tag}: the sealed section really starts on the page the print list names", sealed_actual == sealed,
+           f"page {sealed_actual}")
+        open_text = " ".join(pages[:sealed - 1])
+        want = {"host counts as a guest": "8 guests + a host who plays = 9 roles",
+                "the host reads the Inspector’s lines and plays": "In between, the host plays their own character",
+                "a guest may read the Inspector’s lines": "Ask one guest to read the Inspector’s lines",
+                "order of introductions": "The guest on the host’s left starts",
+                "cards read aloud, then face up": "Read evidence cards 1–4 aloud",
+                "absent characters": "they just aren’t at your table"}
+        miss = [k for k, v in want.items() if v not in open_text]
+        ok(f"{tag}: the host’s new blocks are in the open part of the guide (" + ", ".join(want) + ")", not miss,
+           ", ".join(miss))
+
 def main():
     rep = verify.check_all()
     render.register_fonts()
     banner = make_art()
-    paths = {}
+    paths = {}; host_layout = {}
     for fmt, tag in (("letter", "US-Letter"), ("a4", "A4")):
         pk = os.path.join(OUT, "print", f"{C.SLUG}_PLAYER-KIT_{tag}.pdf"); os.makedirs(os.path.dirname(pk), exist_ok=True)
         d = render.build_player(fmt, pk); paths[f"player_{fmt}"] = pk
         hg = os.path.join(OUT, "print", f"{C.SLUG}_HOST-GUIDE_{tag}.pdf")
-        render.build_host(fmt, hg, d.marks); paths[f"host_{fmt}"] = hg
+        # two passes: the guide prints its own page numbers (the sealed section, the round scripts)
+        prev = None
+        for _ in range(4):
+            h = render.build_host(fmt, hg, d.marks, d.page, prev)
+            if prev == (h.marks, h.page):
+                break
+            prev = (h.marks, h.page)
+        host_layout[fmt] = (d.marks, d.page, h.marks, h.page, prev == (h.marks, h.page))
+        paths[f"host_{fmt}"] = hg
     inv_dir = os.path.join(OUT, "invitations"); shutil.rmtree(inv_dir, ignore_errors=True)
     inv = invitations.build_pdfs(inv_dir, banner) + phone_invites(os.path.join(inv_dir, "phone"), banner)
     open(os.path.join(inv_dir, "README.txt"), "w").write(
@@ -76,6 +120,7 @@ def main():
         "phone/: the same invitations as PNG pictures to text or message. Add the date, time and place in your "
         "message (or write them on with any photo editor).\n")
     verify.check_pdfs(rep, paths)
+    check_host_print_list(rep, paths, host_layout)
     # delivery: 5 files
     dl = os.path.join(OUT, "delivery"); shutil.rmtree(dl, ignore_errors=True); os.makedirs(dl)
     for p in paths.values():

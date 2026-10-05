@@ -322,7 +322,129 @@ def house_rules_page(d):
                  "cards and the plan. After Round 3, everyone writes an accusation.")], "How a round works")
 
 # ---------------------------------------------------------------- host guide
-def build_host(fmt, path, kit_marks):
+def page_ranges(marks, total):
+    """Each bookmarked section of a PDF -> (first page, last page)."""
+    items = sorted(marks.items(), key=lambda kv: kv[1])
+    return {k: (p, (items[i + 1][1] - 1) if i + 1 < len(items) else total) for i, (k, p) in enumerate(items)}
+
+def pages_txt(r):
+    a, b = r
+    return f"{a}" if a == b else f"{a}–{b}"
+
+def table(d, heads, rows, widths, st=None):
+    """A simple table with wrapping cells; widths are fractions of the column width."""
+    Lx = d.L; c = d.c; st = st or Lx.small; pad = 4
+    ws = [Lx.cw * f for f in widths]
+    hst = ParagraphStyle("th", parent=st, fontName="Nunito-ExtraBold", textColor=WHITE)
+    def row(cells, style, fill):
+        h = max(para_h(t, w - 2 * pad, style) for t, w in zip(cells, ws)) + 2
+        d.need(h + 2)
+        c.setFillColor(fill); c.rect(Lx.m, d.y - h, Lx.cw, h, fill=1, stroke=0)
+        x = Lx.m
+        for t, w in zip(cells, ws):
+            para(c, t, x + pad, d.y - 3, w - 2 * pad, style); x += w
+        d.y -= h
+    row([esc(h) for h in heads], hst, PLUM)
+    for i, r in enumerate(rows):
+        if d.y - 30 < Lx.bottom:
+            d.new_page(); row([esc(h) for h in heads], hst, PLUM)
+        row(r, st, PALE if i % 2 else WHITE)
+    d.y -= 10
+
+def print_list(d, kit_marks, kit_pages, host_marks, host_pages):
+    Lx = d.L
+    kr = page_ranges(kit_marks, kit_pages)
+    hr = page_ranges(host_marks, host_pages) if host_marks else {}
+    pg = lambda k: pages_txt(kr[k])
+    sealed = f"{hr['SEALED SOLUTION'][0]}–{host_pages}" if hr else "the last pages"
+    d.new_page("What to print", title="What to print")
+    d.h1("What to print", "Page numbers are for the player kit in this paper size")
+    d.p("Print only what your party needs. The table below is for every party; the next two tell you which booklet "
+        "pages belong to each role and how many copies you need for your number of guests.")
+    b = lambda t: f"<b>{esc(t)}</b>"
+    every = [(b("House rules"), pg("House rules"), "1, for the table"),
+             (b("Plan of Larkwell Hall"), pg("Plan of Larkwell Hall"), "2–3 copies, for the table"),
+             (b("Character booklets"), "see the role table", "1 per guest, only the roles you use (4 pages each)"),
+             (b("Evidence cards"), pg("Evidence cards"), "1 set. Two cards to a page: cut in half, keep in three "
+                                                          "envelopes by round"),
+             (b("Detective’s notes"), pg("Detective’s notes"), "1 per guest"),
+             (b("Accusation sheets"), pg("Accusation sheet"), "Two sheets to a page: print 1 page for every 2 guests "
+                                                              "and cut in half"),
+             (b("Name badges"), pg("Name badges"), "The roles you use (8 to a page). The Inspector badge is for a "
+                                                   "host who doesn’t play"),
+             (b("Potion menu"), pg("Potion menu"), "1"),
+             (b("Awards"), pg("Awards"), "1 each, two to a page: cut in half"),
+             (b("Sealed solution"), f"host guide {sealed}", "Print separately, fold, seal in an envelope. If you play, "
+                                                            "don’t read it")]
+    table(d, ["What", "Pages", "How many"], [[a, esc(x), esc(y)] for a, x, y in every], [0.28, 0.2, 0.52])
+    badge_page = {}
+    for i, k in enumerate(C.CORE + C.ADD_ORDER + ["host"]):
+        badge_page[k] = kr["Name badges"][0] + i // 8
+    d.h2("Which pages for each role")
+    rows = []
+    for k in C.CORE + C.ADD_ORDER:
+        r = kr[f"Booklet: {C.name(k)}"]
+        rows.append([b(C.name(k)), esc("core" if k in C.CORE else f"extra, from {7 + C.ADD_ORDER.index(k)} guests"),
+                     esc(pages_txt(r)), esc(str(badge_page[k]))])
+    rows.append([b("Host who doesn’t play"), esc("no role"), esc("—"), esc(f"{badge_page['host']} (Inspector)")])
+    table(d, ["Role", "In the game", "Booklet pages", "Badge on page"], rows, [0.34, 0.3, 0.18, 0.18])
+    d.h2("What to print for your number of guests")
+    d.p("Guests means everyone who plays a role. If you, the host, play too, count yourself as a guest.", Lx.small)
+    first = kr[f"Booklet: {C.name(C.CORE[0])}"][0]
+    rows = []
+    for n in range(6, 13):
+        last = kr[f"Booklet: {C.name((C.CORE + C.ADD_ORDER)[n - 1])}"][1]
+        bp = sorted({badge_page[k] for k in (C.CORE + C.ADD_ORDER)[:n]})
+        badge = pages_txt((bp[0], bp[-1]))
+        sheets = 4 * n + 1 + 2 + 6 + n + (n + 1) // 2 + len(bp) + 1 + 2
+        rows.append([b(f"{n} guests"), esc(f"{first}–{last}"), esc(f"p. {pg('Detective’s notes')} × {n}"),
+                     esc(f"p. {pg('Accusation sheet')} × {(n + 1) // 2}"), esc(badge), esc(str(sheets))])
+    table(d, ["Guests", "Booklet pages", "Detective’s notes", "Accusation sheets", "Badges", "Pages in all*"], rows,
+          [0.15, 0.16, 0.19, 0.2, 0.12, 0.18])
+    d.p("* Booklets, house rules, the plan twice, the evidence cards, notes, accusation sheets, badges, the potion menu "
+        "and the awards. A host who doesn’t play adds page "
+        f"{badge_page['host']} for the Inspector badge if it isn’t printed already. The sealed solution "
+        f"({sealed} of this guide) is printed on its own.", Lx.small)
+
+def playing_page(d, host_marks):
+    Lx = d.L
+    scripts = host_marks.get("Round scripts") if host_marks else None
+    at = f" (page {scripts})" if scripts else ""
+    d.new_page("Guests, players and the host", title="Guests, players and the host")
+    d.h1("Guests, players and the host")
+    d.h2("Count the host as a guest if the host plays")
+    d.p("Every guest who plays gets a role. If you, the host, play too, count yourself as a guest: 8 guests + a host "
+        "who plays = 9 roles, so use the 9-guest row of the casting table. If you don’t play, you don’t need a role: "
+        "wear the Inspector badge and run the evening.")
+    d.h2("How to play and host at the same time")
+    d.p("The host reads Inspector Drummond’s lines from this guide as the evening goes: the prologue, the start of "
+        f"each round, the accusation and the reveal{at}. In between, the host plays their own character like any "
+        "other guest: reads the booklet, answers questions, asks their own and makes an accusation.")
+    d.p("Rather not switch hats? Ask one guest to read the Inspector’s lines from the round scripts instead. Give them "
+        "those pages only, never the sealed section.")
+    d.h2("Order of introductions in Round 1")
+    d.p("The guest on the host’s left starts and it goes round the circle, or follow the order of the roles in the "
+        "casting table. Each guest says who they are and where they were. The host keeps time: about a minute each.",
+        )
+    d.h2("Evidence cards")
+    d.p("At the start of each round the host first reads the new cards aloud, one by one, then puts them on the "
+        "table face up, so anyone can read them again. Cards stay on the table until the end.")
+    d.h2("Characters who aren’t at your party")
+    d.p("A booklet or a card may mention a character nobody is playing tonight. What it says is still true: that "
+        "person was at Larkwell Hall that evening, they just aren’t at your table. Only extra roles can be missing, "
+        "and card 3 (Round 1) says where each of them was.")
+    d.y -= 4
+    d.panel([esc("If the host plays: count yourself as a guest and take any role, core or extra. You know nothing "
+                 "more than your booklet, so you can play to win. Keep the sealed solution sealed until everyone has "
+                 "made an accusation."),
+             esc("If a guest can’t come: drop the last extra role from the list. If a core guest can’t come, the "
+                 "host reads that booklet aloud at the start of each round (the host can also play a role)."),
+             esc("Bigger group? Pair guests up: two guests share one booklet and play the role as a team.")],
+            "Hosting tips")
+
+def build_host(fmt, path, kit_marks, kit_pages=None, host=None):
+    """host: (marks, pages) of a previous build of this guide, for the page numbers it prints about itself."""
+    host_marks, host_pages = host if host else ({}, 0)
     d = Doc(fmt, path, "Host Guide"); Lx = d.L
     cover(d, "Host guide")
     d.new_page("Welcome", title="Welcome, host")
@@ -373,9 +495,8 @@ def build_host(fmt, path, kit_marks):
                                            "table.", "Send the invitation, then each guest their character invitation: "
                                            "who they play and what to wear. Everyone can play any role; change first "
                                            "names to suit your guests."]),
-            ("One week before", ["Print the player kit: one booklet per guest (only the roles you are using), the "
-                                 "evidence cards, the plan of the house, name badges, detective’s notes and accusation "
-                                 "sheets (one each), the potion menu and the awards.",
+            ("One week before", ["Print the player kit: the page-by-page list is in “What to print”"
+                                 + (f" (page {host_marks['What to print']})" if host_marks else "") + ".",
                                  "Put each booklet in an envelope with the guest’s name. Put the evidence cards in "
                                  "three envelopes: Round 1 (cards 1–4), Round 2 (5–8), Round 3 (9–11).",
                                  "If you are playing too: print the sealed solution pages separately and seal them "
@@ -385,14 +506,7 @@ def build_host(fmt, path, kit_marks):
                             "Keep a bell, a glass and a spoon, or a pan handy to start each round."])]
     for head, items in plan:
         d.h2(head); d.bullets(items)
-    d.h2("What to print from the player kit")
-    rows = [("House rules and the plan of the house", "1 copy each, for the table"),
-            ("Character booklets", "1 per guest, 4 pages each"), ("Evidence cards", "1 set (6 pages, cut in half)"),
-            ("Detective’s notes and accusation sheet", "1 each per guest"), ("Name badges", "the roles you use"),
-            ("Potion menu and awards", "1 each")]
-    for a, b in rows:
-        page = kit_marks.get(a.split(" and ")[0] if a.startswith("Detective") else a, None)
-        d.p(f"<b>{esc(a)}</b>: {esc(b)}", raw=True)
+    print_list(d, kit_marks, kit_pages, host_marks, host_pages)
     # casting
     d.new_page("Casting", title="Casting for 6–12 guests")
     d.h1("Casting", "Choose roles for your guest count")
@@ -417,18 +531,15 @@ def build_host(fmt, path, kit_marks):
                 x = Lx.m + 70 + j * colw[1] + colw[1] / 2
                 c.setFillColor(PLUM if k in C.CORE else AMETHYST); c.circle(x, y - rh / 2, 4.2, fill=1, stroke=0)
         y -= rh
-    d.y = y - 16
+    d.y = y - 14
+    d.p("Guests means everyone who plays a role, the host included if the host plays: 8 guests + a host who plays = "
+        "9 roles.", Lx.small)
     d.h2("The roles")
     for k in keys:
         nm, role, core, costume, colour, hook = C.PEOPLE[k]
         d.p(f"<b>{esc(nm)}</b> <font color='#8E5BB5'>· {'core' if core else 'extra'}</font> — {esc(role)}. "
             f"{esc(hook)} <i>Costume: {esc(costume)}.</i>", Lx.small, raw=True)
-    d.panel([esc("If the host plays: take any role, core or extra. You know nothing more than your booklet, so you "
-                 "can play to win. Keep the sealed solution sealed until everyone has made an accusation."),
-             esc("If a guest can’t come: drop the last extra role from the list. If a core guest can’t come, the "
-                 "host reads that booklet aloud at the start of each round (the host can also play a role)."),
-             esc("Bigger group? Pair guests up: two guests share one booklet and play the role as a team.")],
-            "Hosting tips")
+    playing_page(d, host_marks)
     # the evening
     d.new_page("The evening", title="The evening")
     d.h1("The evening", "A suggested timetable for a 2½-hour party")
@@ -481,6 +592,10 @@ def build_host(fmt, path, kit_marks):
             "current page shows."),
            ("What if the guests are stuck?", "Point them at the plan and at card 1: who could have been in the Still Room "
             "while Rowena was upstairs? Then ask who can vouch for whom."),
+           ("A booklet mentions someone nobody is playing?", "It is still true: that person was in the house that "
+            "evening, they just aren’t at your table. Card 3 says where each of the extra characters was."),
+           ("Can someone else read the Inspector’s lines?", "Yes. Give a guest the round scripts pages only, never the "
+            "sealed section."),
            ("Is it scary?", "Spooky, not gory: candlelight, a bell, a poisoned cordial. No blood, no weapons. Fine for "
             "teens and adults."),
            ("Do I need to print in colour?", "No. The pages are light to save ink; colour looks nicer on the cards and "
@@ -550,13 +665,16 @@ def build_player(fmt, path):
     d.h1("Player kit", "What to print")
     d.p("Print only what your party needs. The host guide has the casting table: which roles to use for your number "
         "of guests.")
-    d.bullets(["House rules and the plan of Larkwell Hall: one copy each, for the table.",
+    d.bullets(["House rules: one copy for the table. The plan of Larkwell Hall: 2–3 copies for the table.",
                "Character booklets: one per guest, only the roles you are using. Four pages each: Your character, "
                "Round 1, Round 2, Round 3. Fold or staple so only the current page shows.",
                "Evidence cards: one set, 11 cards, two to a page. Cut them in half and keep them in three envelopes "
                "by round.",
-               "Detective’s notes and an accusation sheet: one each per guest.",
-               "Name badges: the roles you are using. Potion menu and awards: one each."])
+               "Detective’s notes: one per guest. Accusation sheets: two to a page, so print one page for every "
+               "two guests and cut it in half.",
+               "Name badges: the roles you are using. Potion menu and awards: one each.",
+               "The host guide (“What to print”) lists the pages of every role and how many copies you need for "
+               "your number of guests."])
     house_rules_page(d)
     plan_page(d)
     for k in C.CORE + C.ADD_ORDER:

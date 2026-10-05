@@ -15,7 +15,7 @@ sit). Who made it: I did. Type: digital. Materials: PDF, printable, fillable PDF
 
 ## Files (5 of the 5 allowed)
 
-1. `murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf` — host guide, solution sealed at the back (15 pages)
+1. `murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf` — host guide, solution sealed at the back (17 pages; A4: 16)
 2. `murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf` — the same on A4
 3. `murder-at-the-lantern-supper_PLAYER-KIT_US-Letter.pdf` — booklets, evidence cards, plan of the house, badges,
    notes, accusation sheets, potion menu, awards (65 pages)
@@ -53,7 +53,7 @@ Every guest is a suspect. Nobody leaves until the Inspector knows who did it.
 No acting needed: everything a guest has to say is in their booklet, in plain words.
 
 ★ WHAT’S IN THE KIT
-• Host guide: preparation timeline, casting for 6–12 guests, a timetable for the evening, scripts to read aloud for every round, FAQ and the sealed solution
+• Host guide: preparation timeline, a page-by-page print list for any number of guests, casting for 6–12 guests, a timetable for the evening, scripts to read aloud for every round, FAQ and the sealed solution
 • 12 character booklets, 4 pages each: who you are, costume in two words, your secret, questions to ask, and a page for each round
 • 11 evidence cards in 3 rounds, plus a plan of Larkwell Hall for the table
 • Invitations: a fillable invitation, 12 fillable character invitations (who you play, what to wear) and phone versions to text

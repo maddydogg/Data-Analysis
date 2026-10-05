@@ -11,7 +11,7 @@ she was upstairs in the Lantern Room.
 
 | Path | What it is |
 |---|---|
-| `print/…_HOST-GUIDE_US-Letter.pdf`, `…_A4.pdf` | Host guide (15 pages): welcome, how it works, before the party, casting for 6–12, the evening, plan of the house, round scripts, FAQ, and the SEALED SOLUTION at the back |
+| `print/…_HOST-GUIDE_US-Letter.pdf`, `…_A4.pdf` | Host guide (17 pages in US Letter, 16 in A4): welcome, how it works, before the party, what to print (page by page, per role and per guest count), casting for 6–12, guests, players and the host, the evening, plan of the house, round scripts, FAQ, and the SEALED SOLUTION at the back |
 | `print/…_PLAYER-KIT_US-Letter.pdf`, `…_A4.pdf` | Player kit (65 pages): printing guide, house rules, plan of Larkwell Hall, 12 booklets × 4 pages, 11 evidence cards, detective’s notes, accusation sheets, 13 name badges, potion menu, 4 awards |
 | `invitations/` | Fillable 5x7 invitation, 12 fillable character invitations, 13 phone PNGs, README |
 | `delivery/` | The 5 files for Etsy (4 PDFs + INVITATIONS.zip), each under 20 MB |
@@ -46,6 +46,8 @@ cd ../listing/src && python3 build_listing.py   # mockups, videos, archives, spo
 - **Extra roles:** removing every line of the 6 extra roles changes nothing.
 - **Character–time–place table:** every booklet line and card matches the true timeline (who was where, who could see whom
   from where); only the killer gives a false account, and only of her own whereabouts.
+- **Print list:** the page numbers the host guide prints (every booklet, the table items, the sealed pages) match
+  the player kit and the guide itself; the guide is laid out twice so its own page numbers are settled.
 - **No solution in the player kit**; in the host guide only after the sealed page. Stop list (films, books, other party
   games, real witch trials), no gore, nothing from case No. 3’s solution.
 

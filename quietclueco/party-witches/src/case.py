@@ -482,18 +482,21 @@ ROUND_SCRIPTS = {
     1: ["Read aloud: “Ladies and gentlemen, I am sorry to tell you that Rowena Heatherly is dead. Someone put "
         "foxglove in her cordial tonight. Every one of you was in this house. Before we go any further, I want to "
         "know who you are, and where you were.”",
-        "Put evidence cards 1–4 on the table, face up, and the plan of Larkwell Hall beside them.",
-        "Everyone reads the Round 1 page of their booklet, then introduces themselves to the room. Then mingle: ask "
-        "questions, compare stories, look at the cards. Around 30–40 minutes."],
+        "Read evidence cards 1–4 aloud, one by one. Then put them on the table face up, with the plan of Larkwell "
+        "Hall beside them, so anyone can read them again.",
+        "Everyone reads the Round 1 page of their booklet. Then introductions: the guest on the host’s left starts "
+        "and it goes round the circle (or follow the order of the roles in the casting table). Each guest says who "
+        "they are and where they were. The host keeps time: about a minute each.",
+        "Then mingle: ask questions, compare stories, look at the cards. Around 30–40 minutes."],
     2: ["Ring a bell, clink a glass or bang a pan. Read aloud: “The bell. I keep thinking about the bell. It rang "
         "for a quarter of an hour while Rowena was upstairs. Some of you have been less than honest with me. Cards "
         "on the table, please, and new ones.”",
-        "Put evidence cards 5–8 on the table.",
+        "Read evidence cards 5–8 aloud, one by one. Then put them on the table face up, next to cards 1–4.",
         "Everyone reads the Round 2 page of their booklet. Secrets start to come out. Mingle and question for "
         "30–40 minutes."],
     3: ["Read aloud: “I have one more thing to show you, and two papers from Rowena’s desk. After this, I want "
         "your answer.”",
-        "Put evidence cards 9–11 on the table.",
+        "Read evidence cards 9–11 aloud, one by one. Then put them on the table face up with the others.",
         "Everyone reads the Round 3 page of their booklet. Last chance to question each other: about 20–30 "
         "minutes. Then hand out the accusation sheets."],
 }

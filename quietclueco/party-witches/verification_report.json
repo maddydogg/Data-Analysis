@@ -278,12 +278,12 @@
   {
    "name": "murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: under 20 MB",
    "passed": true,
-   "detail": "0.8 MB, 15 pages"
+   "detail": "0.8 MB, 17 pages"
   },
   {
    "name": "murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: has a sealed solution section",
    "passed": true,
-   "detail": "page 12"
+   "detail": "page 14"
   },
   {
    "name": "murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: nothing from the solution before the sealed section",
@@ -428,12 +428,12 @@
   {
    "name": "murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: under 20 MB",
    "passed": true,
-   "detail": "0.8 MB, 14 pages"
+   "detail": "0.8 MB, 16 pages"
   },
   {
    "name": "murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: has a sealed solution section",
    "passed": true,
-   "detail": "page 12"
+   "detail": "page 14"
   },
   {
    "name": "murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: nothing from the solution before the sealed section",
@@ -447,6 +447,56 @@
   },
   {
    "name": "murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: the sealed section is the last part of the guide",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: page numbers settled (the guide was laid out twice and came out the same)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: \u201cWhat to print\u201d gives the booklet pages of every role, matching the player kit",
+   "passed": true,
+   "detail": "Cordelia 5\u20138, Marigold 9\u201312, Silas 13\u201316, Clementine 17\u201320, Rufus 21\u201324, Isadora 25\u201328, Mother 29\u201332, Linnet 33\u201336, Tamsin 37\u201340, Percival 41\u201344, Ned 45\u201348, Bryony 49\u201352"
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: the print list covers the table items, 2\u20133 plans, cut accusation sheets and the sealed pages (14\u201317)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: the sealed section really starts on the page the print list names",
+   "passed": true,
+   "detail": "page 14"
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_US-Letter.pdf: the host\u2019s new blocks are in the open part of the guide (host counts as a guest, the host reads the Inspector\u2019s lines and plays, a guest may read the Inspector\u2019s lines, order of introductions, cards read aloud, then face up, absent characters)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: page numbers settled (the guide was laid out twice and came out the same)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: \u201cWhat to print\u201d gives the booklet pages of every role, matching the player kit",
+   "passed": true,
+   "detail": "Cordelia 5\u20138, Marigold 9\u201312, Silas 13\u201316, Clementine 17\u201320, Rufus 21\u201324, Isadora 25\u201328, Mother 29\u201332, Linnet 33\u201336, Tamsin 37\u201340, Percival 41\u201344, Ned 45\u201348, Bryony 49\u201352"
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: the print list covers the table items, 2\u20133 plans, cut accusation sheets and the sealed pages (14\u201316)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: the sealed section really starts on the page the print list names",
+   "passed": true,
+   "detail": "page 14"
+  },
+  {
+   "name": "murder-at-the-lantern-supper_HOST-GUIDE_A4.pdf: the host\u2019s new blocks are in the open part of the guide (host counts as a guest, the host reads the Inspector\u2019s lines and plays, a guest may read the Inspector\u2019s lines, order of introductions, cards read aloud, then face up, absent characters)",
    "passed": true,
    "detail": ""
   },
