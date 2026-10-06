@@ -1,0 +1,1082 @@
+{
+ "checks": [
+  {
+   "name": "Tallies 0001-2400, each exactly once",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Every full name is unique",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Names are letters only (no spaces, hyphens, apostrophes)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Dates 1-23 December and times between 06:30 and 18:30",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Villages, boats and landings are all on the chart",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "The Sound Book is in date and time order",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Every day from 1 to 23 December has first crossings (most on the first days)",
+   "passed": true,
+   "detail": "1: 552, 2: 376, 3: 216, 4: 73, 5: 67, 6: 67, 7: 57, 8: 53, 9: 49, 10: 69, 11: 55, 12: 71, 13: 52, 14: 53, 15: 49, 16: 59, 17: 41, 18: 83, 19: 64, 20: 76, 21: 81, 22: 70, 23: 67"
+  },
+  {
+   "name": "Unique answer: windows 3\u201323 together leave exactly one line",
+   "passed": true,
+   "detail": "survivors: ['Jonas Garvock #1478']"
+  },
+  {
+   "name": "Every window is needed: leaving any one out leaves more than one line",
+   "passed": true,
+   "detail": "Window 3 left out -> 2 left; Window 4 left out -> 3 left; Window 5 left out -> 2 left; Window 6 left out -> 2 left; Window 7 left out -> 2 left; Window 8 left out -> 2 left; Window 9 left out -> 2 left; Window 10 left out -> 2 left; Window 11 left out -> 2 left; Window 12 left out -> 2 left; Window 13 left out -> 3 left; Window 14 left out -> 2 left; Window 15 left out -> 3 left; Window 16 left out -> 2 left; Window 17 left out -> 3 left; Window 18 left out -> 2 left; Window 19 left out -> 3 left; Window 20 left out -> 3 left; Window 21 left out -> 3 left; Window 22 left out -> 3 left; Window 23 left out -> 3 left"
+  },
+  {
+   "name": "Each alternative reading on its own keeps the killer and gives the same single answer (19 readings)",
+   "passed": true,
+   "detail": "Window 3 [\u2018already\u2019 read as \u2018before today\u2019: 1 or 2 December only] -> 1; Window 4 [the Pilot Cutter counted too (the chart says it may use the Inner Passage at high water)] -> 1; Window 5 [the Narrows Slip itself counted too] -> 1; Window 5 [\u2018higher up\u2019 read on the chart: loch landings drawn further north than the Narrows] -> 1; Window 5 [\u2018higher up\u2019 read as \u2018further north on the chart\u2019, anywhere at all] -> 1; Window 6 [a village sitting right on the circle counted too] -> 1; Window 10 [the exact minutes of low and high water counted too] -> 1; Window 10 [a quarter of an hour of slack water at each end counted too] -> 1; Window 11 [\u2018between\u2019 read along the shore, which runs all the way round Loch Tarrisk] -> 1; Window 11 [\u2018between\u2019 read on the chart: close to the straight line from one head to the other] -> 1; Window 11 [\u2018between\u2019 read on the chart: any mainland village between the two heads, inland too] -> 1; Window 12 [any landing on the waybill, the letter boxes included] -> 1; Window 14 [\u201cmore than fifteen\u201d read as \u201cfifteen or more\u201d] -> 1; Window 16 [the lighting-up minute itself counted as \u2018before\u2019] -> 1; Window 17 [\u201clater\u201d read as \u201clater or the same letter\u201d] -> 1; Window 18 [a nought in front doesn\u2019t count (0472 read as 472)] -> 1; Window 19 [Y counted as a vowel] -> 1; Window 21 [Y counted as a vowel] -> 1; Window 22 [only a double letter side by side counts as \u2018twice\u2019] -> 1"
+  },
+  {
+   "name": "Every combination of readings (98,304 in total) gives the same answer",
+   "passed": true,
+   "detail": "proof: the killer passes every window under every reading, and each of the other 2,399 lines fails at least one window under every reading"
+  },
+  {
+   "name": "Spatial and time words (already, through, higher up, near, between, rising, before, a.m./p.m.): every reasonable reading keeps the killer and gives the same single answer (12 readings)",
+   "passed": true,
+   "detail": "W3 [\u2018already\u2019 read as \u2018before today\u2019: 1 or 2 December only] -> 1; W4 [the Pilot Cutter counted too (the chart says it may use the Inner Passage at high water)] -> 1; W5 [the Narrows Slip itself counted too] -> 1; W5 [\u2018higher up\u2019 read on the chart: loch landings drawn further north than the Narrows] -> 1; W5 [\u2018higher up\u2019 read as \u2018further north on the chart\u2019, anywhere at all] -> 1; W6 [a village sitting right on the circle counted too] -> 1; W10 [the exact minutes of low and high water counted too] -> 1; W10 [a quarter of an hour of slack water at each end counted too] -> 1; W11 [\u2018between\u2019 read along the shore, which runs all the way round Loch Tarrisk] -> 1; W11 [\u2018between\u2019 read on the chart: close to the straight line from one head to the other] -> 1; W11 [\u2018between\u2019 read on the chart: any mainland village between the two heads, inland too] -> 1; W16 [the lighting-up minute itself counted as \u2018before\u2019] -> 1"
+  },
+  {
+   "name": "Far-fetched readings that would drop the killer leave nobody at all, so the slip shows at once (5 readings)",
+   "passed": true,
+   "detail": "W4 [only the fishing boats (the Mail Boat overlooked)] -> 0 left; W5 [only the very next landing above the Narrows (Torrandhu Jetty)] -> 0 left; W6 [\u2018near\u2019 read as within half the range (6 miles)] -> 0 left; W10 [\u2018making\u2019 read as \u2018at high water\u2019: within an hour of high water] -> 0 left; W16 [the almanac\u2019s p.m. times read as morning times (3.46 read as 03:46)] -> 0 left"
+  },
+  {
+   "name": "Every window rules out at least one finalist (a line that fits all the other windows)",
+   "passed": true,
+   "detail": "{'3': 1, '4': 2, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, '10': 1, '11': 1, '12': 1, '13': 2, '14': 1, '15': 2, '16': 1, '17': 2, '18': 1, '19': 2, '20': 2, '21': 2, '22': 2, '23': 2}"
+  },
+  {
+   "name": "Calendar order uses all 21 windows once and ends on the killer on Day 23",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Every day from 3 to 23 rules out at least one line",
+   "passed": true,
+   "detail": "D3: -1256 (1144) -> D4: -497 (647) -> D5: -547 (100) -> D6: -56 (44) -> D7: -7 (37) -> D8: -5 (32) -> D9: -3 (29) -> D10: -4 (25) -> D11: -2 (23) -> D12: -1 (22) -> D13: -3 (19) -> D14: -2 (17) -> D15: -2 (15) -> D16: -1 (14) -> D17: -2 (12) -> D18: -1 (11) -> D19: -2 (9) -> D20: -2 (7) -> D21: -2 (5) -> D22: -2 (3) -> D23: -2 (1)"
+  },
+  {
+   "name": "The bulk goes on Days 3\u20136, then 1\u20133 a day is typical",
+   "passed": true,
+   "detail": "Days 3\u20136 rule out 2,356; days 7\u201323: 7, 5, 3, 4, 2, 1, 3, 2, 2, 1, 2, 1, 2, 2, 2, 2, 2"
+  },
+  {
+   "name": "The ending stays open: at least 7 lines after Day 19, 5 after Day 20, 3 after Day 21 and 2 after Day 22",
+   "passed": true,
+   "detail": "after Day 19: 9, Day 20: 7, Day 21: 5, Day 22: 3, Day 23: 1"
+  },
+  {
+   "name": "Sealed Check: no finalist shares the killer's check number",
+   "passed": true,
+   "detail": "check number 924; other lines with the same number: 4 of 2,399"
+  },
+  {
+   "name": "Window 3: the Harbour Trust rules say a tally is given on the first crossing and only the first crossing is written in",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Window 4: the passages note puts exactly the Mail Boat and the fishing boats in the Inner Passage, and the witness names no boat",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Window 5: the loch landings are listed in order from the mouth, the Narrows Slip is at the Narrows, and the loch turns south above it (so the chart reading differs from the route reading)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Window 6: the range note lists exactly the villages inside the circle, and Skellan sits on it",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Window 7: the code book page prints the whole alphabet, and the killer's initial starts with a dash",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Window 10: the tide table prints the same times the clue uses (first week)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Window 11: the coast note lists the open-coast villages in order from north to south",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Window 12: the waybill names exactly the parcel sheds and the letter boxes",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Window 16: the almanac prints lighting-up times in a.m./p.m. that match the clue",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Window 20: the tally metals note matches the clue (copper 0801\u20131600)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Killer\u2019s own story is consistent with every paper",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "The killer\u2019s times sit well inside every window (at least 15 minutes from any tide or lighting-up boundary)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Finalists don't point at the answer: for boat, village, landing and hour the killer's value is shared by at least two finalists, is never the single most common value, and no value covers more than half the shortlist",
+   "passed": true,
+   "detail": "boat: killer's value shared by 12 of 29 finalists, most common value 15/30; village: killer's value shared by 8 of 29 finalists, most common value 10/30; landing: killer's value shared by 8 of 29 finalists, most common value 10/30; hour: killer's value shared by 3 of 29 finalists, most common value 5/30"
+  },
+  {
+   "name": "Finalists all have different first names and different surnames",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Level-3 hints keep exactly the same lines as their windows (all 21; the tide and lamp hints on 1\u20133 December, the only dates still in by then)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Examples and facts quoted in hints and house rules are correct",
+   "passed": true,
+   "detail": "G starts with a dash, A with a dot: ok; Agnes and Clara contain an A: ok; 0472 is even; 0+4+7+2 = 13 (not > 15); 1395 adds to 18: ok; Moira, Grant and Morag have five letters; Ruth and Fergus don't: ok; Angus Ross ends on the same letter twice; Moira Bain doesn't: ok; 3.46 p.m. is 15:46: ok; Sadie Kerr fits Window 17; Ada Muir and Mary Muir don't: ok; 0472 has a nought; 1395 hasn't: ok; Moffat and Lindsay have two vowels; Ogilvie has four: ok; Angus and Mary end on a consonant; Effie and Flora don't: ok; Rennison, Laidlaw and Barclay repeat a letter; Munro doesn't: ok; Rennison has three Ns (house rules): ok; Iona Rae has 7 letters, odd: ok; Tally 0472 digits add up to 13 (house rules): ok"
+  },
+  {
+   "name": "Names used as examples in hints are not in the Sound Book",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "No hint names the killer, his tally or his landing on its own",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Stop list: no borrowed brands, titles, real lighthouses or islands, and no names or places from calendar A, cases 1\u20133 or the party game, in any text or name pool (whole words)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "The word \u201cclue\u201d is not used anywhere in the calendar (evidence / lead instead)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "No famous-detective, Christmas-story, lighthouse-history or earlier-character names in the name pools",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Story characters and the killer's own names are kept out of the random name pools",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Every character in the text exists in the fonts that print it",
+   "passed": true,
+   "detail": "{}"
+  },
+  {
+   "name": "[letter] each of the 24 windows starts on its own page, in order",
+   "passed": true,
+   "detail": "first pages: [8, 13, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81]"
+  },
+  {
+   "name": "[letter] every window\u2019s question is printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[letter] all 23 journal entries are printed word for word",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "[letter] every paper pinned to a window is printed word for word (the text a reader without pictures needs)",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "[letter] all 63 hints are printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[letter] the killer's name appears exactly once in the calendar (his line in the Sound Book)",
+   "passed": true,
+   "detail": "1 times"
+  },
+  {
+   "name": "[letter] check-ins on Windows 6, 12 and 18 print the counts the code found",
+   "passed": true,
+   "detail": "{6: 44, 12: 22, 18: 11}"
+  },
+  {
+   "name": "[letter] the Sound Book in the PDF matches the data line for line (2,400 lines)",
+   "passed": true,
+   "detail": "parsed 2400 lines"
+  },
+  {
+   "name": "[letter] the book has a clickable contents page and bookmarks",
+   "passed": true,
+   "detail": "64 bookmarks"
+  },
+  {
+   "name": "[letter] set-up pages include the envelope template and day numbers 1\u201324",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[letter] Fraunces, Nunito and Kalam are embedded",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[letter] solution file names the same killer the code found",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[letter] solution day-by-day counts match the code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[letter] the calendar itself has no solution pages",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] each of the 24 windows starts on its own page, in order",
+   "passed": true,
+   "detail": "first pages: [8, 13, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78]"
+  },
+  {
+   "name": "[a4] every window\u2019s question is printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] all 23 journal entries are printed word for word",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "[a4] every paper pinned to a window is printed word for word (the text a reader without pictures needs)",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "[a4] all 63 hints are printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] the killer's name appears exactly once in the calendar (his line in the Sound Book)",
+   "passed": true,
+   "detail": "1 times"
+  },
+  {
+   "name": "[a4] check-ins on Windows 6, 12 and 18 print the counts the code found",
+   "passed": true,
+   "detail": "{6: 44, 12: 22, 18: 11}"
+  },
+  {
+   "name": "[a4] the Sound Book in the PDF matches the data line for line (2,400 lines)",
+   "passed": true,
+   "detail": "parsed 2400 lines"
+  },
+  {
+   "name": "[a4] the book has a clickable contents page and bookmarks",
+   "passed": true,
+   "detail": "63 bookmarks"
+  },
+  {
+   "name": "[a4] set-up pages include the envelope template and day numbers 1\u201324",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] Fraunces, Nunito and Kalam are embedded",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] solution file names the same killer the code found",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] solution day-by-day counts match the code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[a4] the calendar itself has no solution pages",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] each of the 24 windows starts on its own page, in order",
+   "passed": true,
+   "detail": "first pages: [6, 11, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73]"
+  },
+  {
+   "name": "[ipad] every window\u2019s question is printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] all 23 journal entries are printed word for word",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "[ipad] every paper pinned to a window is printed word for word (the text a reader without pictures needs)",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "[ipad] all 63 hints are printed word for word",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] the killer's name appears exactly once in the calendar (his line in the Sound Book)",
+   "passed": true,
+   "detail": "1 times"
+  },
+  {
+   "name": "[ipad] check-ins on Windows 6, 12 and 18 print the counts the code found",
+   "passed": true,
+   "detail": "{6: 44, 12: 22, 18: 11}"
+  },
+  {
+   "name": "[ipad] the Sound Book in the PDF matches the data line for line (2,400 lines)",
+   "passed": true,
+   "detail": "parsed 2400 lines"
+  },
+  {
+   "name": "[ipad] the book has a clickable contents page and bookmarks",
+   "passed": true,
+   "detail": "62 bookmarks"
+  },
+  {
+   "name": "[ipad] the first page is the calendar: 24 tappable windows, each opening its own day",
+   "passed": true,
+   "detail": "calendar on page 1, 24 window links (+ 1 to the cover)"
+  },
+  {
+   "name": "[ipad] every window page links back to the calendar",
+   "passed": true,
+   "detail": "24 of 24"
+  },
+  {
+   "name": "[ipad] Fraunces, Nunito and Kalam are embedded",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] solution file names the same killer the code found",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] solution day-by-day counts match the code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "[ipad] the calendar itself has no solution pages",
+   "passed": true,
+   "detail": ""
+  }
+ ],
+ "answer": {
+  "day": 2,
+  "time": 818,
+  "tally": 1478,
+  "first": "Jonas",
+  "last": "Garvock",
+  "home": "Carrowby",
+  "boat": "Mail",
+  "landing": 15
+ },
+ "necessity": {
+  "3": 2,
+  "4": 3,
+  "5": 2,
+  "6": 2,
+  "7": 2,
+  "8": 2,
+  "9": 2,
+  "10": 2,
+  "11": 2,
+  "12": 2,
+  "13": 3,
+  "14": 2,
+  "15": 3,
+  "16": 2,
+  "17": 3,
+  "18": 2,
+  "19": 3,
+  "20": 3,
+  "21": 3,
+  "22": 3,
+  "23": 3
+ },
+ "alts": [
+  {
+   "clue": "Window 3",
+   "window": 3,
+   "word": "already / today",
+   "reading": "\u2018already\u2019 read as \u2018before today\u2019: 1 or 2 December only",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "clue": "Window 4",
+   "window": 4,
+   "word": "through / between",
+   "reading": "the Pilot Cutter counted too (the chart says it may use the Inner Passage at high water)",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "clue": "Window 5",
+   "window": 5,
+   "word": "higher up / above",
+   "reading": "the Narrows Slip itself counted too",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "clue": "Window 5",
+   "window": 5,
+   "word": "higher up / above",
+   "reading": "\u2018higher up\u2019 read on the chart: loch landings drawn further north than the Narrows",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "clue": "Window 5",
+   "window": 5,
+   "word": "higher up / above",
+   "reading": "\u2018higher up\u2019 read as \u2018further north on the chart\u2019, anywhere at all",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "clue": "Window 6",
+   "window": 6,
+   "word": "near / within sight",
+   "reading": "a village sitting right on the circle counted too",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "clue": "Window 10",
+   "window": 10,
+   "word": "rising / before high water",
+   "reading": "the exact minutes of low and high water counted too",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "clue": "Window 10",
+   "window": 10,
+   "word": "rising / before high water",
+   "reading": "a quarter of an hour of slack water at each end counted too",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "clue": "Window 11",
+   "window": 11,
+   "word": "between",
+   "reading": "\u2018between\u2019 read along the shore, which runs all the way round Loch Tarrisk",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "clue": "Window 11",
+   "window": 11,
+   "word": "between",
+   "reading": "\u2018between\u2019 read on the chart: close to the straight line from one head to the other",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "clue": "Window 11",
+   "window": 11,
+   "word": "between",
+   "reading": "\u2018between\u2019 read on the chart: any mainland village between the two heads, inland too",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "clue": "Window 12",
+   "window": 12,
+   "word": null,
+   "reading": "any landing on the waybill, the letter boxes included",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "clue": "Window 14",
+   "window": 14,
+   "word": null,
+   "reading": "\u201cmore than fifteen\u201d read as \u201cfifteen or more\u201d",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "clue": "Window 16",
+   "window": 16,
+   "word": "before / a.m. and p.m.",
+   "reading": "the lighting-up minute itself counted as \u2018before\u2019",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "clue": "Window 17",
+   "window": 17,
+   "word": null,
+   "reading": "\u201clater\u201d read as \u201clater or the same letter\u201d",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "clue": "Window 18",
+   "window": 18,
+   "word": null,
+   "reading": "a nought in front doesn\u2019t count (0472 read as 472)",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "clue": "Window 19",
+   "window": 19,
+   "word": null,
+   "reading": "Y counted as a vowel",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "clue": "Window 21",
+   "window": 21,
+   "word": null,
+   "reading": "Y counted as a vowel",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  },
+  {
+   "clue": "Window 22",
+   "window": 22,
+   "word": null,
+   "reading": "only a double letter side by side counts as \u2018twice\u2019",
+   "survivors": 1,
+   "killer_kept": true,
+   "same": true
+  }
+ ],
+ "far": [
+  {
+   "window": 4,
+   "word": "through / between",
+   "reading": "only the fishing boats (the Mail Boat overlooked)",
+   "survivors": 0,
+   "killer_kept": false
+  },
+  {
+   "window": 5,
+   "word": "higher up / above",
+   "reading": "only the very next landing above the Narrows (Torrandhu Jetty)",
+   "survivors": 0,
+   "killer_kept": false
+  },
+  {
+   "window": 6,
+   "word": "near / within sight",
+   "reading": "\u2018near\u2019 read as within half the range (6 miles)",
+   "survivors": 0,
+   "killer_kept": false
+  },
+  {
+   "window": 10,
+   "word": "rising / before high water",
+   "reading": "\u2018making\u2019 read as \u2018at high water\u2019: within an hour of high water",
+   "survivors": 0,
+   "killer_kept": false
+  },
+  {
+   "window": 16,
+   "word": "before / a.m. and p.m.",
+   "reading": "the almanac\u2019s p.m. times read as morning times (3.46 read as 03:46)",
+   "survivors": 0,
+   "killer_kept": false
+  }
+ ],
+ "checkpoints": {
+  "6": 44,
+  "12": 22,
+  "18": 11
+ },
+ "empty_chapters": {
+  "6": [
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23
+  ],
+  "12": [
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23
+  ],
+  "18": [
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23
+  ]
+ },
+ "walk": [
+  {
+   "id": "3",
+   "day": 3,
+   "label": "Window 3",
+   "out": 1256,
+   "left": 1144
+  },
+  {
+   "id": "4",
+   "day": 4,
+   "label": "Window 4",
+   "out": 497,
+   "left": 647
+  },
+  {
+   "id": "5",
+   "day": 5,
+   "label": "Window 5",
+   "out": 547,
+   "left": 100
+  },
+  {
+   "id": "6",
+   "day": 6,
+   "label": "Window 6",
+   "out": 56,
+   "left": 44
+  },
+  {
+   "id": "7",
+   "day": 7,
+   "label": "Window 7",
+   "out": 7,
+   "left": 37
+  },
+  {
+   "id": "8",
+   "day": 8,
+   "label": "Window 8",
+   "out": 5,
+   "left": 32
+  },
+  {
+   "id": "9",
+   "day": 9,
+   "label": "Window 9",
+   "out": 3,
+   "left": 29
+  },
+  {
+   "id": "10",
+   "day": 10,
+   "label": "Window 10",
+   "out": 4,
+   "left": 25
+  },
+  {
+   "id": "11",
+   "day": 11,
+   "label": "Window 11",
+   "out": 2,
+   "left": 23
+  },
+  {
+   "id": "12",
+   "day": 12,
+   "label": "Window 12",
+   "out": 1,
+   "left": 22
+  },
+  {
+   "id": "13",
+   "day": 13,
+   "label": "Window 13",
+   "out": 3,
+   "left": 19
+  },
+  {
+   "id": "14",
+   "day": 14,
+   "label": "Window 14",
+   "out": 2,
+   "left": 17
+  },
+  {
+   "id": "15",
+   "day": 15,
+   "label": "Window 15",
+   "out": 2,
+   "left": 15
+  },
+  {
+   "id": "16",
+   "day": 16,
+   "label": "Window 16",
+   "out": 1,
+   "left": 14
+  },
+  {
+   "id": "17",
+   "day": 17,
+   "label": "Window 17",
+   "out": 2,
+   "left": 12
+  },
+  {
+   "id": "18",
+   "day": 18,
+   "label": "Window 18",
+   "out": 1,
+   "left": 11
+  },
+  {
+   "id": "19",
+   "day": 19,
+   "label": "Window 19",
+   "out": 2,
+   "left": 9
+  },
+  {
+   "id": "20",
+   "day": 20,
+   "label": "Window 20",
+   "out": 2,
+   "left": 7
+  },
+  {
+   "id": "21",
+   "day": 21,
+   "label": "Window 21",
+   "out": 2,
+   "left": 5
+  },
+  {
+   "id": "22",
+   "day": 22,
+   "label": "Window 22",
+   "out": 2,
+   "left": 3
+  },
+  {
+   "id": "23",
+   "day": 23,
+   "label": "Window 23",
+   "out": 2,
+   "left": 1
+  }
+ ],
+ "finalists": [
+  {
+   "tally": 1596,
+   "name": "Susan Mowat",
+   "clue": "10"
+  },
+  {
+   "tally": 1498,
+   "name": "Gavin Bancroft",
+   "clue": "23"
+  },
+  {
+   "tally": 1286,
+   "name": "Morag Kinloch",
+   "clue": "12"
+  },
+  {
+   "tally": 1298,
+   "name": "Dylan Cowie",
+   "clue": "19"
+  },
+  {
+   "tally": 1546,
+   "name": "Jacob Troup",
+   "clue": "17"
+  },
+  {
+   "tally": 1592,
+   "name": "Zelda Mahon",
+   "clue": "21"
+  },
+  {
+   "tally": 1268,
+   "name": "Elias Mavor",
+   "clue": "17"
+  },
+  {
+   "tally": 1532,
+   "name": "Eamon Calvert",
+   "clue": "14"
+  },
+  {
+   "tally": 1558,
+   "name": "Craig Brennan",
+   "clue": "22"
+  },
+  {
+   "tally": 2266,
+   "name": "Mabel Kidston",
+   "clue": "20"
+  },
+  {
+   "tally": 1198,
+   "name": "Frank Dalton",
+   "clue": "23"
+  },
+  {
+   "tally": 1098,
+   "name": "Edgar Dickson",
+   "clue": "18"
+  },
+  {
+   "tally": 1484,
+   "name": "James Burnett",
+   "clue": "22"
+  },
+  {
+   "tally": 1456,
+   "name": "Grant Dewar",
+   "clue": "16"
+  },
+  {
+   "tally": 2386,
+   "name": "Tavis Kemlo",
+   "clue": "20"
+  },
+  {
+   "tally": 1476,
+   "name": "Oscar Buist",
+   "clue": "4"
+  },
+  {
+   "tally": 1189,
+   "name": "Lucas Baird",
+   "clue": "9"
+  },
+  {
+   "tally": 1556,
+   "name": "Helen Bonar",
+   "clue": "8"
+  },
+  {
+   "tally": 1398,
+   "name": "Nadia Murtagh",
+   "clue": "21"
+  },
+  {
+   "tally": 1528,
+   "name": "Karen Doran",
+   "clue": "15"
+  },
+  {
+   "tally": 1168,
+   "name": "Janet Dolan",
+   "clue": "4"
+  },
+  {
+   "tally": 1496,
+   "name": "Pearl Milne",
+   "clue": "11"
+  },
+  {
+   "tally": 1578,
+   "name": "Garth Agnew",
+   "clue": "7"
+  },
+  {
+   "tally": 1492,
+   "name": "Isaac Dunsire",
+   "clue": "19"
+  },
+  {
+   "tally": 1448,
+   "name": "Sarah Kershaw",
+   "clue": "5"
+  },
+  {
+   "tally": 1186,
+   "name": "Rowan Cowan",
+   "clue": "15"
+  },
+  {
+   "tally": 1474,
+   "name": "Zander Gibson",
+   "clue": "13"
+  },
+  {
+   "tally": 1586,
+   "name": "Niall Munro",
+   "clue": "6"
+  },
+  {
+   "tally": 1276,
+   "name": "Seonag Gowans",
+   "clue": "13"
+  },
+  {
+   "tally": 1258,
+   "name": "Johan Gauld",
+   "clue": "3"
+  }
+ ],
+ "seal": "924",
+ "pages": {
+  "book_letter": 90,
+  "solution_letter": 8,
+  "book_a4": 87,
+  "solution_a4": 8,
+  "book_ipad": 81,
+  "solution_ipad": 6
+ },
+ "per_day": {
+  "1": 552,
+  "2": 376,
+  "3": 216,
+  "4": 73,
+  "5": 67,
+  "6": 67,
+  "7": 57,
+  "8": 53,
+  "9": 49,
+  "10": 69,
+  "11": 55,
+  "12": 71,
+  "13": 52,
+  "14": 53,
+  "15": 49,
+  "16": 59,
+  "17": 41,
+  "18": 83,
+  "19": 64,
+  "20": 76,
+  "21": 81,
+  "22": 70,
+  "23": 67
+ }
+}
