@@ -20,6 +20,7 @@ import imageio_ffmpeg
 import kit
 import cal_listing as CL
 from cal_listing import art as A, scenes as SC, COVER
+import cover_options as CO
 import mockups as M
 
 V, FPS = 1080, 30
@@ -138,9 +139,9 @@ class Assets:
         self.dark = SC.keyart(1080, 1080, seed=11, figure=False, lit=False, snow_n=0, moon_xy=None, boat_x=0.25)
         self.lit = SC.keyart(1080, 1080, seed=11, figure=False, lit=True, beams=False, snow_n=0, moon_xy=None, boat_x=0.25)
         self.night = M._night(1080, 1080, figure=True)
-        rec = []
-        self.cover = COVER.cover(V, V, badges=True, record=rec.append, seed=11)
-        self.cover_text = rec
+        cf = CO.option_b()                          # the main listing image: the window seat with Bosun
+        self.cover = cf.img.convert("RGB").resize((V, V), Image.LANCZOS)
+        self.cover_text = [t for k, _, t in cf.sources if k == "drawn"]
         print("assets: pages", flush=True)
         j = L.doc[p["w1journal"]]
         r0 = j.search_for("1 December")[0]; r1 = j.search_for("a day at a time")[0]
@@ -219,7 +220,7 @@ def trailer_frame(A_, t, i):
             px0, py = pg.px(xa, (yt + yb) / 2); px1, _ = pg.px(xb, 0)
             prog = 1.0 if n < int(n_done) else n_done % 1
             kit.pencil_strike(f, x0 + px0 - 4, y0 + py, x0 + px1 - pg.zoom * 20, (yb - yt) * pg.zoom * 1.3, seed=j, progress=prog)
-        caption(f, "2,400 TRAVELLERS. 24 DAYS. ONE RED CAP.", t, 10.9, 12.6)
+        caption(f, "2,400 TRAVELLERS. 24 COSY EVENINGS. ONE RED CAP.", t, 10.9, 12.6)
     else:                                           # the cover
         f = bg_frame(A_.cover)
         k = fade(t, 12.6, 15, 0.5)
@@ -248,7 +249,7 @@ def presentation_frame(A_, t, i):
             f.img.alpha_composite(g.filter(ImageFilter.GaussianBlur(10)))
         fy = ty + 200 * (1 - ease(seg(t, 0.2, 1.0))) + (8 if 1.0 < t < 1.3 else 0)
         finger(f, tx + 10, fy, press if 1.0 < t < 1.8 else 0)
-        caption(f, "OPEN ONE WINDOW A DAY", t, 0.2, 2.6)
+        caption(f, "OPEN ONE WINDOW A NIGHT", t, 0.2, 2.6)
     elif t < 5.4:                                   # the Day 1 pages turn over
         f = bg_frame(A_.table)
         k = seg(t, 2.6, 5.4)
@@ -282,7 +283,7 @@ def presentation_frame(A_, t, i):
         z = 1.0 + 0.32 * ease(seg(t, 9.2, 10.9))
         f = bg_frame(zoom(sub.img, z, cx=0.4, cy=0.72))
         f.sources += sub.sources
-        caption(f, "DAYS 3–23: A JOURNAL PAGE AND A NEW LEAD EACH DAY", t, 8.5, 11.0, size=40)
+        caption(f, "DAYS 3–23: A JOURNAL PAGE AND A NEW LEAD EACH NIGHT", t, 8.5, 11.0, size=40)
     elif t < 12.8:                                  # envelopes and the iPad
         f = bg_frame(A_.table)
         f.paste_page(A_.env, V * 0.3, V * 0.52, angle=-5)

@@ -14,10 +14,11 @@ from PIL import Image, ImageDraw, ImageFilter
 import kit
 import cal_listing as CL
 from cal_listing import art as A, scenes as SC, COVER
+import cover_options as CO
 
 S = 2000
-NAMES = ["01-main", "02-the-calendar", "03-day-1-the-case", "04-day-2-the-sound-book", "05-day-3-first-lead",
-         "06-print-and-fold", "07-ipad-calendar", "08-who-its-for", "09-whats-inside", "10-checked-by-code"]
+NAMES = ["01-main", "02-24-cosy-evenings", "03-day-1-the-case", "04-day-2-the-sound-book", "05-a-new-lead-each-night",
+         "06-print-and-fold", "07-ipad-calendar", "08-who-its-for", "09-whats-inside", "10-fair-play"]
 
 class Assets:
     def __init__(self):
@@ -27,35 +28,51 @@ class Assets:
         self.log_page = clean[len(clean) // 3]
 
 # ---------------------------------------------------------------- illustrated backgrounds
-def bg_table(seed=1, wood=(150, 108, 72)):
-    """A wooden table seen from above in lamplight: a cup of tea, holly, a pencil, a few tallies."""
+def bg_table(seed=1, wood=(164, 116, 76)):
+    """A honey-pine table seen from above in lamplight: fairy lights along the top, pine and holly, a mug of
+    cocoa, a pencil and a few tallies in the corners."""
     cv = A.Canvas(S // 2, S // 2, ss=2, bg=wood)
     W = H = S // 2
     for k in range(9):                                     # planks
         y = k * H / 9
-        cv.rect((0, y, W, y + 3), A.shade(wood, 0.82))
+        cv.rect((0, y, W, y + 3), A.shade(wood, 0.84))
         rng = random.Random(seed + k)
         for _ in range(6):
-            x = rng.uniform(0, W); cv.line([(x, y + 12), (x + rng.uniform(40, 120), y + 14 + rng.uniform(-3, 3))], A.shade(wood, 0.9), w=1.2)
-    cv.glow(W * 0.5, H * 0.45, W * 0.55, (255, 220, 160), alpha=70)
+            x = rng.uniform(0, W); cv.line([(x, y + 12), (x + rng.uniform(40, 120), y + 14 + rng.uniform(-3, 3))], A.shade(wood, 0.92), w=1.2)
+    cv.glow(W * 0.5, H * 0.45, W * 0.6, (255, 214, 150), alpha=70)
+    CO.pine(cv, -20, H * 0.5, W * 0.14, H * 0.36, s=1.2, seed=seed)
+    CO.pine(cv, W + 20, H * 0.62, W * 0.86, H * 0.5, s=1.1, seed=seed + 1)
+    A.holly(cv, W * 0.08, H * 0.42, 34)
     rng = random.Random(seed)
-    corners = [(0.07, 0.36), (0.93, 0.32), (0.07, 0.9), (0.93, 0.88)]
+    corners = [(0.07, 0.9), (0.93, 0.88)]
     for k, (cx, cy) in enumerate(corners):
-        kind = (k + seed) % 4
+        kind = (k + seed) % 3
         if kind == 0:
-            cv.ellipse((W * cx - 52, H * cy - 52, W * cx + 52, H * cy + 52), A.WHITE)
-            cv.ellipse((W * cx - 40, H * cy - 40, W * cx + 40, H * cy + 40), (150, 100, 60))
-            cv.ellipse((W * cx + 40, H * cy - 12, W * cx + 70, H * cy + 12), A.WHITE)
+            CO.mug_top(cv, W * cx, H * cy, 58)
         elif kind == 1:
-            A.holly(cv, W * cx, H * cy, 50)
-        elif kind == 2:
-            cv.line([(W * cx - 70, H * cy + 20), (W * cx + 60, H * cy - 30)], A.OCHRE, w=10)
+            cv.line([(W * cx - 70, H * cy + 20), (W * cx + 60, H * cy - 30)], A.RUST, w=10)
             cv.line([(W * cx + 60, H * cy - 30), (W * cx + 76, H * cy - 36)], A.INK, w=5)
         else:
             for q in range(3):
                 A.tally(cv, W * cx + q * 34 - 34, H * cy + (q % 2) * 22, 20, metal=[A.BRASS, A.COPPER, A.TIN][q])
+    CO.fairy_lights(cv, [(-10, 8), (200, 26), (430, 10), (650, 28), (860, 9), (1010, 22)], 14, seed=seed)
     im = cv.finish(seed=seed).resize((S, S), Image.LANCZOS)
     return im
+
+def bg_room(seed=1, cat=True, dim=0.0):
+    """The window seat at dusk (the main image's scene) with an empty wall for the headline."""
+    cv = CO.window_seat(cat_x=0.86 if cat else None, journal=False)
+    im = cv.finish(seed=seed).resize((S, S), Image.LANCZOS)
+    if dim:
+        im = Image.blend(im, Image.new("RGB", im.size, A.CREAM), dim)
+    return im
+
+def sunset_keyart(w, h, **kw):
+    old = SC.DUSK_SKY; SC.DUSK_SKY = CO.SUNSET
+    try:
+        return SC.keyart(w, h, **kw)
+    finally:
+        SC.DUSK_SKY = old
 
 def bg_scene(fn, seed=1, dim=0.0):
     im = fn(S // 2, S // 2).resize((S, S), Image.LANCZOS)
@@ -83,7 +100,7 @@ def headline(f, top, sub=None, y=200, on_dark=True):
         kit.spaced(f.img, (S / 2, y + 40 + sf.size * 1.22), sub, sf, A.CREAM, sf.size * 0.12)
         f.note("drawn", "sub", sub)
 
-FOOT = "THE KEEPER OF CANDLEHOLM  ·  LIGHTHOUSE MURDER MYSTERY ADVENT CALENDAR"
+FOOT = "THE KEEPER OF CANDLEHOLM  ·  A COSY LIGHTHOUSE MYSTERY ADVENT CALENDAR"
 def footer(f):
     d = f.draw()
     d.rectangle([0, S - 96, S, S], fill=A.CREAM); d.rectangle([0, S - 96, S, S - 88], fill=A.RUST)
@@ -123,17 +140,12 @@ def tap(f, x, y, r):
 
 # ---------------------------------------------------------------- the ten images
 def m01(A_):
-    f = kit.Frame(S, S); rec = []
-    f.img = COVER.cover(S, S, badges=True, record=rec.append).convert("RGBA")
-    for t in rec:
-        f.note("drawn", "cover", t)
-    return f
+    return CO.option_b()
 
 def m02(A_):
     f = frame_from(bg_table(2))
-    headline(f, "24 WINDOWS. 24 DAYS.", "OPEN ONE EACH DAY FROM 1 TO 24 DECEMBER", y=210, on_dark=True)
+    headline(f, "24 COSY EVENINGS", "OPEN ONE WINDOW A NIGHT, 1–24 DECEMBER", y=230, on_dark=True)
     pg = A_.L.image(A_.p["calendar"], 1280)
-    # tick the first three windows in pencil, as in play (drawn onto the page before it is placed)
     cal = A_.L.doc[A_.p["calendar"]]
     tmp = kit.Frame(pg.img.width, pg.img.height); tmp.img = pg.img
     for d in (1, 2, 3):
@@ -141,23 +153,23 @@ def m02(A_):
         px, py = pg.px(r.x0 - 26, r.y0 - 30)
         kit.tick(tmp, px, py, 46, col=A.RUST, width=8)
     pg.img = tmp.img
-    f.paste_page(pg, 760, 1140, angle=-3)
-    for n, (x, y, a) in zip((1, 2, 3, 24), ((1590, 720, -10), (1640, 1010, 8), (1560, 1290, -6), (1630, 1580, 10))):
-        f.paste(kit.envelope(430, n), x, y, angle=a)
+    f.paste_page(pg, 760, 1150, angle=-3)
+    CO.twine_bundle(f, 1590, 1500, [24, 5, 4, 3], w=400, angle=8)
+    for n, (x, y, a) in zip((1, 2), ((1600, 780, -10), (1650, 1070, 8))):
+        f.paste(kit.envelope(400, n), x, y, angle=a)
         f.note("drawn", "envelope", str(n))
-    note_hand(f, (1560, 470), "one a day!", 70, col=A.CREAM, angle=-6)
+    note_hand(f, (1560, 520), "one a night!", 70, col=A.CREAM, angle=-6)
     footer(f)
     return f
 
 def m03(A_):
-    f = frame_from(bg_scene(lambda w, h: SC.keyart(w, h, seed=31, figure=False, hz_frac=0.55, tower=0.3, moon_xy=(0.12, 0.12)), dim=0.15))
-    headline(f, "DAY 1: THE CASE", "THE KEEPER’S JOURNAL · THE TOWER · THE CHART OF THE SOUND", y=200)
+    f = frame_from(bg_scene(lambda w, h: sunset_keyart(w, h, seed=31, figure=False, hz_frac=0.55, tower=0.3, moon_xy=(0.12, 0.3)), dim=0.08))
+    headline(f, "DAY 1: THE CASE OPENS", "THE KEEPER’S JOURNAL · THE TOWER · THE CHART OF THE SOUND", y=200)
     a = A_.L.image(A_.p["w1"], 1120); b = A_.L.image(A_.p["w1journal"], 1060); c = A_.L.image(A_.p["w1chart"], 1150)
     f.paste_page(a, 470, 1180, angle=-6)
     f.paste_page(b, 1010, 1210, angle=2)
     x0, y0 = 1520, 1150
     f.paste_page(c, x0, y0, angle=5)
-    # a red pencil ring round the island on the chart (drawn on top, roughly where the island sits)
     kit.pen_circle(f, x0 - 40, y0 + 120, 95, 70, col=A.RUST, width=8, seed=4)
     note_hand(f, (1420, 1640), "the island!", 66, col=A.RUST, angle=-8)
     footer(f)
@@ -165,7 +177,7 @@ def m03(A_):
 
 def m04(A_):
     f = frame_from(bg_scene(_office))
-    headline(f, "DAY 2: 2,400 TRAVELLERS", "THE SOUND BOOK · CROSS THEM OUT, DAY BY DAY", y=200, on_dark=False)
+    headline(f, "2,400 SUSPECTS. ONE CULPRIT.", "DAY 2: THE SOUND BOOK · CROSS THEM OUT NIGHT BY NIGHT", y=200, on_dark=False)
     a = A_.L.image(A_.p["w2"], 1060)
     f.paste_page(a, 480, 1170, angle=-6)
     b = A_.L.image(A_.log_page, 1420)
@@ -181,15 +193,18 @@ def m04(A_):
 
 def _office(w, h):
     cv = A.Canvas(w, h, ss=2)
-    SC._interior(cv, wall=(222, 206, 176), floor=(150, 112, 80), y=0.86)
-    SC._board(cv, w * 0.04, h * 0.22, w * 0.3, h * 0.62, n_rows=5, n_cols=5, metal=None, seed=3)
-    SC._board(cv, w * 0.7, h * 0.22, w * 0.96, h * 0.62, n_rows=5, n_cols=5, metal=None, seed=9)
-    SC._window(cv, w * 0.36, h * 0.24, w * 0.64, h * 0.5, inside=SC._harbour_view)
+    SC._interior(cv, wall=(232, 214, 180), floor=CO.WOOD_H, y=0.86)
+    SC._board(cv, w * 0.04, h * 0.24, w * 0.3, h * 0.64, n_rows=5, n_cols=5, metal=None, seed=3)
+    SC._board(cv, w * 0.7, h * 0.24, w * 0.96, h * 0.64, n_rows=5, n_cols=5, metal=None, seed=9)
+    SC._window(cv, w * 0.36, h * 0.26, w * 0.64, h * 0.52, inside=SC._harbour_view)
+    CO.fairy_lights(cv, [(-10, h * 0.2), (w * 0.25, h * 0.225), (w * 0.5, h * 0.205), (w * 0.75, h * 0.228), (w + 10, h * 0.207)], 12, seed=4)
+    A.stove(cv, w * 0.1, h * 0.86, h * 0.13)
+    CO.cat_sitting(cv, w * 0.9, h * 0.86, h * 0.09)
     return cv.finish(seed=5)
 
 def m05(A_):
-    f = frame_from(bg_scene(lambda w, h: _night(w, h), dim=0.0))
-    headline(f, "DAYS 3–23: A NEW LEAD EACH DAY", "A PAGE OF THE JOURNAL + THE PAPER PINNED TO IT", y=200)
+    f = frame_from(bg_scene(_kitchen))
+    headline(f, "A NEW LEAD EVERY NIGHT", "A PAGE OF THE KEEPER’S JOURNAL + THE PAPER PINNED TO IT", y=200, on_dark=False)
     a = A_.L.image(A_.p["w3"], 1500)
     f.paste_page(a, 720, 1150, angle=-4)
     w4 = A_.L.doc[A_.p["hint1"]].search_for("Window 4")[0]
@@ -197,9 +212,23 @@ def m05(A_):
     h = A_.L.image(A_.p["hint1"], int(860 * (clip[3] - clip[1]) / (clip[2] - clip[0])), clip=clip)
     f.paste_page(h, 1500, 1500, angle=6)
     badge(f, (1500, 1270), "3 LEVELS OF HINTS", 62, angle=5)
-    badge(f, (1530, 720), "CHECK-INS ON DAYS 6, 12, 18", 44, bg=A.CREAM, fg=A.NIGHT, angle=-4)
+    badge(f, (1530, 720), "CHECK-INS ON DAYS 6, 12, 18", 44, bg=A.NIGHT, fg=A.CREAM, angle=-4)
     footer(f)
     return f
+
+def _kitchen(w, h):
+    """The keeper's kitchen: tongue-and-groove walls, a shelf of jars, the stove, the window on the Sound."""
+    cv = A.Canvas(w, h, ss=2)
+    SC._interior(cv, wall=(232, 214, 180), floor=CO.WOOD_H, y=0.86)
+    SC._window(cv, w * 0.62, h * 0.26, w * 0.94, h * 0.56, inside=CO.view_dusk)
+    cv.rect((w * 0.04, h * 0.4, w * 0.5, h * 0.415), A.WOOD)
+    for k, col in enumerate((A.RUST, A.OCHRE, A.MOSS, A.SEA2, A.RUST_L, A.OCHRE_L)):
+        x = w * 0.07 + k * w * 0.07
+        cv.rect((x, h * 0.34, x + w * 0.045, h * 0.4), col); cv.rect((x - 2, h * 0.33, x + w * 0.045 + 2, h * 0.345), A.PAPER)
+    CO.fairy_lights(cv, [(-10, h * 0.2), (w * 0.25, h * 0.225), (w * 0.5, h * 0.205), (w * 0.75, h * 0.228), (w + 10, h * 0.207)], 12, seed=6)
+    A.stove(cv, w * 0.12, h * 0.86, h * 0.16)
+    A.cat(cv, w * 0.3, h * 0.86, h * 0.06)
+    return cv.finish(seed=6)
 
 def _night(w, h, figure=False):
     cv = A.Canvas(w, h, ss=2)
@@ -216,54 +245,37 @@ def _night(w, h, figure=False):
     return cv.finish(seed=8)
 
 def m06(A_):
-    f = frame_from(bg_table(6, wood=(132, 94, 62)))
-    headline(f, "PRINT. FOLD. OPEN.", "ENVELOPE TEMPLATE + DAY NUMBERS 1–24 INCLUDED", y=200)
+    f = frame_from(bg_table(6))
+    headline(f, "PRINT. FOLD. OPEN.", "ENVELOPE TEMPLATE + DAY NUMBERS 1–24 INCLUDED", y=230)
     a = A_.L.image(A_.p["envelope"], 1100); b = A_.L.image(A_.p["labels"], 1100)
-    f.paste_page(a, 520, 1140, angle=-7); f.paste_page(b, 1080, 1190, angle=3)
-    for n, (x, y, ang) in zip((5, 12, 18, 24), ((1660, 650, 12), (1600, 950, -8), (1680, 1250, 6), (1600, 1560, -10))):
+    f.paste_page(a, 520, 1150, angle=-7); f.paste_page(b, 1080, 1200, angle=3)
+    for n, (x, y, ang) in zip((5, 12), ((1660, 700, 12), (1610, 990, -8))):
         f.paste(kit.envelope(400, n), x, y, angle=ang); f.note("drawn", "envelope", str(n))
+    CO.twine_bundle(f, 1640, 1450, [24, 18, 17], w=380, angle=-7)
     footer(f)
     return f
 
 def m07(A_):
-    f = frame_from(bg_scene(lambda w, h: _window_seat(w, h)))
-    headline(f, "ON iPAD: TAP TODAY’S WINDOW", "GOODNOTES · NOTABILITY · ANY PDF APP", y=200)
+    f = frame_from(CO.window_seat(cat_x=0.13, journal=False).finish(seed=7).resize((S, S), Image.LANCZOS))
+    headline(f, "CURL UP WITH YOUR iPAD", "TAP TONIGHT’S WINDOW · GOODNOTES · NOTABILITY", y=200, on_dark=False)
     scr = A_.I.image(A_.ip["calendar"], 1300)
     ih = 1300; iw = ih * 0.75
     tab = kit.Frame(int(iw) + 40, ih + 40); tab.img = Image.new("RGBA", tab.img.size, (0, 0, 0, 0))
     kit.ipad(tab, (20, 20, 20 + iw, 20 + ih), scr)
-    f.paste(tab.img, S / 2, 1140, angle=-4)
+    f.paste(tab.img, 1080, 1150, angle=-4)
     for kind, src, text in tab.sources:
         f.note(kind, src, text)
-    tap(f, 1140, 900, 110)
-    badge(f, (1560, 1640), "EVERY WINDOW LINKS BACK", 50, angle=6)
+    tap(f, 1220, 910, 110)
+    badge(f, (1600, 1680), "EVERY WINDOW LINKS BACK", 50, angle=6)
     footer(f)
     return f
 
-def _window_seat(w, h):
-    cv = A.Canvas(w, h, ss=2)
-    SC._interior(cv, wall=(214, 196, 166), y=0.8)
-    SC._window(cv, w * 0.12, h * 0.16, w * 0.88, h * 0.7, inside=lambda sub: _view(sub))
-    cv.rect((0, h * 0.7, w, h * 0.8), A.WOOD_L)
-    A.cup(cv, w * 0.84, h * 0.79, h * 0.08)
-    A.cat(cv, w * 0.18, h * 0.79, h * 0.07)
-    return cv.finish(seed=12)
-
-def _view(sub):
-    hz = sub.H * 0.62
-    A.sky(sub, SC.DUSK_SKY, y1=hz + 2, seed=12)
-    SC.mainland(sub, hz, seed=12)
-    A.sea(sub, hz, sub.H, top=A.SEA3, bottom=A.SEA, seed=12)
-    A.island(sub, sub.W * 0.7, hz + sub.H * 0.1, sub.W * 0.3, sub.H * 0.16, seed=12)
-    A.lighthouse(sub, sub.W * 0.68, hz + sub.H * 0.01, sub.H * 0.45, beam_angle=200)
-    A.snow(sub, 120, seed=12)
-
 def m08(A_):
-    f = frame_from(bg_table(8, wood=(120, 86, 58)))
-    headline(f, "WHO IT’S FOR", "ONE DETECTIVE OR UP TO FOUR · 10–25 MINUTES A DAY", y=200)
-    panels = [("FOR TWO", "A December ritual: one window with the evening tea.", _two),
-              ("FOR THE FAMILY", "Teens and grown-ups split the Sound Book and race to the answer.", _family),
-              ("AS A GIFT", "Instant download: a last-minute present for any mystery lover.", _gift)]
+    f = frame_from(bg_table(8))
+    headline(f, "MADE FOR COSY EVENINGS", "ONE DETECTIVE OR UP TO FOUR · 10–25 MINUTES A NIGHT", y=230)
+    panels = [("FOR TWO", "A December ritual with your evening tea.", _two),
+              ("WITH FAMILY", "Split the Sound Book and race to the answer.", _family),
+              ("AS A GIFT", "Instant download: print it tonight, give it tomorrow.", _gift)]
     for k, (title, text, fn) in enumerate(panels):
         cx = 360 + k * 640
         im = fn(560, 760)
@@ -283,43 +295,50 @@ def m08(A_):
         yy = 960
         for ln in lines:
             cd.text((300, yy), ln, font=tf, fill=A.NIGHT, anchor="mm"); yy += 56
-        f.paste(card, cx, 1180, angle=(-3, 2, -2)[k])
+        f.paste(card, cx, 1200, angle=(-3, 2, -2)[k])
         f.note("drawn", "panel", title); f.note("drawn", "panel", text)
     footer(f)
     return f
 
 def _two(w, h):
-    cv = A.Canvas(w, h, ss=2)
-    hz = h * 0.55
-    A.sky(cv, SC.DUSK_SKY, y1=hz + 2, seed=21); A.sea(cv, hz, h, top=A.SEA3, bottom=A.SEA, seed=21)
-    A.island(cv, w * 0.72, hz + h * 0.06, w * 0.4, h * 0.1, seed=21); A.lighthouse(cv, w * 0.72, hz, h * 0.3, beam_angle=200)
-    A.jetty(cv, -10, w * 0.7, h * 0.86)
-    A.figure(cv, w * 0.3, h * 0.84, h * 0.36, cap=A.RUST, coat=A.NIGHT2)
-    A.figure(cv, w * 0.52, h * 0.84, h * 0.34, cap=A.MOSS, coat=A.SEA, bobble=False)
-    A.snow(cv, 80, seed=21)
+    """Two people at the window seat, seen from behind, the lighthouse beyond."""
+    cv = A.Canvas(w, h, ss=2, bg=(232, 214, 180))
+    SC._interior(cv, wall=(232, 214, 180), floor=CO.WOOD_H, y=0.9)
+    SC._window(cv, w * 0.08, h * 0.12, w * 0.92, h * 0.6, inside=CO.view_dusk)
+    CO.fairy_lights(cv, [(0, h * 0.08), (w * 0.3, h * 0.11), (w * 0.6, h * 0.085), (w, h * 0.105)], 8, seed=3)
+    cv.rect((0, h * 0.6, w, h * 0.64), A.WOOD_L)
+    CO.knit(cv, (0, h * 0.64, w, h * 0.9), a=A.RUST, b=A.CREAM, cell=16)
+    A.figure(cv, w * 0.34, h * 0.86, h * 0.44, cap=A.RUST, coat=A.SEA2, bobble=True)
+    A.figure(cv, w * 0.64, h * 0.86, h * 0.4, cap=None, coat=A.MOSS, scarf=A.OCHRE, bobble=False)
+    A.cup(cv, w * 0.12, h * 0.6, h * 0.06)
+    CO.candle(cv, w * 0.88, h * 0.6, h * 0.06)
     return cv.finish(seed=21)
 
 def _family(w, h):
     cv = A.Canvas(w, h, ss=2)
-    SC._interior(cv, wall=(222, 206, 176), y=0.72)
-    A.stove(cv, w * 0.18, h * 0.72, h * 0.22)
+    SC._interior(cv, wall=(232, 214, 180), floor=CO.WOOD_H, y=0.72)
+    CO.fairy_lights(cv, [(0, h * 0.08), (w * 0.3, h * 0.11), (w * 0.6, h * 0.085), (w, h * 0.105)], 8, seed=5)
+    A.stove(cv, w * 0.15, h * 0.72, h * 0.22)
     A.table(cv, w * 0.05, w * 0.95, h * 0.82)
-    for k, (x, hh, capc) in enumerate(((0.3, 0.42, A.RUST), (0.55, 0.34, None), (0.78, 0.4, A.OCHRE))):
-        A.figure(cv, w * x, h * 0.82, h * hh, cap=capc, coat=[A.SEA, A.MOSS_D, A.NIGHT2][k], bobble=capc is not None)
+    for k, (x, hh, capc) in enumerate(((0.32, 0.42, A.RUST), (0.56, 0.34, None), (0.8, 0.4, A.OCHRE))):
+        A.figure(cv, w * x, h * 0.82, h * hh, cap=capc, coat=[A.SEA, A.MOSS_D, A.RUST_D][k], bobble=capc is not None)
+    CO.cat_sitting(cv, w * 0.12, h * 0.98, h * 0.1)
     return cv.finish(seed=22)
 
 def _gift(w, h):
-    cv = A.Canvas(w, h, ss=2)
-    A.sky(cv, [A.NIGHT, A.NIGHT2, A.DUSK], seed=23)
-    cv.glow(w * 0.5, h * 0.55, w * 0.4, A.LAMP, alpha=80)
-    A.parcel(cv, w * 0.22, h * 0.82, w * 0.56, h * 0.42, paper=A.CREAM, string=A.RUST, label=True)
-    A.holly(cv, w * 0.5, h * 0.4, 46)
-    A.snow(cv, 120, seed=23)
+    cv = A.Canvas(w, h, ss=2, bg=(232, 214, 180))
+    SC._interior(cv, wall=(232, 214, 180), floor=CO.WOOD_H, y=0.86)
+    CO.fairy_lights(cv, [(0, h * 0.08), (w * 0.3, h * 0.11), (w * 0.6, h * 0.085), (w, h * 0.105)], 8, seed=7)
+    cv.glow(w * 0.5, h * 0.55, w * 0.4, A.LAMP, alpha=60)
+    A.parcel(cv, w * 0.2, h * 0.86, w * 0.6, h * 0.38, paper=A.SEA2, string=A.RUST, label=True)
+    CO.pine(cv, w * 0.1, h * 0.46, w * 0.5, h * 0.42, s=1.0, seed=8)
+    A.holly(cv, w * 0.5, h * 0.44, 40)
+    A.cat(cv, w * 0.86, h * 0.86, h * 0.06)
     return cv.finish(seed=23)
 
 def m09(A_):
-    f = frame_from(bg_scene(lambda w, h: SC.keyart(w, h, seed=41, figure=False, hz_frac=0.72, tower=0.22, moon_xy=None), dim=0.35))
-    headline(f, "WHAT’S INSIDE", "4 FILES · INSTANT DOWNLOAD", y=200)
+    f = frame_from(bg_scene(lambda w, h: sunset_keyart(w, h, seed=41, figure=False, hz_frac=0.72, tower=0.22, moon_xy=None), dim=0.58))
+    headline(f, "EVERYTHING YOU NEED", "4 FILES · INSTANT DOWNLOAD", y=200)
     cards = [("US LETTER", "90 PAGES"), ("A4", "87 PAGES"), ("iPAD", "81 PAGES · LINKED"), ("SOLUTION", "SEPARATE ZIP")]
     d = f.draw()
     for k, (lab, sub) in enumerate(cards):
@@ -338,8 +357,8 @@ def m09(A_):
         cd.text((190, 415), sub, font=kit.font("bold", 28), fill=A.RUST_D, anchor="mm")
         f.paste(c, cx, cy, angle=ang)
         f.note("drawn", "card", f"{lab} {sub}")
-    items = ["24 windows, one for every day from 1 to 24 December",
-             "The keeper’s journal: one handwritten page a day",
+    items = ["24 windows, one for every night from 1 to 24 December",
+             "The keeper’s journal: one handwritten page a night",
              "The Sound Book: 2,400 travellers to cross out",
              "A sea chart, the tower in section, tide tables, an almanac",
              "Check-ins on Days 6, 12 and 18 so you never get lost",
@@ -355,44 +374,31 @@ def m09(A_):
     return f
 
 def m10(A_):
-    f = frame_from(bg_scene(_sunset, dim=0.25))
-    headline(f, "EXACTLY ONE ANSWER.", None, y=200)
-    kit.spaced(f.img, (S / 2, 380), "CHECKED BY CODE.", kit.font("display", 130), A.OCHRE_L, 6); f.note("drawn", "title", "CHECKED BY CODE.")
-    combos = 1
-    for c in CL.C.CLUES:
-        combos *= 1 + len(c["alts"])
-    rows = [("1", "killer among 2,400 travellers, and only one"),
-            ("21", "days of evidence, every one of them needed"),
-            (f"{combos:,}", "combinations of readings tested: same answer"),
-            ("tick", "chart, tide and time words read every reasonable way"),
-            ("3", "check-ins so you can catch a slip early"),
-            ("0", "spoilers on the pages you open early")]
-    y = 600
+    f = frame_from(bg_room(10, cat=True))
+    headline(f, "FAIR PLAY. ONE ANSWER.", "NO GUESSWORK: EVERY CASE IS CHECKED BY CODE", y=200, on_dark=False)
+    rows = [("1", "culprit among 2,400 travellers"),
+            ("21", "nights of evidence, all needed"),
+            ("3", "check-ins so you never get lost"),
+            ("3", "levels of hints every night"),
+            ("tick", "tested by computer: one answer"),
+            ("0", "spoilers: the answer has its own file")]
+    y = 560; bw = 1360; bx = 80 + bw / 2
     for k, (big, txt) in enumerate(rows):
-        bar = Image.new("RGBA", (S - 300, 160), (0, 0, 0, 0)); bd = ImageDraw.Draw(bar)
-        bd.rounded_rectangle([0, 0, S - 301, 159], radius=18, fill=A.CREAM + (245,), outline=A.NIGHT, width=5)
-        bd.rounded_rectangle([0, 0, 320, 159], radius=18, fill=A.RUST)
-        f.paste(bar, S / 2, y, angle=0, shadow=True)
+        bar = Image.new("RGBA", (bw, 150), (0, 0, 0, 0)); bd = ImageDraw.Draw(bar)
+        bd.rounded_rectangle([0, 0, bw - 1, 149], radius=18, fill=A.PAPER + (250,), outline=A.NIGHT, width=5)
+        bd.rounded_rectangle([0, 0, 260, 149], radius=18, fill=A.RUST)
+        f.paste(bar, bx, y, angle=0, shadow=True)
         d = f.draw()
         if big == "tick":
-            kit.tick(f, 245, y + 5, 90, col=A.CREAM, width=18); d = f.draw()
+            kit.tick(f, 190, y + 5, 84, col=A.CREAM, width=18); d = f.draw()
         else:
-            fb = kit.fit_font(f, big, "display", 120, 270)
-            d.text((310, y + 6), big, font=fb, fill=A.CREAM, anchor="mm"); f.note("drawn", "big", big)
-        tf = kit.fit_font(f, txt, "bold", 52, S - 820)
-        d.text((520, y), txt, font=tf, fill=A.NIGHT, anchor="lm"); f.note("drawn", "row", txt)
-        y += 200
+            fb = kit.fit_font(f, big, "display", 112, 220)
+            d.text((210, y + 6), big, font=fb, fill=A.CREAM, anchor="mm"); f.note("drawn", "big", big)
+        tf = kit.fit_font(f, txt, "bold", 56, bw - 330)
+        d.text((380, y), txt, font=tf, fill=A.NIGHT, anchor="lm"); f.note("drawn", "row", txt)
+        y += 186
     footer(f)
     return f
-
-def _sunset(w, h):
-    cv = A.Canvas(w, h, ss=2)
-    hz = h * 0.7
-    A.sky(cv, [A.NIGHT, A.DUSK, (186, 168, 150), A.PEACH, (242, 196, 136)], y1=hz + 2, seed=16)
-    A.sea(cv, hz, h, top=A.SEA3, bottom=A.SEA2, stroke=A.PEACH, seed=16)
-    A.island(cv, w * 0.8, hz + h * 0.06, w * 0.3, h * 0.1, seed=16)
-    A.lighthouse(cv, w * 0.8, hz, h * 0.3, beam_angle=200)
-    return cv.finish(seed=16)
 
 BUILDERS = [m01, m02, m03, m04, m05, m06, m07, m08, m09, m10]
 

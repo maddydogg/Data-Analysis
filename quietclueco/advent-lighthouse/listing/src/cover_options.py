@@ -272,35 +272,41 @@ def view_dusk(sub):
     A.boat(sub, sub.W * 0.25, hz + sub.H * 0.08, sub.W * 0.14, kind="mail")
     A.snow(sub, 70, seed=21)
 
-def option_b(A_):
+def window_seat(cat_x=0.5, cushion=True, journal=True, wall=(232, 214, 180), y0f=0.4, y1f=0.79):
+    """The keeper's window seat at dusk: the lighthouse through the window, curtains, fairy lights, a cup, a
+    candle and Bosun on the sill looking out to sea. Returns the Canvas (1000 units) for the caller to finish."""
     W = H = S // 2
-    cv = A.Canvas(W, H, ss=2, bg=(232, 214, 180))
-    SC._interior(cv, wall=(232, 214, 180), floor=WOOD_H, y=1.0)
-    x0, y0, x1, y1 = W * 0.1, H * 0.4, W * 0.9, H * 0.79
+    cv = A.Canvas(W, H, ss=2, bg=wall)
+    SC._interior(cv, wall=wall, floor=WOOD_H, y=1.0)
+    x0, y0, x1, y1 = W * 0.1, H * y0f, W * 0.9, H * y1f
     cv.rect((x0 - 16, y0 - 16, x1 + 16, y1 + 4), A.WOOD)
     sub = A.Canvas(int(x1 - x0), int(y1 - y0), ss=cv.ss); view_dusk(sub)
     cv.img.alpha_composite(sub.img, (int(x0 * cv.ss), int(y0 * cv.ss)))
     cv.line([((x0 + x1) / 2, y0), ((x0 + x1) / 2, y1)], A.WOOD, w=7)
     cv.line([(x0, (y0 + y1) / 2 - 20), (x1, (y0 + y1) / 2 - 20)], A.WOOD, w=7)
-    # curtains
-    for sx, xa in ((-1, x0 - 16), (1, x1 + 16)):
+    for sx, xa in ((-1, x0 - 16), (1, x1 + 16)):                                   # curtains
         pts = [(xa, y0 - 40), (xa - sx * 70, y0 - 40), (xa - sx * 46, y0 + 120), (xa - sx * 64, y1), (xa, y1)]
         cv.poly(A.smooth(pts, 6), A.RUST)
         for k in range(3):
             cv.line([(xa - sx * (14 + 16 * k), y0 - 30), (xa - sx * (10 + 14 * k), y1 - 10)], A.RUST_D, w=2, alpha=150)
     cv.rect((x0 - 120, y0 - 50, x1 + 120, y0 - 40), A.WOOD)
     fairy_lights(cv, [(x0 - 40, y0 - 34), (x0 + 150, y0 - 6), (W / 2, y0 - 26), (x1 - 150, y0 - 4), (x1 + 40, y0 - 34)], 15, seed=5)
-    # the sill and a knitted cushion below
-    cv.rect((x0 - 60, y1, x1 + 60, y1 + 26), A.WOOD_L)
+    cv.rect((x0 - 60, y1, x1 + 60, y1 + 26), A.WOOD_L)                               # the sill
     cv.rect((x0 - 60, y1 + 26, x1 + 60, y1 + 34), A.shade(A.WOOD_L, 0.75))
-    knit(cv, (0, y1 + 34, W, H), a=A.CREAM, b=A.RUST, cell=18)
+    if cushion:
+        knit(cv, (0, y1 + 34, W, H), a=A.CREAM, b=A.RUST, cell=18)
     A.cup(cv, x0 + 70, y1, 70)
     candle(cv, x0 + 175, y1, 62)
-    cat_sitting(cv, W * 0.5, y1 + 4, 150)
-    A.journal(cv, x1 - 210, y1 + 2, 160, 34, open_=False, col=A.SEA2)
+    if cat_x is not None:
+        cat_sitting(cv, W * cat_x, y1 + 4, 150)
+    if journal:
+        A.journal(cv, x1 - 210, y1 + 2, 160, 34, open_=False, col=A.SEA2)
     pine(cv, x1 - 110, y1 - 4, x1 - 10, y1 - 30, s=0.9, seed=7)
     A.holly(cv, x1 - 60, y1 - 18, 26)
-    im = cv.finish(seed=7).resize((S, S), Image.LANCZOS)
+    return cv
+
+def option_b(A_=None):
+    im = window_seat().finish(seed=7).resize((S, S), Image.LANCZOS)
     f = kit.Frame(S, S); f.img = im.convert("RGBA")
     twine_bundle(f, 1420, 1450, [3, 2, 1], w=330, angle=-6)
     title_block(f, S / 2, 40, 1700)
