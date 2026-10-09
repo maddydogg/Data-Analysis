@@ -20,7 +20,8 @@ import imageio_ffmpeg
 import kit
 import cal_listing as CL
 from cal_listing import art as A, scenes as SC, COVER
-import cover_options as CO
+import heroes as HR
+import chartstyle as CS
 import mockups as M
 
 V, FPS = 1080, 30
@@ -139,7 +140,7 @@ class Assets:
         self.dark = SC.keyart(1080, 1080, seed=11, figure=False, lit=False, snow_n=0, moon_xy=None, boat_x=0.25)
         self.lit = SC.keyart(1080, 1080, seed=11, figure=False, lit=True, beams=False, snow_n=0, moon_xy=None, boat_x=0.25)
         self.night = M._night(1080, 1080, figure=True)
-        cf = CO.option_b()                          # the main listing image: the window seat with Bosun
+        cf = HR.hero_chart()                        # the main listing image: the chart of the Sound
         self.cover = cf.img.convert("RGB").resize((V, V), Image.LANCZOS)
         self.cover_text = [t for k, _, t in cf.sources if k == "drawn"]
         print("assets: pages", flush=True)
@@ -155,8 +156,8 @@ class Assets:
         self.env = L.image(p["envelope"], 640)
         self.ipadcal = I.image(ip["calendar"], 640)
         self.envs = {n: kit.envelope(300, n) for n in (1, 2, 3, 12, 24)}
-        self.table = M.bg_table(31).resize((V, V), Image.LANCZOS)
-        self.office = M._office(1080, 1080)
+        self.table = CS.chart_bg(0.48, 0.42, 1.7, 0.35, seed=31, size=V)       # the chart, as on the mockups
+        self.office = CS.chart_bg(0.82, 0.24, 2.0, 0.3, seed=32, size=V)
 
 # ---------------------------------------------------------------- trailer
 TR = dict(N=420)
@@ -220,7 +221,7 @@ def trailer_frame(A_, t, i):
             px0, py = pg.px(xa, (yt + yb) / 2); px1, _ = pg.px(xb, 0)
             prog = 1.0 if n < int(n_done) else n_done % 1
             kit.pencil_strike(f, x0 + px0 - 4, y0 + py, x0 + px1 - pg.zoom * 20, (yb - yt) * pg.zoom * 1.3, seed=j, progress=prog)
-        caption(f, "2,400 TRAVELLERS. 24 COSY EVENINGS. ONE RED CAP.", t, 10.9, 12.6)
+        caption(f, "2,400 TRAVELLERS. 24 NIGHTS. ONE RED CAP.", t, 10.9, 12.6)
     else:                                           # the cover
         f = bg_frame(A_.cover)
         k = fade(t, 12.6, 15, 0.5)

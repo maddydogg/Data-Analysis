@@ -1,13 +1,12 @@
-"""Ten listing images: 2000 x 2000 JPG, in the calendar's own cosy vintage illustration.
+"""Ten listing images: 2000 x 2000 JPG in the chart style the seller chose (hero option 3).
 
-01 is the cover; then the calendar; Days 1, 2 and 3; print and fold; iPad; who it's for; what's inside;
-checked by code. Each image has its own illustrated background scene (a tea table, the keeper's kitchen,
-the Sound at dusk, the tally office, the boathouse at night...), poster headlines in Josefin capitals
-with a rust offset print, and the pages shown as they look in play: pencil strikes in the Sound Book,
-a ring round the island on the chart, ticks on the calendar.
+01 is the chart of the Sound with the title cartouche; then one window a night; Days 1, 2 and 3; print and fold; iPad;
+who it's for; what you get; exactly one answer. Every image takes its own region of the same chart (chartstyle.py),
+with a headline cartouche, legend boxes and notes in the keeper's hand, and the pages shown as they look in play:
+pencil strikes in the Sound Book, a ring round the island on the chart, ticks on the calendar.
 
-Only Windows 1-3 and the set-up pages are shown. Every string drawn and the text layer of every PDF
-region pasted is recorded on the kit.Frame, so the spoiler check reads exactly what a buyer can read.
+Only Windows 1-3 and the set-up pages are shown. Every string drawn and the text layer of every PDF region pasted is
+recorded on the kit.Frame, so the spoiler check reads exactly what a buyer can read.
 """
 import math, os, random
 from PIL import Image, ImageDraw, ImageFilter
@@ -15,10 +14,12 @@ import kit
 import cal_listing as CL
 from cal_listing import art as A, scenes as SC, COVER
 import cover_options as CO
+import heroes as H
+import chartstyle as CS
 
 S = 2000
-NAMES = ["01-main", "02-24-cosy-evenings", "03-day-1-the-case", "04-day-2-the-sound-book", "05-a-new-lead-each-night",
-         "06-print-and-fold", "07-ipad-calendar", "08-who-its-for", "09-whats-inside", "10-fair-play"]
+NAMES = ["01-main", "02-one-window-a-night", "03-day-1-the-case", "04-day-2-the-sound-book", "05-a-new-lead-each-night",
+         "06-print-and-fold", "07-ipad-calendar", "08-who-its-for", "09-whats-inside", "10-exactly-one-answer"]
 
 class Assets:
     def __init__(self):
@@ -138,14 +139,14 @@ def tap(f, x, y, r):
         d.ellipse([x - rr, y - rr, x + rr, y + rr], outline=A.RUST + (255 - k * 60,), width=9 - k * 2)
     d.ellipse([x - 20, y - 20, x + 20, y + 20], fill=A.RUST)
 
-# ---------------------------------------------------------------- the ten images
+# ---------------------------------------------------------------- the ten images (chart style, hero 3)
 def m01(A_):
-    return CO.option_b()
+    return H.hero_chart()
 
 def m02(A_):
-    f = frame_from(bg_table(2))
-    headline(f, "24 COSY EVENINGS", "OPEN ONE WINDOW A NIGHT, 1–24 DECEMBER", y=230, on_dark=True)
-    pg = A_.L.image(A_.p["calendar"], 1280)
+    f = CS.frame_on(0.48, 0.42, 1.7, 0.3, seed=2)
+    CS.cartouche(f, "Open one window a night", kicker="24 DAYS  ·  1 TO 24 DECEMBER", sub="a sealed envelope for every evening of Advent")
+    pg = A_.L.image(A_.p["calendar"], 1200)
     cal = A_.L.doc[A_.p["calendar"]]
     tmp = kit.Frame(pg.img.width, pg.img.height); tmp.img = pg.img
     for d in (1, 2, 3):
@@ -154,81 +155,165 @@ def m02(A_):
         kit.tick(tmp, px, py, 46, col=A.RUST, width=8)
     pg.img = tmp.img
     f.paste_page(pg, 760, 1150, angle=-3)
-    CO.twine_bundle(f, 1590, 1500, [24, 5, 4, 3], w=400, angle=8)
-    for n, (x, y, a) in zip((1, 2), ((1600, 780, -10), (1650, 1070, 8))):
-        f.paste(kit.envelope(400, n), x, y, angle=a)
+    for n, (x, y, a) in zip((1, 2, 3, 24), ((1620, 660, -8), (1660, 920, 7), (1600, 1180, -5), (1650, 1440, 8))):
+        f.paste(H.envelope(330, n, (H.CREAM, H.KRAFT, H.SAGE, H.SAGE)[n % 4 if n < 24 else 3], seal=H.OCHRE if n == 24 else H.RUST, holly=n == 24), x, y, angle=a)
         f.note("drawn", "envelope", str(n))
-    note_hand(f, (1560, 520), "one a night!", 70, col=A.CREAM, angle=-6)
-    footer(f)
+    CS.note(f, (1560, 1660), "one a night!", 72)
+    CS.footer(f)
     return f
 
 def m03(A_):
-    f = frame_from(bg_scene(lambda w, h: sunset_keyart(w, h, seed=31, figure=False, hz_frac=0.55, tower=0.3, moon_xy=(0.12, 0.3)), dim=0.08))
-    headline(f, "DAY 1: THE CASE OPENS", "THE KEEPER’S JOURNAL · THE TOWER · THE CHART OF THE SOUND", y=200)
-    a = A_.L.image(A_.p["w1"], 1120); b = A_.L.image(A_.p["w1journal"], 1060); c = A_.L.image(A_.p["w1chart"], 1150)
-    f.paste_page(a, 470, 1180, angle=-6)
-    f.paste_page(b, 1010, 1210, angle=2)
-    x0, y0 = 1520, 1150
+    f = CS.frame_on(0.5, 0.5, 1.0, 0.35, seed=3)
+    CS.cartouche(f, "Day 1: the case opens", kicker="WINDOW 1", sub="the keeper’s journal, the tower and the chart of the Sound")
+    a = A_.L.image(A_.p["w1"], 1100); b = A_.L.image(A_.p["w1journal"], 1040); c = A_.L.image(A_.p["w1chart"], 1120)
+    f.paste_page(a, 470, 1210, angle=-6)
+    f.paste_page(b, 1010, 1235, angle=2)
+    x0, y0 = 1520, 1180
     f.paste_page(c, x0, y0, angle=5)
     kit.pen_circle(f, x0 - 40, y0 + 120, 95, 70, col=A.RUST, width=8, seed=4)
-    note_hand(f, (1420, 1640), "the island!", 66, col=A.RUST, angle=-8)
-    footer(f)
+    CS.note(f, (1420, 1690), "the island!", 66, angle=-8)
+    CS.footer(f)
     return f
 
 def m04(A_):
-    f = frame_from(bg_scene(_office))
-    headline(f, "2,400 SUSPECTS. ONE CULPRIT.", "DAY 2: THE SOUND BOOK · CROSS THEM OUT NIGHT BY NIGHT", y=200, on_dark=False)
-    a = A_.L.image(A_.p["w2"], 1060)
-    f.paste_page(a, 480, 1170, angle=-6)
-    b = A_.L.image(A_.log_page, 1420)
-    x0, y0 = 1270 - b.img.width / 2, 1130 - b.img.height / 2
-    f.paste_page(b, 1270, 1130)
+    f = CS.frame_on(0.82, 0.24, 2.0, 0.3, seed=4)
+    CS.cartouche(f, "2,400 travellers. One answer.", kicker="WINDOW 2  ·  THE SOUND BOOK", sub="cross them out, night by night")
+    a = A_.L.image(A_.p["w2"], 1040)
+    f.paste_page(a, 480, 1190, angle=-6)
+    b = A_.L.image(A_.log_page, 1260)
+    x0, y0 = 1270 - b.img.width / 2, 1150 - b.img.height / 2
+    f.paste_page(b, 1270, 1150)
     rows = CL.log_rows(A_.L, A_.log_page)
     rng = random.Random(7)
     pick = {k for k in range(len(rows)) if rng.random() < 0.55}
     strike_rows(f, b, x0, y0, rows, pick, seed=5)
-    note_hand(f, (1420, 1770), "2,400 down to 1", 76, col=A.RUST, angle=-5)
-    footer(f)
+    CS.note(f, (1430, 1730), "2,400 down to 1", 76, angle=-5)
+    CS.footer(f)
     return f
-
-def _office(w, h):
-    cv = A.Canvas(w, h, ss=2)
-    SC._interior(cv, wall=(232, 214, 180), floor=CO.WOOD_H, y=0.86)
-    SC._board(cv, w * 0.04, h * 0.24, w * 0.3, h * 0.64, n_rows=5, n_cols=5, metal=None, seed=3)
-    SC._board(cv, w * 0.7, h * 0.24, w * 0.96, h * 0.64, n_rows=5, n_cols=5, metal=None, seed=9)
-    SC._window(cv, w * 0.36, h * 0.26, w * 0.64, h * 0.52, inside=SC._harbour_view)
-    CO.fairy_lights(cv, [(-10, h * 0.2), (w * 0.25, h * 0.225), (w * 0.5, h * 0.205), (w * 0.75, h * 0.228), (w + 10, h * 0.207)], 12, seed=4)
-    A.stove(cv, w * 0.1, h * 0.86, h * 0.13)
-    CO.cat_sitting(cv, w * 0.9, h * 0.86, h * 0.09)
-    return cv.finish(seed=5)
 
 def m05(A_):
-    f = frame_from(bg_scene(_kitchen))
-    headline(f, "A NEW LEAD EVERY NIGHT", "A PAGE OF THE KEEPER’S JOURNAL + THE PAPER PINNED TO IT", y=200, on_dark=False)
-    a = A_.L.image(A_.p["w3"], 1500)
-    f.paste_page(a, 720, 1150, angle=-4)
+    f = CS.frame_on(0.17, 0.5, 1.8, 0.3, seed=5)
+    CS.cartouche(f, "A new lead every night", kicker="WINDOWS 3 TO 23", sub="a page of the keeper’s journal and the paper pinned to it")
+    a = A_.L.image(A_.p["w3"], 1280)
+    f.paste_page(a, 700, 1140, angle=-4)
     w4 = A_.L.doc[A_.p["hint1"]].search_for("Window 4")[0]
     clip = (40, 60, 572, w4.y0 - 4)                                   # Window 3's level-1 hint only
-    h = A_.L.image(A_.p["hint1"], int(860 * (clip[3] - clip[1]) / (clip[2] - clip[0])), clip=clip)
-    f.paste_page(h, 1500, 1500, angle=6)
-    badge(f, (1500, 1270), "3 LEVELS OF HINTS", 62, angle=5)
-    badge(f, (1530, 720), "CHECK-INS ON DAYS 6, 12, 18", 44, bg=A.NIGHT, fg=A.CREAM, angle=-4)
-    footer(f)
+    h = A_.L.image(A_.p["hint1"], int(780 * (clip[3] - clip[1]) / (clip[2] - clip[0])), clip=clip)
+    f.paste_page(h, 1480, 1560, angle=6)
+    CS.legend(f, 1500, 1330, [("3 LEVELS OF HINTS", H.F("sansb", 50), A.RUST, 4)], angle=5)
+    CS.legend(f, 1540, 780, [("CHECK-INS", H.F("sansb", 44), CS.NAVY, 4), ("DAYS 6 · 12 · 18", H.F("gloock", 64), A.RUST, 0)], angle=-4)
+    CS.footer(f)
     return f
 
-def _kitchen(w, h):
-    """The keeper's kitchen: tongue-and-groove walls, a shelf of jars, the stove, the window on the Sound."""
-    cv = A.Canvas(w, h, ss=2)
-    SC._interior(cv, wall=(232, 214, 180), floor=CO.WOOD_H, y=0.86)
-    SC._window(cv, w * 0.62, h * 0.26, w * 0.94, h * 0.56, inside=CO.view_dusk)
-    cv.rect((w * 0.04, h * 0.4, w * 0.5, h * 0.415), A.WOOD)
-    for k, col in enumerate((A.RUST, A.OCHRE, A.MOSS, A.SEA2, A.RUST_L, A.OCHRE_L)):
-        x = w * 0.07 + k * w * 0.07
-        cv.rect((x, h * 0.34, x + w * 0.045, h * 0.4), col); cv.rect((x - 2, h * 0.33, x + w * 0.045 + 2, h * 0.345), A.PAPER)
-    CO.fairy_lights(cv, [(-10, h * 0.2), (w * 0.25, h * 0.225), (w * 0.5, h * 0.205), (w * 0.75, h * 0.228), (w + 10, h * 0.207)], 12, seed=6)
-    A.stove(cv, w * 0.12, h * 0.86, h * 0.16)
-    A.cat(cv, w * 0.3, h * 0.86, h * 0.06)
-    return cv.finish(seed=6)
+def m06(A_):
+    f = CS.frame_on(0.18, 0.88, 2.2, 0.3, seed=6)
+    CS.cartouche(f, "Print. Fold. Open.", kicker="PRINT AT HOME", sub="envelope template and day numbers 1–24 included")
+    a = A_.L.image(A_.p["envelope"], 1060); b = A_.L.image(A_.p["labels"], 1060)
+    f.paste_page(a, 520, 1180, angle=-7); f.paste_page(b, 1080, 1220, angle=3)
+    for n, (x, y, ang) in zip((5, 12, 18, 24), ((1650, 650, 10), (1600, 910, -7), (1660, 1170, 5), (1600, 1440, -9))):
+        f.paste(H.envelope(320, n, (H.KRAFT, H.CREAM, H.SAGE, H.SAGE)[(5, 12, 18, 24).index(n)], seal=H.OCHRE if n == 24 else H.RUST, holly=n == 24), x, y, angle=ang)
+        f.note("drawn", "envelope", str(n))
+    CS.footer(f)
+    return f
+
+def m07(A_):
+    f = CS.frame_on(0.5, 0.62, 1.35, 0.25, seed=7)
+    CS.cartouche(f, "Or play it on iPad", kicker="TAP TONIGHT’S WINDOW", sub="GoodNotes, Notability or any PDF app")
+    scr = A_.I.image(A_.ip["calendar"], 1240)
+    ih = 1240; iw = ih * 0.75
+    tab = kit.Frame(int(iw) + 40, ih + 40); tab.img = Image.new("RGBA", tab.img.size, (0, 0, 0, 0))
+    kit.ipad(tab, (20, 20, 20 + iw, 20 + ih), scr)
+    f.paste(tab.img, S / 2, 1150, angle=-4)
+    for kind, src, text in tab.sources:
+        f.note(kind, src, text)
+    tap(f, 1140, 900, 110)
+    CS.legend(f, 1580, 1650, [("EVERY WINDOW LINKS BACK", H.F("sansb", 44), CS.NAVY, 4)], angle=5)
+    CS.footer(f)
+    return f
+
+def m08(A_):
+    f = CS.frame_on(0.5, 0.5, 1.2, 0.45, seed=8)
+    CS.cartouche(f, "For two, for four, or as a gift", kicker="1 TO 4 PLAYERS  ·  10–25 MINUTES A NIGHT")
+    panels = [("FOR TWO", "A December ritual with your evening tea.", _two),
+              ("WITH FAMILY", "Split the Sound Book and race to the answer.", _family),
+              ("AS A GIFT", "Instant download: print it tonight, give it tomorrow.", _gift)]
+    for k, (title, text, fn) in enumerate(panels):
+        cx = 360 + k * 640
+        im = fn(540, 720)
+        card = CS.box(590, 1120); cd = ImageDraw.Draw(card)
+        card.paste(im, (25, 25))
+        cd.rectangle([25, 25, 565, 745], outline=CS.NAVY, width=3)
+        tfit = H.fit(cd, title, "gloock", 80, 520)
+        cd.text((295, 850), title, font=tfit, fill=A.RUST, anchor="ms")
+        tf = H.F("sansb", 38); lines = H.wrap(cd, text, tf, 500)
+        yy = 930
+        for ln in lines:
+            cd.text((295, yy), ln, font=tf, fill=CS.NAVY, anchor="ms"); yy += 54
+        f.paste(card, cx, 1150, angle=(-3, 2, -2)[k])
+        f.note("drawn", "panel", title); f.note("drawn", "panel", text)
+    CS.footer(f)
+    return f
+
+def m09(A_):
+    f = CS.frame_on(0.62, 0.78, 1.6, 0.35, seed=9)
+    CS.cartouche(f, "Everything you get", kicker="INSTANT DOWNLOAD", sub="4 files: US Letter, A4, iPad and the solution, sealed apart")
+    cards = [("US LETTER", "90 PAGES"), ("A4", "87 PAGES"), ("iPAD", "81 PAGES · LINKED"), ("SOLUTION", "SEPARATE ZIP")]
+    for k, (lab, sub) in enumerate(cards):
+        cx = 330 + k * 450; cy = 700; ang = (-4, 3, -3, 4)[k]
+        c = CS.box(360, 400); cd = ImageDraw.Draw(c)
+        if lab != "SOLUTION":
+            for r in range(3):
+                for q in range(4):
+                    x0 = 44 + q * 70; y0 = 44 + r * 62
+                    cd.rectangle([x0, y0, x0 + 58, y0 + 50], fill=A.RUST if (r * 4 + q) % 5 == 0 else CS.NAVY)
+        else:
+            cd.rectangle([110, 50, 250, 230], fill=CS.NAVY)
+            cd.text((180, 140), "ZIP", font=H.F("gloock", 70), fill=H.OCHRE_L, anchor="mm")
+        cd.text((180, 310), lab, font=H.fit(cd, lab, "gloock", 58, 320), fill=CS.NAVY, anchor="ms")
+        cd.text((180, 360), sub, font=H.F("sansb", 26), fill=A.RUST_D, anchor="ms")
+        f.paste(c, cx, cy, angle=ang)
+        f.note("drawn", "card", f"{lab} {sub}")
+    items = ["24 windows, one for every night from 1 to 24 December",
+             "The keeper’s journal: one handwritten page a night",
+             "The Sound Book: 2,400 travellers to cross out",
+             "A sea chart, the tower in section, tide tables, an almanac",
+             "Check-ins on Days 6, 12 and 18 so you never get lost",
+             "3 levels of hints for every window",
+             "The Sealed Check: test your answer without spoilers",
+             "Envelope template, day numbers and the solution file"]
+    f.paste(CS.box(1640, 840), S / 2, 1355, shadow=True, shadow_strength=55)
+    d = f.draw(); y = 1010; fi = H.fit(d, max(items, key=len), "sans", 46, 1400)
+    for it in items:
+        d.polygon([(250, y - 15), (280, y), (250, y + 15)], fill=A.RUST)
+        d.text((310, y), it, font=fi, fill=CS.NAVY, anchor="lm"); f.note("drawn", "item", it)
+        y += 94
+    CS.footer(f)
+    return f
+
+def m10(A_):
+    f = CS.frame_on(0.3, 0.74, 1.5, 0.35, seed=10)
+    CS.cartouche(f, "Exactly one answer", kicker="FAIR PLAY", sub="every case is checked by code before it reaches you")
+    rows = [("1", "culprit among 2,400 travellers"),
+            ("21", "nights of evidence, every one needed"),
+            ("3", "check-ins so you never get lost"),
+            ("3", "levels of hints for every window"),
+            ("tick", "tested by computer: one answer"),
+            ("0", "spoilers: the answer has its own file")]
+    bw, rh = 1560, 186; top = 560
+    f.paste(CS.box(bw, rh * len(rows) + 40), S / 2, top + (rh * len(rows) + 40) / 2, shadow=True, shadow_strength=55)
+    d = f.draw(); x0 = S / 2 - bw / 2
+    for k, (big, txt) in enumerate(rows):
+        yc = top + 20 + rh * k + rh / 2
+        if k:
+            d.line([(x0 + 30, yc - rh / 2), (x0 + bw - 30, yc - rh / 2)], fill=(190, 182, 160), width=2)
+        if big == "tick":
+            kit.tick(f, x0 + 150, yc + 4, 80, col=A.RUST, width=16); d = f.draw()
+        else:
+            d.text((x0 + 150, yc + 8), big, font=H.F("gloock", 118), fill=A.RUST, anchor="mm"); f.note("drawn", "big", big)
+        d.line([(x0 + 290, yc - rh / 2 + 30), (x0 + 290, yc + rh / 2 - 30)], fill=CS.NAVY, width=3)
+        d.text((x0 + 340, yc), txt, font=H.fit(d, txt, "sansb", 58, bw - 400), fill=CS.NAVY, anchor="lm"); f.note("drawn", "row", txt)
+    CS.footer(f)
+    return f
 
 def _night(w, h, figure=False):
     cv = A.Canvas(w, h, ss=2)
@@ -244,61 +329,6 @@ def _night(w, h, figure=False):
     A.snow(cv, 160, seed=8)
     return cv.finish(seed=8)
 
-def m06(A_):
-    f = frame_from(bg_table(6))
-    headline(f, "PRINT. FOLD. OPEN.", "ENVELOPE TEMPLATE + DAY NUMBERS 1–24 INCLUDED", y=230)
-    a = A_.L.image(A_.p["envelope"], 1100); b = A_.L.image(A_.p["labels"], 1100)
-    f.paste_page(a, 520, 1150, angle=-7); f.paste_page(b, 1080, 1200, angle=3)
-    for n, (x, y, ang) in zip((5, 12), ((1660, 700, 12), (1610, 990, -8))):
-        f.paste(kit.envelope(400, n), x, y, angle=ang); f.note("drawn", "envelope", str(n))
-    CO.twine_bundle(f, 1640, 1450, [24, 18, 17], w=380, angle=-7)
-    footer(f)
-    return f
-
-def m07(A_):
-    f = frame_from(CO.window_seat(cat_x=0.13, journal=False).finish(seed=7).resize((S, S), Image.LANCZOS))
-    headline(f, "CURL UP WITH YOUR iPAD", "TAP TONIGHT’S WINDOW · GOODNOTES · NOTABILITY", y=200, on_dark=False)
-    scr = A_.I.image(A_.ip["calendar"], 1300)
-    ih = 1300; iw = ih * 0.75
-    tab = kit.Frame(int(iw) + 40, ih + 40); tab.img = Image.new("RGBA", tab.img.size, (0, 0, 0, 0))
-    kit.ipad(tab, (20, 20, 20 + iw, 20 + ih), scr)
-    f.paste(tab.img, 1080, 1150, angle=-4)
-    for kind, src, text in tab.sources:
-        f.note(kind, src, text)
-    tap(f, 1220, 910, 110)
-    badge(f, (1600, 1680), "EVERY WINDOW LINKS BACK", 50, angle=6)
-    footer(f)
-    return f
-
-def m08(A_):
-    f = frame_from(bg_table(8))
-    headline(f, "MADE FOR COSY EVENINGS", "ONE DETECTIVE OR UP TO FOUR · 10–25 MINUTES A NIGHT", y=230)
-    panels = [("FOR TWO", "A December ritual with your evening tea.", _two),
-              ("WITH FAMILY", "Split the Sound Book and race to the answer.", _family),
-              ("AS A GIFT", "Instant download: print it tonight, give it tomorrow.", _gift)]
-    for k, (title, text, fn) in enumerate(panels):
-        cx = 360 + k * 640
-        im = fn(560, 760)
-        card = Image.new("RGBA", (600, 1180), A.CREAM + (255,)); cd = ImageDraw.Draw(card)
-        cd.rectangle([0, 0, 599, 1179], outline=A.NIGHT, width=6)
-        card.paste(im, (20, 20))
-        tfit = kit.font("display", 74)
-        while cd.textlength(title, font=tfit) > 540:
-            tfit = kit.font("display", tfit.size - 4)
-        cd.text((300, 880), title, font=tfit, fill=A.RUST, anchor="mm")
-        tf = kit.font("bold", 40); words = text.split(); lines = [""]
-        for wd in words:
-            if cd.textlength(lines[-1] + " " + wd, font=tf) > 520:
-                lines.append(wd)
-            else:
-                lines[-1] = (lines[-1] + " " + wd).strip()
-        yy = 960
-        for ln in lines:
-            cd.text((300, yy), ln, font=tf, fill=A.NIGHT, anchor="mm"); yy += 56
-        f.paste(card, cx, 1200, angle=(-3, 2, -2)[k])
-        f.note("drawn", "panel", title); f.note("drawn", "panel", text)
-    footer(f)
-    return f
 
 def _two(w, h):
     """Two people at the window seat, seen from behind, the lighthouse beyond."""
@@ -314,6 +344,7 @@ def _two(w, h):
     CO.candle(cv, w * 0.88, h * 0.6, h * 0.06)
     return cv.finish(seed=21)
 
+
 def _family(w, h):
     cv = A.Canvas(w, h, ss=2)
     SC._interior(cv, wall=(232, 214, 180), floor=CO.WOOD_H, y=0.72)
@@ -325,80 +356,18 @@ def _family(w, h):
     CO.cat_sitting(cv, w * 0.12, h * 0.98, h * 0.1)
     return cv.finish(seed=22)
 
+
 def _gift(w, h):
     cv = A.Canvas(w, h, ss=2, bg=(232, 214, 180))
     SC._interior(cv, wall=(232, 214, 180), floor=CO.WOOD_H, y=0.86)
     CO.fairy_lights(cv, [(0, h * 0.08), (w * 0.3, h * 0.11), (w * 0.6, h * 0.085), (w, h * 0.105)], 8, seed=7)
     cv.glow(w * 0.5, h * 0.55, w * 0.4, A.LAMP, alpha=60)
-    A.parcel(cv, w * 0.2, h * 0.86, w * 0.6, h * 0.38, paper=A.SEA2, string=A.RUST, label=True)
+    A.parcel(cv, w * 0.2, h * 0.86, w * 0.6, h * 0.38, paper=(214, 182, 140), string=A.RUST, label=True)
     CO.pine(cv, w * 0.1, h * 0.46, w * 0.5, h * 0.42, s=1.0, seed=8)
     A.holly(cv, w * 0.5, h * 0.44, 40)
     A.cat(cv, w * 0.86, h * 0.86, h * 0.06)
     return cv.finish(seed=23)
 
-def m09(A_):
-    f = frame_from(bg_scene(lambda w, h: sunset_keyart(w, h, seed=41, figure=False, hz_frac=0.72, tower=0.22, moon_xy=None), dim=0.58))
-    headline(f, "EVERYTHING YOU NEED", "4 FILES · INSTANT DOWNLOAD", y=200)
-    cards = [("US LETTER", "90 PAGES"), ("A4", "87 PAGES"), ("iPAD", "81 PAGES · LINKED"), ("SOLUTION", "SEPARATE ZIP")]
-    d = f.draw()
-    for k, (lab, sub) in enumerate(cards):
-        cx = 300 + k * 470; cy = 640; ang = (-5, 3, -3, 5)[k]
-        c = Image.new("RGBA", (380, 470), (0, 0, 0, 0)); cd = ImageDraw.Draw(c)
-        cd.rounded_rectangle([0, 0, 379, 469], radius=20, fill=A.CREAM, outline=A.NIGHT, width=7)
-        if lab != "SOLUTION":
-            for r in range(4):
-                for q in range(4):
-                    x0 = 46 + q * 75; y0 = 50 + r * 62
-                    cd.rounded_rectangle([x0, y0, x0 + 62, y0 + 50], radius=6, fill=A.RUST if (r * 4 + q) % 5 == 0 else A.NIGHT)
-        else:
-            cd.rounded_rectangle([90, 70, 290, 290], radius=20, fill=A.NIGHT)
-            cd.text((190, 180), "ZIP", font=kit.font("display", 100), fill=A.OCHRE, anchor="mm")
-        cd.text((190, 350), lab, font=kit.font("display", 64), fill=A.NIGHT, anchor="mm")
-        cd.text((190, 415), sub, font=kit.font("bold", 28), fill=A.RUST_D, anchor="mm")
-        f.paste(c, cx, cy, angle=ang)
-        f.note("drawn", "card", f"{lab} {sub}")
-    items = ["24 windows, one for every night from 1 to 24 December",
-             "The keeper’s journal: one handwritten page a night",
-             "The Sound Book: 2,400 travellers to cross out",
-             "A sea chart, the tower in section, tide tables, an almanac",
-             "Check-ins on Days 6, 12 and 18 so you never get lost",
-             "3 levels of hints for every window",
-             "The Sealed Check: test your answer without spoilers",
-             "Envelope template, day numbers and the solution file"]
-    y = 1000
-    for it in items:
-        d.polygon([(190, y - 18), (226, y), (190, y + 18)], fill=A.OCHRE)
-        d.text((260, y), it, font=kit.font("bold", 52), fill=A.CREAM, anchor="lm"); f.note("drawn", "item", it)
-        y += 104
-    footer(f)
-    return f
-
-def m10(A_):
-    f = frame_from(bg_room(10, cat=True))
-    headline(f, "FAIR PLAY. ONE ANSWER.", "NO GUESSWORK: EVERY CASE IS CHECKED BY CODE", y=200, on_dark=False)
-    rows = [("1", "culprit among 2,400 travellers"),
-            ("21", "nights of evidence, all needed"),
-            ("3", "check-ins so you never get lost"),
-            ("3", "levels of hints every night"),
-            ("tick", "tested by computer: one answer"),
-            ("0", "spoilers: the answer has its own file")]
-    y = 560; bw = 1360; bx = 80 + bw / 2
-    for k, (big, txt) in enumerate(rows):
-        bar = Image.new("RGBA", (bw, 150), (0, 0, 0, 0)); bd = ImageDraw.Draw(bar)
-        bd.rounded_rectangle([0, 0, bw - 1, 149], radius=18, fill=A.PAPER + (250,), outline=A.NIGHT, width=5)
-        bd.rounded_rectangle([0, 0, 260, 149], radius=18, fill=A.RUST)
-        f.paste(bar, bx, y, angle=0, shadow=True)
-        d = f.draw()
-        if big == "tick":
-            kit.tick(f, 190, y + 5, 84, col=A.CREAM, width=18); d = f.draw()
-        else:
-            fb = kit.fit_font(f, big, "display", 112, 220)
-            d.text((210, y + 6), big, font=fb, fill=A.CREAM, anchor="mm"); f.note("drawn", "big", big)
-        tf = kit.fit_font(f, txt, "bold", 56, bw - 330)
-        d.text((380, y), txt, font=tf, fill=A.NIGHT, anchor="lm"); f.note("drawn", "row", txt)
-        y += 186
-    footer(f)
-    return f
 
 BUILDERS = [m01, m02, m03, m04, m05, m06, m07, m08, m09, m10]
 

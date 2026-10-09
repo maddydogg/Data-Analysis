@@ -22,14 +22,15 @@ cap. On Christmas Eve, at lighting-up time, the lamp does not come on.
 | `ipad/the-keeper-of-candleholm_iPad.pdf` | iPad version (81 pages): the first page is a calendar of 24 tappable windows; every window links back |
 | `solution/…_SOLUTION_*.pdf` | The Envelope: the answer, the story, the solution day by day, the finalists and an index of all 2,400 lines |
 | `delivery/` | The 4 files for Etsy: 3 calendar PDFs and `the-keeper-of-candleholm_SOLUTION.zip` |
-| `listing/mockups/` | 10 listing images, 2000×2000 JPG, plus an overview sheet |
+| `listing/mockups/` | 10 listing images, 2000×2000 JPG, plus an overview sheet, in the chart style (hero option 3) |
+| `listing/hero-options/` | The five hero options the seller chose from, the comparison sheet and the design philosophy |
 | `listing/video/` | Trailer and calendar presentation, 1080×1080, 14 s, no sound, with poster frames and storyboards |
 | `listing/etsy_listing.md` | Title, description, 13 tags + 5 spares with Listadum data, phrases to check by hand |
 | `listing/spoiler_check.md` / `.json` | Spoiler and format check of every mockup, every video frame, the delivery folder and the archives |
 | `verification_report.md` / `.json` | Code checks of the puzzle and the PDFs |
 | `out/` | Archives (not in git): `…_files-for-sale.zip`, `…_10-mockups-JPG.zip` and both videos |
 | `src/` | `case.py` (story, chart, tides, almanac, clues, journal), `hints.py`, `generate.py`, `verify.py`, `art.py` (vintage drawing kit), `scenes.py` (key art and 24 vignettes), `cover.py`, `render.py`, `build.py` |
-| `listing/src/` | `mockups.py`, `video.py`, `build_listing.py`, `kit.py`, `cal_listing.py` |
+| `listing/src/` | `mockups.py`, `video.py`, `build_listing.py`, `kit.py`, `cal_listing.py`, `heroes.py` (the five hero options), `chartstyle.py` (the chart every listing image is cut from), `cover_options.py` (earlier poll covers), `fonts-hero/` (OFL fonts) |
 
 ## Rebuild
 

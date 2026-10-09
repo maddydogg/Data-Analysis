@@ -98,8 +98,8 @@ def main(video=True):
            "; ".join(f"{h['label']} in {h['source']}" for h in r["hits"]))
     hero = " ".join(t for _, _, t in res[0]["sources"])
     need = ["THE KEEPER OF", "CANDLEHOLM", "24", "DAYS", "PRINTABLE", "iPAD", "ADVENT CALENDAR"]
-    ok("Image 01 carries the title, 24 days, PRINTABLE and iPad", all(n in hero for n in need),
-       ", ".join(n for n in need if n not in hero) or "all present")
+    ok("Image 01 carries the title, 24 days, PRINTABLE and iPad", all(n.lower() in hero.lower() for n in need),
+       ", ".join(n for n in need if n.lower() not in hero.lower()) or "all present")
     shown = sorted({int(m) for r in res for _, _, t in r["sources"] for m in re.findall(r"WINDOW (\d+) OF 24", t)})
     ok("Only Windows 1–3 appear in the mockups", set(shown) <= set(CL.EARLY), str(shown))
     ok("Sound Book page used in the visuals holds neither the killer nor any finalist",

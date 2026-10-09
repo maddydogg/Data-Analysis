@@ -13,100 +13,100 @@
   {
    "name": "Mockup 01-main: 2000x2000 JPG",
    "passed": true,
-   "detail": "441 KB"
+   "detail": "427 KB"
   },
   {
-   "name": "Mockup 01-main: no spoilers in any visible text (6 sources)",
+   "name": "Mockup 01-main: no spoilers in any visible text (8 sources)",
    "passed": true,
    "detail": ""
   },
   {
-   "name": "Mockup 02-the-calendar: 2000x2000 JPG",
+   "name": "Mockup 02-one-window-a-night: 2000x2000 JPG",
    "passed": true,
-   "detail": "462 KB"
+   "detail": "506 KB"
   },
   {
-   "name": "Mockup 02-the-calendar: no spoilers in any visible text (9 sources)",
+   "name": "Mockup 02-one-window-a-night: no spoilers in any visible text (11 sources)",
    "passed": true,
    "detail": ""
   },
   {
    "name": "Mockup 03-day-1-the-case: 2000x2000 JPG",
    "passed": true,
-   "detail": "481 KB"
+   "detail": "528 KB"
   },
   {
-   "name": "Mockup 03-day-1-the-case: no spoilers in any visible text (7 sources)",
+   "name": "Mockup 03-day-1-the-case: no spoilers in any visible text (9 sources)",
    "passed": true,
    "detail": ""
   },
   {
    "name": "Mockup 04-day-2-the-sound-book: 2000x2000 JPG",
    "passed": true,
-   "detail": "635 KB"
+   "detail": "616 KB"
   },
   {
-   "name": "Mockup 04-day-2-the-sound-book: no spoilers in any visible text (6 sources)",
+   "name": "Mockup 04-day-2-the-sound-book: no spoilers in any visible text (8 sources)",
    "passed": true,
    "detail": ""
   },
   {
-   "name": "Mockup 05-day-3-first-lead: 2000x2000 JPG",
+   "name": "Mockup 05-a-new-lead-each-night: 2000x2000 JPG",
    "passed": true,
-   "detail": "445 KB"
+   "detail": "500 KB"
   },
   {
-   "name": "Mockup 05-day-3-first-lead: no spoilers in any visible text (7 sources)",
+   "name": "Mockup 05-a-new-lead-each-night: no spoilers in any visible text (10 sources)",
    "passed": true,
    "detail": ""
   },
   {
    "name": "Mockup 06-print-and-fold: 2000x2000 JPG",
    "passed": true,
-   "detail": "430 KB"
+   "detail": "467 KB"
   },
   {
-   "name": "Mockup 06-print-and-fold: no spoilers in any visible text (9 sources)",
+   "name": "Mockup 06-print-and-fold: no spoilers in any visible text (11 sources)",
    "passed": true,
    "detail": ""
   },
   {
    "name": "Mockup 07-ipad-calendar: 2000x2000 JPG",
    "passed": true,
-   "detail": "475 KB"
+   "detail": "534 KB"
   },
   {
-   "name": "Mockup 07-ipad-calendar: no spoilers in any visible text (5 sources)",
+   "name": "Mockup 07-ipad-calendar: no spoilers in any visible text (7 sources)",
    "passed": true,
    "detail": ""
   },
   {
    "name": "Mockup 08-who-its-for: 2000x2000 JPG",
    "passed": true,
-   "detail": "414 KB"
+   "detail": "550 KB"
   },
   {
-   "name": "Mockup 08-who-its-for: no spoilers in any visible text (9 sources)",
+   "name": "Mockup 08-who-its-for: no spoilers in any visible text (10 sources)",
    "passed": true,
    "detail": ""
   },
   {
    "name": "Mockup 09-whats-inside: 2000x2000 JPG",
    "passed": true,
-   "detail": "474 KB"
+   "detail": "521 KB"
   },
   {
-   "name": "Mockup 09-whats-inside: no spoilers in any visible text (15 sources)",
+   "name": "Mockup 09-whats-inside: no spoilers in any visible text (17 sources)",
    "passed": true,
    "detail": ""
   },
   {
-   "name": "Mockup 10-checked-by-code: 2000x2000 JPG",
+   "name": "Mockup 10-exactly-one-answer: 2000x2000 JPG",
    "passed": true,
-   "detail": "374 KB"
+   "detail": "394 KB"
   },
   {
-   "name": "Mockup 10-checked-by-code: no spoilers in any visible text (14 sources)",
+   "name": "Mockup 10-exactly-one-answer: no spoilers in any visible text (16 sources)",
    "passed": true,
    "detail": ""
   },
@@ -138,7 +138,7 @@
   {
    "name": "Video trailer: captions use evidence / lead, never the stop-listed word for it",
    "passed": true,
-   "detail": "2,400 TRAVELLERS. 24 DAYS. ONE RED CAP.; CANDLEHOLM, DECEMBER; ON CHRISTMAS EVE THE LAMP DID NOT COME ON; SOMEONE IN A RED CAP KEPT COMING BACK; THE KEEPER WROTE EVERYTHING DOWN"
+   "detail": "2,400 TRAVELLERS. 24 NIGHTS. ONE RED CAP.; CANDLEHOLM, DECEMBER; ON CHRISTMAS EVE THE LAMP DID NOT COME ON; SOMEONE IN A RED CAP KEPT COMING BACK; THE KEEPER WROTE EVERYTHING DOWN"
   },
   {
    "name": "Video presentation: every one of 420 frames checked, no spoilers",
@@ -153,12 +153,12 @@
   {
    "name": "Video presentation: captions use evidence / lead, never the stop-listed word for it",
    "passed": true,
-   "detail": "DAY 1: THE CASE, THE TOWER, THE CHART; DAY 2: THE SOUND BOOK. CROSS THEM OUT; DAYS 3\u201323: A JOURNAL PAGE AND A NEW LEAD EACH DAY; OPEN ONE WINDOW A DAY; PRINT AND FOLD, OR TAP ON iPAD"
+   "detail": "DAY 1: THE CASE, THE TOWER, THE CHART; DAY 2: THE SOUND BOOK. CROSS THEM OUT; DAYS 3\u201323: A JOURNAL PAGE AND A NEW LEAD EACH NIGHT; OPEN ONE WINDOW A NIGHT; PRINT AND FOLD, OR TAP ON iPAD"
   },
   {
    "name": "Stop list: no borrowed brands, titles, real lighthouses or earlier names in any drawn text or video caption (whole words)",
    "passed": true,
-   "detail": "86 strings checked"
+   "detail": "106 strings checked"
   },
   {
    "name": "Delivery folder has exactly 4 files (Etsy allows 5)",
@@ -218,17 +218,17 @@
   {
    "name": "Archive the-keeper-of-candleholm_10-mockups-JPG.zip written",
    "passed": true,
-   "detail": "4.5 MB"
+   "detail": "4.9 MB"
   },
   {
    "name": "Archive the-keeper-of-candleholm_trailer_1080.mp4 written",
    "passed": true,
-   "detail": "4.2 MB"
+   "detail": "3.1 MB"
   },
   {
    "name": "Archive the-keeper-of-candleholm_calendar-presentation_1080.mp4 written",
    "passed": true,
-   "detail": "3.7 MB"
+   "detail": "1.9 MB"
   }
  ],
  "delivery": [
